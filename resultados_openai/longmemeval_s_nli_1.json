@@ -1,0 +1,28 @@
+{
+  "total_preguntas": 1,
+  "correctas": 0,
+  "accuracy": 0.0,
+  "accuracy_pct": "0.00%",
+  "tiempo_promedio_seg": 657.7,
+  "tiempo_carga_promedio_seg": 630.69,
+  "tiempo_respuesta_promedio_seg": 3.32,
+  "tiempo_total_min": 10.96,
+  "total_contradicciones": 2,
+  "promedio_memorias_guardadas": 347.0,
+  "use_nli": true,
+  "categoria": "knowledge-update",
+  "detalle": [
+    {
+      "question_id": "6a1eabeb",
+      "question": "What was my personal best time in the charity 5K run?",
+      "answer_correcta": "25 minutes and 50 seconds (or 25:50)",
+      "respuesta_generada": "Your personal best time in the charity 5K run was **27:12**.",
+      "score": 0,
+      "tiempo_segundos": 657.7,
+      "tiempo_carga_seg": 630.69,
+      "tiempo_respuesta_seg": 3.32,
+      "memorias_guardadas": 347,
+      "contradicciones": 2
+    }
+  ]
+}

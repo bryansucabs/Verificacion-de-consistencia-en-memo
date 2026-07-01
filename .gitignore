@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# API keys y credenciales
+.env
+*.env
+.env.*
+
+# Logs internos de las evaluaciones
+resultados_openai/txt/
+resultados_local_qwen/txt/
+resultados_qwen/
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Cache de modelos de Hugging Face
+.cache/
+*.bin
+*.safetensors
+
+# Datasets grandes (no van a GitHub)
+LongMemEval/
+locomo/
+BEAM/
+
+# Tesis
+tesis/
+*.tex
+*.aux
+*.pdf
+
+# Archivos temporales del proyecto
+resumen.txt
+test_base.py
+guia_defensa_bryan.pdf
+
+# El fork completo de mem0 se sube solo desde mem0/mem0/
+# La raíz mem0/ contiene también embedchain/, openmemory/, docs/, etc
+# que no queremos subir. Los excluimos:
+mem0/docs/
+mem0/embedchain/
+mem0/openmemory/
+mem0/tests/
+mem0/examples/
+mem0/scripts/
+mem0/cookbooks/
+mem0/evaluation/
+mem0/server/
+mem0/vercel-ai-sdk/
+mem0/mem0-ts/
+mem0/dashboard/
+mem0/.github/
+mem0/*.md
+mem0/*.toml
+mem0/*.yaml
+mem0/*.yml
+mem0/*.txt
+mem0/*.png
+mem0/*.jpg
+mem0/*.gif
+mem0/Makefile
+mem0/*.sh
+mem0/*.json
+mem0/mem0/llms/openai_original.py
