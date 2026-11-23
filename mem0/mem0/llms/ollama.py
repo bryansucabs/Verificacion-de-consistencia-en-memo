@@ -131,7 +131,17 @@ class OllamaLLM(LLMBase):
             "num_predict": self.config.max_tokens,
             "top_p": self.config.top_p,
         }
+        # Opciones propias de Ollama: solo se envian si fueron configuradas.
+        # Sin num_ctx, Ollama usa su ventana por defecto (4096 con 8 GB de VRAM) y
+        # recorta el prompt de extraccion de Mem0, que mide mas de 8000 tokens.
+        if getattr(self.config, "num_ctx", None) is not None:
+            options["num_ctx"] = self.config.num_ctx
+        if getattr(self.config, "seed", None) is not None:
+            options["seed"] = self.config.seed
         params["options"] = options
+
+        if getattr(self.config, "think", None) is not None:
+            params["think"] = self.config.think
 
         # Remove OpenAI-specific parameters that Ollama doesn't support
         params.pop("max_tokens", None)  # Ollama uses different parameter names

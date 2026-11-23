@@ -746,19 +746,26 @@ class Memory(MemoryBase):
                     for _id_idx in _ids_conflicto:
                         _id_vec = uuid_mapping.get(str(_id_idx))
                         if _id_vec:
+                            # Mejora B (PFC3): marcar como historica en lugar
+                            # de eliminar, segun la configuracion del verificador
+                            _accion = self._verificador_nli.aplicar_accion(
+                                self.vector_store,
+                                _id_vec,
+                                reemplazo=parsed_messages,
+                            )
                             logger.info(
-                                f"[NLI] Eliminando memoria en conflicto "
+                                f"[NLI] Memoria en conflicto {_accion} "
                                 f"id={_id_vec}"
                             )
-                            self.vector_store.delete(vector_id=_id_vec)
-                            self.db.add_history(
-                                _id_vec,
-                                None,
-                                None,
-                                "DELETE",
-                                created_at=None,
-                                updated_at=None,
-                            )
+                            if _accion == "eliminada":
+                                self.db.add_history(
+                                    _id_vec,
+                                    None,
+                                    None,
+                                    "DELETE",
+                                    created_at=None,
+                                    updated_at=None,
+                                )
                     ids_eliminados = set(str(i) for i in _ids_conflicto)
                     existing_memories = [
                         m for m in existing_memories

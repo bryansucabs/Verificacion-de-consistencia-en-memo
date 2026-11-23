@@ -23,6 +23,9 @@ class OllamaConfig(BaseLlmConfig):
         http_client_proxies: Optional[dict] = None,
         # Ollama-specific parameters
         ollama_base_url: Optional[str] = None,
+        num_ctx: Optional[int] = None,
+        think: Optional[bool] = None,
+        seed: Optional[int] = None,
     ):
         """
         Initialize Ollama configuration.
@@ -38,6 +41,9 @@ class OllamaConfig(BaseLlmConfig):
             vision_details: Vision detail level, defaults to "auto"
             http_client_proxies: HTTP client proxy settings, defaults to None
             ollama_base_url: Ollama base URL, defaults to None
+            num_ctx: Context window in tokens. None keeps the Ollama server default
+            think: Enables or disables thinking in models that support it. None keeps the model default
+            seed: Sampling seed. None keeps the Ollama default (random)
         """
         # Initialize base parameters
         super().__init__(
@@ -54,3 +60,7 @@ class OllamaConfig(BaseLlmConfig):
 
         # Ollama-specific parameters
         self.ollama_base_url = ollama_base_url
+        # Solo se envian a Ollama cuando tienen valor; con None el comportamiento no cambia.
+        self.num_ctx = num_ctx
+        self.think = think
+        self.seed = seed
