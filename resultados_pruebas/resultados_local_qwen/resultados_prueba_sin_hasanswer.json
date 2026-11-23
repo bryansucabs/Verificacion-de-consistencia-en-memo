@@ -1,0 +1,52 @@
+{
+  "total_preguntas": 3,
+  "correctas": 1,
+  "accuracy": 0.3333,
+  "accuracy_pct": "33.33%",
+  "tiempo_promedio_seg": 289.99,
+  "tiempo_carga_promedio_seg": 265.55,
+  "tiempo_respuesta_promedio_seg": 0.82,
+  "tiempo_total_min": 14.5,
+  "total_contradicciones": 3,
+  "promedio_memorias_guardadas": 21.0,
+  "use_nli": true,
+  "categoria": "knowledge-update",
+  "detalle": [
+    {
+      "question_id": "6a1eabeb",
+      "question": "What was my personal best time in the charity 5K run?",
+      "answer_correcta": "25 minutes and 50 seconds (or 25:50)",
+      "respuesta_generada": "Your personal best time in the charity 5K run was 27:12.",
+      "score": 0,
+      "tiempo_segundos": 391.48,
+      "tiempo_carga_seg": 347.32,
+      "tiempo_respuesta_seg": 0.89,
+      "memorias_guardadas": 19,
+      "contradicciones": 1
+    },
+    {
+      "question_id": "6aeb4375",
+      "question": "How many Korean restaurants have I tried in my city?",
+      "answer_correcta": "four",
+      "respuesta_generada": "You have tried three different Korean restaurants in your city.",
+      "score": 0,
+      "tiempo_segundos": 279.77,
+      "tiempo_carga_seg": 265.17,
+      "tiempo_respuesta_seg": 0.81,
+      "memorias_guardadas": 28,
+      "contradicciones": 1
+    },
+    {
+      "question_id": "830ce83f",
+      "question": "Where did Rachel move to after her recent relocation?",
+      "answer_correcta": "the suburbs",
+      "respuesta_generada": "Rachel moved back to the suburbs of Chicago after her recent relocation.",
+      "score": 1,
+      "tiempo_segundos": 198.72,
+      "tiempo_carga_seg": 184.16,
+      "tiempo_respuesta_seg": 0.77,
+      "memorias_guardadas": 16,
+      "contradicciones": 1
+    }
+  ]
+}

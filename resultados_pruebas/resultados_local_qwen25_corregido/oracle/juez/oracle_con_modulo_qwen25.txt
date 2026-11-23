@@ -1,0 +1,169 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_local_qwen25_corregido/oracle/oracle_con_modulo_qwen25.json
+Fecha              : 2026-11-16T14:26:58
+
+Correctas segun el juez independiente : 49 de 78  (62.82 %)
+Correctas segun el propio modelo      : 52 de 78  (66.67 %)
+
+Los dos jueces coinciden en           : 73 de 78
+  correcta para los dos               : 48
+  incorrecta para los dos             : 25
+  correcta solo para el propio modelo : 4
+  correcta solo para el independiente : 1
+Preguntas de abstencion (6)           : independiente 1, propio 2
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 5
+
+  [ce6d2d27] What day of the week do I take a cocktail-making class?
+    Respuesta correcta    : Friday
+    Respuesta del sistema : You are taking a cocktail-making class on both Thursday and Friday.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'no')
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended a total of five sessions of the bereavement support group last year, with additional sessions during a tough time, making it at least eight sessions in total.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'no')
+
+  [c7dc5443] What is my current record in the recreational volleyball league?
+    Respuesta correcta    : 5-2
+    Respuesta del sistema : Your current record in the recreational volleyball league is 3 wins and 2 losses.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [42ec0761] Do I have a spare screwdriver for opening up my laptop?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Based on the user memories, you have a spare screwdriver that you can use for cleaning your laptop fans.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes')
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : 0
+
+Based on the provided memories, there is no mention of any Italian restaurants. The memories focus on Korean, Indian, Middle Eastern, and Korean BBQ dishes, but do not include any information about Italian restaurants.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 29
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : Your personal best time in the charity 5K run is 27:12.
+
+  [852ce960] What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?
+    Respuesta correcta    : $400,000
+    Respuesta del sistema : You were pre-approved for $350,000 from Wells Fargo for your mortgage.
+
+  [89941a93] How many bikes do I currently own?
+    Respuesta correcta    : 4
+    Respuesta del sistema : You currently own three bikes: a road bike, a mountain bike, and a commuter bike.
+
+  [ce6d2d27] What day of the week do I take a cocktail-making class?
+    Respuesta correcta    : Friday
+    Respuesta del sistema : You are taking a cocktail-making class on both Thursday and Friday.
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : On your most recent family trip, you went to Hawaii.
+
+  [031748ae] How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?
+    Respuesta correcta    : When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+    Respuesta del sistema : You lead 5 engineers when you just started your new role as Senior Software Engineer, and you still lead 5 engineers now.
+
+  [0f05491a] How many stars do I need to reach the gold level on my Starbucks Rewards app?
+    Respuesta correcta    : 120
+    Respuesta del sistema : You need 125 stars to reach the gold level on your Starbucks Rewards app.
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended a total of five sessions of the bereavement support group last year, with additional sessions during a tough time, making it at least eight sessions in total.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : You purchased a 50mm prime lens most recently.
+
+  [18bc8abd] What brand of BBQ sauce am I currently obsessed with?
+    Respuesta correcta    : Kansas City Masterpiece
+    Respuesta del sistema : Based on the most recent user memories, you are currently not obsessed with any specific brand of BBQ sauce for ribs or brisket. However, you have a preference for Kansas City Masterpiece BBQ sauce for pulled pork. For ribs, you plan to use Sweet Baby Ray's BBQ sauce.
+
+  [b01defab] Did I finish reading 'The Nightingale' by Kristin Hannah?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Based on the user's most recent memory, they want to finish reading 'The Nightingale' by Kristin Hannah by reading daily during their commute in time for the next book club discussion. Therefore, it is implied that the user has not yet finished the book.
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : Based on the user's memories, you intend to get your acoustic guitar serviced at 'Rhythm Central' on Main St. There is no information about where you have previously gotten your guitar serviced.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays.
+
+  [5831f84d] How many Crash Course videos have I watched in the past few weeks?
+    Respuesta correcta    : 15
+    Respuesta del sistema : You have watched 12 Crash Course videos in the past few weeks.
+
+  [eace081b] Where am I planning to stay for my birthday trip to Hawaii?
+    Respuesta correcta    : Oahu
+    Respuesta del sistema : Based on the provided memories, there is no specific information about where you are planning to stay for your birthday trip to Hawaii. The memories focus on activities like hiking, snorkeling, and beach relaxation but do not mention any accommodation details.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous personal best time for the charity 5K run was 26 minutes and 30 seconds.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : You play tennis with friends at the local park every other week both previously and now.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have a total of 37 pre-1920 American coins in your collection.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You currently have 1250 followers on Instagram.
+
+  [c7dc5443] What is my current record in the recreational volleyball league?
+    Respuesta correcta    : 5-2
+    Respuesta del sistema : Your current record in the recreational volleyball league is 3 wins and 2 losses.
+
+  [3ba21379] What type of vehicle model am I currently working on?
+    Respuesta correcta    : Ford F-150 pickup truck
+    Respuesta del sistema : You are currently working on a Ford Mustang Shelby GT350R model.
+
+  [9bbe84a2] What was my previous goal for my Apex Legends level before I updated my goal?
+    Respuesta correcta    : level 100
+    Respuesta del sistema : Your previous goal before updating it was to reach level 150 in Apex Legends by focusing on completing daily and weekly challenges to earn experience points and level up faster.
+
+  [10e09553] How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?
+    Respuesta correcta    : 7
+    Respuesta del sistema : You caught 9 largemouth bass on the earlier fishing trip to Lake Michigan with Alex on July 10, 2026, before the July 22, 2026 trip.
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : 0
+
+Based on the provided memories, there is no mention of any Italian restaurants. The memories focus on Korean, Indian, Middle Eastern, and Korean BBQ dishes, but do not include any information about Italian restaurants.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead a team of 5 engineers when you just started your new role as Senior Software Engineer Manager.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see Dr. Smith weekly for therapy sessions.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You have been living in your current apartment in Harajuku for 3 months.
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with friends at the local park every other week, not table tennis.
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : You currently keep your old sneakers under the bed.

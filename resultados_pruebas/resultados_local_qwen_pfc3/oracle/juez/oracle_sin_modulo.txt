@@ -1,0 +1,169 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_local_qwen_pfc3/oracle/oracle_sin_modulo.json
+Fecha              : 2026-11-16T10:06:25
+
+Correctas segun el juez independiente : 48 de 78  (61.54 %)
+Correctas segun el propio modelo      : 51 de 78  (65.38 %)
+
+Los dos jueces coinciden en           : 73 de 78
+  correcta para los dos               : 47
+  incorrecta para los dos             : 26
+  correcta solo para el propio modelo : 4
+  correcta solo para el independiente : 1
+Preguntas de abstencion (6)           : independiente 1, propio 3
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 5
+
+  [6071bd76] For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?
+    Respuesta correcta    : You switched to less water (5 ounces) per tablespoon of coffee.
+    Respuesta del sistema : You switched to more water per tablespoon of coffee. Previously, you used 1 tablespoon of coffee for every 6 ounces of water, but now you're using 1 tablespoon for every 5 ounces of water, which is less water per tablespoon of coffee.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes.')
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : Based on your memories, you got your guitar serviced at 'Rhythm Central' on Main St.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [cf22b7bf] How much weight have I lost since I started going to the gym consistently?
+    Respuesta correcta    : 10 pounds
+    Respuesta del sistema : You have lost 10 pounds in 3 months and an additional 5 pounds in the past month, totaling 15 pounds since you started going to the gym consistently.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : Based on the provided memories, there is no mention of any Italian restaurants. Therefore, the answer is that you have not tried any Italian restaurants in your city.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : Based on the provided memories, you have added 20 autographed baseballs to your collection since starting three months ago, but there is no mention of autographed footballs. Therefore, the answer is that you have added 0 autographed footballs to your collection in the first three months.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 30
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : Your personal best time in the charity 5K run is 27:12.
+
+  [852ce960] What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?
+    Respuesta correcta    : $400,000
+    Respuesta del sistema : You were pre-approved for $350,000 from Wells Fargo.
+
+  [945e3d21] How often do I attend yoga classes to help with my anxiety?
+    Respuesta correcta    : Three times a week.
+    Respuesta del sistema : You attend yoga classes twice a week to help with your anxiety.
+
+  [d7c942c3] Is my mom using the same grocery list method as me?
+    Respuesta correcta    : Yes.
+    Respuesta del sistema : Based on the user memories, it seems the user is using a new grocery list app to organize ingredients, and has plans related to grocery shopping and dinner preparation. However, the memories do not provide any information about the user's mom's grocery list method. Therefore, we cannot determine if the user's mom is using the same grocery list method as the user.
+
+  [ce6d2d27] What day of the week do I take a cocktail-making class?
+    Respuesta correcta    : Friday
+    Respuesta del sistema : You take a cocktail-making class on Thursday.
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : On your most recent family trip, you went to Hawaii.
+
+  [07741c44] Where do I initially keep my old sneakers?
+    Respuesta correcta    : under my bed
+    Respuesta del sistema : Initially, you plan to keep your old sneakers in a shoe rack in the closet.
+
+  [031748ae] How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?
+    Respuesta correcta    : When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+    Respuesta del sistema : You lead 4 engineers when you just started your new role as Senior Software Engineer, and you still lead 4 engineers now.
+
+  [0f05491a] How many stars do I need to reach the gold level on my Starbucks Rewards app?
+    Respuesta correcta    : 120
+    Respuesta del sistema : You need 125 stars to reach the gold level on the Starbucks Rewards app.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : Based on the user memories, the most recent purchase related to lenses is a 50mm prime lens.
+
+  [45dc21b6] How many of Emma's recipes have I tried out?
+    Respuesta correcta    : 3
+    Respuesta del sistema : You have tried 5 of Emma's recipes so far.
+
+  [ed4ddc30] How many dozen eggs do we currently have stocked up in our refrigerator?
+    Respuesta correcta    : 20
+    Respuesta del sistema : We currently have 30 dozen eggs stocked up in the refrigerator.
+
+  [8fb83627] How many issues of National Geographic have I finished reading?
+    Respuesta correcta    : Five
+    Respuesta del sistema : You have finished reading four issues of National Geographic and five issues about the Amazon rainforest. Therefore, you have finished reading a total of nine issues of National Geographic.
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : Based on your memories, you got your guitar serviced at 'Rhythm Central' on Main St.
+
+  [603deb26] How many times have I tried making a Negroni at home since my friend Emma showed me how to make it?
+    Respuesta correcta    : 10
+    Respuesta del sistema : You have tried making a Negroni at home 5 times since your friend Emma showed you how to make it.
+
+  [5831f84d] How many Crash Course videos have I watched in the past few weeks?
+    Respuesta correcta    : 15
+    Respuesta del sistema : Based on the most recent memory, you have watched 12 Crash Course videos on computer science in the past few weeks.
+
+  [affe2881] How many different species of birds have I seen in my local park?
+    Respuesta correcta    : 32
+    Respuesta del sistema : You have seen 27 different species of birds in your local park.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous personal best time for the charity 5K run was 26 minutes and 30 seconds.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : Based on the user's memories, there is no specific information about how often the user played tennis with friends at the local park in the past. However, the user is currently planning to play tennis with friends at the local park this Sunday, indicating a current intention to play. Without conflicting information, we can infer that the user is planning to play more regularly now compared to the past, but the exact frequency is not provided.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have 37 pre-1920 American coins in your collection.
+
+  [cf22b7bf] How much weight have I lost since I started going to the gym consistently?
+    Respuesta correcta    : 10 pounds
+    Respuesta del sistema : You have lost 10 pounds in 3 months and an additional 5 pounds in the past month, totaling 15 pounds since you started going to the gym consistently.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You currently have 1250 followers on Instagram.
+
+  [ba61f0b9] How many women are on the team led by my former manager Rachel?
+    Respuesta correcta    : 6
+    Respuesta del sistema : There are 5 women on the team led by your former manager Rachel.
+
+  [0977f2af] What new kitchen gadget did I invest in before getting the Air Fryer?
+    Respuesta correcta    : Instant Pot
+    Respuesta del sistema : The information provided does not include details about any previous kitchen gadgets before the Air Fryer. Based on the given memories, the only new kitchen gadget mentioned is the Air Fryer. Therefore, there is no record of investing in a previous kitchen gadget before getting the Air Fryer.
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : Based on the provided memories, there is no mention of any Italian restaurants. Therefore, the answer is that you have not tried any Italian restaurants in your city.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead a team of 4 engineers in your new role as Senior Software Engineer.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see Dr. Smith weekly for therapy sessions.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You have been living in your current apartment in Harajuku for 3 months.
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : Based on the provided memories, you have added 20 autographed baseballs to your collection since starting three months ago, but there is no mention of autographed footballs. Therefore, the answer is that you have added 0 autographed footballs to your collection in the first three months.
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : Currently, you store your old sneakers under the bed.

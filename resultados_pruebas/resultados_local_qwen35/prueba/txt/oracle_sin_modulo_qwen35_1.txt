@@ -1,0 +1,53 @@
+Limpiando Qdrant...
+Qdrant limpio.
+Cargando dataset...
+Evaluando 1 preguntas de 'knowledge-update' (oracle)
+Modelo: qwen3.5:4b | num_ctx: 12288 | think: False | semilla: 42
+Modulo NLI: desactivado
+Resultados en: E:/proyecto/resultados_local_qwen35/prueba/oracle_sin_modulo_qwen35_1.json
+============================================================
+Cargando modelos (calentamiento, este tiempo no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+Modelos listos en 47 s.
+
+Pregunta 1/1: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.896] User has been doing running lately and recently set a personal best time of 27:1
+    - [0.869] User is preparing for a charity 5K run and seeking tips to improve endurance, wi
+    - [0.848] User is training for another charity 5K run and seeking tips to improve enduranc
+    - [0.572] User is considering incorporating strength training into their fitness routine t
+    - [0.521] User is planning a fitness schedule for the next few weeks and has a soccer game
+    - [0.377] User has been focusing on strengthening their core and legs, which has improved 
+    - [0.375] User is asking for tips on how to improve running technique to become more effic
+    - [0.352] User plays soccer every two weeks with coworkers and is seeking tips to improve 
+    - [0.342] User is preparing for a tennis tournament on May 6th, 2027 and seeking tips to i
+    - [0.325] User is planning to sign up for a tennis tournament on May 6th, 2027, which will
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   27:12
+  Memorias:   12 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 105913 tokens entrada | 506 salida | recortadas: 0
+  Score (propio): 0 [no] | Accuracy: 0.00% | Carga: 37.8s (3.1s/mensaje) | Respuesta: 0.5s | Total: 46.4s
+  Ollama:     qwen3.5:4b d8b0f5e9760c 3.5 GB 100% GPU 12288 llamacpp 4 minutes from now
+
+============================================================
+RESUMEN FINAL
+============================================================
+Modelo                 : qwen3.5:4b (oracle, sin modulo)
+Preguntas evaluadas    : 1
+Respuestas correctas   : 0  (calificacion del propio modelo)
+Accuracy               : 0.00%
+Tiempo carga promedio  : 37.8 segundos
+Tiempo por mensaje     : 3.15 segundos por mensaje guardado
+Tiempo respuesta prom. : 0.5 segundos
+Tiempo total promedio  : 46.4 segundos
+Total contradicciones  : 0
+Memorias marcadas      : 0
+Pares descartados NER  : 0
+Memorias prom/pregunta : 12.0
+Mensajes cargados      : 12 (errores: 0, errores internos de Mem0: 0)
+Llamadas al LLM (Mem0) : 12 (recortadas: 0)
+Tiempo total           : 0.8 minutos
+Resultados guardados   : E:/proyecto/resultados_local_qwen35/prueba/oracle_sin_modulo_qwen35_1.json
+============================================================

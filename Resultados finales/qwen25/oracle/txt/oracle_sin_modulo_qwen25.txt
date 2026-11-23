@@ -1,0 +1,1597 @@
+Limpiando Qdrant...
+Qdrant limpio.
+Cargando dataset...
+Evaluando 78 preguntas de 'knowledge-update' (oracle)
+Modelo: qwen2.5:7b-instruct-q4_K_M | num_ctx: 12288 | think: None | semilla: 42
+Modulo NLI: desactivado
+Resultados en: E:/proyecto/qwen25_combinada/oracle/oracle_sin_modulo_qwen25.json
+============================================================
+Cargando modelos (calentamiento, este tiempo no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+Modelos listos en 24 s.
+
+Pregunta 1/78: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.905] User recently set a personal best time of 27:12 in a charity 5K run
+    - [0.894] User recently set a personal best time of 27:12 in a charity 5K run on May 6, 20
+    - [0.884] User recently set a personal best time of 27:12 in a charity 5K run on [date]
+    - [0.866] User is training for a charity 5K run and hopes to beat their personal best time
+    - [0.866] User is training for a charity 5K run and aims to beat their personal best time 
+    - [0.865] User is training for a charity 5K run and aims to beat their personal best time 
+    - [0.587] User is seeking tips to improve their running technique for soccer
+    - [0.576] User is thinking about incorporating strength training into their routine to imp
+    - [0.508] User is planning their fitness schedule for the next few weeks and wants to know
+    - [0.345] User is looking for tips to improve their endurance for soccer, as they are play
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   Your personal best time in the charity 5K run is 27:12.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103579 tokens entrada | 1512 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 0.00% | Carga: 33.0s (2.7s/mensaje) | Respuesta: 0.7s | Total: 40.6s
+  Ollama:     qwen2.5:7b-instruct-q4_K_M 845dbda0ea48 5.2 GB 100% GPU 12288 llamacpp 4 minutes from now
+
+Pregunta 2/78: How many Korean restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.861] User has tried four Korean restaurants in their city recently, each with its own
+    - [0.851] User has tried three Korean restaurants in their city recently, each with its ow
+    - [0.764] User tried an amazing bibimbap at one Korean restaurant, a spicy kimchi stew at 
+    - [0.661] User has been experimenting with different types of noodles and is interested in
+    - [0.621] User is planning a dinner party and needs recommendations for popular Korean BBQ
+    - [0.617] User is considering kimchi and bokkeumbap for the Korean BBQ dishes at the dinne
+    - [0.601] User is planning a dinner party and considering Korean BBQ beef, Middle Eastern 
+    - [0.595] User is planning to serve kimchi and bokkeumbap for the Korean BBQ dishes at the
+    - [0.579] User heard about a new Indian restaurant in their neighborhood that just opened 
+    - [0.568] User is planning a dinner party and needs recommendations for side dishes to com
+  Correcta:   four
+  Generada:   You have tried four Korean restaurants in your city recently.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102614 tokens entrada | 2025 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 50.00% | Carga: 42.7s (3.6s/mensaje) | Respuesta: 0.5s | Total: 50.6s
+
+Pregunta 3/78: Where did Rachel move to after her recent relocation?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.844] User's friend Rachel recently moved back to the suburbs near a major city
+    - [0.831] User's friend Rachel moved to Chicago
+    - [0.777] User is also thinking about visiting a friend Rachel in a new city apartment
+    - [0.767] User will ask Rachel for her neighborhood information to narrow down accommodati
+    - [0.764] User is also thinking about visiting a friend Rachel in a new apartment in Chica
+    - [0.757] User is visiting a friend Rachel in a new apartment in Chicago
+    - [0.755] User is considering visiting a friend Rachel in a new apartment in Chicago
+    - [0.721] User is considering neighborhoods in Chicago for easy exploration and meeting up
+    - [0.672] User is looking for good neighborhoods to stay in when visiting Rachel in Chicag
+    - [0.307] User is planning a trip with friends to either a beach town in Florida or a hiki
+  Correcta:   the suburbs
+  Generada:   Rachel moved back to the suburbs after her recent relocation. However, she previously moved to Chica
+  Memorias:   21 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102036 tokens entrada | 1454 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 30.3s (2.5s/mensaje) | Respuesta: 0.6s | Total: 38.1s
+
+Pregunta 4/78: What was the amount I was pre-approved for when I got my mortgage from Wells Far
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.858] User is buying a $325,000 house and is pre-approved for $350,000 from Wells Farg
+    - [0.849] User is trying to estimate monthly mortgage payments, property taxes, and insura
+    - [0.838] User is buying a $325,000 house and is pre-approved for $350,000 from Wells Farg
+    - [0.822] User is looking forward to finally owning a home, having a backyard, and was pre
+    - [0.816] User is trying to estimate closing costs for a $325,000 house, pre-approved for 
+    - [0.805] User is trying to estimate and negotiate closing costs for a $325,000 house, pre
+    - [0.401] User is trying to estimate monthly mortgage payments, property taxes, and insura
+    - [0.369] User plans to negotiate with the seller to cover an additional $3,250 in closing
+    - [0.357] User is trying to finalize their budget for buying a new home, specifically focu
+    - [0.353] User needs to estimate and negotiate closing costs for their new home purchase.
+  Correcta:   $400,000
+  Generada:   You were pre-approved for $350,000 from Wells Fargo.
+  Memorias:   38 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103857 tokens entrada | 2820 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 50.00% | Carga: 58.4s (4.9s/mensaje) | Respuesta: 0.6s | Total: 66.2s
+
+Pregunta 5/78: How often do I attend yoga classes to help with my anxiety?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.870] User attends yoga classes three times a week, which helps clear their head
+    - [0.761] User has been noticing that yoga practice helps feel more grounded and centered,
+    - [0.669] User loves the yoga schedule and wants to ensure all report tasks are completed 
+    - [0.600] User is interested in stress-reducing apps or meditation techniques for self-car
+    - [0.498] User has been doing yoga twice a week to manage stress and improve focus
+    - [0.454] User has been using meditation to help manage anxiety and depression
+    - [0.390] User is seeking recommendations for books or resources to better understand anxi
+    - [0.388] User wants to incorporate more mindfulness into daily routine, even on busy days
+    - [0.364] User uses meditation to set intentions and focus on daily goals
+    - [0.333] User is available from 9am-5pm, with a lunch break from 12-1pm
+  Correcta:   Three times a week.
+  Generada:   You attend yoga classes twice a week to help with your anxiety.
+  Memorias:   21 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103840 tokens entrada | 3490 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 40.00% | Carga: 82.6s (6.9s/mensaje) | Respuesta: 0.8s | Total: 90.5s
+
+Pregunta 6/78: Is my mom using the same grocery list method as me?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.845] User is using the same grocery list app as their mom now
+    - [0.800] User is trying to get their mom to use a grocery list app
+    - [0.713] User is using a new grocery list app to keep track of ingredients for the dinner
+    - [0.692] User added onions and bell peppers to their grocery list for the dinner party
+    - [0.689] User realized they are running low on olive oil and added it to their grocery li
+    - [0.469] User is planning a dinner party this weekend and needs recipe ideas for chicken 
+    - [0.352] User is thinking of trying out new recipes with cauliflower gnocchi from Trader 
+    - [0.326] User is considering making cauliflower gnocchi as a side dish for the dinner par
+    - [0.320] User is planning to make cauliflower gnocchi as a side dish for the dinner party
+    - [0.316] User decided on Brown Butter Sage Sauce for the dinner party
+  Correcta:   Yes.
+  Generada:   Based on the user memories, it seems the user is using a new grocery list app to organize ingredient
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103147 tokens entrada | 2194 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 33.33% | Carga: 50.0s (4.2s/mensaje) | Respuesta: 1.6s | Total: 58.9s
+
+Pregunta 7/78: How many hours have I spent on my abstract ocean sculpture?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.934] User has been working on an abstract ocean sculpture for 10-12 hours and it is s
+    - [0.865] User has been working on an abstract ocean sculpture at home for 5-6 hours and s
+    - [0.818] User is considering using natural materials like seashells or driftwood in their
+    - [0.802] User is considering creating a series of ocean-inspired sculptures and wants to 
+    - [0.793] User is planning to create a series of ocean-inspired sculptures and wants to ex
+    - [0.774] User is thinking of using natural materials like seashells or driftwood in their
+    - [0.772] User is considering using natural materials like seashells or driftwood in their
+    - [0.772] User is planning to create a series of ocean-inspired sculptures using resin and
+    - [0.721] User is planning to incorporate found ocean objects, like sea glass or beach sto
+    - [0.716] User is considering creating a sculpture that incorporates found ocean objects, 
+  Correcta:   10-12 hours
+  Generada:   You have spent 10-12 hours on your abstract ocean sculpture so far.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103796 tokens entrada | 2618 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 42.86% | Carga: 51.2s (4.3s/mensaje) | Respuesta: 0.6s | Total: 59.0s
+
+Pregunta 8/78: How many bikes do I currently own?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.847] User currently has three bikes and is wondering if that's too many
+    - [0.746] User owns a road bike, a mountain bike, and a commuter bike
+    - [0.739] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.739] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.739] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.659] User has already done 2,000 miles on their current road bike
+    - [0.658] User will bring all their bikes, including a road bike, a mountain bike, a commu
+    - [0.655] User will bring all their bikes, including a road bike, a mountain bike, and a c
+    - [0.624] User will bring all their bikes, including a new hybrid bike, on their road trip
+    - [0.624] User has been using their road bike for long rides on the weekends and has done 
+  Correcta:   4
+  Generada:   You currently own four bikes: a road bike, a mountain bike, a commuter bike, and a new hybrid bike.
+  Memorias:   49 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104905 tokens entrada | 3494 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 50.00% | Carga: 75.6s (6.3s/mensaje) | Respuesta: 0.8s | Total: 83.2s
+
+Pregunta 9/78: What day of the week do I take a cocktail-making class?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.902] User is planning a cocktail-making class on Thursday and Friday
+    - [0.882] User is planning a cocktail-making class on Thursday
+    - [0.881] User is planning a cocktail-making class on Friday
+    - [0.805] User is planning to make a Watermelon Basil Margarita for the cocktail-making cl
+    - [0.720] User is planning to experiment with new tequila-based cocktail recipes for the c
+    - [0.698] User is planning to experiment with new tequila-based cocktail recipes for the c
+    - [0.632] User is seeking inspiration for a new cocktail recipe that incorporates tequila 
+    - [0.511] User is planning to make Paloma and Tequila Sour cocktails during the class on F
+    - [0.361] User likes the Watermelon Basil Margarita and is experimenting with basil in coc
+    - [0.358] User is experimenting with basil in cocktails and likes the Watermelon Basil Mar
+  Correcta:   Friday
+  Generada:   You take a cocktail-making class on Thursday.
+  Memorias:   42 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103463 tokens entrada | 2791 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 44.44% | Carga: 57.3s (4.8s/mensaje) | Respuesta: 0.5s | Total: 64.7s
+
+Pregunta 10/78: Where did I go on my most recent family trip?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.749] User is planning a solo trip after a family trip to Hawaii, considering extra da
+    - [0.746] User is planning a solo trip after a family trip to Hawaii, considering extra da
+    - [0.744] User recently had a family trip to Hawaii where they enjoyed snorkeling together
+    - [0.740] User thinks they would have set aside more time for exploring Waikiki and shoppi
+    - [0.739] User thinks they would have set aside more time for exploring Waikiki and shoppi
+    - [0.712] User is planning a trip to Europe and seeking tips on creating a family-friendly
+    - [0.707] User is planning a trip to Europe and seeking tips on creating a family-friendly
+    - [0.654] User is planning a solo trip to Tokyo after recently going to Paris with family,
+    - [0.617] User is planning a trip and is deciding between traveling solo or with family, s
+    - [0.613] User is deciding between traveling solo or with family, seeking tips on balancin
+  Correcta:   Paris
+  Generada:   On your most recent family trip, you went to Hawaii.
+  Memorias:   24 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103702 tokens entrada | 1826 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 40.00% | Carga: 38.0s (3.2s/mensaje) | Respuesta: 0.5s | Total: 45.7s
+
+Pregunta 11/78: Where do I initially keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.825] User plans to store old sneakers in a shoe rack
+    - [0.741] User plans to get their old sneakers polished and conditioned this weekend
+    - [0.728] User is looking for a good cobbler to get their old sneakers polished and condit
+    - [0.698] User is storing old sneakers under the bed and they are starting to smell
+    - [0.683] User plans to take inventory of their shoe collection and identify items to get 
+    - [0.645] User plans to donate old dress shoes to a local charity thrift store this Saturd
+    - [0.617] User is thinking of organizing their closet by type, grouping all boots together
+    - [0.604] User is considering organizing their closet by type, grouping all boots together
+    - [0.563] User plans to get a new pair of sandals with better quality straps
+    - [0.537] User is considering buying a new pair of sandals with better quality straps
+  Correcta:   under my bed
+  Generada:   Initially, you plan to keep your old sneakers in a shoe rack in the closet.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102424 tokens entrada | 2233 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 36.36% | Carga: 47.0s (3.9s/mensaje) | Respuesta: 0.4s | Total: 54.4s
+
+Pregunta 12/78: How many short stories have I written since I started writing regularly?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.836] User has been writing regularly for three months and has completed 7 short stori
+    - [0.719] User is considering setting a goal for a certain number of short stories per mon
+    - [0.709] User likes the idea of a writing calendar and has been writing short stories reg
+    - [0.709] User considers setting a goal for a certain number of short stories per month to
+    - [0.642] User is considering writing a memoir focusing on experiences with writing over t
+    - [0.624] User intends to start with a 'The Spark' chapter describing how they started wri
+    - [0.621] User is looking for tips to stay organized with writing projects, including shor
+    - [0.614] User is looking for tips to stay organized with writing projects including short
+    - [0.603] User is interested in using prompts or themes to generate ideas for short storie
+    - [0.599] User plans to write a memoir focusing on experiences with writing over the past 
+  Correcta:   seven
+  Generada:   You have written 7 short stories since you started writing regularly three months ago.
+  Memorias:   20 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103526 tokens entrada | 2140 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 41.67% | Carga: 44.3s (3.7s/mensaje) | Respuesta: 0.5s | Total: 51.8s
+
+Pregunta 13/78: How many pages of 'A Short History of Nearly Everything' have I read so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.901] User has been reading 'A Short History of Nearly Everything', currently on page 
+    - [0.886] User is currently reading 'A Short History of Nearly Everything' and is on page 
+    - [0.819] User is trying to learn more about AI-powered medical diagnosis and is reading '
+    - [0.813] User just finished reading about the discovery of DNA structure in 'A Short Hist
+    - [0.298] User is interested in learning more about renewable energy and is seeking online
+    - [0.291] User is interested in learning more about AI-powered diagnosis of rare diseases 
+    - [0.288] User is interested in learning more about AI-powered diagnosis of rare diseases
+    - [0.275] User is interested in the potential of AI in medical diagnosis and is learning a
+    - [0.272] User wants to learn more about the current state of artificial intelligence, spe
+    - [0.270] User has been listening to a podcast on 'The Science Hour' about AI-powered medi
+  Correcta:   220
+  Generada:   Based on the most recent memory, you have read up to page 220 of 'A Short History of Nearly Everythi
+  Memorias:   22 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104193 tokens entrada | 1400 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 46.15% | Carga: 29.9s (2.5s/mensaje) | Respuesta: 0.7s | Total: 37.7s
+
+Pregunta 14/78: How many engineers do I lead when I just started my new role as Senior Software 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.866] User is leading a team of 5 engineers in their new role as Senior Software Engin
+    - [0.834] User is in a new role as Senior Software Engineer
+    - [0.456] User is excited about leading their team of engineers and sees it as a great exp
+    - [0.426] User is planning a team outing for 6 people, including 5 engineers and 1 manager
+    - [0.420] User is planning a team outing for 4 engineers and 1 manager in the San Francisc
+    - [0.419] User is planning a team outing for 5 people, including 4 engineers and 1 manager
+    - [0.405] User is planning a team outing for 5 engineers and 1 manager in the city
+    - [0.370] User is planning a team outing for engineers in the city and is considering outd
+    - [0.367] User is reaching out to Samantha for the Corporate Team Building Package for 6 p
+    - [0.366] User is planning a team outing for engineers in the city and needs activity reco
+  Correcta:   When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+  Generada:   You lead 4 engineers when you just started your new role as Senior Software Engineer, and you still 
+  Memorias:   25 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103696 tokens entrada | 1998 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 42.86% | Carga: 40.8s (3.4s/mensaje) | Respuesta: 0.7s | Total: 48.7s
+
+Pregunta 15/78: How many titles are currently on my to-watch list?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.740] User wants to organize their to-watch list of 25 titles
+    - [0.689] User is interested in adding more historical dramas to their to-watch list of 25
+    - [0.653] User wants to know if 'The Haunting of Hill House' can be finished in a week or 
+    - [0.611] User added 'The Crown', 'The OA', and other shows to their watchlist for later
+    - [0.538] User is interested in 'The Haunting of Hill House' and plans to watch an episode
+    - [0.531] User decided to watch 'The Haunting of Hill House' and is interested in its stor
+    - [0.528] User is interested in 'The Haunting of Hill House' for its storytelling, plannin
+    - [0.528] User is interested in adding 'Amistad' and 'Hotel Rwanda' to their to-watch list
+    - [0.518] User is looking for new TV shows on Netflix similar to 'Stranger Things' or 'The
+    - [0.503] User is particularly interested in 'Schindler's List' and '12 Years a Slave' for
+  Correcta:   25
+  Generada:   Based on the most recent memory, the user has 25 titles on their to-watch list.
+  Memorias:   23 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104262 tokens entrada | 1833 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 46.67% | Carga: 40.7s (3.4s/mensaje) | Respuesta: 0.7s | Total: 48.7s
+
+Pregunta 16/78: How many stars do I need to reach the gold level on my Starbucks Rewards app?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.972] User is trying to reach the gold level on their Starbucks Rewards app and wants 
+    - [0.966] User needs 120 stars to reach the gold level on their Starbucks Rewards app
+    - [0.963] User needs 125 stars to reach the gold level on their Starbucks Rewards app
+    - [0.946] User is trying to reach the gold level on their Starbucks Rewards app and needs 
+    - [0.943] User is trying to reach the gold level on their Starbucks Rewards app and needs 
+    - [0.863] User is looking for the easiest way to earn stars on their Starbucks Rewards app
+    - [0.861] User is looking for tips on how to earn stars faster using the Starbucks Rewards
+    - [0.653] User is also interested in Fetch Rewards and wants to know how many points are n
+    - [0.399] User is considering Best Buy's loyalty program, My Best Buy, and wants to know h
+    - [0.363] User is looking for tips on organizing loyalty cards and rewards points
+  Correcta:   120
+  Generada:   You need 125 stars to reach the gold level on the Starbucks Rewards app.
+  Memorias:   14 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 101675 tokens entrada | 1438 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 43.75% | Carga: 31.0s (2.6s/mensaje) | Respuesta: 0.7s | Total: 39.2s
+
+Pregunta 17/78: How long have I been using my Fitbit Charge 3?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.878] User has been using their Fitbit Charge 3 for 6 months to track daily steps
+    - [0.859] User has been using their Fitbit Charge 3 for 9 months and finds it helpful for 
+    - [0.858] User has been using their Fitbit Charge 3 for 6 months and finds it helpful for 
+    - [0.305] User is using a portable massage roller for muscle recovery and stress relief af
+    - [0.295] User is a fan of non-fiction books related to health and wellness, specifically 
+    - [0.285] User wants tips on staying motivated to reach daily step goals on lazy Sundays
+    - [0.282] User finds reading about health and wellness helps relax and unwind, providing n
+    - [0.281] User is looking for tips to improve sleep quality due to recent sleep issues
+    - [0.279] User is evaluating the Hugger Mugger ParaMat and Manduka eKO SuperLite for their
+    - [0.276] User has been using their yoga mat for a while and is considering a thicker mat 
+  Correcta:   9 months
+  Generada:   You have been using your Fitbit Charge 3 for 9 months, as per your most recent memory.
+  Memorias:   31 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104222 tokens entrada | 2224 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 47.06% | Carga: 44.5s (3.7s/mensaje) | Respuesta: 0.8s | Total: 52.5s
+
+Pregunta 18/78: How many sessions of the bereavement support group did I attend?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.908] User attended five sessions of a bereavement support group last year
+    - [0.892] User attended three sessions of a bereavement support group during a tough time
+    - [0.846] User attended a bereavement support group during a tough time
+    - [0.815] User attended a bereavement support group and found it helpful in processing emo
+    - [0.416] User remembers the facilitator was kind and understanding, and the group members
+    - [0.409] User is trying to recall family gatherings and funerals attended in the past yea
+    - [0.407] User is considering joining online forums or social media communities focused on
+    - [0.397] User wants to recall family gatherings and funerals attended in the past year
+    - [0.395] User wants to reach out to friends and family members who have gone through simi
+    - [0.346] User wants to seek out a therapist or counselor for guidance and support
+  Correcta:   five
+  Generada:   Based on the memories provided, the user attended three sessions of the bereavement support group an
+  Memorias:   24 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103620 tokens entrada | 2476 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 50.00% | Carga: 51.8s (4.3s/mensaje) | Respuesta: 1.0s | Total: 60.0s
+
+Pregunta 19/78: What type of camera lens did I purchase most recently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.679] User recently got a new 50mm prime lens which has been working out great
+    - [0.678] User recently got a new 50mm prime lens
+    - [0.649] User is considering upgrading their camera body to a full-frame model like the N
+    - [0.642] User is considering upgrading their camera body to a full-frame model like the N
+    - [0.635] User is considering the Lowepro ProTactic 450 AW and the Think Tank Urban Disgui
+    - [0.635] User is considering the Lowepro ProTactic 450 AW and Think Tank Urban Disguise 4
+    - [0.634] User is planning to upgrade their camera body to a full-frame model like the Nik
+    - [0.623] User is considering the Manfrotto MT057CXPRO4 tripod for future upgrades to a fu
+    - [0.613] User is considering getting a wide-angle lens, preferably a 14-24mm or 16-35mm, 
+    - [0.596] User is considering a tripod that can support their Nikon D5600 and lenses
+  Correcta:   a 70-200mm zoom lens
+  Generada:   Based on the user memories, the most recent purchase related to lenses is a 50mm prime lens.
+  Memorias:   42 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 105250 tokens entrada | 3238 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 47.37% | Carga: 68.5s (5.7s/mensaje) | Respuesta: 0.5s | Total: 76.5s
+
+Pregunta 20/78: How often do I see my therapist, Dr. Smith?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.889] User sees Dr. Smith weekly for therapy sessions
+    - [0.877] User has a therapy session with Dr. Smith every two weeks
+    - [0.877] User has a therapy session with Dr. Smith every two weeks
+    - [0.761] User had a session with Dr. Smith this week and discussed setting healthy bounda
+    - [0.696] User is feeling overwhelmed with commitments and Dr. Smith suggested learning to
+    - [0.356] User has work hours from 9 to 5, Monday to Friday, and regular social commitment
+    - [0.341] User is feeling more confident about setting healthy boundaries after the therap
+    - [0.318] User is prioritizing self-care activities like meditation and journaling to mana
+    - [0.315] User has been prioritizing self-care activities like yoga and meditation to mana
+    - [0.313] User is prioritizing self-care activities like yoga and meditation to manage anx
+  Correcta:   every week
+  Generada:   You see your therapist, Dr. Smith, weekly to discuss setting healthy boundaries and other issues.
+  Memorias:   32 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103880 tokens entrada | 2717 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 50.00% | Carga: 58.1s (4.8s/mensaje) | Respuesta: 0.6s | Total: 66.2s
+
+Pregunta 21/78: How many MCU films did I watch in the last 3 months?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.927] User has watched 4 MCU films in the last 3 months
+    - [0.914] User has been watching 12 films in the last 3 months, including 5 MCU movies
+    - [0.801] User has watched 4 MCU films in the last 3 months and suggests Spider-Man: Homec
+    - [0.752] User is on a Marvel binge and wants to share MCU films suitable for family movie
+    - [0.532] User is considering creating a Marvel-themed photo booth with props like Spider-
+    - [0.529] User is thinking of creating a Marvel-themed photo booth with props like Spider-
+    - [0.519] User is creating a Marvel-themed photo booth with props like Spider-Man masks an
+    - [0.517] User has watched 12 films in the last 3 months
+    - [0.509] User suggests Spider-Man: Homecoming for the family movie night
+    - [0.507] User is looking for snack and activity suggestions to complement the movie Spide
+  Correcta:   5
+  Generada:   You watched 5 MCU films in the last 3 months.
+  Memorias:   37 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 94861 tokens entrada | 2724 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 52.38% | Carga: 56.2s (5.1s/mensaje) | Respuesta: 0.9s | Total: 64.4s
+
+Pregunta 22/78: How many of Emma's recipes have I tried out?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.897] User has tried 3 recipes from Emma's channel so far
+    - [0.871] User has been enjoying recipes from Emma's channel and has tried two of them
+    - [0.377] User is considering trying new vegan dessert recipes this weekend
+    - [0.374] User is considering trying the Chocolate Chia Pudding recipe
+    - [0.363] User is planning to try the Chocolate Chia Pudding recipe
+    - [0.361] User is interested in vegan dessert recipes and has tried the Chocolate Chia Pud
+    - [0.361] User is considering trying new vegan dessert recipes this weekend, specifically 
+    - [0.360] User is trying the Chocolate Chia Pudding recipe
+    - [0.360] User will try the Chocolate Chia Pudding recipe
+    - [0.357] User is planning to try vegan recipes, specifically the Chocolate Chia Pudding
+  Correcta:   3
+  Generada:   You have tried 5 of Emma's recipes so far.
+  Memorias:   38 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103034 tokens entrada | 2445 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 50.00% | Carga: 50.5s (4.2s/mensaje) | Respuesta: 0.5s | Total: 58.3s
+
+Pregunta 23/78: What company is Rachel, an old colleague from my previous company, currently wor
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.904] User plans to catch up with Rachel, an old colleague from their previous company
+    - [0.854] User met Rachel, an old colleague from their previous company, at the TechConnec
+    - [0.852] User met Rachel, an old colleague from a previous company, at the TechConnect co
+    - [0.688] User attended the TechConnect conference on February 10th and 11th, met Rachel a
+    - [0.596] User met David, a friend, at the startup mixer at WeWork, and David introduced t
+    - [0.594] User met David, a friend, at the startup mixer at WeWork, and David introduced t
+    - [0.590] User met David, a friend, at the same startup mixer at WeWork, and he introduced
+    - [0.563] User attended a startup mixer at WeWork and met Alex, the founder of a new edtec
+    - [0.558] User plans to reach out to Alex again to learn more about his startup and potent
+    - [0.555] User will add David, a friend, to the spreadsheet as well, who was introduced at
+  Correcta:   TechCorp
+  Generada:   TechCorp
+  Memorias:   39 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104572 tokens entrada | 4282 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 52.17% | Carga: 89.2s (7.4s/mensaje) | Respuesta: 0.8s | Total: 97.4s
+
+Pregunta 24/78: For the coffee-to-water ratio in my French press, did I switch to more water per
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.891] User is experimenting with a French press and has found that 1 tablespoon of cof
+    - [0.836] User has their French press ratio set to 1 tablespoon of coffee for every 5 ounc
+    - [0.771] User is curious about the best way to clean their French press
+    - [0.715] User is excited to try new beans in their French press and believes the bright, 
+    - [0.555] User is considering trying a new coffee recipe and is unsure about which coffee 
+    - [0.542] User is curious about the beans in their first coffee subscription shipment and 
+    - [0.378] User decided to try Kenyan coffee first for their new recipe
+    - [0.365] User decided to pair Earl Grey tea with their citrus-infused coffee
+    - [0.361] User is looking for tips on storing coffee beans to preserve their freshness
+    - [0.352] User is looking for a good coffee subscription service
+  Correcta:   You switched to less water (5 ounces) per tablespoon of coffee.
+  Generada:   You switched to more water per tablespoon of coffee. Previously, you used 1 tablespoon of coffee for
+  Memorias:   20 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103085 tokens entrada | 1636 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 50.00% | Carga: 34.6s (2.9s/mensaje) | Respuesta: 0.9s | Total: 42.7s
+
+Pregunta 25/78: Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.868] User moved the 'Ethereal Dreams' painting by Emma Taylor to above their bed, it 
+    - [0.811] User moved the 'Ethereal Dreams' painting to their bedroom, it adds a nice touch
+    - [0.773] User will keep the 'Ethereal Dreams' painting above their living room sofa as is
+    - [0.632] User is planning to create an art piece that incorporates a figure in a dreamlik
+    - [0.599] User is planning to create a dreamlike scene with a figure floating in a misty, 
+    - [0.438] User has been enjoying a new painting above their living room sofa, it adds a ni
+    - [0.427] User has a new painting above their living room sofa that adds a nice touch to t
+    - [0.380] User is planning to display some of their own art pieces around the party area
+    - [0.379] User is thinking of displaying some of their own art pieces around the party are
+    - [0.378] User is looking for inspiration for their next art project and is interested in 
+  Correcta:   in my bedroom
+  Generada:   The painting 'Ethereal Dreams' by Emma Taylor is currently hanging above the bed in the bedroom.
+  Memorias:   36 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104708 tokens entrada | 2549 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 52.00% | Carga: 51.9s (4.3s/mensaje) | Respuesta: 0.7s | Total: 60.1s
+
+Pregunta 26/78: How many times have I worn my new black Converse Chuck Taylor All Star sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.890] User has worn their new black Converse Chuck Taylor All Star sneakers six times,
+    - [0.878] User loves their new black Converse Chuck Taylor All Star sneakers and has worn 
+    - [0.875] User has worn their new black Converse Chuck Taylor All Star sneakers four times
+    - [0.872] User has been wearing their new black Converse Chuck Taylor All Star sneakers fo
+    - [0.867] User has been wearing their new black Converse Chuck Taylor All Star sneakers fo
+    - [0.867] User has been wearing their new black Converse Chuck Taylor All Star sneakers fo
+    - [0.867] User has been wearing their new black Converse Chuck Taylor All Star sneakers fo
+    - [0.865] User recently wore their new black Converse Chuck Taylor All Star sneakers to ru
+    - [0.860] User recently started wearing their new black Converse Chuck Taylor All Star sne
+    - [0.842] User's new black Converse Chuck Taylor All Star sneakers are comfortable and go 
+  Correcta:   six
+  Generada:   You have worn your new black Converse Chuck Taylor All Star sneakers six times, including to run err
+  Memorias:   39 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104434 tokens entrada | 3184 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 53.85% | Carga: 65.6s (5.5s/mensaje) | Respuesta: 1.1s | Total: 74.0s
+
+Pregunta 27/78: How many episodes of the Science series have I completed on Crash Course?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.856] User has been watching Crash Course Science series and completed 50 episodes
+    - [0.809] User wants to plan a daily routine incorporating lunch break and before-bed time
+    - [0.806] User wants to plan a daily routine incorporating lunch break and before-bed time
+    - [0.777] User is currently on episode 50 of the Crash Course Science series
+    - [0.774] User is currently on episode 10 of the Crash Course Science series
+    - [0.752] User wants to watch 1 Crash Course episode daily
+    - [0.752] User wants to watch 1 Crash Course episode daily
+    - [0.752] User wants to watch 1 Crash Course episode daily
+    - [0.731] User wants to incorporate a lunch break and before-bed time for watching Crash C
+    - [0.533] User has been taking a course on Coursera
+  Correcta:   50
+  Generada:   You have completed 50 episodes of the Crash Course Science series.
+  Memorias:   49 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104181 tokens entrada | 4243 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 55.56% | Carga: 90.2s (7.5s/mensaje) | Respuesta: 0.8s | Total: 98.4s
+
+Pregunta 28/78: Do I go to the gym more frequently than I did previously?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.656] User does not work out on Mondays, Wednesdays, and Fridays, going to the gym on 
+    - [0.616] User works out four times a week, specifically on Tuesdays, Thursdays, and Satur
+    - [0.588] User currently uses a habit tracker app to keep track of daily and weekly tasks,
+    - [0.568] User plans to reward themselves with a post-workout smoothie on Saturday after c
+    - [0.511] User plans to reward themselves with a post-workout smoothie on Saturday after c
+    - [0.499] User wants to plan their week for tasks including reading, meditation, social co
+    - [0.491] User does not work out on Mondays, Wednesdays, and Fridays
+    - [0.486] User wants to plan their week for tasks including meal prep, admin work, reading
+    - [0.486] User dedicates specific days to certain tasks, like Fridays for admin tasks and 
+    - [0.483] User wants to fit in reading and meditation in their weekly schedule
+  Correcta:   Yes
+  Generada:   Based on the user's current memory, you go to the gym on Tuesdays, Thursdays, and Saturdays, which i
+  Memorias:   22 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102536 tokens entrada | 2389 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 57.14% | Carga: 50.8s (4.2s/mensaje) | Respuesta: 1.1s | Total: 59.3s
+
+Pregunta 29/78: How many new postcards have I added to my collection since I started collecting 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.895] User has added 17 new postcards to their collection since starting to collect ag
+    - [0.880] User has added 25 new postcards to their collection since starting to collect ag
+    - [0.781] User recently acquired 8 more postcards from a local antique shop trip
+    - [0.735] User provided a list of 17 new postcards, including details like title, date, co
+    - [0.660] User will start with a simple postcard rack for their collection
+    - [0.649] User is seeking recommendations for online communities and resources for postcar
+    - [0.639] User needs tips on categorizing and organizing their postcard collection to easi
+    - [0.621] User will categorize their postcard collection by theme for organization
+    - [0.605] User is considering using a mix of wall-mounted shelves and glass-top display ca
+    - [0.595] User is seeking recommendations for creating a simple, yet effective display for
+  Correcta:   25
+  Generada:   You have added 25 new postcards to your collection since starting to collect again.
+  Memorias:   23 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103059 tokens entrada | 1961 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 58.62% | Carga: 36.6s (3.1s/mensaje) | Respuesta: 0.6s | Total: 44.4s
+
+Pregunta 30/78: How many videos of Corey Schafer's Python programming series have I completed so
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.923] User has been preparing for their project by watching Corey Schafer's Python pro
+    - [0.888] User has completed 30 videos of Corey Schafer's Python programming series and pl
+    - [0.884] User has completed 30 videos of Corey Schafer's Python series and plans to start
+    - [0.862] User has been brushing up on Python skills by watching Corey Schafer's programmi
+    - [0.616] User is working on a project involving text analysis and sentiment analysis and 
+    - [0.503] User is considering starting a simple NLP project like sentiment analysis using 
+    - [0.332] User is thinking of applying NLP to a project and is looking for beginner resour
+    - [0.321] User wants to learn more about spaCy's language models and their application in 
+    - [0.312] User is setting up a project environment for NLP tasks, including installing nec
+    - [0.311] User is interested in exploring other NLP techniques like named entity recogniti
+  Correcta:   30
+  Generada:   You have completed 30 videos of Corey Schafer's Python series so far.
+  Memorias:   23 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104118 tokens entrada | 2742 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 60.00% | Carga: 58.5s (4.9s/mensaje) | Respuesta: 0.6s | Total: 66.5s
+
+Pregunta 31/78: How long have I been living in my current apartment in Harajuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.868] User has been living in Harajuku for 3 months and continues to discover new hidd
+    - [0.855] User is living in a studio apartment in Harajuku, Tokyo, and has been commuting 
+    - [0.845] User is living in a studio apartment in Harajuku, Tokyo, and has been commuting 
+    - [0.822] User's new studio apartment is in Harajuku, Tokyo, and the commute to work is co
+    - [0.765] User hasn't explored much of the historical side of Harajuku yet and is interest
+    - [0.761] User has been enjoying the fall foliage in Tokyo, particularly in the Harajuku n
+    - [0.751] User hasn't explored much of the historical side of Harajuku yet and is interest
+    - [0.750] User is interested in exploring the historical side of Harajuku, such as the Mei
+    - [0.616] User has been enjoying the fall foliage in Tokyo, particularly in the Daikanyama
+    - [0.577] User has been exploring a new neighborhood every Sunday, with a recent discovery
+  Correcta:   3 months
+  Generada:   You have been living in your current apartment in Harajuku for 3 months.
+  Memorias:   50 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104677 tokens entrada | 3979 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 61.29% | Carga: 81.4s (6.8s/mensaje) | Respuesta: 0.9s | Total: 89.7s
+
+Pregunta 32/78: What brand of BBQ sauce am I currently obsessed with?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.795] User loves Sweet Baby Ray's BBQ sauce and plans to use it with ribs and brisket.
+    - [0.785] User is considering getting a Killer Hogs BBQ rub to complement Sweet Baby Ray's
+    - [0.774] User is considering getting a BBQ rub to complement Sweet Baby Ray's BBQ sauce f
+    - [0.772] User is currently obsessed with Kansas City Masterpiece BBQ sauce on their ribs.
+    - [0.768] User is planning to make mac and cheese and needs to stock up on Sweet Baby Ray'
+    - [0.764] User needs to stock up on Sweet Baby Ray's BBQ sauce for the ribs.
+    - [0.751] User is considering recipes for a good BBQ sauce to serve with pulled pork, curr
+    - [0.748] User will use Sweet Baby Ray's BBQ sauce for the ribs.
+    - [0.686] User is planning to use Kansas City Masterpiece BBQ sauce for the pulled pork.
+    - [0.657] User loves mac and cheese and plans to make it for the BBQ.
+  Correcta:   Kansas City Masterpiece
+  Generada:   Based on your memories, you are currently obsessed with Kansas City Masterpiece BBQ sauce for ribs.
+  Memorias:   41 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104021 tokens entrada | 3618 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 62.50% | Carga: 71.9s (6.0s/mensaje) | Respuesta: 0.7s | Total: 80.0s
+
+Pregunta 33/78: How long have my parents been staying with me in the US?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7761 (char 7760)
+  Memorias recuperadas para responder:
+    - [0.812] User's parents have been staying with them in the US for nine months, helping wi
+    - [0.786] User's parents have been living with them in the US for the past six months, hel
+    - [0.730] User's parents have been staying with them for nine months, helping with paperwo
+    - [0.657] User is concerned about the impact of having parents living with them in the US 
+    - [0.545] User will ask the attorney about the waiver of inadmissibility process and how i
+    - [0.539] User is unsure about including their parents' income or expenses in the green ca
+    - [0.525] User is concerned about the financial aspect of their green card application, sp
+    - [0.507] User needs to demonstrate financial support for their parents if they are includ
+    - [0.437] User wants to know the steps and timeline for applying for a green card
+    - [0.402] User wants to know the next step in the green card application process after sub
+  Correcta:   nine months
+  Generada:   Your parents have been staying with you in the US for nine months.
+  Memorias:   18 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 1)
+  LLM:        12 llamadas | 103531 tokens entrada | 4346 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 63.64% | Carga: 79.2s (6.6s/mensaje) | Respuesta: 0.7s | Total: 87.1s
+
+Pregunta 34/78: How long have I been sticking to my daily tidying routine?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.887] User has been sticking to a daily tidying routine for 4 weeks
+    - [0.887] User has been sticking to a daily tidying routine for 4 weeks
+    - [0.872] User is proud of sticking to a daily tidying routine for 3 weeks
+    - [0.872] User is proud of sticking to a daily tidying routine for 3 weeks
+    - [0.832] User is proud of sticking to a daily tidying routine for 4 weeks and its positiv
+    - [0.785] User needs help organizing their garage this weekend and is proud of sticking to
+    - [0.736] User is planning to create a dedicated workstation for their daily tidying routi
+    - [0.685] User is considering turning a space in the garage into a workstation for daily t
+    - [0.676] User plans to use the garage space for a workstation dedicated to daily tidying
+    - [0.592] User has been using an all-natural brand for bathroom cleaning that is effective
+  Correcta:   4 weeks
+  Generada:   You have been sticking to your daily tidying routine for 4 weeks now.
+  Memorias:   37 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 95328 tokens entrada | 2215 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.71% | Carga: 43.5s (4.0s/mensaje) | Respuesta: 0.5s | Total: 51.1s
+
+Pregunta 35/78: How long have I had my cat, Luna?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.753] User has had their cat Luna for about 9 months and is trying to keep her active 
+    - [0.750] User has had Luna for about 9 months and has set up a cat tree for her.
+    - [0.707] User has had their cat Luna for about 6 months and is scheduling a microchipping
+    - [0.705] User has set up a cat tree for Luna and rotates her toys weekly to keep things f
+    - [0.693] User is trying to maintain their cat Luna's weight and is seeking general tips o
+    - [0.687] User is trying to keep their cat Luna healthy and happy and is considering inter
+    - [0.681] User is trying to maintain their cat Luna's weight and reduce hair shedding.
+    - [0.679] User is thinking of getting interactive toys for their cat Luna to keep her enga
+    - [0.679] User is setting up a playtime routine for their cat Luna to help her get more ex
+    - [0.678] User is considering setting up a playtime routine for their cat Luna to help her
+  Correcta:   9 months
+  Generada:   You have had Luna for 9 months.
+  Memorias:   25 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102216 tokens entrada | 2121 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.71% | Carga: 44.4s (3.7s/mensaje) | Respuesta: 0.5s | Total: 52.6s
+
+Pregunta 36/78: How many Instagram followers do I currently have?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.799] User's Instagram follower count increased to 600, a new milestone.
+    - [0.763] User wants to increase their social media presence, especially on Instagram, and
+    - [0.754] User has been trying to increase their social media presence, especially on Inst
+    - [0.728] User reached 600 followers on Instagram and is planning to use the 'Question Sti
+    - [0.727] User has reached 600 followers on Instagram and is planning to use the 'Question
+    - [0.687] User will ask followers about their preferences to determine what type of conten
+    - [0.677] User plans to post a follow-up Instagram story with a graphic or screenshot of t
+    - [0.675] User wants to increase their social media presence on Instagram, especially for 
+    - [0.672] User will post a poll on Instagram asking followers about their preferences for 
+    - [0.657] User wants to increase their social media presence, especially on Instagram, and
+  Correcta:   600
+  Generada:   You currently have 600 followers on Instagram.
+  Memorias:   25 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 105592 tokens entrada | 1335 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 29.3s (2.4s/mensaje) | Respuesta: 0.5s | Total: 37.1s
+
+Pregunta 37/78: How many dozen eggs do we currently have stocked up in our refrigerator?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 6443 (char 6442)
+  Memorias recuperadas para responder:
+    - [0.851] User has 30 dozen eggs stocked up in the fridge
+    - [0.844] User has 20 dozen eggs stocked up in the fridge
+    - [0.601] User is thinking of using fresh eggs from the coop for the quiche
+    - [0.543] User is considering breakfast recipes using fresh eggs and goat milk
+    - [0.523] User is thinking of making egg salad for a quick lunch and asked for a simple re
+    - [0.518] User was thinking of making egg salad for a quick lunch and asked for a simple r
+    - [0.513] User is thinking of getting some bees to help with pollination on the farm
+    - [0.502] User asked for tips on storing the cheese and its shelf life
+    - [0.471] User is thinking of building a fence around the chicken coop to protect from rac
+    - [0.466] User is considering building a fence around the chicken coop to protect from rac
+  Correcta:   20
+  Generada:   We currently have 30 dozen eggs stocked up in the refrigerator.
+  Memorias:   22 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 1)
+  LLM:        12 llamadas | 102562 tokens entrada | 3764 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 64.86% | Carga: 66.4s (5.5s/mensaje) | Respuesta: 0.6s | Total: 74.3s
+
+Pregunta 38/78: How many issues of National Geographic have I finished reading?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.866] User has finished five issues of National Geographic focused on the Amazon rainf
+    - [0.853] User has finished five issues of National Geographic focused on the Amazon rainf
+    - [0.841] User reads National Geographic for in-depth articles on science and nature, curr
+    - [0.838] User reads National Geographic for in-depth articles on science and nature, curr
+    - [0.810] User reads The New Yorker for fiction and National Geographic for in-depth artic
+    - [0.797] User enjoys The New Yorker for fiction and National Geographic for in-depth arti
+    - [0.761] User was recommended to fill in the National Geographic section of a spreadsheet
+    - [0.389] User reads The Atlantic magazine regularly.
+    - [0.381] User reads news, science, and entertainment magazines regularly.
+    - [0.368] User reads The Atlantic and Medium online regularly.
+  Correcta:   Five
+  Generada:   You have finished reading four issues of National Geographic and five issues about the Amazon rainfo
+  Memorias:   21 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 101927 tokens entrada | 1746 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.16% | Carga: 34.0s (2.8s/mensaje) | Respuesta: 1.1s | Total: 42.1s
+
+Pregunta 39/78: Did I finish reading 'The Nightingale' by Kristin Hannah?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.901] User also recently finished 'The Nightingale' by Kristin Hannah, which was highl
+    - [0.870] User put down 'The Nightingale' by Kristin Hannah temporarily due to emotional c
+    - [0.851] User wants to finish 'The Nightingale' by Kristin Hannah for the next book club 
+    - [0.850] User enjoyed 'The Nightingale' by Kristin Hannah, finding the sisterly bond betw
+    - [0.842] User wants to finish 'The Nightingale' by Kristin Hannah in time for the next bo
+    - [0.842] User enjoys 'The Seven Husbands of Evelyn Hugo' and 'The Nightingale' by Kristin
+    - [0.781] User wants to finish 'The Nightingale' in time for the next book club discussion
+    - [0.766] User is looking for book recommendations similar to 'The Seven Husbands of Evely
+    - [0.749] User is looking for recommendations for similar historical fiction books to 'The
+    - [0.738] User wants recommendations for similar historical fiction books to 'The Seven Hu
+  Correcta:   Yes
+  Generada:   Yes, you finished reading 'The Nightingale' by Kristin Hannah. You are planning to dedicate your dai
+  Memorias:   34 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104765 tokens entrada | 3163 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.10% | Carga: 60.3s (5.0s/mensaje) | Respuesta: 0.9s | Total: 68.3s
+
+Pregunta 40/78: Where did I get my guitar serviced?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.779] User is looking for music shops on Main St that offer guitar servicing
+    - [0.777] User has an acoustic guitar that needs servicing but hasn't scheduled it yet
+    - [0.758] User remembers that the music shop on Main St called 'Rhythm Central' offers gui
+    - [0.740] User remembers a music shop on Main St called 'Rhythm Central' for guitar servic
+    - [0.725] User is looking for tips on how to prepare their acoustic guitar for servicing
+    - [0.719] User plans to call 'Rhythm Central' to ask about their services and prices for g
+    - [0.715] User intends to get their acoustic guitar serviced soon and is unsure if they sh
+    - [0.706] User is planning to get their acoustic guitar serviced soon and is unsure if the
+    - [0.695] User intends to get their acoustic guitar serviced before the music festival
+    - [0.685] User is planning to get their acoustic guitar serviced before the music festival
+  Correcta:   The music shop on Main St.
+  Generada:   Based on your memories, you got your guitar serviced at 'Rhythm Central' on Main St.
+  Memorias:   30 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103878 tokens entrada | 1969 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.00% | Carga: 37.7s (3.1s/mensaje) | Respuesta: 0.8s | Total: 45.5s
+
+Pregunta 41/78: What is my current highest score in Ticket to Ride?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.856] User has been playing Ticket to Ride and has a high score of 124 points.
+    - [0.852] User has been playing Ticket to Ride and has a high score of 124 points
+    - [0.850] User has been playing Ticket to Ride and has a high score of 132 points
+    - [0.683] User is considering hosting another game night and seeks recommendations for gam
+    - [0.683] User is considering hosting another game night and seeks recommendations for gam
+    - [0.679] User is looking for games similar to Ticket to Ride and is considering Carcasson
+    - [0.676] User is interested in hosting another game night and seeks recommendations for g
+    - [0.674] User is interested in hosting another game night and seeks recommendations for g
+    - [0.671] User is interested in hosting a game night and seeks recommendations for games s
+    - [0.472] User is considering getting Deception: Murder in Hong Kong or Two Rooms and a Bo
+  Correcta:   132 points
+  Generada:   Your current highest score in Ticket to Ride is 132 points.
+  Memorias:   27 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104040 tokens entrada | 2466 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.85% | Carga: 50.1s (4.2s/mensaje) | Respuesta: 0.9s | Total: 57.9s
+
+Pregunta 42/78: How many tops have I bought from H&M so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.884] User has already bought five tops from H&M and is considering getting more
+    - [0.868] User is considering buying more tops from H&M this weekend and is checking for p
+    - [0.837] User has already bought three tops from H&M and is particularly fond of their su
+    - [0.747] User is planning to go to the mall this weekend and wants to know what stores ar
+    - [0.731] User is planning to go to the mall this weekend and is checking for sales or pro
+    - [0.715] User is interested in H&M's loyalty program or rewards card
+    - [0.703] User is interested in signing up for H&M's loyalty program or rewards card
+    - [0.333] User is thinking of getting a new pair of sneakers and is checking if ASOS has a
+    - [0.327] User is planning to check Google Reviews and Yelp for The Vault, a new thrift st
+    - [0.322] User is considering popular online marketplaces or websites for vintage clothing
+  Correcta:   five
+  Generada:   You have bought five tops from H&M so far.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102850 tokens entrada | 2929 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 55.2s (4.6s/mensaje) | Respuesta: 0.5s | Total: 62.7s
+
+Pregunta 43/78: How much did I earn at the Downtown Farmers Market on my most recent visit?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.894] User earned $420 at the Downtown Farmers Market on May 6, 2026
+    - [0.759] User is considering a 'Downtown Farmers Market' themed gift basket featuring bes
+    - [0.753] User is thinking of a 'Downtown Farmers Market' themed gift basket featuring bes
+    - [0.458] User participated in markets and events from March 18 to May 20, 2026, earning $
+    - [0.437] User earned $220, $85, $25, $350, $200, and $400 from markets and events on Marc
+    - [0.402] User has upcoming events on March 18th, 25th, April 1st, May 6th, 13th, and 20th
+    - [0.400] User is tracking sales and expenses for their small business, specifically calcu
+    - [0.399] User is trying to track sales and expenses for their small business and needs he
+    - [0.382] User just returned from the Foodie Festival, where they cleared out some old sto
+    - [0.313] User is thinking of promoting the loyalty program through social media, email ne
+  Correcta:   $420
+  Generada:   $420
+  Memorias:   26 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103985 tokens entrada | 3058 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.44% | Carga: 66.2s (5.5s/mensaje) | Respuesta: 1.0s | Total: 74.3s
+
+Pregunta 44/78: How many times have I tried making a Negroni at home since my friend Emma showed
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.924] User has been making Negronis at home 10 times since learning from a friend Emma
+    - [0.917] User has been making Negronis at home 10 times since Emma taught them, and is ge
+    - [0.917] User has been making Negronis at home 5 times since Emma taught them, and is get
+    - [0.916] User has been perfecting their Negroni recipe at home 10 times since Emma taught
+    - [0.744] User is experimenting with cocktails, particularly Negronis made with Hendrick's
+    - [0.741] User is interested in trying a White Negroni to showcase the gin and bitter liqu
+    - [0.734] User is considering using a White Negroni to showcase the gin and bitter liqueur
+    - [0.669] User is looking for recommendations for other bitter liqueurs to try in place of
+    - [0.375] User is looking for tips on making a good honey syrup for cocktails
+    - [0.364] User is experimenting with infusing gin with cucumber and mint for a Cucumber Gi
+  Correcta:   10
+  Generada:   You have tried making a Negroni at home 5 times since your friend Emma showed you how to make it.
+  Memorias:   26 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 95603 tokens entrada | 2460 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 65.91% | Carga: 48.7s (4.4s/mensaje) | Respuesta: 0.8s | Total: 56.3s
+
+Pregunta 45/78: What time do I usually go to the gym?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.653] User thinks Tuesday afternoon at 2:00 pm could work well for a meeting with a po
+    - [0.648] User is trying to schedule a meeting with a potential client on Tuesday afternoo
+    - [0.644] User prefers to avoid scheduling a meeting on Mondays, Wednesdays, and Fridays d
+    - [0.616] User wants to set reminders for gym sessions at 7:00 pm on Mondays, Wednesdays, 
+    - [0.604] User is planning to use Todoist for task management and reminders, particularly 
+    - [0.526] User is interested in scheduling a meeting with a potential client and needs hel
+    - [0.436] User is considering confirming meeting details, like the time and date, in the e
+    - [0.383] User needs to send files to the potential client before the scheduled meeting
+    - [0.357] User is interested in productivity apps like Todoist and Trello, specifically ho
+    - [0.350] User is interested in Todoist and Trello and wants to know how they integrate wi
+  Correcta:   6:00 pm
+  Generada:   You usually go to the gym at 6:00 pm, but there are also reminders set for 7:00 pm on Mondays, Wedne
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 93337 tokens entrada | 1639 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 33.9s (3.1s/mensaje) | Respuesta: 0.6s | Total: 41.5s
+
+Pregunta 46/78: How many Crash Course videos have I watched in the past few weeks?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.928] User has been watching Crash Course videos, completing 15 videos in the past few
+    - [0.928] User has been watching Crash Course videos, completing 15 Crash Course videos in
+    - [0.926] User has been watching Crash Course videos, completing 12 videos in the past few
+    - [0.924] User has been watching Crash Course videos, completing 10 videos in the past few
+    - [0.913] User has been watching Crash Course videos, having finished 12 in the past few w
+    - [0.522] User is interested in learning more about cloud computing and AWS, specifically 
+    - [0.517] User is interested in learning more about cloud computing and specifically wants
+    - [0.512] User is interested in learning more about cloud computing and specifically wants
+    - [0.507] User is interested in learning about cloud computing and specifically wants reco
+    - [0.505] User has taken a Python programming course on edX and is interested in learning 
+  Correcta:   15
+  Generada:   Based on the most recent memory, you have watched 12 Crash Course videos on computer science in the 
+  Memorias:   36 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 94837 tokens entrada | 2175 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 65.22% | Carga: 47.8s (4.3s/mensaje) | Respuesta: 0.8s | Total: 55.5s
+
+Pregunta 47/78: Where am I planning to stay for my birthday trip to Hawaii?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.854] User is planning a birthday trip to Hawaii in October and is looking for snorkel
+    - [0.836] User is planning a birthday trip to Hawaii and considering snorkeling at the Na 
+    - [0.830] User is planning a birthday trip to Hawaii and is considering the Manoa Falls Tr
+    - [0.828] User is planning a birthday trip to Hawaii and will check out Morning Glass Coff
+    - [0.824] User is planning a birthday trip to Hawaii and is interested in hiking trails on
+    - [0.821] User is planning a birthday trip to Oahu and considering Hanauma Bay Nature Pres
+    - [0.817] User is planning a birthday trip to Hawaii and is looking for hiking trail recom
+    - [0.808] User is planning to spend the rest of their birthday relaxing on a beach on Oahu
+    - [0.610] User is considering a snorkeling trip to see sea turtles and monk seals on Kauai
+    - [0.588] User is interested in visiting waterfalls on Kauai and wants to know which ones 
+  Correcta:   Oahu
+  Generada:   You are planning to stay on Oahu for your birthday trip to Hawaii.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102030 tokens entrada | 1859 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.96% | Carga: 39.7s (3.3s/mensaje) | Respuesta: 1.1s | Total: 47.7s
+
+Pregunta 48/78: How many different species of birds have I seen in my local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.921] User has identified 27 different bird species in their local park
+    - [0.920] User has identified 32 different bird species in their local park
+    - [0.904] User has been keeping track of 27 different bird species in their local park
+    - [0.904] User has been keeping track of 27 different bird species in their local park
+    - [0.828] User has seen a Northern Flicker in their local park, bringing their total speci
+    - [0.828] User has seen a Northern Flicker in their local park, bringing their total speci
+    - [0.749] User is planning a picnic in their local park this weekend and considering bring
+    - [0.748] User is planning a picnic in their local park this weekend and is wondering abou
+    - [0.719] User is planning a picnic in their local park this weekend and is considering br
+    - [0.650] User is interested in exploring more birding spots in their area, specifically n
+  Correcta:   32
+  Generada:   You have seen 27 different species of birds in your local park.
+  Memorias:   49 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103918 tokens entrada | 3303 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 64.58% | Carga: 70.2s (5.8s/mensaje) | Respuesta: 0.7s | Total: 78.0s
+
+Pregunta 49/78: What was my previous frequent flyer status on United Airlines before I got the c
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.916] User wants to know their current frequent flyer status on United Airlines
+    - [0.786] User hit 20,000 miles on United Airlines and is now eligible for Premier Silver 
+    - [0.774] User is planning a trip to San Francisco in a few weeks and considering flying w
+    - [0.725] User wants to estimate taxes and fees for a one-way economy award ticket from DC
+    - [0.709] User wants to know about transferring miles from other loyalty programs to Unite
+    - [0.701] User wants to know how many United miles are needed to book a flight to LA and t
+    - [0.684] User has a United Airlines MileagePlus account and is currently at Premier Gold 
+    - [0.645] User wants to know if they can use their United miles to book a flight to LA
+    - [0.624] User wants to plan a trip to LA and is considering using United miles to book a 
+    - [0.614] User wants to know how many United miles are needed to book a one-way economy ti
+  Correcta:   Premier Silver
+  Generada:   Based on the provided memories, your previous frequent flyer status on United Airlines before reachi
+  Memorias:   22 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103384 tokens entrada | 1791 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.31% | Carga: 36.8s (3.1s/mensaje) | Respuesta: 1.6s | Total: 45.4s
+
+Pregunta 50/78: What was my previous personal best time for the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.909] User recently completed a charity 5K run with a personal best time of 27 minutes
+    - [0.896] User finished a charity 5K run with a personal best time of 26 minutes and 30 se
+    - [0.875] User recently completed a charity 5K run in Oakdale with a personal best time of
+    - [0.756] User wants the cycling route to start and end at the local park where they did a
+    - [0.717] User is considering signing up for a 10K run in a few months and wants help crea
+    - [0.714] User is thinking of signing up for a 10K run in a few months and wants help crea
+    - [0.673] User has about 12 weeks until the 10K event and prefers to run in the morning
+    - [0.610] User has about 12 weeks until the 10K event
+    - [0.534] User is creating a training schedule for soccer, cycling, yoga, and triathlon ac
+    - [0.533] User wants to do yoga 2 times a week for 45 minutes, cycling 1 time a week for 2
+  Correcta:   27 minutes and 45 seconds
+  Generada:   Your previous personal best time for the charity 5K run was 26 minutes and 30 seconds.
+  Memorias:   45 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 105183 tokens entrada | 3491 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 64.00% | Carga: 71.7s (6.0s/mensaje) | Respuesta: 0.9s | Total: 79.6s
+
+Pregunta 51/78: How many autographed baseballs have I added to my collection in the first three 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.914] User recently added 20 autographed baseballs to their collection in the past few
+    - [0.868] User recently got a signed Mike Trout baseball and now has 15 autographed baseba
+    - [0.841] User is considering selling some of their autographed baseballs to make room for
+    - [0.790] User is seeking resources for determining the value and selling their autographe
+    - [0.596] User is interested in attending upcoming sports memorabilia auctions in the city
+    - [0.560] User is considering expanding their vinyl record collection to include more inte
+    - [0.550] User is considering selling some of their vinyl records to make space in their c
+    - [0.406] User is interested in Mike Trout's current batting average and home run count fo
+    - [0.383] User is looking for Mike Trout's current batting average and home run count for 
+    - [0.350] User is interested in attending a stamp show next quarter and is seeking informa
+  Correcta:   15
+  Generada:   You have added 15 autographed baseballs to your collection in the first three months of starting you
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 94392 tokens entrada | 961 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.71% | Carga: 21.7s (2.0s/mensaje) | Respuesta: 1.8s | Total: 30.4s
+
+Pregunta 52/78: How often do I play tennis with my friends at the local park previously? How oft
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.844] User is planning to play tennis with friends at the local park this Sunday, like
+    - [0.843] User was at the local park on Sunday, November 12, 2026, where they saw people p
+    - [0.835] User plans to play tennis with friends at the local park this Sunday, like they 
+    - [0.827] User is planning to play tennis with friends at the local park this Sunday
+    - [0.816] User plans to play tennis with friends at the local park this Sunday
+    - [0.733] User is looking for recommendations on a good tennis bag to carry gear to the lo
+    - [0.583] User is signing up for swim lessons at the local pool and enjoying it
+    - [0.562] User is looking for tips on how to improve their swimming technique after signin
+    - [0.524] User is looking for yoga studios near Almaden Lake Park to visit after jogging
+    - [0.511] User plans to jog the Almaden Lake Park Loop, a 5-mile route with minimal traffi
+  Correcta:   Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+  Generada:   Based on the user's memories, there is no specific information about how often the user played tenni
+  Memorias:   30 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102990 tokens entrada | 2170 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.46% | Carga: 47.4s (4.0s/mensaje) | Respuesta: 0.8s | Total: 55.0s
+
+Pregunta 53/78: How much time do I dedicate to coding exercises each day?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.904] User dedicates about two hours daily to coding exercises to improve skills and t
+    - [0.886] User has been dedicating about two hours daily to coding exercises to improve sk
+    - [0.864] User dedicates about an hour daily to coding exercises to track progress and imp
+    - [0.793] User has been using the Pomodoro Technique to stay focused on coding exercises
+    - [0.779] User is looking for tools or apps to track progress in coding exercises as part 
+    - [0.768] User thinks Habitica and WakaTime could be useful for tracking progress in codin
+    - [0.664] User plans to explore more resources for problem-solving and coding challenges
+    - [0.652] User is exploring more resources for problem-solving and coding challenges, cons
+    - [0.632] User is looking for resources to help with problem-solving and coding challenges
+    - [0.553] User is using Pluralsight for Python tutorials and likes their interactive exerc
+  Correcta:   about two hours
+  Generada:   You dedicate about two hours daily to coding exercises.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 95060 tokens entrada | 1850 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.15% | Carga: 39.5s (3.6s/mensaje) | Respuesta: 0.8s | Total: 47.4s
+
+Pregunta 54/78: What day of the week did I meet with my previous language exchange tutor Juan?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.896] User is unsure about the day of their language exchange class with Juan, knowing
+    - [0.870] User remembers that their language exchange class with Juan is in the evening an
+    - [0.859] User needs to be reminded of the day they have their language exchange class wit
+    - [0.849] User's language exchange class with Juan is on Wednesday evening
+    - [0.844] User has a language exchange class with Juan every Wednesday evening
+    - [0.799] User is planning their schedule for the week and wants tips to improve conversat
+    - [0.707] User is meeting Maria for a language exchange session on Thursday
+    - [0.700] User has a language exchange session with Maria this week
+    - [0.557] User is planning a trip to Colombia and wants travel tips and phrases in Spanish
+    - [0.553] User needs travel tips and phrases in Spanish for their trip to Colombia
+  Correcta:   Wednesday
+  Generada:   Based on the user's most recent memories, the language exchange class with Juan is on Wednesday even
+  Memorias:   18 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 93352 tokens entrada | 1642 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.81% | Carga: 36.5s (3.3s/mensaje) | Respuesta: 0.8s | Total: 44.2s
+
+Pregunta 55/78: How many pre-1920 American coins do I have in my collection?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.910] User is interested in organizing and displaying pre-1920 American coins, with a 
+    - [0.899] User is organizing pre-1920 American coins by denomination and mint mark, with a
+    - [0.859] User is planning to display pre-1920 American coins together and seeking tips on
+    - [0.754] User added a 1915-S Barber quarter to their pre-1920 American coin collection
+    - [0.625] User is considering finding good deals on vintage cameras at upcoming coin shows
+    - [0.624] User is interested in misprinted date error coins, such as the 1972 doubled die 
+    - [0.623] User is seeking recommendations for reputable coin appraisal services or experts
+    - [0.621] User is looking for coin display cases or albums that can hold all the coins
+    - [0.617] User is considering PCGS and NGC for authenticating error coins, specifically th
+    - [0.613] User is using Coin Collector's Assistant for coins and Discogs for records
+  Correcta:   38
+  Generada:   You have 37 pre-1920 American coins in your collection.
+  Memorias:   27 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 94885 tokens entrada | 2875 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.64% | Carga: 56.8s (5.2s/mensaje) | Respuesta: 0.6s | Total: 64.6s
+
+Pregunta 56/78: How many free night's stays can I redeem at any Hilton property with my accumula
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.921] User is considering redeeming Hilton points for a free night's stay at any Hilto
+    - [0.909] User has accumulated enough Hilton points for two free night's stays at any Hilt
+    - [0.904] User has accumulated enough Hilton points for a single free night's stay at any 
+    - [0.778] User is considering other Hilton properties in Las Vegas, specifically the Hilto
+    - [0.775] User is also considering other Hilton properties in Las Vegas, specifically the 
+    - [0.712] User might use their Hilton points for a separate trip to Las Vegas
+    - [0.633] User is considering staying at the Hilton Paris Eiffel Tower as a potential opti
+    - [0.621] Hilton Lake Las Vegas Resort is a Category 5 hotel
+    - [0.620] User is planning a weekend getaway to Las Vegas and considering staying at the H
+    - [0.620] User is planning a weekend getaway to Las Vegas and considering staying at the H
+  Correcta:   Two
+  Generada:   You can redeem for two free night's stays at any Hilton property with your accumulated points.
+  Memorias:   22 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102394 tokens entrada | 2071 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.29% | Carga: 43.4s (3.6s/mensaje) | Respuesta: 0.6s | Total: 50.9s
+
+Pregunta 57/78: How much weight have I lost since I started going to the gym consistently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.792] User has lost 10 pounds since starting a consistent gym routine 3 months ago
+    - [0.686] User is tracking progress with a fitness app, burning 2500 calories per week and
+    - [0.646] User has lost 5 pounds in the past month
+    - [0.583] User wants to continue losing weight and reach goal weight by the end of summer
+    - [0.583] User wants tips on maintaining energy levels during workouts
+    - [0.576] User is currently unsure about their fitness level for the 10K goal
+    - [0.575] User is a beginner runner and has been doing cardio at the gym and outdoor activ
+    - [0.573] User has been doing 30-minute walks 3 times a week and planning to train 4-5 hou
+    - [0.555] User is a beginner runner currently doing 30-minute walks 3 times a week and pla
+    - [0.553] User is a beginner runner with a 10K goal by summer, currently doing 30-minute w
+  Correcta:   10 pounds
+  Generada:   You have lost 10 pounds in 3 months and an additional 5 pounds in the past month, totaling 15 pounds
+  Memorias:   39 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 96387 tokens entrada | 2667 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.91% | Carga: 51.8s (4.7s/mensaje) | Respuesta: 0.8s | Total: 59.5s
+
+Pregunta 58/78: How many followers do I have on Instagram now?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 10
+  Memorias recuperadas para responder:
+    - [0.876] User currently has 1250 followers on Instagram
+    - [0.876] User is close to 1300 followers on Instagram
+    - [0.698] User is considering using Instagram Live more often and wants tips on making liv
+    - [0.694] User is looking to optimize their Instagram content strategy to increase engagem
+    - [0.694] User wants to know how to use Instagram Insights to see which posts are performi
+    - [0.667] User is curious about creating engaging captions for their Instagram posts
+    - [0.654] User is considering doing a Q&A session during their next Instagram Live stream 
+    - [0.653] User wants to modify the hashtags for the Instagram post to be more specific to 
+    - [0.652] User is looking for tips on creating engaging captions for their Instagram posts
+    - [0.643] User likes the options for the Instagram post caption
+  Correcta:   1300
+  Generada:   You currently have 1250 followers on Instagram.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 10 (errores: 0, errores internos de Mem0: 0)
+  LLM:        10 llamadas | 84960 tokens entrada | 2043 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.79% | Carga: 44.3s (4.4s/mensaje) | Respuesta: 0.5s | Total: 52.0s
+
+Pregunta 59/78: What is my current record in the recreational volleyball league?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.819] User is performing well in the volleyball league with a record of 3 wins and 2 l
+    - [0.819] User has been performing well in the volleyball league, with a record of 3 wins 
+    - [0.818] User has been performing well in the volleyball league with a record of 3 wins a
+    - [0.818] User has been performing well in the volleyball league with a record of 3 wins a
+    - [0.816] User has been performing well in the volleyball league, with a record of 5 wins 
+    - [0.674] User is considering organizing a recreational basketball league at their office
+    - [0.673] User is thinking about organizing a recreational basketball league at their offi
+    - [0.671] User is considering organizing a recreational basketball league at their office 
+    - [0.663] User is considering scaling back their involvement in organizing a recreational 
+    - [0.656] User is thinking of hosting a mini tournament to wrap up the volleyball season a
+  Correcta:   5-2
+  Generada:   Your current record in the recreational volleyball league is 5-2.
+  Memorias:   42 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 105072 tokens entrada | 3288 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.41% | Carga: 63.7s (5.3s/mensaje) | Respuesta: 0.6s | Total: 71.3s
+
+Pregunta 60/78: How many projects have I completed since starting painting classes?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.918] User has completed 5 projects since starting painting classes and feels accompli
+    - [0.820] User has completed 5 painting projects since starting classes and feels accompli
+    - [0.800] User has completed 4 painting projects since starting classes and feels confiden
+    - [0.685] User is seeking inspiration for their next painting project
+    - [0.625] User is considering setting up a small art studio in their spare bedroom for pai
+    - [0.625] User is considering setting up a small art studio in their spare bedroom for pai
+    - [0.600] User will experiment with layering and texture to add depth and visual interest 
+    - [0.586] User is excited to set up a small art studio in their spare bedroom, planning to
+    - [0.578] User is working on a sunset painting for their sister's birthday
+    - [0.578] User is working on a sunset painting for their sister's birthday
+  Correcta:   5
+  Generada:   You have completed 5 projects since starting painting classes.
+  Memorias:   26 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103099 tokens entrada | 2394 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.00% | Carga: 45.9s (3.8s/mensaje) | Respuesta: 0.5s | Total: 53.4s
+
+Pregunta 61/78: What type of vehicle model am I currently working on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.686] User is working on a Ford Mustang Shelby GT350R model and is interested in addin
+    - [0.676] User is working on a Ford Mustang Shelby GT350R model and is interested in addin
+    - [0.664] User is working on a Ford Mustang Shelby GT350R model and is impressed with Vall
+    - [0.660] User is working on a Ford F-150 pickup truck model and is interested in adding w
+    - [0.653] User wants to create a realistic dashboard for the Ford Mustang Shelby GT350R mo
+    - [0.649] User is looking for tips on weathering effects for a Ford F-150 pickup truck mod
+    - [0.641] User is looking for tips on weathering effects for a Ford Mustang Shelby GT350R 
+    - [0.632] User is thinking of adding some decals to the Ford F-150 pickup truck model
+    - [0.627] User will use a combination of acrylic paints and weathering powders to create a
+    - [0.627] User is working on a Ford F-150 pickup truck model and is interested in adding s
+  Correcta:   Ford F-150 pickup truck
+  Generada:   You are currently working on both a Ford Mustang Shelby GT350R model and a Ford F-150 pickup truck m
+  Memorias:   18 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103707 tokens entrada | 2055 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.57% | Carga: 45.4s (3.8s/mensaje) | Respuesta: 0.6s | Total: 53.0s
+
+Pregunta 62/78: What was my previous goal for my Apex Legends level before I updated my goal?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.729] User aims to reach level 150 in Apex Legends and will focus on completing daily 
+    - [0.720] User has been playing Apex Legends frequently and aims to reach level 100 before
+    - [0.719] User aims to reach level 100 in Apex Legends before the end of the year
+    - [0.716] User is determined to reach level 100 in Apex Legends before the end of the year
+    - [0.699] User wants to know tips for improving aim in Apex Legends
+    - [0.667] User is considering playing Apex Legends with friends this weekend and is unsure
+    - [0.652] User is also considering getting a new gaming headset compatible with their PC f
+    - [0.632] User is also considering getting a new gaming mouse to pair with a new keyboard 
+    - [0.621] User is considering getting a new gaming mouse to pair with a new keyboard for F
+    - [0.621] User is considering getting a new gaming mouse to pair with a new keyboard for F
+  Correcta:   level 100
+  Generada:   Before updating your goal, your previous goal was to reach level 100 in Apex Legends before the end 
+  Memorias:   22 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 94710 tokens entrada | 2273 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.13% | Carga: 43.5s (4.0s/mensaje) | Respuesta: 0.7s | Total: 51.2s
+
+Pregunta 63/78: How many largemouth bass did I catch with Alex on the earlier fishing trip to La
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 10
+  Memorias recuperadas para responder:
+    - [0.935] User caught 7 largemouth bass on a trip to Lake Michigan with Alex on July 10, 2
+    - [0.926] User and Alex caught 9 largemouth bass on a fishing trip to Lake Michigan on Jul
+    - [0.820] User is thinking about trying new lures for bass fishing, specifically for catch
+    - [0.798] User is planning another fishing trip to Lake Michigan
+    - [0.754] User is considering using spinnerbaits and plastic worms as lures for catching l
+    - [0.740] User is interested in the current water temperature and fishing forecast for Lak
+    - [0.738] User watched YouTube videos on deer hunting strategies and tactics before their 
+    - [0.650] User is planning to help Alex set up tree stands on his property soon
+    - [0.607] User is planning to use deer calls during their next hunting trip
+    - [0.548] User is trying to get back into fishing and hunting and is looking for apps or t
+  Correcta:   7
+  Generada:   You caught 7 largemouth bass on a trip to Lake Michigan with Alex on 7/10.
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 10 (errores: 0, errores internos de Mem0: 0)
+  LLM:        10 llamadas | 85160 tokens entrada | 2101 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 40.1s (4.0s/mensaje) | Respuesta: 0.9s | Total: 47.9s
+
+Pregunta 64/78: What time do I wake up on Saturday mornings?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 8666 (char 8665)
+  Memorias recuperadas para responder:
+    - [0.766] User likes to wake up at 7:30 am on Saturdays and fit in a cup of coffee beforeh
+    - [0.737] User is checking the weather forecast for the weekend and planning to go for a j
+    - [0.735] User is planning to go for a jog on Saturday morning and is checking the weather
+    - [0.731] User plans to go for a jog on Saturday morning and is checking the weather forec
+    - [0.726] User likes waking up around 8:30 am on Saturdays and fitting in a 30-minute jog 
+    - [0.717] User is considering jogging routes around their neighborhood for Saturday mornin
+    - [0.700] User is considering jogging routes around their downtown neighborhood for Saturd
+    - [0.684] User is trying to establish a consistent morning routine on weekends and is cons
+    - [0.673] User is trying to establish a consistent morning routine on weekends and is look
+    - [0.663] User wants to start jogging around 7:30 am on Saturdays to fit in a cup of coffe
+  Correcta:   7:30 am
+  Generada:   You wake up at 7:30 am on Saturday mornings.
+  Memorias:   28 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 1)
+  LLM:        12 llamadas | 103885 tokens entrada | 4871 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.19% | Carga: 89.9s (7.5s/mensaje) | Respuesta: 0.8s | Total: 97.5s
+
+Pregunta 65/78: How many women are on the team led by my former manager Rachel?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.889] User was impressed to learn that Rachel, their former manager, now leads a team 
+    - [0.878] User's former manager, Rachel, leads a team of 10 people, with 6 women out of 10
+    - [0.878] User's former manager, Rachel, leads a team of 10 people, with half being women.
+    - [0.826] User is curious about the gender representation in Rachel's team, considering wo
+    - [0.798] User is curious about the specific roles or areas where the women are concentrat
+    - [0.796] User wonders if the gender representation in Rachel's team is good for the indus
+    - [0.784] User is curious about the specific roles of the 5 women on Rachel's team of 10 p
+    - [0.780] User is interested in the specific roles of the 5 women on Rachel's team of 10 p
+    - [0.764] User is interested in learning more about the women on Rachel's team, specifical
+    - [0.432] User wonders if this gender representation in leadership is good for the industr
+  Correcta:   6
+  Generada:   There are 5 women on the team led by your former manager Rachel.
+  Memorias:   31 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 94546 tokens entrada | 2471 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 66.15% | Carga: 55.3s (5.0s/mensaje) | Respuesta: 0.7s | Total: 62.9s
+
+Pregunta 66/78: Do I have a spare screwdriver for opening up my laptop?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.846] User has a spare screwdriver for cleaning their laptop fans
+    - [0.844] User needs a spare screwdriver to clean the fans in their laptop
+    - [0.390] User will check out an electronics store near their place for tools and accessor
+    - [0.357] User needs help setting up automatic backups for their working files and wants t
+    - [0.345] User will use the Anker cable organizer for their computer bag
+    - [0.336] User wants to know how to select which files and folders to back up on Google Dr
+    - [0.320] User has set up Google Drive backups for their working files and wants to verify
+    - [0.316] User wants to set up automatic backups using Google Drive for their working file
+    - [0.312] User needs help setting up automatic backups for their working files and is cons
+    - [0.310] User has set up Google Drive backups for their working files and wants to know h
+  Correcta:   Yes
+  Generada:   Yes, you will use a spare screwdriver for laptop maintenance.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 1, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102106 tokens entrada | 1432 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 31.3s (2.6s/mensaje) | Respuesta: 0.6s | Total: 38.8s
+
+Pregunta 67/78: How many times have I met up with Alex from Germany?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 10
+  Memorias recuperadas para responder:
+    - [0.906] User met Alex from Germany at a music festival and they have met up twice alread
+    - [0.867] User has a friend named Alex from Germany
+    - [0.861] User met Alex at a music festival and they have met up twice already
+    - [0.837] User met Alex from Germany at a music festival a few weeks ago and they bonded o
+    - [0.780] User is interested in visiting cafes or bars in Kreuzberg with Alex
+    - [0.770] User is planning to meet up with Alex in Berlin for work
+    - [0.753] User is planning a trip to Germany soon
+    - [0.728] User is going to ask Alex if he has any favorite indie rock bands or musicians
+    - [0.726] User plans to ask Alex for his favorite indie rock bands or musicians
+    - [0.616] User is planning to visit record stores in Berlin to find local bands' music
+  Correcta:   We've met up twice.
+  Generada:   You have met up with Alex from Germany twice.
+  Memorias:   23 | Contradicciones: 0 | Mensajes: 10 (errores: 0, errores internos de Mem0: 0)
+  LLM:        10 llamadas | 85318 tokens entrada | 1999 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.16% | Carga: 38.9s (3.9s/mensaje) | Respuesta: 0.5s | Total: 47.0s
+
+Pregunta 68/78: Did I mostly recently increase or decrease the limit on the number of cups of co
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 10
+  Memorias recuperadas para responder:
+    - [0.851] User is considering increasing their morning coffee limit to two cups.
+    - [0.844] User is thinking of increasing their morning coffee limit to two cups.
+    - [0.716] User has switched to a darker roast coffee and is drinking only one cup in the m
+    - [0.715] User is trying to optimize their morning routine, specifically their coffee brew
+    - [0.698] User has switched to a darker roast coffee and is drinking only one cup in the m
+    - [0.696] Switching to a darker roast and reducing coffee intake has been helping the user
+    - [0.679] User is trying to optimize their morning coffee routine by considering a switch 
+    - [0.677] User is trying to optimize their morning coffee routine by considering switching
+    - [0.668] User is trying to optimize their morning coffee routine by experimenting with di
+    - [0.668] User is trying to optimize their morning coffee routine and is considering switc
+  Correcta:   You increased the limit (from one cup to two cups)
+  Generada:   You most recently increased the limit on the number of cups of coffee in the morning to two cups. Th
+  Memorias:   24 | Contradicciones: 0 | Mensajes: 10 (errores: 0, errores internos de Mem0: 0)
+  LLM:        10 llamadas | 86231 tokens entrada | 1922 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.65% | Carga: 38.3s (3.8s/mensaje) | Respuesta: 0.8s | Total: 46.1s
+
+Pregunta 69/78: How many trips have I taken my Canon EOS 80D camera on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.800] User is considering the Really Right Stuff tripod for their Canon EOS 80D camera
+    - [0.794] User has taken their Canon EOS 80D on five trips, including Yellowstone, Yosemit
+    - [0.573] User is organizing their camera gear
+    - [0.528] User is considering switching to Adobe Creative Cloud for professional photograp
+    - [0.527] User is considering Adobe Creative Cloud for professional photography and Google
+    - [0.527] User has a new camera strap and is looking for a camera bag that can fit everyth
+    - [0.466] User has taken their camera on three trips to Yellowstone, Yosemite, and the Gra
+    - [0.466] User has taken their camera on three trips to Yellowstone, Yosemite, and the Gra
+    - [0.420] User is excited to take their camera on many more adventures with a new tripod
+    - [0.380] User is planning a trip to Zion National Park to capture landscape shots
+  Correcta:   five
+  Generada:   You have taken your Canon EOS 80D on five trips, including Yellowstone, Yosemite, and the Grand Cany
+  Memorias:   28 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103522 tokens entrada | 2255 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 68.12% | Carga: 44.0s (3.7s/mensaje) | Respuesta: 0.7s | Total: 51.6s
+
+Pregunta 70/78: What new kitchen gadget did I invest in before getting the Air Fryer?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.790] User is using their new Air Fryer to make crispy sweet potato fries to go with t
+    - [0.758] User is using their Air Fryer to make crispy sweet potato fries
+    - [0.536] User is planning to make a Cuban Black Bean and Rice Bowl and pair it with sweet
+    - [0.527] User is planning healthy lunch ideas for the week and is considering using their
+    - [0.527] User is looking for healthy lunch ideas that can be reheated for the week ahead 
+    - [0.523] User is considering using their new Instant Pot to make soups and stews
+    - [0.513] User is using their new Instant Pot to make Korean Chicken Stew
+    - [0.509] User is using their new Instant Pot to make Korean Chicken Stew and considering 
+    - [0.506] User is using their new Instant Pot to make Korean Chicken Stew and is consideri
+    - [0.327] User is asking about the best way to store leftovers from the Cuban Black Bean a
+  Correcta:   Instant Pot
+  Generada:   The information provided does not include details about any previous kitchen gadgets before the Air 
+  Memorias:   27 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103323 tokens entrada | 2365 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 67.14% | Carga: 49.9s (4.2s/mensaje) | Respuesta: 0.7s | Total: 57.4s
+
+Pregunta 71/78: How many Italian restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.602] User has tried four Korean restaurants in their city recently, each with its own
+    - [0.593] User has tried three Korean restaurants in their city recently, each with its ow
+    - [0.581] User heard about a new Indian restaurant in their neighborhood that just opened 
+    - [0.537] User tried an amazing bibimbap at one Korean restaurant, a spicy kimchi stew at 
+    - [0.474] User is planning a dinner party and considering Korean BBQ beef, Middle Eastern 
+    - [0.456] User is planning to make falafel as one of the Middle Eastern options for the di
+    - [0.448] User is trying out different types of rice, particularly basmati rice, for the d
+    - [0.422] User is considering kimchi and bokkeumbap for the Korean BBQ dishes at the dinne
+    - [0.411] User is planning to make samosas and saag aloo for the Indian dishes at the dinn
+    - [0.407] User is trying out an authentic Japanese short-grain rice for the dinner party, 
+  Correcta:   The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+  Generada:   Based on the provided memories, there is no mention of any Italian restaurants. Therefore, the answe
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102614 tokens entrada | 2025 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.61% | Carga: 40.4s (3.4s/mensaje) | Respuesta: 0.8s | Total: 47.9s
+
+Pregunta 72/78: How many engineers do I lead when I just started my new role as Software Enginee
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.730] User is leading a team of 5 engineers in their new role as Senior Software Engin
+    - [0.673] User is in a new role as Senior Software Engineer
+    - [0.536] User is planning to invite manager Rachel to join the team outing
+    - [0.533] User is reaching out to Samantha for the Corporate Team Building Package for 6 p
+    - [0.451] User is excited about leading their team of engineers and sees it as a great exp
+    - [0.437] User is planning a team outing for 6 people, including 5 engineers and 1 manager
+    - [0.434] User is planning a team outing for 4 engineers and 1 manager in the San Francisc
+    - [0.431] User is planning a team outing for 5 people, including 4 engineers and 1 manager
+    - [0.423] User is planning a team outing for 5 engineers and 1 manager in the city
+    - [0.369] User is planning a team outing for engineers in the city and needs activity reco
+  Correcta:   The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+  Generada:   You lead a team of 4 engineers in your new role as Senior Software Engineer.
+  Memorias:   25 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103696 tokens entrada | 1998 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 66.67% | Carga: 39.4s (3.3s/mensaje) | Respuesta: 0.6s | Total: 46.9s
+
+Pregunta 73/78: How often do I see Dr. Johnson?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.673] User sees Dr. Smith weekly for therapy sessions
+    - [0.660] User has a therapy session with Dr. Smith every two weeks
+    - [0.660] User has a therapy session with Dr. Smith every two weeks
+    - [0.598] User had a session with Dr. Smith this week and discussed setting healthy bounda
+    - [0.539] User is feeling overwhelmed with commitments and Dr. Smith suggested learning to
+    - [0.357] User has work hours from 9 to 5, Monday to Friday, and regular social commitment
+    - [0.308] User needs to fit in self-care activities like meditation and journaling
+    - [0.306] User has been prioritizing self-care activities like yoga and meditation to mana
+    - [0.302] User is prioritizing self-care activities like yoga and meditation to manage anx
+    - [0.300] User's top priority is managing workload and meeting deadlines without burning o
+  Correcta:   The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+  Generada:   You see Dr. Smith weekly for therapy sessions.
+  Memorias:   32 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103880 tokens entrada | 2717 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 65.75% | Carga: 56.9s (4.7s/mensaje) | Respuesta: 0.6s | Total: 64.5s
+
+Pregunta 74/78: How long have I been living in my current apartment in Shinjuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.786] User is living in a studio apartment in Harajuku, Tokyo, and has been commuting 
+    - [0.777] User is living in a studio apartment in Harajuku, Tokyo, and has been commuting 
+    - [0.772] User has been living in Harajuku for 3 months and continues to discover new hidd
+    - [0.752] User's new studio apartment is in Harajuku, Tokyo, and the commute to work is co
+    - [0.702] User has been enjoying the fall foliage in Tokyo, particularly in the Harajuku n
+    - [0.676] User hasn't explored much of the historical side of Harajuku yet and is interest
+    - [0.663] User is interested in exploring the historical side of Harajuku, such as the Mei
+    - [0.652] User hasn't explored much of the historical side of Harajuku yet and is interest
+    - [0.641] User has been enjoying the fall foliage in Tokyo, particularly in the Daikanyama
+    - [0.601] User is also considering inviting friends from Tokyo to join the trip for a few 
+  Correcta:   The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+  Generada:   You have been living in your current apartment in Harajuku for 3 months.
+  Memorias:   50 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104677 tokens entrada | 3979 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 64.86% | Carga: 80.7s (6.7s/mensaje) | Respuesta: 0.9s | Total: 88.3s
+
+Pregunta 75/78: How many autographed football have I added to my collection in the first three m
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 11
+  Memorias recuperadas para responder:
+    - [0.791] User recently added 20 autographed baseballs to their collection in the past few
+    - [0.755] User recently got a signed Mike Trout baseball and now has 15 autographed baseba
+    - [0.723] User is considering selling some of their autographed baseballs to make room for
+    - [0.670] User is seeking resources for determining the value and selling their autographe
+    - [0.605] User is interested in attending upcoming sports memorabilia auctions in the city
+    - [0.569] User is considering selling some of their vinyl records to make space in their c
+    - [0.554] User is considering expanding their vinyl record collection to include more inte
+    - [0.355] User is interested in Mike Trout's current batting average and home run count fo
+    - [0.354] User is interested in attending a stamp show next quarter and is seeking informa
+    - [0.349] User is interested in selling vintage cameras to make room for new additions to 
+  Correcta:   The information provided is not enough. You mentioned collecting autographed baseball but not football.
+  Generada:   Based on the provided memories, you have added 20 autographed baseballs to your collection since sta
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 11 (errores: 0, errores internos de Mem0: 0)
+  LLM:        11 llamadas | 94392 tokens entrada | 961 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.33% | Carga: 21.9s (2.0s/mensaje) | Respuesta: 1.0s | Total: 29.9s
+
+Pregunta 76/78: How often do I play table tennis with my friends at the local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.823] User is planning to play tennis with friends at the local park this Sunday, like
+    - [0.817] User plans to play tennis with friends at the local park this Sunday, like they 
+    - [0.810] User is planning to play tennis with friends at the local park this Sunday
+    - [0.799] User plans to play tennis with friends at the local park this Sunday
+    - [0.794] User was at the local park on Sunday, November 12, 2026, where they saw people p
+    - [0.720] User is looking for recommendations on a good tennis bag to carry gear to the lo
+    - [0.591] User prefers to play tennis for fun with friends, not inspired by professional p
+    - [0.587] User is considering ordering Nike Court Flex Tennis Socks for their tennis activ
+    - [0.580] User is signing up for swim lessons at the local pool and enjoying it
+    - [0.568] User is a fan of Roger Federer but plays tennis for fun with friends
+  Correcta:   The information provided is not enough. You mentioned playing tennis but not table tennis.
+  Generada:   Based on the provided memories, there is no information about playing table tennis at the local park
+  Memorias:   30 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102990 tokens entrada | 2170 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.79% | Carga: 47.1s (3.9s/mensaje) | Respuesta: 0.8s | Total: 54.9s
+
+Pregunta 77/78: Before I purchased the gravel bike, do I have other bikes in addition to my moun
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.835] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.835] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.835] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.826] User owns a road bike, a mountain bike, and a commuter bike
+    - [0.817] User will bring all their bikes, including a road bike, a mountain bike, a commu
+    - [0.814] User will bring all their bikes, including a road bike, a mountain bike, and a c
+    - [0.700] User is considering bringing a fourth bike, a new hybrid bike, on their road tri
+    - [0.699] User is thinking of bringing a fourth bike, a new hybrid bike, on their road tri
+    - [0.699] User will bring all their bikes, including a new hybrid bike, on their road trip
+    - [0.673] User has been using their road bike for long rides on the weekends, their mounta
+  Correcta:   Yes. (You have a road bike too.)
+  Generada:   Yes, before purchasing the gravel bike, you already had a road bike in addition to your mountain bik
+  Memorias:   49 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104905 tokens entrada | 3494 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.23% | Carga: 74.8s (6.2s/mensaje) | Respuesta: 0.8s | Total: 83.0s
+
+Pregunta 78/78: Where do I currently keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.814] User plans to store old sneakers in a shoe rack
+    - [0.726] User plans to get their old sneakers polished and conditioned this weekend
+    - [0.723] User is looking for a good cobbler to get their old sneakers polished and condit
+    - [0.696] User is storing old sneakers under the bed and they are starting to smell
+    - [0.674] User plans to take inventory of their shoe collection and identify items to get 
+    - [0.644] User plans to donate old dress shoes to a local charity thrift store this Saturd
+    - [0.592] User is thinking of organizing their closet by type, grouping all boots together
+    - [0.580] User is considering organizing their closet by type, grouping all boots together
+    - [0.547] User plans to get a new pair of sandals with better quality straps
+    - [0.530] User is considering buying a new pair of sandals with better quality straps
+  Correcta:   in a shoe rack in my closet
+  Generada:   Currently, you store your old sneakers under the bed.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102424 tokens entrada | 2233 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 65.38% | Carga: 46.8s (3.9s/mensaje) | Respuesta: 0.3s | Total: 54.0s
+
+============================================================
+RESUMEN FINAL
+============================================================
+Modelo                 : qwen2.5:7b-instruct-q4_K_M (oracle, sin modulo)
+Preguntas evaluadas    : 78
+Respuestas correctas   : 51  (calificacion del propio modelo)
+Accuracy               : 65.38%
+Tiempo carga promedio  : 50.8 segundos
+Tiempo por mensaje     : 4.33 segundos por mensaje guardado
+Tiempo respuesta prom. : 0.7 segundos
+Tiempo total promedio  : 58.7 segundos
+Total contradicciones  : 0
+Memorias marcadas      : 0
+Pares descartados NER  : 0
+Memorias prom/pregunta : 27.7
+Mensajes cargados      : 915 (errores: 1, errores internos de Mem0: 3)
+Llamadas al LLM (Mem0) : 915 (recortadas: 0)
+Tiempo total           : 76.3 minutos
+Resultados guardados   : E:/proyecto/qwen25_combinada/oracle/oracle_sin_modulo_qwen25.json
+============================================================

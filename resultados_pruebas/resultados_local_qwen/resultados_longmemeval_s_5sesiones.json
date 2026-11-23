@@ -1,0 +1,52 @@
+{
+  "total_preguntas": 3,
+  "correctas": 2,
+  "accuracy": 0.6667,
+  "accuracy_pct": "66.67%",
+  "tiempo_promedio_seg": 481.83,
+  "tiempo_carga_promedio_seg": 465.48,
+  "tiempo_respuesta_promedio_seg": 0.78,
+  "tiempo_total_min": 24.09,
+  "total_contradicciones": 1,
+  "promedio_memorias_guardadas": 67.67,
+  "use_nli": true,
+  "categoria": "knowledge-update",
+  "detalle": [
+    {
+      "question_id": "6a1eabeb",
+      "question": "What was my personal best time in the charity 5K run?",
+      "answer_correcta": "25 minutes and 50 seconds (or 25:50)",
+      "respuesta_generada": "Your personal best time in the charity 5K run is 25:50.",
+      "score": 1,
+      "tiempo_segundos": 462.78,
+      "tiempo_carga_seg": 441.45,
+      "tiempo_respuesta_seg": 0.79,
+      "memorias_guardadas": 61,
+      "contradicciones": 1
+    },
+    {
+      "question_id": "6aeb4375",
+      "question": "How many Korean restaurants have I tried in my city?",
+      "answer_correcta": "four",
+      "respuesta_generada": "Based on the information provided, you have tried a total of seven Korean restaurants recently. This is calculated by adding the four from the first memory to the three from the second memory.",
+      "score": 0,
+      "tiempo_segundos": 472.86,
+      "tiempo_carga_seg": 458.73,
+      "tiempo_respuesta_seg": 0.94,
+      "memorias_guardadas": 70,
+      "contradicciones": 0
+    },
+    {
+      "question_id": "830ce83f",
+      "question": "Where did Rachel move to after her recent relocation?",
+      "answer_correcta": "the suburbs",
+      "respuesta_generada": "Rachel moved back to the suburbs after her recent relocation.",
+      "score": 1,
+      "tiempo_segundos": 509.86,
+      "tiempo_carga_seg": 496.25,
+      "tiempo_respuesta_seg": 0.6,
+      "memorias_guardadas": 72,
+      "contradicciones": 0
+    }
+  ]
+}

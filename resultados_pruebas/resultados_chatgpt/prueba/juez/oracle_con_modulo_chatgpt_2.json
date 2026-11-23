@@ -1,0 +1,53 @@
+{
+  "archivo_origen": "resultados_chatgpt/prueba/oracle_con_modulo_chatgpt_2.json",
+  "sha256_origen": "ecc335117ee5445726c449ad95d7b3a61cb4cef204b45d61be5f63ee4c32f807",
+  "juez": {
+    "nombre": "llama33",
+    "modelo": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "proveedor": "DeepInfra",
+    "base_url": "https://api.deepinfra.com/v1/openai",
+    "temperatura": 0,
+    "max_tokens": 10
+  },
+  "repeticion": "r1",
+  "veredictos": [
+    {
+      "question_id": "6a1eabeb",
+      "veredicto": 0,
+      "veredicto_regla_oficial": 0,
+      "salida_cruda": "No.",
+      "intentos": 1,
+      "plantilla": "knowledge-update",
+      "juez": "llama33",
+      "modelo_pedido": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "modelo_devuelto": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "proveedor": "DeepInfra",
+      "temperatura": 0,
+      "max_tokens": 10,
+      "sha256_prompt": "f02d492c4aba52f3a897c8e8c2f4585bd01988bc056f78bcfdaa99aab4c9548d",
+      "tokens_entrada": 128,
+      "tokens_salida": 3,
+      "fecha_utc": "2026-11-16T20:57:49+00:00",
+      "score_propio": 0
+    },
+    {
+      "question_id": "6aeb4375",
+      "veredicto": 1,
+      "veredicto_regla_oficial": 1,
+      "salida_cruda": "Yes.",
+      "intentos": 1,
+      "plantilla": "knowledge-update",
+      "juez": "llama33",
+      "modelo_pedido": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "modelo_devuelto": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "proveedor": "DeepInfra",
+      "temperatura": 0,
+      "max_tokens": 10,
+      "sha256_prompt": "8c5eca3527f32eaf2250a1ecabf0873736fa06676e9d0ddb28cd3ae029b4eb08",
+      "tokens_entrada": 110,
+      "tokens_salida": 3,
+      "fecha_utc": "2026-11-16T20:57:49+00:00",
+      "score_propio": 1
+    }
+  ]
+}

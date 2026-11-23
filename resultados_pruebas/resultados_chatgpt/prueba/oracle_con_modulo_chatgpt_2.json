@@ -1,0 +1,194 @@
+{
+  "total_preguntas": 2,
+  "correctas": 1,
+  "accuracy": 0.5,
+  "accuracy_pct": "50.00%",
+  "juez_de_score": "propio (gpt-6-luna, plantillas oficiales)",
+  "tiempo_promedio_seg": 59.67,
+  "tiempo_carga_promedio_seg": 42.78,
+  "tiempo_respuesta_promedio_seg": 2.12,
+  "tiempo_por_mensaje_guardado_seg": 3.56,
+  "tiempo_consolidacion_promedio_seg": 9.4,
+  "tiempo_total_min": 1.99,
+  "total_contradicciones": 2,
+  "total_memorias_marcadas": 2,
+  "total_pares_descartados_filtro": 0,
+  "promedio_memorias_guardadas": 15.0,
+  "maximo_memorias_guardadas": 15,
+  "total_mensajes_cargados": 24,
+  "total_errores_carga": 0,
+  "total_errores_mem0": 0,
+  "total_errores_llm": 0,
+  "total_llamadas_llm": 28,
+  "total_tokens_entrada": 198975,
+  "total_tokens_cache_lectura": 182616,
+  "fraccion_desde_cache": 0.9178,
+  "total_tokens_salida": 1644,
+  "costo_total_usd": 0.0043,
+  "use_nli": true,
+  "use_ner": true,
+  "use_marking": true,
+  "use_bidirectional": true,
+  "categoria": "knowledge-update",
+  "variante": "oracle",
+  "configuracion": {
+    "proveedor": "chatgpt",
+    "modelo": "gpt-6-luna",
+    "embeddings": "text-embedding-3-small",
+    "temperatura_respuesta": 0,
+    "temperatura_extraccion": 0.1,
+    "razonamiento": "desactivado",
+    "parametros_que_el_modelo_rechazo": [],
+    "top_k_busqueda": 10,
+    "history_db_path": ":memory:",
+    "dataset": "E:/proyecto/LongMemEval/data/longmemeval_oracle",
+    "precios_usd_por_millon": {
+      "entrada": 0.1,
+      "cache_lectura": 0.01,
+      "cache_escritura": 0.125,
+      "salida": 0.5
+    },
+    "costo_no_incluye": "embeddings",
+    "fecha_fin": "2026-11-16T15:57:29"
+  },
+  "detalle": [
+    {
+      "question_id": "6a1eabeb",
+      "question": "What was my personal best time in the charity 5K run?",
+      "answer_correcta": "25 minutes and 50 seconds (or 25:50)",
+      "respuesta_generada": "27:12",
+      "score": 0,
+      "salida_juez_propio": "no",
+      "tiempo_segundos": 58.56,
+      "tiempo_carga_seg": 43.38,
+      "tiempo_consolidacion_seg": 7.3,
+      "tiempo_respuesta_seg": 2.38,
+      "tiempo_juez_propio_seg": 0.78,
+      "mensajes_cargados": 12,
+      "errores_carga": 0,
+      "errores_mem0": 0,
+      "errores_llm": 0,
+      "memorias_guardadas": 15,
+      "contradicciones": 1,
+      "memorias_marcadas": 1,
+      "pares_descartados_filtro": 0,
+      "llamadas_llm": 14,
+      "tokens_entrada": 99792,
+      "tokens_cache_lectura": 91308,
+      "tokens_cache_escritura": 0,
+      "tokens_salida": 783,
+      "costo_usd": 0.002153,
+      "memorias_usadas": [
+        {
+          "memoria": "User is training for another upcoming charity 5K and hopes to beat a personal-best time of 25:50; they asked for endurance-improvement tips.",
+          "puntaje": 0.7325
+        },
+        {
+          "memoria": "User recently set a personal best of 27:12 in a charity 5K run and has been running lately.",
+          "puntaje": 0.627
+        },
+        {
+          "memoria": "User is considering adding strength training to their fitness routine and asked for exercises that could improve their running performance.",
+          "puntaje": 0.1699
+        },
+        {
+          "memoria": "User asked whether interval training should prioritize completing the intervals by pushing hard or maintaining a consistent pace throughout the workout.",
+          "puntaje": 0.1633
+        },
+        {
+          "memoria": "[OUTDATED as of 2026-11-16] User wants tips for improving running technique to become more efficient and effective on the soccer field.",
+          "puntaje": 0.1545
+        },
+        {
+          "memoria": "User recently scored a goal in a recreational soccer game with coworkers; it was a personal highlight because they are not typically a goal-scorer.",
+          "puntaje": 0.1531
+        },
+        {
+          "memoria": "User has been focusing on strengthening their core and legs, which they say has helped with running and soccer.",
+          "puntaje": 0.1311
+        },
+        {
+          "memoria": "User is planning a fitness schedule for the next few weeks and wants tips to improve endurance for soccer.",
+          "puntaje": 0.1291
+        },
+        {
+          "memoria": "User has played tennis casually for a few years and is considering signing up for a tennis tournament on May 6; it would be their first real tournament.",
+          "puntaje": 0.1108
+        },
+        {
+          "memoria": "User is preparing for a tennis tournament on May 6 and asked for tips to improve their serve.",
+          "puntaje": 0.1057
+        }
+      ]
+    },
+    {
+      "question_id": "6aeb4375",
+      "question": "How many Korean restaurants have I tried in my city?",
+      "answer_correcta": "four",
+      "respuesta_generada": "Four.",
+      "score": 1,
+      "salida_juez_propio": "yes",
+      "tiempo_segundos": 60.78,
+      "tiempo_carga_seg": 42.17,
+      "tiempo_consolidacion_seg": 11.51,
+      "tiempo_respuesta_seg": 1.87,
+      "tiempo_juez_propio_seg": 1.14,
+      "mensajes_cargados": 12,
+      "errores_carga": 0,
+      "errores_mem0": 0,
+      "errores_llm": 0,
+      "memorias_guardadas": 15,
+      "contradicciones": 1,
+      "memorias_marcadas": 1,
+      "pares_descartados_filtro": 0,
+      "llamadas_llm": 14,
+      "tokens_entrada": 99183,
+      "tokens_cache_lectura": 91308,
+      "tokens_cache_escritura": 0,
+      "tokens_salida": 861,
+      "costo_usd": 0.002131,
+      "memorias_usadas": [
+        {
+          "memoria": "User has tried four different Korean restaurants and is looking for new restaurant recommendations; the city was not specified.",
+          "puntaje": 0.799
+        },
+        {
+          "memoria": "User has recently tried three different Korean restaurants, each of which had its own unique flavor and style.",
+          "puntaje": 0.7464
+        },
+        {
+          "memoria": "User recently tried three Korean restaurants: one served amazing bibimbap, another had a really spicy kimchi stew, and the third offered a tasty, distinctive take on Japchae made with sweet potato noodles. User felt each restaurant had its own unique flavor and style.",
+          "puntaje": 0.7034
+        },
+        {
+          "memoria": "[OUTDATED as of 2026-11-16] User is planning a dinner party and wants popular Korean BBQ dishes that are easy to prepare in large quantities for the menu.",
+          "puntaje": 0.4843
+        },
+        {
+          "memoria": "User is planning a dinner party with dishes from multiple cuisines, intending to pair a few Korean BBQ options with Indian and Middle Eastern dishes; the user wants Indian dishes that are easy to prepare in large quantities.",
+          "puntaje": 0.4739
+        },
+        {
+          "memoria": "User has recently been experimenting with different types of noodles and wants to try making popular Korean noodle dishes at home.",
+          "puntaje": 0.4687
+        },
+        {
+          "memoria": "User is planning a dinner party and is considering Korean-style BBQ beef; they want recommendations for complementary side dishes.",
+          "puntaje": 0.4442
+        },
+        {
+          "memoria": "User is considering serving kimchi and bokkeumbap as side dishes with Korean-style BBQ beef at a dinner party.",
+          "puntaje": 0.441
+        },
+        {
+          "memoria": "User decided to serve samosas and saag aloo as Indian-inspired dishes alongside Korean BBQ beef and Middle Eastern falafel at the dinner party.",
+          "puntaje": 0.4393
+        },
+        {
+          "memoria": "User is considering changing the dinner-party menu and wants Indian-inspired recipe ideas that would complement both Korean BBQ beef and Middle Eastern falafel.",
+          "puntaje": 0.4289
+        }
+      ]
+    }
+  ]
+}

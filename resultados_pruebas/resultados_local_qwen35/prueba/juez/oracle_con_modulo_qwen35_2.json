@@ -1,0 +1,53 @@
+{
+  "archivo_origen": "resultados_local_qwen35/prueba/oracle_con_modulo_qwen35_2.json",
+  "sha256_origen": "4f66abc2f4d8312076da015c052144bde2fac19e59944bcf652e4962aadd258e",
+  "juez": {
+    "nombre": "llama33",
+    "modelo": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "proveedor": "DeepInfra",
+    "base_url": "https://api.deepinfra.com/v1/openai",
+    "temperatura": 0,
+    "max_tokens": 10
+  },
+  "repeticion": "r1",
+  "veredictos": [
+    {
+      "question_id": "6a1eabeb",
+      "veredicto": 0,
+      "veredicto_regla_oficial": 0,
+      "salida_cruda": "No.",
+      "intentos": 1,
+      "plantilla": "knowledge-update",
+      "juez": "llama33",
+      "modelo_pedido": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "modelo_devuelto": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "proveedor": "DeepInfra",
+      "temperatura": 0,
+      "max_tokens": 10,
+      "sha256_prompt": "06966bbac30aae275f58b0ce4b4bd7f59b3bb6dd1933f9263d135f47d0a213b9",
+      "tokens_entrada": 129,
+      "tokens_salida": 3,
+      "fecha_utc": "2026-11-16T09:48:14+00:00",
+      "score_propio": 0
+    },
+    {
+      "question_id": "6aeb4375",
+      "veredicto": 0,
+      "veredicto_regla_oficial": 0,
+      "salida_cruda": "No.",
+      "intentos": 1,
+      "plantilla": "knowledge-update",
+      "juez": "llama33",
+      "modelo_pedido": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "modelo_devuelto": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "proveedor": "DeepInfra",
+      "temperatura": 0,
+      "max_tokens": 10,
+      "sha256_prompt": "9da6ad1614d63761e6d94ee512353711b09d4f17d34d9dcb17ac68ea9380a1af",
+      "tokens_entrada": 119,
+      "tokens_salida": 3,
+      "fecha_utc": "2026-11-16T09:48:14+00:00",
+      "score_propio": 0
+    }
+  ]
+}

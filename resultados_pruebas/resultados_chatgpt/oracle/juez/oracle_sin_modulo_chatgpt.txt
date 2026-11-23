@@ -1,0 +1,91 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_chatgpt/oracle/oracle_sin_modulo_chatgpt.json
+Fecha              : 2026-11-16T18:15:32
+
+Correctas segun el juez independiente : 63 de 78  (80.77 %)
+Correctas segun el propio modelo      : 65 de 78  (83.33 %)
+
+Los dos jueces coinciden en           : 76 de 78
+  correcta para los dos               : 63
+  incorrecta para los dos             : 13
+  correcta solo para el propio modelo : 2
+  correcta solo para el independiente : 0
+Preguntas de abstencion (6)           : independiente 2, propio 3
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 2
+
+  [ce6d2d27] What day of the week do I take a cocktail-making class?
+    Respuesta correcta    : Friday
+    Respuesta del sistema : Thursday and Friday.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with your friends every other week—not table tennis.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 15
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : 27:12
+
+  [ce6d2d27] What day of the week do I take a cocktail-making class?
+    Respuesta correcta    : Friday
+    Respuesta del sistema : Thursday and Friday.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : A 50mm prime lens.
+
+  [b6019101] How many MCU films did I watch in the last 3 months?
+    Respuesta correcta    : 5
+    Respuesta del sistema : 4 MCU films.
+
+  [01493427] How many new postcards have I added to my collection since I started collecting again?
+    Respuesta correcta    : 25
+    Respuesta del sistema : 17 postcards.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : 26 minutes and 30 seconds.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You have 1,250 Instagram followers as of November 16, 2026.
+
+  [9bbe84a2] What was my previous goal for my Apex Legends level before I updated my goal?
+    Respuesta correcta    : level 100
+    Respuesta del sistema : Your previous goal was to reach level 150.
+
+  [10e09553] How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?
+    Respuesta correcta    : 7
+    Respuesta del sistema : You and Alex caught 9 largemouth bass.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : 4 engineers
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see Dr. Smith weekly.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You’ve been living in your current apartment in Harajuku for about three months.
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with your friends every other week—not table tennis.
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : Under your bed.

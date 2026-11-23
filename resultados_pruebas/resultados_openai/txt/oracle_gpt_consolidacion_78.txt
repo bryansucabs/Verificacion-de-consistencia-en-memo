@@ -1,0 +1,2162 @@
+Pregunta 1/78: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+WARNING:mem0.utils.spacy_models:Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+WARNING:mem0.utils.spacy_models:Failed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\jit\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 5301.97it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.993
+  Eliminada (vieja): 'User recently ran a charity 5K and set a personal best time of 27:12.'
+  Conservada (nueva): 'User is preparing for a charity 5K run and is aiming to beat their per'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User is asking for tips to improve running technique so they can be mo'
+  Conservada (nueva): 'User is asking for tips to improve their soccer shooting technique.'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.962
+  Eliminada (vieja): 'User is considering signing up for a tennis tournament happening on Ma'
+  Conservada (nueva): 'User is practicing their tennis serve and volleys and is aiming to rea'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.686] User’s goal for the upcoming charity 5K is to beat their personal best time of 2
+    - [0.672] User is preparing for a charity 5K run and is aiming to beat their personal best
+    - [0.557] User is getting ready for a charity 5K run and wants tips to improve their endur
+    - [0.489] User is training for another charity 5K run and wants tips to improve endurance 
+    - [0.243] User is considering incorporating strength training into their routine and asked
+    - [0.210] User is asking what to focus on during interval training—whether it’s more impor
+    - [0.207] User has been focusing on strengthening their core and legs, and says this has h
+    - [0.199] User wants help planning their fitness schedule for the next few weeks and asked
+    - [0.189] User is practicing their tennis serve and volleys and is aiming to reach at leas
+    - [0.189] User recently scored a goal in a recreational soccer game with their coworkers, 
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   Your personal best time in the charity 5K run was **25:50**.
+  Memorias:   17 | Contradicciones: 3
+  Score: 1 | Accuracy: 100.00% | Carga: 49.1s | Respuesta: 3.0s | Total: 85.5s
+
+Pregunta 2/78: How many Korean restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 4084.74it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User asked whether the assistant has tried good Korean restaurants in '
+  Conservada (nueva): 'User is asking for recommendations for good Korean restaurants in thei'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.677] User is asking for recommendations for good Korean restaurants in their city, sa
+    - [0.560] User has tried multiple Korean restaurants recently and is looking for new recom
+    - [0.546] User tried three Korean restaurants recently and reports that one had an amazing
+    - [0.512] User is continuing to focus on Korean noodle dishes for home cooking, asking abo
+    - [0.443] User has been experimenting with different types of noodles and wants recommenda
+    - [0.435] User has been experimenting with different types of noodles lately and wants rec
+    - [0.435] User is planning a dinner party and wants suggestions for popular Korean BBQ dis
+    - [0.394] User is planning a dinner party with a variety of dishes from different cuisines
+    - [0.373] User is planning a dinner party and wants recommendations for side dishes that w
+    - [0.371] User decided to include kimchi and bokkeumbap in their dinner party menu.
+  Correcta:   four
+  Generada:   You’ve tried **4** Korean restaurants in your city.
+  Memorias:   24 | Contradicciones: 1
+  Score: 1 | Accuracy: 100.00% | Carga: 40.6s | Respuesta: 8.2s | Total: 85.6s
+
+Pregunta 3/78: Where did Rachel move to after her recent relocation?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3714.46it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.627] User’s friend Rachel moved to Chicago (from the suburbs) and the user is conside
+    - [0.622] User’s friend Rachel recently moved back to the suburbs again, and user wants a 
+    - [0.560] User plans to ask Rachel which neighborhood she is living in, then use that info
+    - [0.549] User previously considered Miami Beach but wants a more relaxed Florida option, 
+    - [0.516] User is considering visiting their friend Rachel, who recently moved to a new ap
+    - [0.509] User plans to ask Rachel about her Chicago neighborhood and her favorite spots i
+    - [0.474] User is visiting their friend Rachel in Chicago and wants recommendations for go
+    - [0.289] User has been to Miami Beach before and is now looking for a more relaxed Florid
+    - [0.223] User asked what the plan is for the rest of their trip, specifically whether the
+    - [0.201] User asked for recommendations for good coffee shops or cafes in Chicago.
+  Correcta:   the suburbs
+  Generada:   Rachel moved back to the suburbs (after her recent relocation).
+  Memorias:   18 | Contradicciones: 0
+  Score: 1 | Accuracy: 100.00% | Carga: 34.2s | Respuesta: 3.4s | Total: 68.0s
+
+Pregunta 4/78: What was the amount I was pre-approved for when I got my mortgage from Wells Far
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2541.45it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.704] User recalls being pre-approved for $400,000 from Wells Fargo (mentioned in the 
+    - [0.607] User is buying a $325,000 house and has Wells Fargo pre-approval for a $350,000 
+    - [0.404] User is thinking of requesting an additional 1% of the purchase price toward clo
+    - [0.366] User wants an estimate of how much they would need to pay out of pocket for clos
+    - [0.363] User is negotiating with the seller to cover additional closing costs beyond an 
+    - [0.359] User is considering asking the seller to cover an additional 1% of the purchase 
+    - [0.357] User is in the process of buying a new home and wants help estimating how much t
+    - [0.351] User plans to ask the seller to cover an additional 1% of the purchase price tow
+    - [0.348] User is considering negotiating with the seller for additional closing-cost cove
+    - [0.341] User is asking for help understanding how much of the closing costs they can neg
+  Correcta:   $400,000
+  Generada:   You were pre-approved for **$400,000** from Wells Fargo.
+  Memorias:   20 | Contradicciones: 0
+  Score: 1 | Accuracy: 100.00% | Carga: 45.9s | Respuesta: 4.1s | Total: 82.8s
+
+Pregunta 5/78: How often do I attend yoga classes to help with my anxiety?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3714.00it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.995
+  Eliminada (vieja): 'User is using journaling/reflection exercises to identify triggers and'
+  Conservada (nueva): 'User uses meditation to set intentions and focus on daily goals, and i'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.578] User reports that their yoga practice helps them feel more grounded and centered
+    - [0.573] User notices they are more focused on days they attend yoga classes, which they 
+    - [0.503] User has been prioritizing self-care by doing yoga twice a week, which helps the
+    - [0.502] User has been prioritizing self-care by doing yoga twice a week to relax and foc
+    - [0.463] User reports that their yoga practice has been helping them feel more grounded.
+    - [0.343] User is seeking recommendations for books or other trusted resources to better u
+    - [0.339] User is educating themselves more about anxiety and depression and wants a list 
+    - [0.334] User has been educating themselves about anxiety and depression and wants a list
+    - [0.327] User uses meditation to set intentions and focus on daily goals, and is interest
+    - [0.318] User is asking for tips to incorporate more mindfulness into their daily routine
+  Correcta:   Three times a week.
+  Generada:   You attend yoga classes **three times a week** to help with your anxiety.
+  Memorias:   26 | Contradicciones: 1
+  Score: 1 | Accuracy: 100.00% | Carga: 40.7s | Respuesta: 3.3s | Total: 78.4s
+
+Pregunta 6/78: Is my mom using the same grocery list method as me?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3608.59it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.995
+  Eliminada (vieja): 'User has been trying to get their mom to switch from a paper list to t'
+  Conservada (nueva): 'User says their mom is now using the same grocery list app as User, so'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.663] User says their mom is now using the same grocery list app as User, so they can 
+    - [0.653] User’s mom has started using the same grocery list app as User, enabling them to
+    - [0.629] User has been using a new grocery list app to organize grocery lists and keep tr
+    - [0.515] User is using a new grocery list app they recently downloaded to organize grocer
+    - [0.491] User is using a new grocery list app to keep track of ingredients and says it ha
+    - [0.373] User plans to add onions and bell peppers to their grocery list and realized the
+    - [0.310] For the chicken fajitas, User plans to add onions and bell peppers to their groc
+    - [0.260] User is using cauliflower gnocchi they got from Trader Joe’s and is looking for 
+    - [0.255] User is planning to make chicken fajitas for dinner on 2026-05-29 and wants simp
+    - [0.244] User needs fresh herbs (cilantro and parsley) for their fajitas and asked for ti
+  Correcta:   Yes.
+  Generada:   Yes—your mom is now using the same grocery list app/method as you, so you can share lists and track 
+  Memorias:   23 | Contradicciones: 1
+  Score: 1 | Accuracy: 100.00% | Carga: 37.2s | Respuesta: 3.2s | Total: 78.5s
+
+Pregunta 7/78: How many hours have I spent on my abstract ocean sculpture?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3812.25it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.997 > umbral=0.85
+  Memoria en conflicto: 'User has been working on an abstract ocean sculpture at home and has spent aroun'
+  Hecho nuevo:          'user: I've already spent 10-12 hours on my abstract ocean sculpture, and I'm exc'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=e86b722e-cd8a-424c-9170-256c24dda3ed
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.978
+  Eliminada (vieja): 'User is planning a series of ocean-inspired sculptures and wants onlin'
+  Conservada (nueva): 'User is planning a series of ocean-inspired sculptures and wants onlin'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.971
+  Eliminada (vieja): 'User is planning a series of ocean-inspired sculptures and wants onlin'
+  Conservada (nueva): 'User is planning a series of ocean-inspired sculptures and wants ideas'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.786] User has been working on an abstract ocean sculpture at home and has already spe
+    - [0.735] User has already spent 10–12 hours on an abstract ocean sculpture at home and it
+    - [0.511] User is planning a series of ocean-inspired sculptures and wants ideas for a pie
+    - [0.476] User is considering incorporating natural materials like seashells or driftwood 
+    - [0.466] User plans to incorporate found ocean objects—specifically sea glass and beach s
+    - [0.455] User is working on a sunset-inspired sculpture and is considering using a combin
+    - [0.441] User is planning to create a new sculpture inspired by a sunset on the beach and
+    - [0.385] User is planning a sculpture inspired by a sunset and wants tips for capturing t
+    - [0.362] User wants to experiment with resin techniques to achieve a translucent, ocean-l
+    - [0.307] User is considering adding texture to their sunset-inspired sculpture by combini
+  Correcta:   10-12 hours
+  Generada:   You’ve spent **10–12 hours** on your abstract ocean sculpture.
+  Memorias:   11 | Contradicciones: 3
+  Score: 1 | Accuracy: 100.00% | Carga: 32.1s | Respuesta: 3.2s | Total: 60.2s
+
+Pregunta 8/78: How many bikes do I currently own?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3661.60it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.941
+  Eliminada (vieja): 'User is planning a 50-mile ride this weekend and wants to ensure their'
+  Conservada (nueva): 'User is considering doing a century ride soon and wants to know whethe'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.640] User currently has three bikes total (road bike, mountain bike, and commuter bik
+    - [0.509] User uses their road bike along with two other bikes: a mountain bike and a comm
+    - [0.457] User is planning a San Francisco to New York City road trip with about 10 days a
+    - [0.430] User is considering doing a century ride soon and wants to know whether their cu
+    - [0.427] User plans to bring their road bike and all their bikes (including mountain bike
+    - [0.398] User plans to book accommodations with bike storage in advance because they will
+    - [0.385] User has already gotten a new bike computer and has been tracking their progress
+    - [0.367] User plans to use their road bike for an upcoming century ride and has been usin
+    - [0.353] User is planning to try out a newly purchased hybrid bike on some of the scenic 
+    - [0.349] User is considering upgrading their road bike’s wheels to carbon fiber wheels an
+  Correcta:   4
+  Generada:   You currently own **3 bikes** (a road bike, a mountain bike, and a commuter bike).
+  Memorias:   25 | Contradicciones: 1
+  Score: 0 | Accuracy: 87.50% | Carga: 38.8s | Respuesta: 3.2s | Total: 75.7s
+
+Pregunta 9/78: What day of the week do I take a cocktail-making class?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3690.96it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.996 > umbral=0.85
+  Memoria en conflicto: 'User is considering serving grilled asparagus and quinoa as a side dish with the'
+  Hecho nuevo:          'user: I'm thinking of serving the grilled jerk chicken with a side of roasted sw'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=3ceec2ce-451c-44b4-9259-aa3d56a9eded
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User plans to try the Tequila Sour during their cocktail-making class '
+  Conservada (nueva): 'User plans to try the Paloma during their cocktail-making class on Fri'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Eliminada (vieja): 'User is planning a dinner party menu and is looking for appetizer idea'
+  Conservada (nueva): 'User is looking for main course recommendations that would pair well w'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Eliminada (vieja): 'User is looking for main course recommendations that would pair well w'
+  Conservada (nueva): 'User is planning a dinner party and is looking for dessert ideas to se'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Eliminada (vieja): 'User asked for recommendations for a good watermelon puree recipe to u'
+  Conservada (nueva): 'User asked for recommendations for a good tequila to pair with waterme'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.975
+  Eliminada (vieja): 'User has a cocktail-making class on Thursday and is excited to try out'
+  Conservada (nueva): 'User is excited to try a new recipe and is planning to experiment with'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User likes basil in cocktails and is considering a Watermelon Basil Ma'
+  Conservada (nueva): 'User asked for recommendations for a good tequila to pair with waterme'
+  [Consolidacion] 6 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.649] User is interested in tequila-based cocktails and has a cocktail-making class on
+    - [0.566] User plans to try the Paloma and the Tequila Sour during their cocktail-making c
+    - [0.563] User plans to try the Paloma during their cocktail-making class on Friday, speci
+    - [0.562] User is excited to try a new recipe and is planning to experiment with additiona
+    - [0.500] User is looking for inspiration for a new tequila-based cocktail recipe and want
+    - [0.263] User likes the idea of a Watermelon Basil Margarita and has been experimenting w
+    - [0.263] User plans to roast watermelon to bring out sweetness for a watermelon puree use
+    - [0.254] User has decided to serve coconut lime panna cotta with mango salsa as the desse
+    - [0.250] User is planning a dinner party menu and has chosen grilled pineapple and prosci
+    - [0.237] User is considering roasting watermelon to bring out sweetness for a watermelon 
+  Correcta:   Friday
+  Generada:   You take your cocktail-making class on **Friday**.
+  Memorias:   21 | Contradicciones: 7
+  Score: 1 | Accuracy: 88.89% | Carga: 40.6s | Respuesta: 3.5s | Total: 86.0s
+
+Pregunta 10/78: Where did I go on my most recent family trip?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3663.02it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.519] User is considering going to Paris again after recently visiting with their fami
+    - [0.498] User recently took a family trip to Hawaii where they had a great time snorkelin
+    - [0.462] User is planning a trip to Europe and wants tips on how to plan a family-friendl
+    - [0.462] User plans to add solo excursions to their next family trip, including taking a 
+    - [0.446] User is planning their next trip and feels torn between traveling solo versus tr
+    - [0.439] User is excited to explore hidden gems in Tokyo and wants help comparing and con
+    - [0.419] User’s family trip to Hawaii included snorkeling as a highlight, and User wishes
+    - [0.417] User is interested in planning travel that includes both family time and solo fr
+    - [0.380] User is excited to plan a solo trip to Tokyo and wants recommendations for uniqu
+    - [0.302] User is asking which popular food-tour destinations are best for travelers and w
+  Correcta:   Paris
+  Generada:   You most recently went to **Hawaii** on your family trip.
+  Memorias:   17 | Contradicciones: 0
+  Score: 0 | Accuracy: 80.00% | Carga: 33.9s | Respuesta: 3.1s | Total: 61.5s
+
+Pregunta 11/78: Where do I initially keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3660.31it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.666] User has been storing old sneakers under their bed, and they are starting to sme
+    - [0.620] User plans to organize their closet this weekend and store old sneakers in a sho
+    - [0.613] User is seeking tips on how to keep sneakers clean and fresh while they are stor
+    - [0.605] User plans to organize their closet this weekend and store old sneakers in a sho
+    - [0.589] User plans to organize their closet this weekend by type (e.g., keeping all boot
+    - [0.529] User plans to drop off their old sneakers at a cobbler this weekend to get them 
+    - [0.519] User plans to take inventory of their shoe collection and identify additional pa
+    - [0.505] User plans to take inventory of their shoe collection to identify additional pai
+    - [0.487] User plans to get old sneakers polished and conditioned by a cobbler this weeken
+    - [0.455] User is considering organizing their closet by type—keeping all boots together, 
+  Correcta:   under my bed
+  Generada:   Initially, you keep your old sneakers under your bed.
+  Memorias:   21 | Contradicciones: 0
+  Score: 1 | Accuracy: 81.82% | Carga: 35.6s | Respuesta: 3.6s | Total: 72.6s
+
+Pregunta 12/78: How many short stories have I written since I started writing regularly?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3644.71it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Eliminada (vieja): 'User is thinking about setting a goal for a certain number of short st'
+  Conservada (nueva): 'User has been writing regularly for three months and says it has been '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.659] User has been writing regularly for three months and says it has been amazing; t
+    - [0.493] User has been writing regularly for three months and is using that momentum to p
+    - [0.477] User is considering using a writing calendar to manage their writing schedule, e
+    - [0.455] User is writing multiple projects at once, including short stories, a journal, a
+    - [0.408] User is considering using writing prompts or themes to generate ideas for their 
+    - [0.403] User plans to start their memoir with the chapter titled "The Spark," describing
+    - [0.391] User is planning to write a memoir focused on their experiences with writing ove
+    - [0.366] User wants to convey in their memoir the excitement and anticipation they feel w
+    - [0.339] User’s memoir will include a section describing their Sundays as dedicated writi
+    - [0.323] User is continuing to experiment with non-linear narrative structures in their w
+  Correcta:   seven
+  Generada:   You’ve written **7 short stories** since you started writing regularly.
+  Memorias:   17 | Contradicciones: 1
+  Score: 1 | Accuracy: 83.33% | Carga: 30.8s | Respuesta: 3.5s | Total: 62.6s
+
+Pregunta 13/78: How many pages of 'A Short History of Nearly Everything' have I read so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3353.08it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User has been reading "A Short History of Nearly Everything" and is cu'
+  Conservada (nueva): 'User is reading "A Short History of Nearly Everything" and is on page '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User has been reading "A Short History of Nearly Everything" and is cu'
+  Conservada (nueva): 'User is reading "A Short History of Nearly Everything" and is on page '
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.553] User is reading "A Short History of Nearly Everything" and is on page 220, havin
+    - [0.528] User finished the section about the discovery of DNA structure in "A Short Histo
+    - [0.228] User has been listening to a podcast on "The Science Hour" about AI-powered medi
+    - [0.178] User is thinking about how AI could help diagnose rare genetic disorders, inspir
+    - [0.175] User is highly interested in the potential of AI in medical diagnosis and has be
+    - [0.175] User is interested in learning more about renewable energy and asked for online 
+    - [0.159] User is trying to learn more about AI-powered medical diagnosis and wants online
+    - [0.153] User is interested in AI in healthcare beyond diagnosis and is seeking research 
+    - [0.145] User wants to learn more about applications of AI in healthcare beyond diagnosis
+    - [0.143] User wants to learn about the current state of AI in healthcare and is specifica
+  Correcta:   220
+  Generada:   You’ve read **220 pages** of *A Short History of Nearly Everything* so far.
+  Memorias:   23 | Contradicciones: 2
+  Score: 1 | Accuracy: 84.62% | Carga: 39.3s | Respuesta: 3.5s | Total: 82.9s
+
+Pregunta 14/78: How many engineers do I lead when I just started my new role as Senior Software 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3888.16it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User is planning to invite their manager Rachel to the outing, making '
+  Conservada (nueva): 'User plans to invite their manager Rachel to the outing, making the gr'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.990
+  Eliminada (vieja): 'User plans to invite their manager Rachel to the outing, making the gr'
+  Conservada (nueva): 'User leads a team of 4 engineers in their new role as Senior Software '
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.818] User is asking how many engineers they lead in their new role as Senior Software
+    - [0.622] User leads a team of 4 engineers in their new role as Senior Software Engineer, 
+    - [0.589] User says they now lead a team of five engineers and is excited to see how they 
+    - [0.492] User has been enjoying their role as Senior Software Engineer for a while and sa
+    - [0.323] User is working on improving delegation and team management by setting realistic
+    - [0.321] User plans to improve delegation and team management by setting realistic deadli
+    - [0.315] User is thinking about their team’s workload and wants suggestions on delegating
+    - [0.258] User is planning a team outing for their engineers and is seeking fun activity r
+    - [0.176] User is deciding on the typical format for a team outing, specifically whether t
+    - [0.171] User plans to reach out to Samantha to ask about the Corporate Team Building Pac
+  Correcta:   When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+  Generada:   When you just started your new role as **Senior Software Engineer**, you led **4 engineers**.  
+
+Now
+  Memorias:   26 | Contradicciones: 2
+  Score: 1 | Accuracy: 85.71% | Carga: 41.0s | Respuesta: 3.2s | Total: 76.4s
+
+Pregunta 15/78: How many titles are currently on my to-watch list?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3777.71it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.982 > umbral=0.85
+  Memoria en conflicto: 'User is considering historical dramas "Victoria" and "The Last Kingdom" first, a'
+  Hecho nuevo:          'user: I'm thinking of exploring more historical dramas like "The Crown". Do you '
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=3f0b6cfa-e070-4b1b-ac29-c8937b0b7ef8
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.878
+  Eliminada (vieja): 'User wants help organizing their to-watch list because they currently '
+  Conservada (nueva): 'User says they currently have a long to-watch list with 20 titles wait'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.960
+  Eliminada (vieja): 'User says they currently have a long to-watch list with 20 titles wait'
+  Conservada (nueva): 'User currently has 25 titles on their to-watch list and says they are '
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.684] User currently has 25 titles on their to-watch list and says they are always loo
+    - [0.649] User asks for help organizing their to-watch list because they currently have 25
+    - [0.599] User is looking for historical drama recommendations that are movies (not series
+    - [0.495] User plans to start watching "Victoria" and "The Last Kingdom" first, since they
+    - [0.424] User plans to watch "Victoria" and is looking for additional historical drama re
+    - [0.415] User is thinking of exploring more historical dramas like "The Crown" and is int
+    - [0.414] User has heard good things about "Victoria" and "The Last Kingdom" and is consid
+    - [0.412] User just finished binge-watching "The Crown" and loved it, and is now looking f
+    - [0.404] User plans to add "Amistad" and "Hotel Rwanda" to their to-watch list because th
+    - [0.393] User finished binge-watching "The Crown" and loved it, and is now exploring more
+  Correcta:   25
+  Generada:   You currently have **25 titles** on your to-watch list.
+  Memorias:   24 | Contradicciones: 3
+  Score: 1 | Accuracy: 86.67% | Carga: 37.9s | Respuesta: 3.4s | Total: 78.4s
+
+Pregunta 16/78: How many stars do I need to reach the gold level on my Starbucks Rewards app?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3501.67it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.994 > umbral=0.85
+  Memoria en conflicto: 'User is trying to reach the Gold level on the Starbucks Rewards app and clarifie'
+  Hecho nuevo:          'user: Wait, I apologize for the mistake earlier! To correct myself, I actually n'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=d98e9836-a33c-4fd7-8850-65e9f738929d
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.945 > umbral=0.85
+  Memoria en conflicto: 'User forgot to ask again how many stars are needed to reach the Gold level on th'
+  Hecho nuevo:          'user: I'm trying to reach the gold level on my Starbucks Rewards app, which I kn'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=c9148e58-5776-40f8-8c3a-dbcd6ed6ebd9
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User corrected their Starbucks Rewards Gold requirement and said they '
+  Conservada (nueva): 'User corrected their Starbucks Rewards Gold requirement again, saying '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.843] User is trying to reach the Gold level on the Starbucks Rewards app and asked ho
+    - [0.810] User is trying to reach the Gold level on the Starbucks Rewards app and asked fo
+    - [0.728] User corrected their Starbucks Rewards Gold requirement again, saying they need 
+    - [0.629] User has been using the Starbucks Rewards app and wants tips on how to earn star
+    - [0.596] User is planning to stop by Starbucks after shopping at Sephora and wants to kno
+    - [0.570] User is using the Starbucks Rewards app and wants tips on how to earn stars fast
+    - [0.427] User also asked how many points are needed to redeem a $10 gift card on Fetch Re
+    - [0.416] User asked how many Fetch Rewards points are needed to redeem a $10 gift card.
+    - [0.341] User is considering buying a new laptop and is looking into Best Buy's loyalty p
+    - [0.281] User wants advice on the best way to organize loyalty cards and rewards points, 
+  Correcta:   120
+  Generada:   You need **120 stars** to reach the **Gold** level on your Starbucks Rewards app.
+  Memorias:   15 | Contradicciones: 3
+  Score: 1 | Accuracy: 87.50% | Carga: 35.9s | Respuesta: 3.3s | Total: 64.3s
+
+Pregunta 17/78: How long have I been using my Fitbit Charge 3?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3807.01it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.965
+  Eliminada (vieja): 'User has been using a Fitbit Charge 3 for about 6 months to help them '
+  Conservada (nueva): 'User realized they have been using their Fitbit Charge 3 for 9 months '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.971
+  Eliminada (vieja): 'User has been using their current yoga mat for a while but is consider'
+  Conservada (nueva): 'User decided to go with the Hugger Mugger ParaMat as their new yoga ma'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User is specifically considering the Hugger Mugger ParaMat as a new yo'
+  Conservada (nueva): 'User is considering the Manduka eKO SuperLite yoga mat as an alternati'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User is considering the Manduka eKO SuperLite yoga mat as an alternati'
+  Conservada (nueva): 'User decided to go with the Hugger Mugger ParaMat as their new yoga ma'
+  [Consolidacion] 4 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.724] User realized they have been using their Fitbit Charge 3 for 9 months (previousl
+    - [0.237] User wants tips for staying motivated to reach their daily step goal on lazy Sun
+    - [0.235] User is considering buying a yoga strap to go along with their new yoga mat.
+    - [0.215] User recently read a book about the benefits of intermittent fasting and was ins
+    - [0.210] User has been working on improving sleep quality by maintaining a consistent bed
+    - [0.193] User has been having some issues with their sleep lately and is asking for tips 
+    - [0.187] User has been working on improving sleep quality by establishing a consistent be
+    - [0.182] User has been dealing with knee issues during yoga and has been considering swit
+    - [0.176] User reads health and wellness content before bed because it inspires healthier 
+    - [0.157] User has been having knee issues during yoga and is considering a thicker, more 
+  Correcta:   9 months
+  Generada:   You’ve been using your Fitbit Charge 3 for about **9 months**.
+  Memorias:   24 | Contradicciones: 4
+  Score: 1 | Accuracy: 88.24% | Carga: 41.0s | Respuesta: 3.3s | Total: 82.1s
+
+Pregunta 18/78: How many sessions of the bereavement support group did I attend?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3424.74it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Eliminada (vieja): 'User attended three sessions of a bereavement support group and found '
+  Conservada (nueva): 'User recalls attending a bereavement support group last year and says '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.992
+  Eliminada (vieja): 'User attended three sessions of a bereavement support group and found '
+  Conservada (nueva): 'User recalls attending a bereavement support group last year and says '
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.691] User recalls attending a bereavement support group last year and says they atten
+    - [0.543] User attended a bereavement support group while going through a tough time and i
+    - [0.524] User is considering seeking out a therapist or counselor for guidance and suppor
+    - [0.517] User is considering seeking out a therapist or counselor for guidance and suppor
+    - [0.474] User remembers the bereavement support group facilitator as kind and understandi
+    - [0.473] User remembers the bereavement support group facilitator as very kind and unders
+    - [0.471] User found a bereavement support group helpful for processing emotions and feeli
+    - [0.455] User wants to carry forward lessons from the bereavement support group and feels
+    - [0.376] User is considering joining online forums or social media communities focused on
+    - [0.356] User is considering joining online forums or social media communities focused on
+  Correcta:   five
+  Generada:   You attended **five sessions** of the bereavement support group.
+  Memorias:   32 | Contradicciones: 2
+  Score: 1 | Accuracy: 88.89% | Carga: 51.6s | Respuesta: 4.0s | Total: 113.0s
+
+Pregunta 19/78: What type of camera lens did I purchase most recently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3383.41it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User is choosing between two camera bags—Lowepro ProTactic 450 AW and '
+  Conservada (nueva): 'User decided to go with the Think Tank Urban Disguise 40L camera bag, '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.562] User recently got a new 50mm prime lens, which has been working out great for th
+    - [0.519] User has had issues with their old 18-55mm kit lens and has been relying on manu
+    - [0.511] User is considering buying a wide-angle lens, specifically something like a 14-2
+    - [0.506] User believes a wide-angle lens (14-24mm or 16-35mm) would complement their exis
+    - [0.495] User has been getting some great shots lately with their 70-200mm zoom lens.
+    - [0.472] User recently took great shots with their 70-200mm zoom lens at a local park and
+    - [0.385] User is looking for tripod recommendations that can support their Nikon D5600 an
+    - [0.376] User is considering upgrading from their current Nikon D5600 to a full-frame cam
+    - [0.366] User is interested in a camera bag that fits street and travel photography, and 
+    - [0.358] User primarily uses their camera for portrait and low-light photography and want
+  Correcta:   a 70-200mm zoom lens
+  Generada:   You most recently purchased a **50mm prime lens**.
+  Memorias:   20 | Contradicciones: 1
+  Score: 0 | Accuracy: 84.21% | Carga: 38.8s | Respuesta: 3.4s | Total: 77.1s
+
+Pregunta 20/78: How often do I see my therapist, Dr. Smith?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3211.75it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.934
+  Eliminada (vieja): 'User asked whether it is okay to set boundaries with a partner and how'
+  Conservada (nueva): 'User says they are ready to have a conversation with their partner abo'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.689] User has a therapy session with Dr. Smith coming up soon, and the sessions occur
+    - [0.652] User says they see Dr. Smith every week (not every two weeks) and that Dr. Smith
+    - [0.480] User has been feeling overwhelmed with work and social commitments and had a ses
+    - [0.454] User had a session with Dr. Smith this week where they discussed that User needs
+    - [0.441] User plans to meditate and journal for a bit after the conversation, and reports
+    - [0.385] User has been feeling overwhelmed by commitments lately and Dr. Smith suggested 
+    - [0.312] User’s work hours are 9 to 5, Monday to Friday, and they have regular social com
+    - [0.306] User’s work hours are 9 to 5, Monday to Friday, and they have regular social com
+    - [0.250] User asked for a simple checklist to help them stay on track by reviewing priori
+    - [0.229] User is trying to fit time for self-care activities such as meditation and journ
+  Correcta:   every week
+  Generada:   You see Dr. Smith **every week**.
+  Memorias:   25 | Contradicciones: 1
+  Score: 1 | Accuracy: 85.00% | Carga: 42.7s | Respuesta: 3.5s | Total: 79.2s
+
+Pregunta 21/78: How many MCU films did I watch in the last 3 months?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3221.93it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User has watched 4 MCU films in the last 3 months and is considering S'
+  Conservada (nueva): 'User reports having watched 12 films in the last 3 months, including 5'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.725] User reports having watched 12 films in the last 3 months, including 5 MCU films
+    - [0.716] User has been on a roll with movies lately, having watched 12 films in the last 
+    - [0.516] User is looking for suggestions of MCU films suitable for their family movie nig
+    - [0.355] User is considering adding 'The Lion King' and 'Back to the Future' to their fam
+    - [0.335] User decided to use movie trivia and a quote-along competition as the main movie
+    - [0.311] User is planning a family movie marathon over the upcoming long weekend and want
+    - [0.309] User is planning a family movie marathon over an upcoming long weekend and wants
+    - [0.297] User decided to add 'The Goonies' to their family movie marathon over the upcomi
+    - [0.297] User asked for suggestions for snacks and activities to complement Spider-Man: H
+    - [0.293] User wants movie-themed games or quizzes during breaks and decided to use movie 
+  Correcta:   5
+  Generada:   You watched **5 MCU films** in the last 3 months.
+  Memorias:   26 | Contradicciones: 1
+  Score: 1 | Accuracy: 85.71% | Carga: 43.7s | Respuesta: 3.6s | Total: 93.8s
+
+Pregunta 22/78: How many of Emma's recipes have I tried out?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3277.56it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Eliminada (vieja): 'User is interested in trying more vegan restaurants and previously ask'
+  Conservada (nueva): 'User plans to use taxis or ride-hailing services in Barcelona and Rome'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.892
+  Eliminada (vieja): 'User has been loving Emma’s recipes on her channel and has already tri'
+  Conservada (nueva): 'User has tried out 3 recipes from Emma’s channel so far and says they '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.991
+  Eliminada (vieja): 'User plans to look into vegan cooking classes in Barcelona and Rome an'
+  Conservada (nueva): 'User plans to use taxis or ride-hailing services in Barcelona and Rome'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.657] User has tried out 3 recipes from Emma’s channel so far and says they are all am
+    - [0.588] User is planning to try vegan dessert recipes this weekend and has already tried
+    - [0.413] User has already tried the vegan cheesecake recipe and is planning to try Chocol
+    - [0.401] User has already tried a vegan cheesecake recipe and plans to try Chocolate Chia
+    - [0.389] User is planning to try new vegan dessert recipes this weekend (around May 29, 2
+    - [0.295] User asked for a simple recipe for Chocolate Chia Pudding.
+    - [0.289] User asked for must-try vegan dishes in Barcelona and Rome to experience local s
+    - [0.258] User is seeking recommendations for must-try vegan dishes in Barcelona and Rome,
+    - [0.242] User plans to use taxis or ride-hailing services in Barcelona and Rome when they
+    - [0.230] User is interested in finding vegan cooking classes or workshops in Spain and It
+  Correcta:   3
+  Generada:   You’ve tried **3** of Emma’s recipes so far.
+  Memorias:   25 | Contradicciones: 3
+  Score: 1 | Accuracy: 86.36% | Carga: 37.6s | Respuesta: 3.3s | Total: 81.7s
+
+Pregunta 23/78: What company is Rachel, an old colleague from my previous company, currently wor
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3289.08it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.927
+  Eliminada (vieja): 'User met Alex, a founder of a new edtech startup, at a startup mixer a'
+  Conservada (nueva): 'User plans to add David (a friend) to their spreadsheet of networking '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.706] User plans to catch up with Rachel, an old colleague from their previous company
+    - [0.682] User met Rachel, an old colleague from their previous company, at the TechConnec
+    - [0.386] User met David at the same WeWork startup mixer and plans to add David to their 
+    - [0.366] User met Alex, the founder of a new edtech startup, at a startup mixer at WeWork
+    - [0.351] User plans to add David (a friend) to their spreadsheet of networking contacts; 
+    - [0.322] User met Alex, the founder of a new edtech startup, and they discussed their sha
+    - [0.322] User met Jason, the CEO of StartupX, at the TechConnect conference and wants to 
+    - [0.313] User asked for help crafting a follow-up email to Jason, the CEO of StartupX, to
+    - [0.310] User is filling out a spreadsheet template to track connections and the events w
+    - [0.304] User met Jason, the CEO of StartupX, at the same TechConnect conference and plan
+  Correcta:   TechCorp
+  Generada:   Rachel is currently working at **TechCorp**.
+  Memorias:   28 | Contradicciones: 1
+  Score: 1 | Accuracy: 86.96% | Carga: 39.4s | Respuesta: 3.8s | Total: 85.5s
+
+Pregunta 24/78: For the coffee-to-water ratio in my French press, did I switch to more water per
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3129.58it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Eliminada (vieja): 'User has been experimenting with French press brewing and has found a '
+  Conservada (nueva): 'User adjusted their French press brewing ratio to 1 tablespoon of coff'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.768] User adjusted their French press brewing ratio to 1 tablespoon of coffee for eve
+    - [0.472] User wants to clean their French press thoroughly to remove old coffee oils and 
+    - [0.407] User asked what the assistant thinks of the beans from the assistant’s first cof
+    - [0.389] User is excited to brew the new beans from their coffee subscription in a French
+    - [0.345] User is experimenting with citrus notes in coffee and wants recommendations for 
+    - [0.325] User asked for tips on how to store coffee beans to preserve their freshness aft
+    - [0.287] User plans to try Kenyan coffee first from their new coffee subscription shipmen
+    - [0.287] User plans to try Earl Grey tea with their citrus-infused coffee.
+    - [0.284] User plans to brew a fresh pot of coffee in the morning and feels excited to use
+    - [0.283] User is looking for recommendations for a good coffee subscription service.
+  Correcta:   You switched to less water (5 ounces) per tablespoon of coffee.
+  Generada:   You switched to **more water per tablespoon of coffee** (from **1 tbsp per 6 oz** to **1 tbsp per 5 
+  Memorias:   18 | Contradicciones: 1
+  Score: 0 | Accuracy: 83.33% | Carga: 30.0s | Respuesta: 3.7s | Total: 64.3s
+
+Pregunta 25/78: Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3101.93it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User plans to keep the "Ethereal Dreams" painting above their living r'
+  Conservada (nueva): 'User moved the "Ethereal Dreams" painting to their bedroom and says it'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.990
+  Eliminada (vieja): 'User has been enjoying a new painting above their living room sofa, de'
+  Conservada (nueva): 'User moved the "Ethereal Dreams" painting to their bedroom and says it'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.680] User recently moved the "Ethereal Dreams" painting by Emma Taylor above their be
+    - [0.531] User moved the "Ethereal Dreams" painting to their bedroom and says it adds a ni
+    - [0.451] User has a digital print titled "Moonlit Ocean" by Jack Harris that they plan to
+    - [0.402] User rearranged their bedroom and is loving how the framed "Moonlit Ocean" print
+    - [0.367] User is planning to work on an art piece that incorporates a figure in a dreamli
+    - [0.318] User is creating a dreamlike artwork featuring a figure floating in a misty, eth
+    - [0.304] User is planning to create a cozy atmosphere for their art-themed party by displ
+    - [0.282] User is seeking inspiration for their next art project and asked for suggestions
+    - [0.276] User is particularly interested in exploring surrealism and lowbrow art for thei
+    - [0.269] User is seeking tips for creating a sense of movement or flow in their artwork t
+  Correcta:   in my bedroom
+  Generada:   The painting **“Ethereal Dreams” by Emma Taylor** is currently hanging **in the user’s bedroom, abov
+  Memorias:   24 | Contradicciones: 2
+  Score: 1 | Accuracy: 84.00% | Carga: 36.3s | Respuesta: 3.6s | Total: 82.7s
+
+Pregunta 26/78: How many times have I worn my new black Converse Chuck Taylor All Star sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3071.48it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.773] User has worn their new black Converse Chuck Taylor All Star sneakers four times
+    - [0.747] User has new black Converse Chuck Taylor All Star sneakers and has already worn 
+    - [0.689] User wore their new black Converse sneakers to run errands on May 28, 2026, brin
+    - [0.489] User is considering getting a waterproofing spray for their new black Converse C
+    - [0.484] User is considering buying a waterproofing spray for their new black Converse Ch
+    - [0.424] User has white Adidas Superstars that they wore to the gym and cleaned for about
+    - [0.420] User wore their white Adidas Superstars to the gym last week, and they got dirty
+    - [0.384] User is considering buying a new pair of Vans Old Skool sneakers and is asking w
+    - [0.380] User is considering buying a new pair of Vans Old Skool sneakers and wants advic
+    - [0.272] User is considering getting a shoe cleaning kit to make cleaning shoes easier in
+  Correcta:   six
+  Generada:   You’ve worn your new black Converse Chuck Taylor All Star sneakers **6 times**.
+  Memorias:   29 | Contradicciones: 0
+  Score: 1 | Accuracy: 84.62% | Carga: 38.4s | Respuesta: 3.8s | Total: 90.6s
+
+Pregunta 27/78: How many episodes of the Science series have I completed on Crash Course?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3131.77it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.743] User has been watching Crash Course's Science series and reports completing 50 e
+    - [0.664] User is currently on episode 10 of Crash Course's Science series as of May 29, 2
+    - [0.432] User wants their daily routine to include prioritizing reading and exercise, alo
+    - [0.397] User wants help creating a daily schedule that maximizes their time by incorpora
+    - [0.285] User asked what to do next and suggested exploring more educational resources or
+    - [0.285] User is taking a course on Coursera and wants additional reading materials (book
+    - [0.275] User plans to start learning linear algebra with Khan Academy's Linear Algebra C
+    - [0.266] User plans to start learning Spanish with SpanishDict and then move on to Course
+    - [0.265] User reads for 30 minutes daily and wants book recommendations focused on scienc
+    - [0.246] User is considering taking an online course on Data Science with Python and aske
+  Correcta:   50
+  Generada:   You’ve completed **50 episodes** of Crash Course’s Science series.
+  Memorias:   20 | Contradicciones: 0
+  Score: 1 | Accuracy: 85.19% | Carga: 32.3s | Respuesta: 3.5s | Total: 63.2s
+
+Pregunta 28/78: Do I go to the gym more frequently than I did previously?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2995.05it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.990
+  Eliminada (vieja): 'User has another social commitment: a family dinner scheduled for next'
+  Conservada (nueva): 'User has a social commitment: dinner with Rachel scheduled for this Fr'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.437] User clarifies their gym schedule: they do not work out on Mondays, Wednesdays, 
+    - [0.409] User does not work out on Mondays, Wednesdays, and Fridays; they go to the gym o
+    - [0.399] User is considering rewarding themselves with a post-workout smoothie on Saturda
+    - [0.352] User says their weekly plan is now aligned with their gym days and is asking for
+    - [0.327] User is planning to reward themselves with a post-workout smoothie on Saturday a
+    - [0.326] User wants to fit in time for reading and meditation as part of their weekly pla
+    - [0.322] User wants suggestions on how to prioritize tasks and stay organized while plann
+    - [0.321] User currently uses a habit tracker app to keep track of daily and weekly tasks,
+    - [0.306] User uses a habit tracker app to keep track of daily and weekly tasks, plus thei
+    - [0.259] User dedicates specific days to certain tasks: Fridays for admin tasks and Sunda
+  Correcta:   Yes
+  Generada:   No—your current plan is **3 gym days per week** (Tue/Thu/Sat), which is not more frequent than befor
+  Memorias:   23 | Contradicciones: 1
+  Score: 0 | Accuracy: 82.14% | Carga: 38.9s | Respuesta: 4.0s | Total: 76.5s
+
+Pregunta 29/78: How many new postcards have I added to my collection since I started collecting 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3136.35it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.976
+  Eliminada (vieja): 'User has been collecting postcards and photography-related items and w'
+  Conservada (nueva): 'User realized they have added 25 new postcards to their collection sin'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'Among the 17 new postcards, User listed: '1920s Paris Postcard' (Date:'
+  Conservada (nueva): 'Among the 17 new postcards, User listed: 'Eiffel Tower at Night' (Date'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'Among the 17 new postcards, User listed: 'Vintage Beach Scene' (Date: '
+  Conservada (nueva): 'Among the 17 new postcards, User listed: 'Eiffel Tower at Night' (Date'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.759] User realized they have added 25 new postcards to their collection since they st
+    - [0.642] On 2026-05-29, User got back from a trip to a local antique shop and acquired 8 
+    - [0.598] User provided a table listing 17 new postcards they added, with columns for Post
+    - [0.544] User wants tips for categorizing and organizing their postcard collection so the
+    - [0.509] User decided to stop adding postcard details for now and is happy to have a list
+    - [0.496] Among the 17 new postcards, User listed: 'Eiffel Tower at Night' (Date: 1960s; P
+    - [0.481] User has been collecting postcards and photography-related items and wants onlin
+    - [0.472] User plans to organize their postcard collection by categorizing postcards by th
+    - [0.465] User is looking for recommendations for resources and online communities specifi
+    - [0.465] User indicated the table includes 14 additional postcards beyond PC001–PC003, bu
+  Correcta:   25
+  Generada:   You’ve added **25 new postcards** to your collection since you started collecting again (as of **May
+  Memorias:   21 | Contradicciones: 3
+  Score: 1 | Accuracy: 82.76% | Carga: 37.0s | Respuesta: 4.1s | Total: 73.3s
+
+Pregunta 30/78: How many videos of Corey Schafer's Python programming series have I completed so
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3124.82it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.969
+  Eliminada (vieja): 'User has been brushing up on Python skills by watching Corey Schafer's'
+  Conservada (nueva): 'User has completed 30 videos of Corey Schafer's Python series and feel'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.783] User has completed 30 videos so far of Corey Schafer's Python series and plans t
+    - [0.711] User has completed 30 videos of Corey Schafer's Python series and feels excited 
+    - [0.586] User has been preparing for their NLP project by watching Corey Schafer's Python
+    - [0.472] User plans to start their NLP learning with a DataCamp course as a next step aft
+    - [0.247] User is thinking about applying NLP to a project and wants beginner-friendly res
+    - [0.220] User is working on a project involving text analysis and sentiment analysis and 
+    - [0.210] User plans to start with a DataCamp course and set up an NLP project environment
+    - [0.201] User plans to start their NLP project with a simple sentiment analysis project u
+    - [0.192] User is continuing to build an NLP project focused on text analysis and sentimen
+    - [0.180] User is planning to start their NLP work with a simple sentiment analysis projec
+  Correcta:   30
+  Generada:   You’ve completed **30 videos** of Corey Schafer’s Python programming series so far.
+  Memorias:   20 | Contradicciones: 1
+  Score: 1 | Accuracy: 83.33% | Carga: 36.4s | Respuesta: 3.5s | Total: 77.7s
+
+Pregunta 30/78: How many videos of Corey Schafer's Python programming series have I completed so
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3124.82it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.969
+  Eliminada (vieja): 'User has been brushing up on Python skills by watching Corey Schafer's'
+  Conservada (nueva): 'User has completed 30 videos of Corey Schafer's Python series and feel'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.783] User has completed 30 videos so far of Corey Schafer's Python series and plans t
+    - [0.711] User has completed 30 videos of Corey Schafer's Python series and feels excited 
+    - [0.586] User has been preparing for their NLP project by watching Corey Schafer's Python
+    - [0.472] User plans to start their NLP learning with a DataCamp course as a next step aft
+    - [0.247] User is thinking about applying NLP to a project and wants beginner-friendly res
+    - [0.220] User is working on a project involving text analysis and sentiment analysis and 
+    - [0.210] User plans to start with a DataCamp course and set up an NLP project environment
+    - [0.201] User plans to start their NLP project with a simple sentiment analysis project u
+    - [0.192] User is continuing to build an NLP project focused on text analysis and sentimen
+    - [0.180] User is planning to start their NLP work with a simple sentiment analysis projec
+  Correcta:   30
+  Generada:   You’ve completed **30 videos** of Corey Schafer’s Python programming series so far.
+  Memorias:   20 | Contradicciones: 1
+  Score: 1 | Accuracy: 83.33% | Carga: 36.4s | Respuesta: 3.5s | Total: 77.7s
+
+Pregunta 31/78: How long have I been living in my current apartment in Harajuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2968.94it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Eliminada (vieja): 'User has been living in Harajuku (Tokyo) for about 3 months as of the '
+  Conservada (nueva): 'User has been living in Tokyo’s Harajuku in a new studio apartment for'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.993
+  Eliminada (vieja): 'User has been living in Tokyo’s Harajuku in a new studio apartment for'
+  Conservada (nueva): 'User has been living in Harajuku (Tokyo) for about 3 months as of May '
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.723] User has been living in Harajuku (Tokyo) for about 3 months as of May 29, 2026 a
+    - [0.396] User says they have not explored much of the historical side of Harajuku yet and
+    - [0.360] User has been meaning to explore the historical side of Harajuku and wants to vi
+    - [0.347] User is enjoying fall foliage in Tokyo and has been exploring a new neighborhood
+    - [0.333] User explores a new neighborhood every Sunday and last weekend found a great cof
+    - [0.313] User has been enjoying fall foliage in Tokyo lately and says it feels very diffe
+    - [0.295] User asked whether there are any autumn festivals or events happening in Yokoham
+    - [0.269] User is considering staying in Matsumoto (rather than Hakuba Valley) to experien
+    - [0.267] User decided to stay in Matsumoto for their Japanese Alps trip because they want
+    - [0.264] User is planning a trip to the Japanese Alps in November 2026 and is looking for
+  Correcta:   3 months
+  Generada:   About 3 months (as of May 29, 2026).
+  Memorias:   31 | Contradicciones: 2
+  Score: 1 | Accuracy: 83.87% | Carga: 44.9s | Respuesta: 3.6s | Total: 95.5s
+
+Pregunta 32/78: What brand of BBQ sauce am I currently obsessed with?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2776.63it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.990
+  Eliminada (vieja): 'User is planning to host another backyard BBQ soon and wants to try ne'
+  Conservada (nueva): 'User is planning to add BBQ pulled pork to their upcoming backyard BBQ'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.978
+  Eliminada (vieja): 'User is currently obsessed with Kansas City Masterpiece BBQ sauce and '
+  Conservada (nueva): 'User’s favorite BBQ sauce is Kansas City Masterpiece BBQ sauce, but th'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.959
+  Eliminada (vieja): 'User is asking for recipes for smoked brisket to share, as part of the'
+  Conservada (nueva): 'User is asking for tips on how to set up their smoker for the “Low and'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.560] User’s favorite BBQ sauce is Kansas City Masterpiece BBQ sauce, but they’re open
+    - [0.557] User wants to stock up on Sweet Baby Ray's BBQ sauce to serve with ribs at their
+    - [0.457] User is considering buying a BBQ rub to complement Sweet Baby Ray's BBQ sauce an
+    - [0.399] User is planning to serve BBQ pulled pork on a bun with coleslaw and pickles at 
+    - [0.382] User is specifically looking for suggestions for unique toppings and preparation
+    - [0.367] User plans to make mac and cheese for their upcoming backyard BBQ, describing it
+    - [0.367] User is planning to add BBQ pulled pork to their upcoming backyard BBQ menu and 
+    - [0.359] User has been loving their new Weber gas grill for quick weeknight dinners.
+    - [0.350] User is planning a backyard BBQ and is looking for side dishes that pair well wi
+    - [0.341] User is planning to host another backyard BBQ soon and wants help with menu plan
+  Correcta:   Kansas City Masterpiece
+  Generada:   You’re currently obsessed with **Kansas City Masterpiece BBQ sauce**.
+  Memorias:   21 | Contradicciones: 3
+  Score: 1 | Accuracy: 84.38% | Carga: 36.0s | Respuesta: 3.4s | Total: 73.1s
+
+Pregunta 33/78: How long have my parents been staying with me in the US?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2672.30it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User’s parents have been living with them in the US for nine months wh'
+  Conservada (nueva): 'User’s parents have been living with them in the US for about six mont'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.995
+  Eliminada (vieja): 'User’s parents have been living with them in the US for about six mont'
+  Conservada (nueva): 'User’s parents have been staying with them in the US for nine months a'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.703] User’s parents have been staying with them in the US for nine months and have be
+    - [0.567] User asks whether having their parents living with them in the US would impact t
+    - [0.538] User asked for more information about the waiver of inadmissibility process and 
+    - [0.510] User plans to ask an immigration attorney about the attorney’s experience with s
+    - [0.501] User plans to ask an immigration attorney about the waiver of inadmissibility pr
+    - [0.469] User plans to ask an immigration attorney about the waiver of inadmissibility pr
+    - [0.452] User plans to ask an immigration attorney about their experience with green card
+    - [0.417] User is concerned about the financial aspect of their green card application bec
+    - [0.414] User wants to know whether, for a green card application, they must demonstrate 
+    - [0.413] User plans to ask an immigration attorney about the attorney’s experience with g
+  Correcta:   nine months
+  Generada:   Your parents have been staying with you in the US for **nine months**.
+  Memorias:   19 | Contradicciones: 2
+  Score: 1 | Accuracy: 84.85% | Carga: 39.6s | Respuesta: 3.6s | Total: 85.8s
+
+Pregunta 34/78: How long have I been sticking to my daily tidying routine?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3111.35it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User plans to start organizing their garage by purging and categorizin'
+  Conservada (nueva): 'User feels pretty good about getting started with organizing after rec'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.991
+  Eliminada (vieja): 'User has been sticking to a daily tidying routine for 3 weeks as of Ma'
+  Conservada (nueva): 'User has been sticking to a daily tidying routine for 4 weeks as of Ma'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.726] User has been sticking to a daily tidying routine for 4 weeks as of May 29, 2026
+    - [0.441] User is considering turning the freed-up garage space into a dedicated workstati
+    - [0.411] User is thinking about implementing a "one-touch rule" as part of their cleaning
+    - [0.339] User has been loving an all-natural bathroom cleaning brand they started using l
+    - [0.334] User feels pretty good about getting started with organizing after receiving tip
+    - [0.327] User plans to implement the "one-touch rule" during garage cleaning this weekend
+    - [0.324] User is asking for advice on how to categorize their cleaning supplies, consider
+    - [0.316] User plans to keep a variety of cleaning supplies at their dedicated workstation
+    - [0.280] User is planning to clean out the garage this weekend and wants advice on how to
+    - [0.268] User plans to organize their garage using tips that emphasize categorizing and g
+  Correcta:   4 weeks
+  Generada:   You’ve been sticking to your daily tidying routine for **4 weeks** (as of **May 29, 2026**).
+  Memorias:   18 | Contradicciones: 2
+  Score: 1 | Accuracy: 85.29% | Carga: 33.8s | Respuesta: 3.9s | Total: 65.6s
+
+Pregunta 35/78: How long have I had my cat, Luna?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2918.82it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.709] User has a cat named Luna and has had her for about 6 months (and later about 9 
+    - [0.671] User has had their cat Luna for about 9 months and has been working to keep her 
+    - [0.624] User has had their cat Luna for about 6 months and has been meaning to get her m
+    - [0.464] User has been brushing their cat Luna daily with a new brush they got, and user 
+    - [0.459] User is considering setting up a playtime routine for their cat Luna to help her
+    - [0.445] User gives Luna freeze-dried salmon treats that Luna loves.
+    - [0.441] User is considering getting a pet camera to monitor their cat Luna when they are
+    - [0.439] User is trying to reduce how much their cat Luna sheds and is asking for tips to
+    - [0.434] User is asking for general tips on how to maintain Luna’s weight to keep her hea
+    - [0.426] User has been brushing Luna daily using a new brush they recently got, and user 
+  Correcta:   9 months
+  Generada:   You’ve had Luna for about **9 months**.
+  Memorias:   23 | Contradicciones: 0
+  Score: 1 | Accuracy: 85.71% | Carga: 44.2s | Respuesta: 3.2s | Total: 102.3s
+
+Pregunta 36/78: How many Instagram followers do I currently have?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3172.33it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.993
+  Eliminada (vieja): 'User reached 500 followers last week (relative to the observation date'
+  Conservada (nueva): 'User reached 600 followers on Instagram as a new milestone (checked on'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.578] User reported a social media milestone: they reached 600 Instagram followers (af
+    - [0.571] User reached 600 followers on Instagram as a new milestone (checked on 2026-05-2
+    - [0.481] User reached 500 followers last week (relative to May 29, 2026) and wants to kee
+    - [0.428] User intends to ask followers about their content preferences to decide what to 
+    - [0.418] User is trying to increase their social media presence on Instagram and wants id
+    - [0.409] User is trying to increase their social media presence, especially on Instagram,
+    - [0.388] User wants to increase their social media presence on Instagram and is especiall
+    - [0.378] User is considering using Instagram’s Poll feature to ask followers what they wa
+    - [0.360] User plans to post an Instagram Stories poll asking followers what they want to 
+    - [0.350] User is deciding whether to share the results of the Instagram Stories poll in a
+  Correcta:   600
+  Generada:   You currently have **600 Instagram followers**.
+  Memorias:   29 | Contradicciones: 1
+  Score: 1 | Accuracy: 86.11% | Carga: 41.9s | Respuesta: 3.9s | Total: 88.6s
+
+Pregunta 37/78: How many dozen eggs do we currently have stocked up in our refrigerator?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3154.94it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.991 > umbral=0.85
+  Memoria en conflicto: 'User plans to start with a fresh chevre (goat cheese) recipe as a beginner proje'
+  Hecho nuevo:          'user: I'm excited to start making some cheese with our goat milk. I think I'll s'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=b131dd8b-f5cd-4ed0-8d6c-0b79f6e8ecff
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.980
+  Eliminada (vieja): 'User has a large supply of fresh eggs from their coop—20 dozen stocked'
+  Conservada (nueva): 'User has a larger supply of fresh eggs from their coop—30 dozen stocke'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User has a larger supply of fresh eggs from their coop—30 dozen stocke'
+  Conservada (nueva): 'User currently has 20 dozen fresh eggs from their coop stocked in the '
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.589] User currently has 20 dozen fresh eggs from their coop stocked in the fridge and
+    - [0.357] User says they need to start using up their goat milk because they have a large 
+    - [0.321] User wants a simple recipe for egg salad for a quick lunch.
+    - [0.312] User wants breakfast dish ideas that incorporate both fresh eggs and goat milk f
+    - [0.273] User plans to try a spinach and feta variation using their farm ingredients (lik
+    - [0.271] User is thinking of making quiche for dinner and asked for a simple quiche recip
+    - [0.224] User asked for tips on how to use ricotta cheese once it’s made (e.g., ideas for
+    - [0.215] User plans to start building the predator-proof fence around their chicken coop 
+    - [0.207] User is planning to build a predator-proof fence around their chicken coop this 
+    - [0.198] User asked for advice on dealing with pests like mites and flies in their chicke
+  Correcta:   20
+  Generada:   We currently have **20 dozen** fresh eggs stocked in the refrigerator.
+  Memorias:   19 | Contradicciones: 3
+  Score: 1 | Accuracy: 86.49% | Carga: 37.4s | Respuesta: 3.5s | Total: 72.2s
+
+Pregunta 38/78: How many issues of National Geographic have I finished reading?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3294.13it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.720] User finished their third National Geographic issue and is currently on their fo
+    - [0.686] User is tracking National Geographic issues in their spreadsheet: they remember 
+    - [0.684] User wants help filling in the National Geographic section of their reading-prog
+    - [0.573] User has been reading about the Amazon rainforest in National Geographic and rep
+    - [0.550] User has been reading about the Amazon rainforest and its indigenous communities
+    - [0.511] User has been reading a lot about the Amazon rainforest lately, especially in Na
+    - [0.461] User enjoys The New Yorker for fiction and reads National Geographic for in-dept
+    - [0.343] User regularly reads news, science, and entertainment magazines.
+    - [0.310] User has been reading a lot about the Yanomami people and their struggles in Nat
+    - [0.286] User has been reading Rolling Stone frequently, especially its online content.
+  Correcta:   Five
+  Generada:   You’ve finished **5** issues of *National Geographic*.
+  Memorias:   24 | Contradicciones: 0
+  Score: 1 | Accuracy: 86.84% | Carga: 51.6s | Respuesta: 3.3s | Total: 98.2s
+
+Pregunta 39/78: Did I finish reading 'The Nightingale' by Kristin Hannah?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2929.20it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.684] User finished reading 'The Nightingale' by Kristin Hannah recently and described
+    - [0.654] User loved 'The Nightingale' by Kristin Hannah and felt the ending was emotional
+    - [0.613] User recently finished 'The Nightingale' by Kristin Hannah and described it as a
+    - [0.598] User put 'The Nightingale' by Kristin Hannah down temporarily because it was get
+    - [0.530] User plans to ask staff at the Main St bookstore for recommendations that could 
+    - [0.436] User appreciated that 'The Nightingale' did not shy away from the harsh realitie
+    - [0.397] User found 'The Nightingale' eye-opening for highlighting the daily struggles an
+    - [0.388] User said what resonated most in 'The Nightingale' was the sisterly bond between
+    - [0.388] User has been into historical fiction lately and recently finished reading 'The 
+    - [0.357] User plans to start reading 'The Alice Network' because they want to read more a
+  Correcta:   Yes
+  Generada:   No—you temporarily put *The Nightingale* down due to how emotional it felt, and you’re considering w
+  Memorias:   24 | Contradicciones: 0
+  Score: 0 | Accuracy: 84.62% | Carga: 39.3s | Respuesta: 4.0s | Total: 74.7s
+
+Pregunta 40/78: Where did I get my guitar serviced?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2978.89it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User has been meaning to get their acoustic guitar serviced but has no'
+  Conservada (nueva): 'User decided to get their acoustic guitar serviced before the upcoming'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.692] User is considering getting their acoustic guitar serviced at the music shop on 
+    - [0.675] User recalls that the music shop on Main St where they got their guitar serviced
+    - [0.614] User is asking whether there are good music shops on Main St that offer guitar s
+    - [0.596] User decided to get their acoustic guitar serviced before the upcoming music fes
+    - [0.580] User is considering getting their acoustic guitar serviced soon in relation to a
+    - [0.569] User remembers a music shop on Main St called "Rhythm Central" that has a good r
+    - [0.532] User is deciding whether to get their acoustic guitar serviced before or after a
+    - [0.357] User is looking for good music shops in their area that sell violins, with the i
+    - [0.343] User is located in the 12345 zip code and is looking for local music shops and s
+    - [0.299] User corrected their location details: they are actually in the city center rath
+  Correcta:   The music shop on Main St.
+  Generada:   You got your guitar serviced at the music shop on Main St called **“Rhythm Central.”**
+  Memorias:   21 | Contradicciones: 1
+  Score: 1 | Accuracy: 85.00% | Carga: 38.6s | Respuesta: 3.3s | Total: 77.4s
+
+Pregunta 41/78: What is my current highest score in Ticket to Ride?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3009.93it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User is considering buying Deception: Murder in Hong Kong or Two Rooms'
+  Conservada (nueva): 'User decided to choose Deception: Murder in Hong Kong for their next g'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.801] User’s highest score in Ticket to Ride increased to 132 points as of May 29, 202
+    - [0.721] User has been doing very well at Ticket to Ride lately, reporting a highest scor
+    - [0.476] User is considering hosting another game night soon and wants new game recommend
+    - [0.450] User is planning to host another game night soon and wants recommendations for g
+    - [0.301] User is intrigued by the board game Scythe and wants to learn more about it, inc
+    - [0.292] User decided to stick with playing Carcassonne with a smaller group rather than 
+    - [0.290] User is interested in trying out Carcassonne and wants to know whether it works 
+    - [0.281] User has already played Codenames and What Do You Meme with friends and all of t
+    - [0.254] User decided to choose Deception: Murder in Hong Kong for their next game night 
+    - [0.239] User is drawn to the Nordic Kingdom faction/theme in Scythe and likes the idea o
+  Correcta:   132 points
+  Generada:   Your current highest score in **Ticket to Ride is 132 points** (as of **May 29, 2026**).
+  Memorias:   18 | Contradicciones: 1
+  Score: 1 | Accuracy: 85.37% | Carga: 38.6s | Respuesta: 3.7s | Total: 68.7s
+
+Pregunta 42/78: How many tops have I bought from H&M so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3265.95it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Eliminada (vieja): 'User has already bought three tops from H&M and is really loving H&M’s'
+  Conservada (nueva): 'User has already bought five tops from H&M so far and is thinking abou'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.729] User has already bought five tops from H&M so far and is thinking about getting 
+    - [0.408] User is planning to go to the mall this weekend and wants a reminder of which st
+    - [0.396] User is planning to check the mall’s website first to find information about sto
+    - [0.392] User is asking whether H&M has a loyalty program or rewards card they can sign u
+    - [0.355] User is planning to go to the mall this weekend and wants to know whether H&M or
+    - [0.337] User has already placed an order with ASOS recently and is considering placing a
+    - [0.265] User is considering buying a new pair of sneakers and asked whether ASOS current
+    - [0.230] User is looking for household essentials and asked whether Target currently has 
+    - [0.225] User is looking for popular online marketplaces or websites to find vintage clot
+    - [0.153] User is looking for other thrift stores or vintage shops in their area to check 
+  Correcta:   five
+  Generada:   You’ve bought **five** tops from H&M so far.
+  Memorias:   18 | Contradicciones: 1
+  Score: 1 | Accuracy: 85.71% | Carga: 39.7s | Respuesta: 3.4s | Total: 73.3s
+
+Pregunta 43/78: How much did I earn at the Downtown Farmers Market on my most recent visit?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3230.09it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.727] User earned $420 at the Downtown Farmers Market on their most recent visit (in t
+    - [0.671] User provided a list of their event sales totals: March 18 (Downtown Farmers Mar
+    - [0.414] User is considering offering a “Downtown Farmers Market” themed gift basket feat
+    - [0.399] User wants help calculating their total earnings from all markets and events the
+    - [0.399] User returned from the Foodie Festival and reports it was amazing; they also cle
+    - [0.375] User sells homemade jams, candles, and soaps, and is planning to expand their pr
+    - [0.256] User sells homemade jams, candles, and soaps and is seeking advice on managing i
+    - [0.224] User is considering expanding their product line to include more artisanal soaps
+    - [0.221] User is considering restocking candle supplies because they have almost sold out
+    - [0.210] User sells homemade jams, candles, and soaps, and strawberry jam is one of their
+  Correcta:   $420
+  Generada:   You earned **$420** at the Downtown Farmers Market on your most recent visit.
+  Memorias:   22 | Contradicciones: 0
+  Score: 1 | Accuracy: 86.05% | Carga: 45.7s | Respuesta: 3.6s | Total: 82.1s
+
+Pregunta 44/78: How many times have I tried making a Negroni at home since my friend Emma showed
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2949.27it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User has been perfecting their Negroni recipe and finds that using Hen'
+  Conservada (nueva): 'User has been perfecting their Negroni recipe by making it at home 10 '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.850] User has been making a Negroni at home 10 times since their friend Emma showed t
+    - [0.833] User has been perfecting their Negroni recipe and has tried making it at home 10
+    - [0.821] User has been perfecting their Negroni recipe by making it at home 10 times sinc
+    - [0.611] User has been experimenting with Negroni recipes at home and finds that Hendrick
+    - [0.609] User is asking for a good recipe for a White Negroni and tips on how to balance 
+    - [0.500] User plans to experiment with other bitter liqueurs in their Negroni to see how 
+    - [0.486] User is asking for recommendations for other classic cocktails to try making at 
+    - [0.481] User is asking for recommendations for other gin-based cocktails to try making a
+    - [0.445] User is looking for recommendations for other bitter liqueurs to try in place of
+    - [0.427] User is excited to try classic cocktails at home, specifically planning to exper
+  Correcta:   10
+  Generada:   You’ve tried making a Negroni at home **10 times** since Emma showed you how.
+  Memorias:   24 | Contradicciones: 1
+  Score: 1 | Accuracy: 86.36% | Carga: 38.3s | Respuesta: 3.7s | Total: 81.0s
+
+Pregunta 45/78: What time do I usually go to the gym?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3118.01it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.966
+  Eliminada (vieja): 'User thinks Tuesday at 2:00 pm works for the potential client meeting '
+  Conservada (nueva): 'User prefers scheduling the potential client meeting on Tuesday or Thu'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.489] User wants the best way to set reminders for gym sessions that usually happen at
+    - [0.484] User wants help setting reminders for gym sessions that usually happen at 7:00 p
+    - [0.433] User is considering scheduling the potential client meeting for Tuesday afternoo
+    - [0.406] User prefers scheduling the potential client meeting on Tuesday or Thursday to a
+    - [0.401] User is flexible about scheduling a potential client meeting but wants to avoid 
+    - [0.292] User is planning out their week and wants help figuring out the best time to sch
+    - [0.289] User is planning a meeting with a potential client and wants help figuring out t
+    - [0.176] User plans to email the potential client a Google Drive folder link with a brief
+    - [0.172] User wants advice on organizing tasks in Todoist when they have many projects ru
+    - [0.155] User plans to email the file link with a brief note and is considering whether t
+  Correcta:   6:00 pm
+  Generada:   You usually go to the gym at **7:00 pm** on **Mondays, Wednesdays, and Fridays**.
+  Memorias:   21 | Contradicciones: 1
+  Score: 0 | Accuracy: 84.44% | Carga: 34.1s | Respuesta: 3.6s | Total: 75.8s
+
+Pregunta 46/78: How many Crash Course videos have I watched in the past few weeks?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3469.89it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.989
+  Eliminada (vieja): 'User has been tracking their educational activities and reports finish'
+  Conservada (nueva): 'As of May 29, 2026, User reports being on a learning streak and having'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.704] As of May 29, 2026, User reports being on a learning streak and having watched 1
+    - [0.661] As of May 29, 2026, User has continued watching Crash Course videos and has just
+    - [0.271] User has already taken a Python programming course on edX and now wants recommen
+    - [0.266] User is trying to learn more about cloud computing and wants online courses or t
+    - [0.260] User has been engaging with online communities like Kaggle and Reddit to learn f
+    - [0.258] User is thinking about exploring advanced machine learning topics—specifically r
+    - [0.242] User reports making good progress on their AWS and machine learning journey afte
+    - [0.235] User is interested in learning machine learning beyond their current Python cour
+    - [0.233] User is trying to learn more about natural language processing (NLP) and is seek
+    - [0.223] User is asking for a good study plan and specific resources to prepare for the A
+  Correcta:   15
+  Generada:   You’ve watched **15 Crash Course videos** in the past few weeks.
+  Memorias:   19 | Contradicciones: 1
+  Score: 1 | Accuracy: 84.78% | Carga: 31.4s | Respuesta: 3.2s | Total: 63.2s
+
+Pregunta 47/78: Where am I planning to stay for my birthday trip to Hawaii?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3545.10it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User previously planned to stay on Oahu for their Hawaii birthday trip'
+  Conservada (nueva): 'User is planning a birthday trip to Hawaii and is specifically looking'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.992
+  Eliminada (vieja): 'User is planning a birthday trip to Hawaii and is specifically looking'
+  Conservada (nueva): 'User is planning a birthday trip to Hawaii and is asking whether Kauai'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.743] User is planning a birthday trip to Hawaii in October and is considering staying
+    - [0.667] User is planning a birthday trip to Hawaii in October and wants to spend the res
+    - [0.624] User is considering staying on Oahu for their Hawaii birthday trip and wants res
+    - [0.615] User is planning to stay on Oahu for their birthday trip and is considering visi
+    - [0.608] User is planning a birthday trip to Hawaii in October and is looking for good re
+    - [0.606] User is planning a birthday trip to Hawaii in October and is asking for recommen
+    - [0.504] User is planning a birthday trip to Hawaii and is asking whether Kauai has any w
+    - [0.479] User decided to book a snorkeling tour to the Na Pali Coast for their Hawaii tri
+    - [0.467] User is planning a snorkeling trip on Hawaii with the specific goal of seeing se
+    - [0.459] User is considering doing the Manoa Falls Trail on Oahu as a morning hike and wa
+  Correcta:   Oahu
+  Generada:   You’re planning to stay on **Oahu** for your birthday trip to Hawaii.
+  Memorias:   14 | Contradicciones: 2
+  Score: 1 | Accuracy: 85.11% | Carga: 38.8s | Respuesta: 4.3s | Total: 72.9s
+
+Pregunta 48/78: How many different species of birds have I seen in my local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3017.58it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.919
+  Eliminada (vieja): 'User is planning a trip to a nearby lake next weekend to spot waterbir'
+  Conservada (nueva): 'User decided to bring both binoculars and a spotting scope on their tr'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.987
+  Eliminada (vieja): 'User has been keeping track of the bird species they’ve seen in their '
+  Conservada (nueva): 'User saw a Northern Flicker in their local park last weekend, bringing'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.715] User has been tracking bird species in their local park and has spotted 27 diffe
+    - [0.589] User saw a Northern Flicker in their local park last weekend, bringing their tot
+    - [0.481] User wants recommendations for nearby nature reserves or parks known for bird di
+    - [0.471] User is planning a picnic in their local park this weekend and wants bird-friend
+    - [0.460] User is asking whether suet will attract woodpecker species other than the North
+    - [0.445] User is trying to improve their bird identification skills, specifically finding
+    - [0.395] User plans to bring binoculars to get a closer look at birds and asks whether th
+    - [0.388] User plans to bring binoculars to try to spot warblers or sparrows.
+    - [0.379] User plans to bring sunflower seeds and suet to attract woodpeckers to their loc
+    - [0.370] User is considering bringing fresh fruits (apples and oranges) to their local pa
+  Correcta:   32
+  Generada:   You’ve seen **32** different bird species in your local park.
+  Memorias:   21 | Contradicciones: 2
+  Score: 1 | Accuracy: 85.42% | Carga: 36.6s | Respuesta: 8.6s | Total: 90.6s
+
+Pregunta 49/78: What was my previous frequent flyer status on United Airlines before I got the c
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3000.11it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.956
+  Eliminada (vieja): 'User says they just hit 20,000 United Airlines miles and believe this '
+  Conservada (nueva): 'User reports they just reached Premier Gold status on United Airlines '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.666] User asked what their current frequent flyer status is on United Airlines, indic
+    - [0.551] User reports they just reached Premier Gold status on United Airlines (MileagePl
+    - [0.485] User asked how long it usually takes to earn enough United MileagePlus miles to 
+    - [0.485] User wants to know more about transferring miles from other loyalty programs to 
+    - [0.432] User is considering transferring some Chase Ultimate Rewards points to their Uni
+    - [0.427] User is considering using their United miles to book a flight to Los Angeles.
+    - [0.411] User is planning to fly from Washington, DC with flexible travel dates, looking 
+    - [0.402] User is planning a trip to San Francisco in a few weeks and is considering flyin
+    - [0.395] User is considering using their United miles to book a flight to Los Angeles but
+    - [0.361] User is interested in deal-finding for United Airlines round-trip flights to San
+  Correcta:   Premier Silver
+  Generada:   I don’t have enough information in your memories to determine what your previous United MileagePlus 
+  Memorias:   20 | Contradicciones: 1
+  Score: 0 | Accuracy: 83.67% | Carga: 34.1s | Respuesta: 3.5s | Total: 65.1s
+
+Pregunta 50/78: What was my previous personal best time for the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3325.87it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User recently completed a charity 5K run with a personal best time of '
+  Conservada (nueva): 'User finished a previous charity 5K run with a personal best time of 2'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.667] User finished a previous charity 5K run with a personal best time of 26 minutes 
+    - [0.641] User recently returned from a charity 5K run last weekend and improved their per
+    - [0.464] User’s average running pace is around 9:30 minutes per mile, and they want to fi
+    - [0.374] User is training for a sprint triathlon on June 24, 2026.
+    - [0.371] User has about 12 weeks until the 10K event and is comfortable incorporating spe
+    - [0.362] User is considering signing up for a 10K run in a few months and wants help crea
+    - [0.332] User is ready to take on a more challenging 10K training plan and wants it adjus
+    - [0.311] User prefers the Saturday cycling route to include scenic views and bike-friendl
+    - [0.295] User is available to run any day of the week, has no injuries, and is comfortabl
+    - [0.288] User currently runs 3 times per week: one longer run on weekends and two shorter
+  Correcta:   27 minutes and 45 seconds
+  Generada:   Your previous personal best time for the charity 5K run was **26 minutes, 30 seconds**.
+  Memorias:   25 | Contradicciones: 1
+  Score: 0 | Accuracy: 82.00% | Carga: 36.6s | Respuesta: 3.4s | Total: 72.8s
+
+Pregunta 51/78: How many autographed baseballs have I added to my collection in the first three 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3030.50it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.707] User has 15 autographed baseballs total since they started collecting about thre
+    - [0.686] User has been collecting autographed baseballs and recently acquired a signed Mi
+    - [0.636] User returned from a weekend trip and used the time to organize their collection
+    - [0.622] User is collecting autographed baseballs and recently (last week relative to May
+    - [0.579] User is considering selling some of their autographed baseballs to make room for
+    - [0.415] User is interested in collecting and selling vintage items (including cameras, v
+    - [0.350] User is looking for information on upcoming sports memorabilia auctions in their
+    - [0.288] User is considering attending a stamp show next quarter and asked whether there 
+    - [0.246] User is interested in error coins and previously acquired a 1943 Lincoln Wheat C
+    - [0.241] User is considering listing their Leica camera on Fred Miranda and Rangefinder F
+  Correcta:   15
+  Generada:   You’ve added **15 autographed baseballs** to your collection in the first three months of collecting
+  Memorias:   16 | Contradicciones: 0
+  Score: 1 | Accuracy: 82.35% | Carga: 29.1s | Respuesta: 3.5s | Total: 57.4s
+
+Pregunta 52/78: How often do I play tennis with my friends at the local park previously? How oft
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2937.74it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.771] User plays tennis with friends at a local park on a recurring schedule (every ot
+    - [0.702] User is planning to play tennis with friends at the local park this Sunday (2026
+    - [0.697] User is planning to play tennis with friends at the local park this Sunday, cont
+    - [0.417] User is asking for good ways to keep their tennis racket in good condition, cont
+    - [0.405] User is considering getting a new tennis bag to carry their gear to the local pa
+    - [0.400] User is considering getting a new tennis bag to carry gear to the local park and
+    - [0.400] User is looking for ways to keep their tennis racket in good condition
+    - [0.386] User is interested in improving their tennis game by focusing on baseline foreha
+    - [0.344] User is a baseline-focused tennis player who concentrates on forehand and backha
+    - [0.326] User is a big fan of Roger Federer and describes him as a legend on the court, b
+  Correcta:   Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+  Generada:   Previously, you played on a recurring **every-other-week** schedule. Now, you’re continuing that sam
+  Memorias:   27 | Contradicciones: 0
+  Score: 0 | Accuracy: 80.77% | Carga: 44.5s | Respuesta: 4.2s | Total: 83.0s
+
+Pregunta 53/78: How much time do I dedicate to coding exercises each day?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3474.14it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.987
+  Eliminada (vieja): 'User dedicates about an hour each day to coding exercises and finds it'
+  Conservada (nueva): 'User dedicates about two hours each day to coding exercises and is exc'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.719] User dedicates about two hours each day to coding exercises and is excited to se
+    - [0.572] User wants tips for staying motivated to practice coding daily, especially when 
+    - [0.535] User is asking for recommendations on how to approach coding challenges and exer
+    - [0.526] User is reflecting on their coding learning journey over the past few months and
+    - [0.504] User uses the Pomodoro Technique to stay focused during coding exercises and fin
+    - [0.495] User is considering using Habitica and WakaTime to track progress and habits rel
+    - [0.482] User is interested in tracking progress in coding exercises by keeping a log of 
+    - [0.454] User is looking for platforms or websites that provide a wide range of coding ch
+    - [0.450] User plans to track coding progress by keeping a log of challenges completed, co
+    - [0.394] User wants to start contributing to open-source projects and collaborating with 
+  Correcta:   about two hours
+  Generada:   You dedicate about **two hours each day** to coding exercises.
+  Memorias:   20 | Contradicciones: 1
+  Score: 1 | Accuracy: 81.13% | Carga: 37.0s | Respuesta: 3.7s | Total: 70.8s
+
+Pregunta 54/78: What day of the week did I meet with my previous language exchange tutor Juan?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2875.39it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.978
+  Eliminada (vieja): 'User is planning to visit the Gold Museum in Bogotá and asked for info'
+  Conservada (nueva): 'User is planning to visit Plaza de Bolívar after the Gold Museum in Bo'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.787] User is trying to recall which weekday they meet their language exchange tutor J
+    - [0.669] User has a weekly language exchange class with a Colombian tutor named Juan, and
+    - [0.662] User remembers that their language exchange with Juan always happens in the even
+    - [0.650] User is meeting their language exchange tutor Maria on Thursday.
+    - [0.592] User has a weekly language exchange class with Colombian tutor Juan and this wee
+    - [0.577] User has a language exchange session with a tutor named Maria this week and is p
+    - [0.536] User has a language exchange session with their tutor Maria this week and wants 
+    - [0.268] User is planning a trip to Colombia and wants travel tips and Spanish phrases fo
+    - [0.266] User is planning a trip to Colombia and wants travel tips plus Spanish phrases f
+    - [0.247] User wants common Spanish phrases for shopping in Colombia to help them prepare 
+  Correcta:   Wednesday
+  Generada:   You met with Juan on **Wednesday** (every Wednesday evening).
+  Memorias:   18 | Contradicciones: 1
+  Score: 1 | Accuracy: 81.48% | Carga: 41.2s | Respuesta: 3.5s | Total: 79.2s
+
+Pregunta 55/78: How many pre-1920 American coins do I have in my collection?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3083.78it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.679] User is organizing their pre-1920 American coin collection by denomination and m
+    - [0.599] User is interested in organizing and displaying their pre-1920 American coins, i
+    - [0.592] User added a 1915-S Barber quarter to their pre-1920 American coin collection.
+    - [0.516] User has a coin collection that includes a 1913 Liberty Head nickel they want ap
+    - [0.432] User is collecting error coins and recently bought a 1972 doubled die cent, and 
+    - [0.415] User is excited to start organizing and displaying their coins and is asking for
+    - [0.390] User wants to get their 1913 Liberty Head nickel appraised and is unsure where t
+    - [0.389] User is interested in learning more about error coins, specifically misprinted d
+    - [0.376] User is planning to authenticate their error coins, with a focus on a recently p
+    - [0.341] User has heard that PCGS is more popular among error coin collectors, but they a
+  Correcta:   38
+  Generada:   You have **37** pre-1920 American coins in your collection.
+  Memorias:   21 | Contradicciones: 0
+  Score: 0 | Accuracy: 80.00% | Carga: 33.2s | Respuesta: 3.2s | Total: 68.5s
+
+Pregunta 56/78: How many free night's stays can I redeem at any Hilton property with my accumula
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3144.44it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.970 > umbral=0.85
+  Memoria en conflicto: 'User has accumulated enough Hilton points for two free nights at any Hilton prop'
+  Hecho nuevo:          'user: I've accumulated enough points for a single free night's stay at any Hilto'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=6cc42d14-cdbc-4167-9d5c-fc8295ff8d30
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.933
+  Eliminada (vieja): 'User has accumulated enough Hilton points for a single free night stay'
+  Conservada (nueva): 'User has accumulated enough Hilton points for two free nights at any H'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.978
+  Eliminada (vieja): 'User has accumulated enough Hilton points for a single free night stay'
+  Conservada (nueva): 'User has accumulated enough Hilton points for two free nights at any H'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.852] User is considering redeeming their Hilton points for a stay and asked how many 
+    - [0.750] User has accumulated enough Hilton points for two free nights at any Hilton prop
+    - [0.406] User is considering other Hilton properties in Las Vegas, including the Hilton G
+    - [0.382] User is considering other Hilton properties in Las Vegas and specifically wants 
+    - [0.331] User is planning a weekend getaway to Las Vegas and is considering staying at Hi
+    - [0.301] User is considering staying at the Waldorf Astoria Las Vegas and wants to learn 
+    - [0.293] User is considering staying at the Waldorf Astoria Las Vegas and asked for more 
+    - [0.276] User is specifically interested in the Hilton Paris Eiffel Tower, including whet
+    - [0.266] User’s Paris hotel budget is around $200–$300 per night; they prefer relatively 
+    - [0.266] User asked to compare rates and amenities between the Hilton Paris Eiffel Tower 
+  Correcta:   Two
+  Generada:   You can redeem **two free-night stays** at any Hilton property with your accumulated points.
+  Memorias:   20 | Contradicciones: 3
+  Score: 1 | Accuracy: 80.36% | Carga: 39.0s | Respuesta: 4.0s | Total: 83.4s
+
+Pregunta 57/78: How much weight have I lost since I started going to the gym consistently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2980.09it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.651] User reports losing 10 pounds since starting to go consistently to the gym about
+    - [0.492] User reports losing 5 pounds in the past month and describes it as slow but stea
+    - [0.466] User reports losing about 5 pounds in the past month, describing it as slow prog
+    - [0.415] User tracks progress using a fitness app and reports burning an average of 2500 
+    - [0.396] User has been doing yoga and Pilates but wants to be more consistent with them a
+    - [0.375] User is asking for tips on how to stay motivated and focused on long-term goals 
+    - [0.353] User describes themselves as a complete beginner to running, but they’ve been do
+    - [0.349] User is looking for tips on how to make exercise a sustainable part of their dai
+    - [0.282] User asks for tips on how to keep their energy levels up during workouts, specif
+    - [0.279] User is planning their workout routine for the next month and wants new exercise
+  Correcta:   10 pounds
+  Generada:   You’ve lost **about 10 pounds** since you started going to the gym consistently about **3 months ago
+  Memorias:   28 | Contradicciones: 0
+  Score: 1 | Accuracy: 80.70% | Carga: 47.5s | Respuesta: 3.6s | Total: 86.7s
+
+Pregunta 58/78: How many followers do I have on Instagram now?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 10
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3086.35it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.581] User wants to check their current Instagram follower count and believes they are
+    - [0.530] User has 1,250 Instagram followers and wants to use Instagram Insights to see wh
+    - [0.381] User is looking to optimize their Instagram content strategy to increase engagem
+    - [0.333] User is creating a new Instagram post about a recent industry event they attende
+    - [0.326] User asked for tips on creating engaging captions for their Instagram posts.
+    - [0.296] User is considering trying out Instagram Live more often and wants tips on how t
+    - [0.290] User wants to modify hashtags for an Instagram post so they are more specific to
+    - [0.271] User is seeking suggestions for relevant influencers or content creators in thei
+    - [0.269] User is planning a Q&A session for their next Instagram Live and wants tips to m
+    - [0.238] User plans to reach out to Ashley Gaida to propose a guest blog post collaborati
+  Correcta:   1300
+  Generada:   You currently have **1,250 Instagram followers**.
+  Memorias:   13 | Contradicciones: 0
+  Score: 0 | Accuracy: 79.31% | Carga: 27.4s | Respuesta: 3.2s | Total: 56.2s
+
+Pregunta 59/78: What is my current record in the recreational volleyball league?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3614.85it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.994
+  Eliminada (vieja): 'User does not yet have a bike but is planning to get one soon for tria'
+  Conservada (nueva): 'User is considering getting a bike fitting to ensure their bike is pro'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.986
+  Eliminada (vieja): 'User plans to start an office recreational basketball league by sendin'
+  Conservada (nueva): 'User plans to offer group clinics and online resources as an initial w'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User is concerned about fitting all triathlon workouts into their exis'
+  Conservada (nueva): 'User plans to schedule their office basketball games around their tria'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.973
+  Eliminada (vieja): 'User is doing well in a volleyball league and reports their team is cu'
+  Conservada (nueva): 'User feels pretty confident about their athletic abilities lately, cit'
+  [Consolidacion] 4 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.484] User feels pretty confident about their athletic abilities lately, citing their 
+    - [0.391] User is deciding whether to mix teams or keep teams separate for the mini tourna
+    - [0.385] User is considering hosting a mini tournament to wrap up their office basketball
+    - [0.379] User is considering organizing a recreational basketball league at their office 
+    - [0.373] User has been doing a mix of cardio and strength training at the gym and also pl
+    - [0.370] User is considering whether to add prizes or recognition (e.g., for the winning 
+    - [0.362] User is thinking about starting a recreational basketball league at their office
+    - [0.304] User is considering triathlon training priorities and is asking whether they sho
+    - [0.296] User plans to scale back their involvement in organizing the office recreational
+    - [0.295] User plans to schedule their office basketball games around their triathlon trai
+  Correcta:   5-2
+  Generada:   Your current record in the recreational volleyball league is **5–2**.
+  Memorias:   20 | Contradicciones: 4
+  Score: 1 | Accuracy: 79.66% | Carga: 35.6s | Respuesta: 3.4s | Total: 73.0s
+
+Pregunta 60/78: How many projects have I completed since starting painting classes?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3116.88it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User is interested in using a limited palette for their abstract paint'
+  Conservada (nueva): 'User is interested in using a bold and bright palette for an abstract '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.978
+  Eliminada (vieja): 'User is considering setting up a small art studio in their spare bedro'
+  Conservada (nueva): 'User is excited to start setting up a small art studio and plans to be'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.727] User has completed 4 projects since starting painting classes and feels pretty c
+    - [0.683] User just finished their 5th project since starting painting classes and feels p
+    - [0.617] User feels glad they received helpful tips on varnishing and signing their paint
+    - [0.388] User is excited to start an abstract painting using a bold and bright palette, p
+    - [0.363] User plans to create a dedicated “wet zone” in the studio for painting-related m
+    - [0.362] User is looking for inspiration for their next painting project and feels stuck 
+    - [0.360] User is working on a painting and wants advice on how to sign and date it in a w
+    - [0.330] User is excited to start setting up a small art studio and plans to begin by pur
+    - [0.330] User is seeking tips on how to properly varnish and protect a painting.
+    - [0.319] User is thinking about setting up a small art studio in their spare bedroom and 
+  Correcta:   5
+  Generada:   You’ve completed **5 projects** since starting painting classes.
+  Memorias:   22 | Contradicciones: 2
+  Score: 1 | Accuracy: 80.00% | Carga: 35.9s | Respuesta: 3.2s | Total: 70.2s
+
+Pregunta 61/78: What type of vehicle model am I currently working on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3158.95it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Eliminada (vieja): 'User is working on a Ford Mustang Shelby GT350R model and wants tips o'
+  Conservada (nueva): 'User is building a Ford Mustang Shelby GT350R model and wants tips on '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User is working on a Ford Mustang Shelby GT350R model and is looking f'
+  Conservada (nueva): 'User is adding weathering effects to the underside of their Ford F-150'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Eliminada (vieja): 'User previously used Vallejo paints on their Ford Mustang Shelby GT350'
+  Conservada (nueva): 'User is currently using Vallejo paints on their Ford Mustang Shelby GT'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.474] User is planning to add realistic engine and transmission details to their Ford 
+    - [0.451] User is building a Ford Mustang Shelby GT350R model and wants tips on creating r
+    - [0.412] User recently switched from a completed model to a Ford F-150 pickup truck model
+    - [0.412] User has just wrapped up a model and switched to building a Ford F-150 pickup tr
+    - [0.386] User is adding extra details to their Ford Mustang Shelby GT350R model, includin
+    - [0.376] User is asking for recommendations on how to create a realistic dashboard for th
+    - [0.374] User is building a Ford Mustang Shelby GT350R model and plans to create realisti
+    - [0.364] User is adding extra interior details to their Ford Mustang Shelby GT350R model,
+    - [0.359] User is adding weathering effects to the underside of their Ford F-150 pickup tr
+    - [0.339] User wants weathering effects for their Ford F-150 pickup truck model, including
+  Correcta:   Ford F-150 pickup truck
+  Generada:   You’re currently working on a **Ford F-150 pickup truck model**.
+  Memorias:   22 | Contradicciones: 3
+  Score: 1 | Accuracy: 80.33% | Carga: 40.9s | Respuesta: 3.4s | Total: 88.9s
+
+Pregunta 62/78: What was my previous goal for my Apex Legends level before I updated my goal?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3320.19it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.977
+  Eliminada (vieja): 'User has been playing Apex Legends a lot and is determined to reach le'
+  Conservada (nueva): 'User is determined to reach level 100 before the end of the year while'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User is determined to reach level 100 before the end of the year while'
+  Conservada (nueva): 'User’s current goal in Apex Legends is to reach level 150 eventually, '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User plans to play Apex Legends with friends this weekend strictly for'
+  Conservada (nueva): 'User plans to focus on completing Apex Legends daily and weekly challe'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User is planning to play Apex Legends with friends this weekend and is'
+  Conservada (nueva): 'User plans to focus on completing Apex Legends daily and weekly challe'
+  [Consolidacion] 4 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.636] User’s current goal in Apex Legends is to reach level 150 eventually, and they a
+    - [0.581] User plans to communicate more effectively with their Apex Legends team and focu
+    - [0.570] User plans to focus on completing Apex Legends daily and weekly challenges to ea
+    - [0.565] User intends to complete Apex Legends daily and weekly challenges to earn more e
+    - [0.524] User is planning to play Apex Legends with friends this weekend and is deciding 
+    - [0.505] User asked for tips to improve their aim in Apex Legends.
+    - [0.484] User plans to improve overall gameplay and team communication in Apex Legends, i
+    - [0.423] User wants tips to improve overall gameplay and team communication in Apex Legen
+    - [0.420] User is aiming to reach level 150 eventually, but for a weekend gaming session w
+    - [0.355] User is considering buying a new gaming mouse to pair with their new keyboard, s
+  Correcta:   level 100
+  Generada:   Your previous goal was to **reach level 150 eventually** (before you updated it).
+  Memorias:   17 | Contradicciones: 4
+  Score: 0 | Accuracy: 79.03% | Carga: 34.5s | Respuesta: 4.1s | Total: 72.3s
+
+Pregunta 63/78: How many largemouth bass did I catch with Alex on the earlier fishing trip to La
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 10
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3319.23it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User caught 7 largemouth bass on a Lake Michigan fishing trip with Ale'
+  Conservada (nueva): 'User plans to use spinnerbaits and plastic worms again for largemouth '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.720] User references a prior Lake Michigan fishing trip with Alex where they caught 9
+    - [0.684] User plans to use spinnerbaits and plastic worms again for largemouth bass fishi
+    - [0.666] User is interested in using spinnerbaits and plastic worms for largemouth bass f
+    - [0.468] User is planning another fishing trip to Lake Michigan and asked for the current
+    - [0.438] User is planning to fish from Illinois, likely around the Waukegan harbor area.
+    - [0.429] User is considering trying out new lures for bass fishing and is specifically lo
+    - [0.375] User has been getting back into fishing and hunting and wants to organize trips 
+    - [0.315] User is interested in apps or tools that help organize fishing and hunting trips
+    - [0.296] User is planning to help Alex set up more tree stands on Alex’s property soon an
+    - [0.295] User is planning to try out deer calls during their next hunting trip and has be
+  Correcta:   7
+  Generada:   You caught **9 largemouth bass** with Alex on the earlier Lake Michigan trip before the **7/22** tri
+  Memorias:   15 | Contradicciones: 1
+  Score: 0 | Accuracy: 77.78% | Carga: 28.3s | Respuesta: 12.8s | Total: 68.3s
+
+Pregunta 64/78: What time do I wake up on Saturday mornings?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3727.70it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.951
+  Eliminada (vieja): 'User likes to wake up at 7:30 am on Saturdays and wants to fit in a cu'
+  Conservada (nueva): 'User is considering a Sunday morning routine that includes a 30-minute'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.908
+  Eliminada (vieja): 'User is deciding whether to wear earbuds or listen to music while jogg'
+  Conservada (nueva): 'User plans to leave their earbuds behind and focus on their surroundin'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.980
+  Eliminada (vieja): 'User wakes up around 8:30 am on Saturdays and uses that time to fit in'
+  Conservada (nueva): 'User asked what time they should aim to start their Saturday morning j'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.637] User asked what time they should aim to start their Saturday morning jog, given 
+    - [0.529] User is considering a Sunday morning routine that includes a 30-minute yoga or s
+    - [0.497] User wants to build a consistent weekend morning routine and is looking for exer
+    - [0.445] User is planning to go for a jog on Saturday morning and asked what the weather 
+    - [0.311] User likes the idea of doing yoga or stretching as part of their weekend morning
+    - [0.308] User is deciding whether to prioritize yoga or stretching over other Sunday-morn
+    - [0.236] User wants to start small and scale up their weekend yoga/stretching practice as
+    - [0.209] User is looking for jogging route suggestions around their neighborhood and want
+    - [0.202] User is interested in reading more before bed each night and plans to read for 3
+    - [0.176] User plans to read 'The Lean Startup' by Eric Ries for 30 minutes each night bef
+  Correcta:   7:30 am
+  Generada:   You wake up at **7:30 am on Saturday mornings**.
+  Memorias:   22 | Contradicciones: 3
+  Score: 1 | Accuracy: 78.12% | Carga: 39.8s | Respuesta: 4.0s | Total: 80.2s
+
+Pregunta 65/78: How many women are on the team led by my former manager Rachel?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2907.49it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Eliminada (vieja): 'User recently caught up with their former manager, Rachel, who is now '
+  Conservada (nueva): 'User references their own experience: their former manager Rachel’s te'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.701] User references their own experience: their former manager Rachel’s team is desc
+    - [0.668] User is revisiting their former manager Rachel’s current team of 10 people and i
+    - [0.619] User is asking for details on the specific roles of the 5 women on Rachel’s team
+    - [0.582] User is evaluating whether having 50% women on Rachel’s leadership team is good 
+    - [0.312] User is looking for examples or resources about companies that are doing a good 
+    - [0.306] User is interested in mentorship programs offered by companies to support women’
+    - [0.289] User is asking for details about Accenture’s “return to work” program for caregi
+    - [0.282] User is comparing workplace diversity and inclusion initiatives across multiple 
+    - [0.282] User is interested in learning about the importance of diversity in the workplac
+    - [0.265] User is asking about Goldman Sachs’s unconscious bias training, specifically wha
+  Correcta:   6
+  Generada:   There are **5 women** on Rachel’s team (out of 10 people).
+  Memorias:   14 | Contradicciones: 1
+  Score: 0 | Accuracy: 76.92% | Carga: 31.8s | Respuesta: 4.0s | Total: 62.6s
+
+Pregunta 66/78: Do I have a spare screwdriver for opening up my laptop?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2937.41it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User plans to open their laptop soon to clean the fans and asks whethe'
+  Conservada (nueva): 'User has a spare screwdriver they picked up when organizing their comp'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User planned to open their laptop to upgrade the RAM but realized they'
+  Conservada (nueva): 'User has a spare screwdriver they picked up when organizing their comp'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User planned to upgrade their laptop RAM by opening the laptop but ini'
+  Conservada (nueva): 'User has a spare screwdriver they picked up when organizing their comp'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.750] User said they had a spare screwdriver they picked up when organizing their comp
+    - [0.724] User has a spare screwdriver they picked up when organizing their computer desk 
+    - [0.313] User planned to check an electronics store near their place for tools and access
+    - [0.302] User plans to check an electronics store near their place because it usually has
+    - [0.289] User is looking for good options for backup software to set up automatic backups
+    - [0.276] User is setting up automatic backups for their working files on their laptop and
+    - [0.271] User wants recommendations for cable organizers to organize their computer bag.
+    - [0.247] User asked for a walkthrough on how to select which files and folders to back up
+    - [0.222] User asked for troubleshooting steps for a wireless mouse freezing issue and won
+    - [0.215] User decided to go with the Anker cable organizer for organizing their computer 
+  Correcta:   Yes
+  Generada:   Yes—you have a spare screwdriver you picked up while organizing your computer desk, and you’re all s
+  Memorias:   23 | Contradicciones: 3
+  Score: 0 | Accuracy: 75.76% | Carga: 39.4s | Respuesta: 3.7s | Total: 77.8s
+
+Pregunta 67/78: How many times have I met up with Alex from Germany?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 10
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3011.97it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.705] User is planning to meet up with their friend Alex from Germany while in Berlin;
+    - [0.683] User has a friend named Alex from Germany whom they met at a music festival; use
+    - [0.637] User met a guy named Alex from Germany at a music festival a few weeks before Ma
+    - [0.587] User is planning to meet up with their friend Alex from Germany while in Berlin,
+    - [0.409] User plans to ask Alex whether he has any favorite indie rock bands or musicians
+    - [0.336] User is curious about the music festival where they met Alex and wants recommend
+    - [0.313] User is planning a trip to Germany soon and asked for recommendations for indie 
+    - [0.293] User is planning to check out live music venues in Kreuzberg while they are in B
+    - [0.267] User is looking for local music blogs or zines to follow so they can stay up-to-
+    - [0.223] User is more into the lo-fi and garage rock scene and is looking for good record
+  Correcta:   We've met up twice.
+  Generada:   You’ve met up with Alex from Germany **twice** already.
+  Memorias:   14 | Contradicciones: 0
+  Score: 1 | Accuracy: 76.12% | Carga: 34.5s | Respuesta: 3.6s | Total: 65.5s
+
+Pregunta 68/78: Did I mostly recently increase or decrease the limit on the number of cups of co
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 10
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2865.34it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.967 > umbral=0.85
+  Memoria en conflicto: 'User has been using a French press but is considering switching back to their dr'
+  Hecho nuevo:          'user: I'm considering the drip coffee maker option, but I've been wanting to try'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=4c458172-43a2-46f4-b202-bc792c7c610f
+  Memorias recuperadas para responder:
+    - [0.653] User is considering changing their morning coffee limit to two cups and is askin
+    - [0.567] User switched to a darker roast and cut back to just one cup of coffee in the mo
+    - [0.551] User is excited to try the French press method with their darker roast and has i
+    - [0.481] User is trying to optimize their morning routine to be more efficient, specifica
+    - [0.457] User is experimenting with coffee brewing methods as part of optimizing their mo
+    - [0.350] User is experimenting with sweeteners for morning coffee and is considering stev
+    - [0.349] User is considering using a drip coffee maker but also wants to try a French pre
+    - [0.348] User is deciding on a new coffee maker and currently uses a drip coffee maker, b
+    - [0.317] User has been trying to make their morning routine more intentional by replacing
+    - [0.294] User plans to try the French press method with their darker roast to see how it 
+  Correcta:   You increased the limit (from one cup to two cups)
+  Generada:   You mostly recently **increased** your morning coffee limit to **two cups**.
+  Memorias:   17 | Contradicciones: 1
+  Score: 1 | Accuracy: 76.47% | Carga: 29.5s | Respuesta: 3.6s | Total: 64.2s
+
+Pregunta 69/78: How many trips have I taken my Canon EOS 80D camera on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3022.53it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.903
+  Eliminada (vieja): 'User is considering investing in Lee Filters’ square filter system and'
+  Conservada (nueva): 'User is considering a graduated ND filter and is deciding between circ'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.738] User has taken their Canon EOS 80D on multiple adventures, including three trips
+    - [0.718] User has taken their Canon EOS 80D on five trips and describes it as a “beast.”
+    - [0.690] User has used a Canon EOS 80D on five trips and describes it as a “beast.”
+    - [0.581] User is considering buying a Really Right Stuff tripod and asked whether it is c
+    - [0.429] User is organizing their camera gear and has been using a Lowepro backpack-style
+    - [0.409] User is considering the Lowepro ProTactic 450 AW tripod/bag solution and wants t
+    - [0.376] User recently got a Lowepro backpack-style camera bag and says it has been great
+    - [0.361] User plans to use Adobe Creative Cloud for professional photography work and kee
+    - [0.341] User has been experimenting with Lightroom and Photoshop and really likes the re
+    - [0.334] User wants a camera bag recommendation that can hold all their camera gear comfo
+  Correcta:   five
+  Generada:   You’ve taken your Canon EOS 80D on **five trips**.
+  Memorias:   26 | Contradicciones: 1
+  Score: 1 | Accuracy: 76.81% | Carga: 42.1s | Respuesta: 3.6s | Total: 83.9s
+
+Pregunta 70/78: What new kitchen gadget did I invest in before getting the Air Fryer?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3079.53it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.567] User received an air fryer yesterday (around May 28, 2026) and wants tips for ma
+    - [0.551] User received an air fryer yesterday and wants tips for making crispy sweet pota
+    - [0.515] User plans to use the air fryer they received yesterday (around May 28, 2026) to
+    - [0.304] User asked how to store sweet potato fries and whether to refrigerate or freeze 
+    - [0.301] User is considering using their new Instant Pot to make some of the soups and st
+    - [0.299] User asked how to store sweet potato fries and whether they should be refrigerat
+    - [0.257] User is planning to try the Korean Chicken Stew recipe and is concerned about sp
+    - [0.253] User is interested in trying a Korean Chicken Stew recipe and is concerned about
+    - [0.250] User asked for recommendations for Korean chili flakes and gochujang brands to u
+    - [0.247] User plans to start preparing the ingredients for the Korean Chicken Stew after 
+  Correcta:   Instant Pot
+  Generada:   You invested in an **Instant Pot** before getting the air fryer.
+  Memorias:   26 | Contradicciones: 0
+  Score: 1 | Accuracy: 77.14% | Carga: 42.4s | Respuesta: 3.6s | Total: 87.9s
+
+Pregunta 71/78: How many Italian restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3309.90it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.997
+  Eliminada (vieja): 'User asked whether the assistant has tried good Korean restaurants in '
+  Conservada (nueva): 'User asked whether the assistant has tried good Korean restaurants in '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.993
+  Eliminada (vieja): 'User is planning a dinner party and wants suggestions for popular Kore'
+  Conservada (nueva): 'User is planning a dinner party with a variety of dishes from differen'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.406] User asked whether the assistant has tried good Korean restaurants in User’s cit
+    - [0.300] User has heard about a new Indian restaurant that just opened in their neighborh
+    - [0.293] User tried three Korean restaurants recently and reports each had a distinct fla
+    - [0.288] User has tried multiple Korean restaurants recently and describes each as having
+    - [0.248] User has been experimenting with different types of noodles and is interested in
+    - [0.243] User has been experimenting with different types of noodles lately and wants rec
+    - [0.225] User is looking for a good brand of basmati rice for their dishes and has been t
+    - [0.222] User is planning a dinner party with a variety of dishes from different cuisines
+    - [0.178] User is revising their dinner party menu and is looking for recipe ideas for Ind
+    - [0.177] User is looking for Indian-inspired recipe ideas to complement Korean BBQ beef a
+  Correcta:   The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+  Generada:   I don’t have any memory of you trying Italian restaurants in your city, so the number is **0**.
+  Memorias:   22 | Contradicciones: 2
+  Score: 0 | Accuracy: 76.06% | Carga: 39.2s | Respuesta: 3.9s | Total: 81.4s
+
+Pregunta 72/78: How many engineers do I lead when I just started my new role as Software Enginee
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3182.34it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User is planning to invite their manager Rachel to the outing, making '
+  Conservada (nueva): 'User plans to invite their manager Rachel to the outing, making the gr'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.992
+  Eliminada (vieja): 'User leads a team of 4 engineers in their new role as Senior Software '
+  Conservada (nueva): 'User has been enjoying their role as Senior Software Engineer and says'
+  [Consolidacion] 2 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.588] User clarifies that in their new role as Senior Software Engineer, they lead a t
+    - [0.544] User has been enjoying their role as Senior Software Engineer and says it has be
+    - [0.408] User plans to invite their manager Rachel to the outing, making the group consis
+    - [0.355] User is thinking about improving how they manage their team’s workload by delega
+    - [0.318] User plans to improve team management by setting realistic deadlines and expecta
+    - [0.310] User is planning to delegate tasks more effectively and set realistic deadlines 
+    - [0.283] User is planning a team outing for their engineers and is seeking fun activity r
+    - [0.206] User is asking what the typical format for a team outing should be, specifically
+    - [0.194] User is considering the format and agenda for the team outing, including possibl
+    - [0.168] User is planning a team hike at Mount Tamalpais State Park and will check trail 
+  Correcta:   The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+  Generada:   You lead **5 engineers** (your team of 4 engineers plus you, with your manager Rachel also attending
+  Memorias:   26 | Contradicciones: 2
+  Score: 0 | Accuracy: 75.00% | Carga: 39.6s | Respuesta: 3.5s | Total: 82.3s
+
+Pregunta 73/78: How often do I see Dr. Johnson?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3180.90it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.490] User sees Dr. Smith every week and says Dr. Smith has been helping them work on 
+    - [0.432] User has an upcoming therapy session with Dr. Smith scheduled every two weeks, a
+    - [0.369] User had a session with Dr. Smith during the week of May 29, 2026, and they disc
+    - [0.314] User has been feeling overwhelmed with work and social commitments and had a ses
+    - [0.294] User plans to meditate and journal after the conversation, describing it as a he
+    - [0.291] User works 9-to-5, Monday through Friday, and has regular social commitments inc
+    - [0.286] User is working a 9-to-5 job, Monday through Friday, and has regular social comm
+    - [0.215] User has been feeling overwhelmed by commitments lately and Dr. Smith suggested 
+    - [0.176] User has been having trouble falling asleep some nights despite trying journalin
+    - [0.169] User said the simple checklist will help them stay on track by prioritizing task
+  Correcta:   The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+  Generada:   You see **Dr. Smith** (not Dr. Johnson) **every week**.
+  Memorias:   27 | Contradicciones: 0
+  Score: 0 | Accuracy: 73.97% | Carga: 37.0s | Respuesta: 3.5s | Total: 74.9s
+
+Pregunta 74/78: How long have I been living in my current apartment in Shinjuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2984.79it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.917
+  Eliminada (vieja): 'User has not yet explored much of Harajuku’s historical side and still'
+  Conservada (nueva): 'User plans to visit Kawai Shrine when they have a chance, as part of t'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.958
+  Eliminada (vieja): 'User has been living in Harajuku (Tokyo) for about 3 months as of the '
+  Conservada (nueva): 'User has been living in Harajuku, Tokyo for about a month as of May 29'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.990
+  Eliminada (vieja): 'User has been living in Harajuku, Tokyo for about a month as of May 29'
+  Conservada (nueva): 'User has been living in Harajuku for 3 months as of May 29, 2026 and i'
+  [Consolidacion] 3 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.612] User has been living in Harajuku for 3 months as of May 29, 2026 and is still di
+    - [0.344] User has been enjoying fall foliage in Tokyo and explores a new neighborhood eve
+    - [0.325] User explores a new neighborhood every Sunday and last weekend found a great cof
+    - [0.319] User has been enjoying fall foliage in Tokyo lately and says it feels very diffe
+    - [0.317] User plans a November 2026 trip to the Japanese Alps Visitor Center, then to Mat
+    - [0.316] User is interested in visiting Meiji Shrine in Harajuku but has not yet had the 
+    - [0.313] User is planning a trip to the Japanese Alps in November 2026 and is considering
+    - [0.313] User plans to visit Kawai Shrine when they have a chance, as part of their ongoi
+    - [0.308] User asked for more information about Kawai Shrine in Harajuku, specifically wha
+    - [0.305] User is looking forward to visiting the Japanese Alps Visitor Center and learnin
+  Correcta:   The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+  Generada:   You haven’t provided how long you’ve been living in your current apartment in Shinjuku. The only loc
+  Memorias:   30 | Contradicciones: 3
+  Score: 1 | Accuracy: 74.32% | Carga: 50.7s | Respuesta: 3.6s | Total: 104.6s
+
+Pregunta 75/78: How many autographed football have I added to my collection in the first three m
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 11
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3268.62it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.935
+  Eliminada (vieja): 'User has 15 autographed baseballs total, and they started collecting a'
+  Conservada (nueva): 'User returned from a weekend trip and used the time to organize their '
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.572] User returned from a weekend trip and used the time to organize their collection
+    - [0.518] User acquired a signed Mike Trout baseball last week and added it to their colle
+    - [0.494] User is considering selling some of their autographed baseballs to make room for
+    - [0.347] User is looking for information on upcoming sports memorabilia auctions in their
+    - [0.334] User is expanding their collecting interests beyond coins and vintage cameras to
+    - [0.278] User is considering attending a stamp show next quarter and asked whether there 
+    - [0.253] User is interested in Mike Trout’s latest stats, specifically his current battin
+    - [0.237] User is considering listing their Leica camera on Fred Miranda and Rangefinder F
+    - [0.221] User is interested in error coins and asked for information about upcoming coin 
+    - [0.209] User is interested in resources for finding rare Japanese vinyl records to add t
+  Correcta:   The information provided is not enough. You mentioned collecting autographed baseball but not football.
+  Generada:   You haven’t added any autographed football to your collection in the first three months—your memorie
+  Memorias:   17 | Contradicciones: 1
+  Score: 0 | Accuracy: 73.33% | Carga: 41.8s | Respuesta: 3.6s | Total: 72.4s
+
+Pregunta 76/78: How often do I play table tennis with my friends at the local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 2966.27it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.686] User plays tennis with friends at a local park on a recurring schedule (every ot
+    - [0.664] User plans to play tennis with friends at the local park this Sunday, continuing
+    - [0.399] User wants advice on how to keep their tennis racket in good condition.
+    - [0.369] User plays tennis primarily as a baseline player, focusing on forehand and backh
+    - [0.337] User is considering getting a new tennis bag to carry gear to the local park and
+    - [0.331] User is thinking about getting a new tennis bag to carry their gear to the local
+    - [0.331] User is interested in improving tennis skills with a baseline-focused style (for
+    - [0.305] User is a big fan of Roger Federer and describes him as a legend on the court, b
+    - [0.236] User has been mixing more swimming into their routine and recently signed up for
+    - [0.228] User is looking for drills/exercises to improve reaction time and hand-eye coord
+  Correcta:   The information provided is not enough. You mentioned playing tennis but not table tennis.
+  Generada:   You play tennis with your friends at the local park every other week (on a recurring schedule).
+  Memorias:   23 | Contradicciones: 0
+  Score: 0 | Accuracy: 72.37% | Carga: 37.4s | Respuesta: 4.0s | Total: 75.9s
+
+Pregunta 77/78: Before I purchased the gravel bike, do I have other bikes in addition to my moun
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3303.57it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.972
+  Eliminada (vieja): 'User is planning a 50-mile road bike ride this weekend and wants tips '
+  Conservada (nueva): 'User is planning a long road trip next month and wants help finding bi'
+  [Consolidacion] 1 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.636] User currently has three bikes total: a road bike, a mountain bike used for trai
+    - [0.635] User uses their road bike along with two other bikes: a mountain bike and a comm
+    - [0.493] User is wondering whether having three bikes is “too many.”
+    - [0.475] User is planning a long road trip next month with four bikes: their road bike, m
+    - [0.454] User has already gotten a new bike computer and has been tracking their progress
+    - [0.445] User is considering doing a century ride soon and wants to know whether their cu
+    - [0.431] User is excited to try out a newly purchased hybrid bike on some of the scenic r
+    - [0.424] User is considering bringing their clipless shoes on the upcoming San Francisco 
+    - [0.418] User plans to use their road bike for an upcoming century ride and says they’ve 
+    - [0.389] User plans to bring their road bike and all their bikes on the trip and needs to
+  Correcta:   Yes. (You have a road bike too.)
+  Generada:   Yes. Before you purchased the gravel bike, you had two other bikes besides your mountain bike and co
+  Memorias:   25 | Contradicciones: 1
+  Score: 1 | Accuracy: 72.73% | Carga: 47.2s | Respuesta: 3.3s | Total: 85.7s
+
+Pregunta 78/78: Where do I currently keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights: 100%|████████████████████████████████████████| 202/202 [00:00<00:00, 3355.91it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.680] User has been storing old sneakers under their bed, and they are starting to sme
+    - [0.650] User is looking for tips on how to keep old sneakers clean and fresh while they 
+    - [0.628] User plans to organize their closet this weekend and store some old sneakers in 
+    - [0.628] User plans to organize their closet this weekend and store old sneakers in a sho
+    - [0.588] User plans to organize their closet this weekend by type (e.g., keeping all boot
+    - [0.569] User plans to drop their old sneakers off at a cobbler this weekend to get them 
+    - [0.545] User plans to take inventory of their shoe collection and identify additional pa
+    - [0.528] User plans to take inventory of their shoe collection to identify additional pai
+    - [0.508] User plans to get old sneakers polished and conditioned by a cobbler this weeken
+    - [0.483] User is looking for suggestions for a good cobbler to polish and condition their
+  Correcta:   in a shoe rack in my closet
+  Generada:   You currently keep your old sneakers **under your bed**, and they’re starting to smell.
+  Memorias:   21 | Contradicciones: 0
+  Score: 0 | Accuracy: 71.79% | Carga: 34.7s | Respuesta: 3.6s | Total: 76.7s
+
+============================================================
+RESUMEN FINAL
+============================================================
+Preguntas evaluadas    : 78
+Respuestas correctas   : 56
+Accuracy               : 71.79%
+Tiempo carga promedio  : 38.5 segundos
+Tiempo respuesta prom. : 3.8 segundos
+Tiempo total promedio  : 77.6 segundos
+Total contradicciones  : 111
+Memorias prom/pregunta : 21.6
+Tiempo total           : 100.9 minutos
+Resultados guardados   : E:/proyecto/resultados_openai/oracle_gpt_consolidacion_78.json
+============================================================

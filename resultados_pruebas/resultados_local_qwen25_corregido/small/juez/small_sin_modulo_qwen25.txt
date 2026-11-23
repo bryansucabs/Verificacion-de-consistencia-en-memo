@@ -1,0 +1,143 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_local_qwen25_corregido/small/small_sin_modulo_qwen25.json
+Fecha              : 2026-11-17T16:44:47
+
+Correctas segun el juez independiente : 49 de 78  (62.82 %)
+Correctas segun el propio modelo      : 50 de 78  (64.10 %)
+
+Los dos jueces coinciden en           : 77 de 78
+  correcta para los dos               : 49
+  incorrecta para los dos             : 28
+  correcta solo para el propio modelo : 1
+  correcta solo para el independiente : 0
+Preguntas de abstencion (6)           : independiente 1, propio 1
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 1
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : You got your guitar serviced at Rhythm Central on Main St.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'no')
+
+
+Respuestas incorrectas segun el juez independiente: 29
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : Your personal best time in the charity 5K run is 27:12.
+
+  [830ce83f] Where did Rachel move to after her recent relocation?
+    Respuesta correcta    : the suburbs
+    Respuesta del sistema : Rachel moved to Chicago after her recent relocation.
+
+  [852ce960] What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?
+    Respuesta correcta    : $400,000
+    Respuesta del sistema : You were pre-approved for $350,000 from Wells Fargo for your mortgage.
+
+  [945e3d21] How often do I attend yoga classes to help with my anxiety?
+    Respuesta correcta    : Three times a week.
+    Respuesta del sistema : Based on the provided memories, there is no specific information about how often you attend yoga classes. However, you find your yoga practice helpful for feeling more grounded and are collecting data on yoga effects, which suggests you likely attend yoga classes regularly. To get a clearer answer, you might want to check your current yoga schedule or the frequency mentioned in your Google form questions.
+
+  [89941a93] How many bikes do I currently own?
+    Respuesta correcta    : 4
+    Respuesta del sistema : You currently own three bikes: a road bike, a mountain bike, and a commuter bike.
+
+  [07741c44] Where do I initially keep my old sneakers?
+    Respuesta correcta    : under my bed
+    Respuesta del sistema : Based on the user's recent plans and intentions, the user initially keeps their old sneakers in their closet, planning to store them in a shoe rack this weekend.
+
+  [031748ae] How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?
+    Respuesta correcta    : When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+    Respuesta del sistema : You lead 4 engineers when you just started your new role as Senior Software Engineer, and you still lead 4 engineers now.
+
+  [0f05491a] How many stars do I need to reach the gold level on my Starbucks Rewards app?
+    Respuesta correcta    : 120
+    Respuesta del sistema : You need 125 stars to reach the gold level on your Starbucks Rewards app.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : Based on the user memories, the most recent purchase related to a lens is a 50mm prime lens.
+
+  [2698e78f] How often do I see my therapist, Dr. Smith?
+    Respuesta correcta    : every week
+    Respuesta del sistema : You see your therapist, Dr. Smith, every two weeks.
+
+  [6071bd76] For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?
+    Respuesta correcta    : You switched to less water (5 ounces) per tablespoon of coffee.
+    Respuesta del sistema : You switched to more water per tablespoon of coffee. Your most recent memory indicates a 1:6 coffee-to-water ratio works well for you, which means 1 tablespoon of coffee for every 6 ounces of water.
+
+  [c4ea545c] Do I go to the gym more frequently than I did previously?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No, you do not go to the gym more frequently than you did previously. You consistently go to the gym four times a week, specifically on Tuesdays, Thursdays, and Saturdays, and you have not changed this routine based on the provided memories.
+
+  [ed4ddc30] How many dozen eggs do we currently have stocked up in our refrigerator?
+    Respuesta correcta    : 20
+    Respuesta del sistema : We currently have 30 dozen eggs stocked up in the refrigerator.
+
+  [8fb83627] How many issues of National Geographic have I finished reading?
+    Respuesta correcta    : Five
+    Respuesta del sistema : Based on the most recent user memories, the user has finished reading a total of 13 issues of National Geographic. This is calculated by adding the issues from the different memories: 3 + 5 + 3 + 5 = 13.
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : You got your guitar serviced at Rhythm Central on Main St.
+
+  [0e4e4c46] What is my current highest score in Ticket to Ride?
+    Respuesta correcta    : 132 points
+    Respuesta del sistema : Your current highest score in Ticket to Ride is 124 points.
+
+  [5831f84d] How many Crash Course videos have I watched in the past few weeks?
+    Respuesta correcta    : 15
+    Respuesta del sistema : You have watched 12 Crash Course videos in the past few weeks.
+
+  [eace081b] Where am I planning to stay for my birthday trip to Hawaii?
+    Respuesta correcta    : Oahu
+    Respuesta del sistema : Based on the provided memories, there is no specific information about where you are planning to stay for your birthday trip to Hawaii. The memories focus on snorkeling spots, hiking trails, and beaches on different islands. You might want to provide more details about your accommodation plans.
+
+  [50635ada] What was my previous frequent flyer status on United Airlines before I got the current status?
+    Respuesta correcta    : Premier Silver
+    Respuesta del sistema : Based on the user's memory, your previous frequent flyer status on United Airlines before getting the current Premier Silver status was not specified. However, since you have now reached 20,000 miles and are eligible for Premier Silver, it's reasonable to infer that your previous status was likely Premier or a lower status, as Premier Silver typically requires 20,000 miles or more. Without more specific information, we can't determine a previous status, but you were not Premier Platinum before.
+
+  [0ddfec37] How many autographed baseballs have I added to my collection in the first three months of collection?
+    Respuesta correcta    : 15
+    Respuesta del sistema : Based on the memories, you added 20 autographed baseballs to your collection in the past few months, which likely refers to the first three months of your collection. Therefore, you added 20 autographed baseballs to your collection in the first three months.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : Previously, you were planning to play tennis with friends at the local park every other Sunday. Now, you are still planning to play tennis with friends at the local park every other Sunday.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have 37 pre-1920 American coins in your collection.
+
+  [42ec0761] Do I have a spare screwdriver for opening up my laptop?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Based on the user memories, there is no direct information about whether you have a spare screwdriver for opening up your laptop. The memories focus on the user looking for a screwdriver to buy or use for upgrading RAM and cleaning fans, but do not mention having a spare screwdriver already. Therefore, the answer is that it is unclear from the given information whether you have a spare screwdriver.
+
+  [0977f2af] What new kitchen gadget did I invest in before getting the Air Fryer?
+    Respuesta correcta    : Instant Pot
+    Respuesta del sistema : Based on the provided memories, there is no mention of investing in any new kitchen gadget before getting the Air Fryer. The focus is on using the Air Fryer for making sweet potato fries and considering other gadgets like a smartwatch or high-tech gadget as gifts. Therefore, there is no information to indicate a previous investment in a specific kitchen gadget.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead a team of 4 engineers when you just started your new role as Software Engineer Manager.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see Dr. Smith every two weeks for therapy sessions.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You have been living in your current studio apartment in Harajuku, Tokyo, for 3 months.
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : Based on the provided memories, there is no mention of autographed footballs being added to the collection. All the memories are about autographed baseballs. Therefore, the answer to how many autographed footballs have been added to the collection in the first three months is:
+
+0
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You do not play table tennis with your friends at the local park based on the provided memories. The memories are about playing tennis, not table tennis.

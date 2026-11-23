@@ -1,0 +1,133 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : chatgptluna_escenario_1/small/small_sin_modulo_chatgptluna.json
+Fecha              : 2026-11-18T18:42:40
+
+Correctas segun el juez independiente : 54 de 78  (69.23 %)
+Correctas segun el propio modelo      : 53 de 78  (67.95 %)
+
+Los dos jueces coinciden en           : 75 de 78
+  correcta para los dos               : 52
+  incorrecta para los dos             : 23
+  correcta solo para el propio modelo : 1
+  correcta solo para el independiente : 2
+Preguntas de abstencion (6)           : independiente 2, propio 1
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 3
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : You got your guitar serviced at the music shop on Main St (the one you previously mentioned as doing guitar servicing), specifically **Rhythm Central**.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [42ec0761] Do I have a spare screwdriver for opening up my laptop?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Yes—you have a spare screwdriver you picked up while organizing your computer desk, so you should be set for opening your laptop to clean the fans.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes')
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You don’t have any memories about seeing **Dr. Johnson**. You do see **Dr. Smith** every week (and you also have sessions scheduled every two weeks).
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes.')
+
+
+Respuestas incorrectas segun el juez independiente: 24
+
+  [830ce83f] Where did Rachel move to after her recent relocation?
+    Respuesta correcta    : the suburbs
+    Respuesta del sistema : Rachel moved to **Chicago** after her recent relocation.
+
+  [89941a93] How many bikes do I currently own?
+    Respuesta correcta    : 4
+    Respuesta del sistema : You currently own **three bikes**.
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : Your most recent family trip was to **Hawaii**.
+
+  [031748ae] How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?
+    Respuesta correcta    : When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+    Respuesta del sistema : When you just started your new role as a Senior Software Engineer, you led **5 engineers**. Now, you lead **4 engineers**.
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended **three sessions** of the bereavement support group.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : You most recently purchased a **50mm prime lens**.
+
+  [b6019101] How many MCU films did I watch in the last 3 months?
+    Respuesta correcta    : 5
+    Respuesta del sistema : You watched **4 MCU films** in the last 3 months.
+
+  [6071bd76] For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?
+    Respuesta correcta    : You switched to less water (5 ounces) per tablespoon of coffee.
+    Respuesta del sistema : You switched to **more water per tablespoon**—from **1 tbsp per 5 oz** to **1 tbsp per 6 oz**.
+
+  [e493bb7c] Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+    Respuesta correcta    : in my bedroom
+    Respuesta del sistema : The painting **“Ethereal Dreams” by Emma Taylor** is currently hanging **above their living room sofa**.
+
+  [01493427] How many new postcards have I added to my collection since I started collecting again?
+    Respuesta correcta    : 25
+    Respuesta del sistema : You’ve added **17 new postcards** since you started collecting again.
+
+  [b01defab] Did I finish reading 'The Nightingale' by Kristin Hannah?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No—you recently finished *The Nightingale*, but you also put it down temporarily because it was getting too emotional, and you’re planning to get back to it to finish it.
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : You got your guitar serviced at the music shop on Main St (the one you previously mentioned as doing guitar servicing), specifically **Rhythm Central**.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at **7:00 pm** on **Mondays, Wednesdays, and Fridays**.
+
+  [50635ada] What was my previous frequent flyer status on United Airlines before I got the current status?
+    Respuesta correcta    : Premier Silver
+    Respuesta del sistema : I don’t have enough information in the provided memories to determine what your previous United MileagePlus status was before you reached **Premier Gold**.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous personal best time for the charity 5K run was **26 minutes and 30 seconds**.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : Previously, you played tennis with friends at the local park **every other week**. Now, you’re still planning to play **every other week** (this Sunday, **2026-05-31**).
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have **37** pre-1920 American coins in your collection.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You currently have **about 1,250 Instagram followers** (close to 1,300).
+
+  [c6853660] Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?
+    Respuesta correcta    : You increased the limit (from one cup to two cups)
+    Respuesta del sistema : You mostly recently **decreased** your morning coffee limit to **one cup** (after previously considering increasing it to two).
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : I don’t have any memory indicating you’ve tried any Italian restaurants in your city. So: **0**.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead **4 engineers** when you just started your new role as Software Engineer Manager.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You’ve been living in your current apartment in Shinjuku for about **3 months** (since around **March 2026**).
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with your friends at the local park every other week (this Sunday is one of those sessions).
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : You currently keep your old sneakers **under your bed**.

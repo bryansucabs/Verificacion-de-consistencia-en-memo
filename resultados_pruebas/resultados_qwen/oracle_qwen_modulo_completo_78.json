@@ -1,0 +1,14 @@
+[
+  {
+    "question_id": "6a1eabeb",
+    "question": "What was my personal best time in the charity 5K run?",
+    "answer_correcta": "25 minutes and 50 seconds (or 25:50)",
+    "respuesta_generada": "25:50",
+    "score": 1,
+    "tiempo_segundos": 322.45,
+    "tiempo_carga_seg": 253.91,
+    "tiempo_respuesta_seg": 0.95,
+    "memorias_guardadas": 20,
+    "contradicciones": 11
+  }
+]

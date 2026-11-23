@@ -1,0 +1,22 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_chatgpt/prueba/oracle_con_modulo_chatgpt_2.json
+Fecha              : 2026-11-16T15:57:49
+
+Correctas segun el juez independiente : 1 de 2  (50.00 %)
+Correctas segun el propio modelo      : 1 de 2  (50.00 %)
+
+Los dos jueces coinciden en           : 2 de 2
+  correcta para los dos               : 1
+  incorrecta para los dos             : 1
+  correcta solo para el propio modelo : 0
+  correcta solo para el independiente : 0
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 0
+
+
+Respuestas incorrectas segun el juez independiente: 1
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : 27:12

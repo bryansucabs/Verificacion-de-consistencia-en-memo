@@ -1,0 +1,29 @@
+============================================================
+RESUMEN FINAL
+============================================================
+Preguntas evaluadas    : 78
+Respuestas correctas   : 51
+Accuracy               : 65.38%
+Tiempo carga promedio  : 286.2 segundos
+Tiempo respuesta prom. : 0.9 segundos
+Tiempo total promedio  : 300.4 segundos
+Total contradicciones  : 97
+Memorias prom/pregunta : 46.1
+Tiempo total           : 390.5 minutos
+Resultados guardados   : E:/proyecto/resultados_oracle_nli_v2.json
+============================================================
+
+===========================================================
+RESUMEN FINAL
+============================================================
+Preguntas evaluadas    : 78
+Respuestas correctas   : 50
+Accuracy               : 64.10%
+Tiempo carga promedio  : 279.9 segundos
+Tiempo respuesta prom. : 0.9 segundos
+Tiempo total promedio  : 294.4 segundos
+Total contradicciones  : 0
+Memorias prom/pregunta : 47.7
+Tiempo total           : 382.8 minutos
+Resultados guardados   : E:/proyecto/resultados_oracle_sin_nli.json
+============================================================

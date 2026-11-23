@@ -1,0 +1,108 @@
+Limpiando Qdrant...
+Qdrant limpio.
+Cargando dataset...
+Evaluando 78 preguntas de 'knowledge-update'
+Resultados en: E:/proyecto/resultados_qwen/oracle_qwen_modulo_completo_78.json
+============================================================
+
+Pregunta 1/78: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85
+  Mensajes user a cargar: 12
+WARNING:mem0.utils.spacy_models:Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+WARNING:mem0.utils.spacy_models:Failed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\jit\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|                                                                | 0/202 [00:00<?, ?it/s]Loading weights: 100%|####################################################| 202/202 [00:00<00:00, 2538.19it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.971 > umbral=0.85
+  Memoria en conflicto: 'User trains for endurance improvement in upcoming charity 5K run, aiming to beat'
+  Hecho nuevo:          'user: I'm training for another charity 5K run coming up and I was wondering if y'
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.992 > umbral=0.85
+  Memoria en conflicto: 'User set a personal best time of 27:12 in a charity 5K run.'
+  Hecho nuevo:          'user: I'm training for another charity 5K run coming up and I was wondering if y'
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=a1461b16-aecb-4dea-be24-65ad2be5bd6d
+INFO:mem0.memory.main:[NLI] Eliminando memoria en conflicto id=47f775a9-6112-4db4-a5da-b70133d8e360
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User focuses on core and leg strengthening for running and soccer perf'
+  Conservada (nueva): 'User aims to improve shooting technique in soccer.'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Eliminada (vieja): 'User focuses on core and leg strengthening to improve running and socc'
+  Conservada (nueva): 'User aims to improve shooting technique in soccer.'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Eliminada (vieja): 'User aims to improve running technique for soccer performance.'
+  Conservada (nueva): 'User aims to improve shooting technique in soccer.'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.993
+  Eliminada (vieja): 'User needs to focus on endurance for upcoming soccer game with coworke'
+  Conservada (nueva): 'User needs to focus on endurance improvement for upcoming charity 5K r'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.889
+  Eliminada (vieja): 'User seeks reminders about upcoming soccer game with coworkers.'
+  Conservada (nueva): 'User scored a goal in a recent recreational soccer game with coworkers'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Eliminada (vieja): 'User plans to sign up for a tennis tournament on May 6th and seeks tip'
+  Conservada (nueva): 'User practices serve and volleys, aiming for quarterfinals in the tour'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User practices serve and volleys, aiming for quarterfinals in the tour'
+  Conservada (nueva): 'User plans to sign up for a tennis tournament and seeks tips on prepar'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User seeks tips on choosing the right tennis racket and strings for th'
+  Conservada (nueva): 'User focuses on serve, volleys, and footwork for tennis tournament pre'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Eliminada (vieja): 'User practices serve and volleys, aiming for quarterfinals in the tour'
+  Conservada (nueva): 'User plans to sign up for a tennis tournament and seeks tips on prepar'
+  [Consolidacion] 9 memorias obsoletas eliminadas
+  Memorias recuperadas para responder:
+    - [0.839] User plans to beat personal best time of 25:50 in next charity 5K run.
+    - [0.838] User aims to beat personal best time of 25:50 in upcoming charity 5K run.
+    - [0.815] User seeks tips on improving endurance for upcoming charity 5K run and aims to b
+    - [0.813] User aims to improve endurance for upcoming charity 5K run and hopes to beat per
+    - [0.796] User trains for endurance improvement in upcoming charity 5K run, aiming to beat
+    - [0.777] User seeks tips on improving endurance for charity 5K run coming up.
+    - [0.774] User seeks tips on improving endurance for upcoming charity 5K run.
+    - [0.761] User needs to focus on endurance improvement for upcoming charity 5K run.
+    - [0.751] User trains for endurance improvement in upcoming charity 5K run.
+    - [0.576] User practices running and strengthens core and legs for better performance in s
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   25:50
+  Memorias:   20 | Contradicciones: 11
+  Score: 1 | Accuracy: 100.00% | Carga: 253.9s | Respuesta: 0.9s | Total: 322.4s
+
+Pregunta 2/78: How many Korean restaurants have I tried in my city?
+Traceback (most recent call last):
+  File "e:\proyecto\evaluacion_nli.py", line 208, in <module>
+    m = Memory.from_config(config)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\proyecto\mem0\mem0\memory\main.py", line 552, in from_config
+    return cls(config)
+           ^^^^^^^^^^^
+  File "E:\proyecto\mem0\mem0\memory\main.py", line 343, in __init__
+    self.llm = LlmFactory.create(self.config.llm.provider, self.config.llm.config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\proyecto\mem0\mem0\utils\factory.py", line 112, in create
+    return llm_class(config)
+           ^^^^^^^^^^^^^^^^^
+  File "E:\proyecto\mem0\mem0\llms\ollama.py", line 41, in __init__
+    self.client = Client(host=self.config.ollama_base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 132, in __init__
+    super().__init__(httpx.Client, host, **kwargs)
+  File "C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 112, in __init__
+    self._client = client(
+                   ^^^^^^^
+  File "C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 688, in __init__
+    self._transport = self._init_transport(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 731, in _init_transport
+    return HTTPTransport(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 153, in __init__
+    ssl_context = create_ssl_context(verify=verify, cert=cert, trust_env=trust_env)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_config.py", line 40, in create_ssl_context
+    ctx = ssl.create_default_context(cafile=certifi.where())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 707, in create_default_context
+    context.load_verify_locations(cafile, capath, cadata)
+KeyboardInterrupt

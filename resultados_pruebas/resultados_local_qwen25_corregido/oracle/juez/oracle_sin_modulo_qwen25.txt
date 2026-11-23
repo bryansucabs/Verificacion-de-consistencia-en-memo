@@ -1,0 +1,177 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_local_qwen25_corregido/oracle/oracle_sin_modulo_qwen25.json
+Fecha              : 2026-11-16T13:47:36
+
+Correctas segun el juez independiente : 46 de 78  (58.97 %)
+Correctas segun el propio modelo      : 47 de 78  (60.26 %)
+
+Los dos jueces coinciden en           : 73 de 78
+  correcta para los dos               : 44
+  incorrecta para los dos             : 29
+  correcta solo para el propio modelo : 3
+  correcta solo para el independiente : 2
+Preguntas de abstencion (6)           : independiente 1, propio 1
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 5
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended a total of five sessions of the bereavement support group last year, and three sessions during a tough time, making it at least eight sessions in total.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'no')
+
+  [8fb83627] How many issues of National Geographic have I finished reading?
+    Respuesta correcta    : Five
+    Respuesta del sistema : Based on the most recent user memories, you have finished reading five issues of National Geographic focused on the Amazon rainforest and its indigenous communities, and four issues of National Geographic for in-depth articles on science and nature. Therefore, you have finished reading a total of nine issues of National Geographic.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [50635ada] What was my previous frequent flyer status on United Airlines before I got the current status?
+    Respuesta correcta    : Premier Silver
+    Respuesta del sistema : Based on the user memories, before hitting 20,000 miles and becoming eligible for Premier Silver status, the user's previous frequent flyer status on United Airlines is not explicitly mentioned. However, since the user now has Premier Gold status, it's reasonable to infer that their previous status was likely Premier Silver, as Premier Gold is the next higher status after Premier Silver. If you need the exact previous status, you might need to check the user's account history more precisely.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes.')
+
+  [42ec0761] Do I have a spare screwdriver for opening up my laptop?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Based on the user's memories, you have a spare screwdriver that you can use for cleaning your laptop fans.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes.')
+
+  [c6853660] Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?
+    Respuesta correcta    : You increased the limit (from one cup to two cups)
+    Respuesta del sistema : You recently considered increasing the limit on the number of cups of coffee in the morning to two cups, but you are currently drinking only one cup, which has been helping you feel more focused.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 32
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : Your personal best time in the charity 5K run was 27:12, which you achieved on May 6, 2026.
+
+  [6aeb4375] How many Korean restaurants have I tried in my city?
+    Respuesta correcta    : four
+    Respuesta del sistema : Based on the most recent memory, you have tried three Korean restaurants in your city recently.
+
+  [852ce960] What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?
+    Respuesta correcta    : $400,000
+    Respuesta del sistema : You were pre-approved for $350,000 from Wells Fargo for your mortgage.
+
+  [d7c942c3] Is my mom using the same grocery list method as me?
+    Respuesta correcta    : Yes.
+    Respuesta del sistema : Based on the user memories, the user is currently using a grocery list app and is trying to get their mom to use one as well. Since the user is using a new grocery list app to keep track of ingredients for the dinner party, it is likely that the user's mom is not yet using the same grocery list method as the user. However, the user is trying to get her mom to start using it, so there's a possibility that this could change.
+
+  [71315a70] How many hours have I spent on my abstract ocean sculpture?
+    Respuesta correcta    : 10-12 hours
+    Respuesta del sistema : You have spent a total of 15-18 hours on your abstract ocean sculpture so far.
+
+  [89941a93] How many bikes do I currently own?
+    Respuesta correcta    : 4
+    Respuesta del sistema : You currently own three bikes: a road bike, a mountain bike, and a commuter bike.
+
+  [ce6d2d27] What day of the week do I take a cocktail-making class?
+    Respuesta correcta    : Friday
+    Respuesta del sistema : You are planning cocktail-making classes on both Thursday and Friday.
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : On your most recent family trip, you went to Hawaii.
+
+  [031748ae] How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?
+    Respuesta correcta    : When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+    Respuesta del sistema : You lead 5 engineers when you just started your new role as Senior Software Engineer, and you still lead 5 engineers now.
+
+  [0f05491a] How many stars do I need to reach the gold level on my Starbucks Rewards app?
+    Respuesta correcta    : 120
+    Respuesta del sistema : You need 125 stars to reach the gold level on your Starbucks Rewards app.
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended a total of five sessions of the bereavement support group last year, and three sessions during a tough time, making it at least eight sessions in total.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : You purchased a 50mm prime lens most recently.
+
+  [e493bb7c] Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+    Respuesta correcta    : in my bedroom
+    Respuesta del sistema : Currently, the painting 'Ethereal Dreams' by Emma Taylor is hanging above the living room sofa.
+
+  [ed4ddc30] How many dozen eggs do we currently have stocked up in our refrigerator?
+    Respuesta correcta    : 20
+    Respuesta del sistema : We currently have 30 dozen eggs stocked up in the refrigerator.
+
+  [8fb83627] How many issues of National Geographic have I finished reading?
+    Respuesta correcta    : Five
+    Respuesta del sistema : Based on the most recent user memories, you have finished reading five issues of National Geographic focused on the Amazon rainforest and its indigenous communities, and four issues of National Geographic for in-depth articles on science and nature. Therefore, you have finished reading a total of nine issues of National Geographic.
+
+  [b01defab] Did I finish reading 'The Nightingale' by Kristin Hannah?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No, you did not finish reading 'The Nightingale' by Kristin Hannah, but you plan to finish it by reading daily during your commute to prepare for the next book club discussion.
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : Based on the user's memories, you intend to get your acoustic guitar serviced at 'Rhythm Central' on Main St. There is no information about where you have previously gotten your guitar serviced.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays.
+
+  [eace081b] Where am I planning to stay for my birthday trip to Hawaii?
+    Respuesta correcta    : Oahu
+    Respuesta del sistema : Based on the provided memories, there is no specific information about where you are planning to stay for your birthday trip to Hawaii. The memories focus on activities and locations but do not mention accommodation.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous personal best time for the charity 5K run was 26 minutes and 30 seconds.
+
+  [0ddfec37] How many autographed baseballs have I added to my collection in the first three months of collection?
+    Respuesta correcta    : 15
+    Respuesta del sistema : Based on the user's memories, the user added 20 autographed baseballs to their collection in the past few months and then added a signed Mike Trout baseball, bringing the total to 15. However, the specific number of autographed baseballs added in the first three months is not directly stated. Given the information, we can infer that at least 20 autographed baseballs were added in the past few months, which could include the first three months. Without more precise timing, we cannot determine the exact number added in the first three months.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : You play tennis with friends at the local park every other week both previously and now.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have a total of 37 pre-1920 American coins in your collection.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You currently have 1250 followers on Instagram.
+
+  [3ba21379] What type of vehicle model am I currently working on?
+    Respuesta correcta    : Ford F-150 pickup truck
+    Respuesta del sistema : You are currently working on a Ford Mustang Shelby GT350R model.
+
+  [c6853660] Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?
+    Respuesta correcta    : You increased the limit (from one cup to two cups)
+    Respuesta del sistema : You recently considered increasing the limit on the number of cups of coffee in the morning to two cups, but you are currently drinking only one cup, which has been helping you feel more focused.
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : Based on the provided memories, there is no mention of any Italian restaurants. Therefore, the answer is that you have not tried any Italian restaurants in your city.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead a team of 5 engineers when you just started your new role as Senior Software Engineer Manager.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see Dr. Smith weekly for therapy sessions.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You have been living in your current apartment in Harajuku, Tokyo, for 3 months.
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with friends at the local park every other week, not table tennis.
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : You currently keep your old sneakers under the bed.

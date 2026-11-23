@@ -1,0 +1,203 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_local_qwen35/oracle/oracle_sin_modulo_qwen35.json
+Fecha              : 2026-11-16T04:56:40
+
+Correctas segun el juez independiente : 38 de 78  (48.72 %)
+Correctas segun el propio modelo      : 42 de 78  (53.85 %)
+
+Los dos jueces coinciden en           : 74 de 78
+  correcta para los dos               : 38
+  incorrecta para los dos             : 36
+  correcta solo para el propio modelo : 4
+  correcta solo para el independiente : 0
+Preguntas de abstencion (6)           : independiente 0, propio 4
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 4
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You do not see Dr. Johnson; you have a therapy session with **Dr. Smith** every two weeks.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You have not been living in an apartment in **Shinjuku**; your memories indicate you are currently living in a studio apartment in **Harajuku** for three months.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : 0
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No')
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You do not play table tennis; you play tennis with your friends at the local park.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 40
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : 27:12
+
+  [6aeb4375] How many Korean restaurants have I tried in my city?
+    Respuesta correcta    : four
+    Respuesta del sistema : You have tried three different Korean restaurants in your city.
+
+  [830ce83f] Where did Rachel move to after her recent relocation?
+    Respuesta correcta    : the suburbs
+    Respuesta del sistema : Rachel recently moved to a new apartment in Chicago.
+
+  [852ce960] What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?
+    Respuesta correcta    : $400,000
+    Respuesta del sistema : You were pre-approved for $350,000 from Wells Fargo.
+
+  [d7c942c3] Is my mom using the same grocery list method as me?
+    Respuesta correcta    : Yes.
+    Respuesta del sistema : No, your mom is not currently using the same grocery list method as you; she remains stuck on using paper lists despite your efforts to get her to use the app.
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : Hawaii
+
+  [0f05491a] How many stars do I need to reach the gold level on my Starbucks Rewards app?
+    Respuesta correcta    : 120
+    Respuesta del sistema : You need **125 stars** to reach the Gold level on your Starbucks Rewards app.
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended a total of 8 sessions (5 in November 2025 and 3 in November 2026).
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : You purchased a **50mm prime lens** most recently.
+
+  [2698e78f] How often do I see my therapist, Dr. Smith?
+    Respuesta correcta    : every week
+    Respuesta del sistema : You see your therapist, Dr. Smith, every two weeks.
+
+  [b6019101] How many MCU films did I watch in the last 3 months?
+    Respuesta correcta    : 5
+    Respuesta del sistema : 4
+
+  [5a4f22c0] What company is Rachel, an old colleague from my previous company, currently working at?
+    Respuesta correcta    : TechCorp
+    Respuesta del sistema : Rachel's current company is not mentioned in the provided memories; the records only state that she is an old colleague from your previous company.
+
+  [e493bb7c] Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+    Respuesta correcta    : in my bedroom
+    Respuesta del sistema : The painting "Ethereal Dreams" by Emma Taylor is currently hanging above the user's living room sofa.
+
+  [618f13b2] How many times have I worn my new black Converse Chuck Taylor All Star sneakers?
+    Respuesta correcta    : six
+    Respuesta del sistema : You have worn your black Converse Chuck Taylor All Star sneakers four times.
+
+  [01493427] How many new postcards have I added to my collection since I started collecting again?
+    Respuesta correcta    : 25
+    Respuesta del sistema : 17
+
+  [db467c8c] How long have my parents been staying with me in the US?
+    Respuesta correcta    : nine months
+    Respuesta del sistema : Your parents have been living with you in the US for six months.
+
+  [7a87bd0c] How long have I been sticking to my daily tidying routine?
+    Respuesta correcta    : 4 weeks
+    Respuesta del sistema : You have been following your daily tidying routine for 3 weeks.
+
+  [ed4ddc30] How many dozen eggs do we currently have stocked up in our refrigerator?
+    Respuesta correcta    : 20
+    Respuesta del sistema : Based on the provided user memories, there is no information specifying the quantity of eggs you have stocked up in your refrigerator. The memories mention having "fresh eggs" available for cooking and cheese-making, but they do not state a specific number or count.
+
+  [8fb83627] How many issues of National Geographic have I finished reading?
+    Respuesta correcta    : Five
+    Respuesta del sistema : You have finished three issues of National Geographic.
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : Rhythm Central
+
+  [4b24c848] How many tops have I bought from H&M so far?
+    Respuesta correcta    : five
+    Respuesta del sistema : You have purchased three tops from H&M so far.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays.
+
+  [5831f84d] How many Crash Course videos have I watched in the past few weeks?
+    Respuesta correcta    : 15
+    Respuesta del sistema : You have watched 10 Crash Course videos in the past few weeks.
+
+  [50635ada] What was my previous frequent flyer status on United Airlines before I got the current status?
+    Respuesta correcta    : Premier Silver
+    Respuesta del sistema : The provided user memories do not contain information about your previous frequent flyer status on United Airlines. They only mention that you currently hold **Premier Silver** status and have 20,000 miles. To find out what your status was before Premier Silver, you would need to check your account history directly through the United Airlines website or app.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : You previously played tennis with your friends at the local park as part of your weekly routine, and you continue to do so on a weekly basis.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have 37 pre-1920 American coins in your collection.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You currently have 1250 followers on Instagram.
+
+  [c7dc5443] What is my current record in the recreational volleyball league?
+    Respuesta correcta    : 5-2
+    Respuesta del sistema : 3-2
+
+  [06db6396] How many projects have I completed since starting painting classes?
+    Respuesta correcta    : 5
+    Respuesta del sistema : You have completed 4 painting projects since starting your painting classes.
+
+  [9bbe84a2] What was my previous goal for my Apex Legends level before I updated my goal?
+    Respuesta correcta    : level 100
+    Respuesta del sistema : Level 150
+
+  [dad224aa] What time do I wake up on Saturday mornings?
+    Respuesta correcta    : 7:30 am
+    Respuesta del sistema : You wake up at 8:30 am on Saturday mornings.
+
+  [ba61f0b9] How many women are on the team led by my former manager Rachel?
+    Respuesta correcta    : 6
+    Respuesta del sistema : Rachel's team consists of 10 people, half of whom are women, meaning there are **5 women** on her team.
+
+  [26bdc477] How many trips have I taken my Canon EOS 80D camera on?
+    Respuesta correcta    : five
+    Respuesta del sistema : You have taken your Canon EOS 80D on three photography adventures: Yellowstone, Yosemite, and the Grand Canyon.
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : 0
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead a team of 4 engineers in your new role as Senior Software Engineer.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You do not see Dr. Johnson; you have a therapy session with **Dr. Smith** every two weeks.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You have not been living in an apartment in **Shinjuku**; your memories indicate you are currently living in a studio apartment in **Harajuku** for three months.
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : 0
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You do not play table tennis; you play tennis with your friends at the local park.
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : Under your bed.

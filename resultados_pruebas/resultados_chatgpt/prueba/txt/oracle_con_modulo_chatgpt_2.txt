@@ -1,0 +1,90 @@
+Limpiando Qdrant...
+Cargando dataset...
+Evaluando 2 preguntas de 'knowledge-update' (oracle)
+Modelo: gpt-6-luna | embeddings: text-embedding-3-small | Qdrant en el puerto 6335 | tope: 0.3 USD
+Modulo NLI: ACTIVADO
+Resultados en: E:/proyecto/resultados_chatgpt/prueba/oracle_con_modulo_chatgpt_2.json
+============================================================
+Comprobando la conexion (calentamiento, no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+Conexion correcta. Gastado hasta ahora: 0.0009 USD.
+
+Pregunta 1/2: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\jit\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3475.18it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Marcada (vieja): 'User wants tips for improving running technique to become more efficie'
+  Conservada (nueva): 'User asked for tips to improve their soccer shooting technique.'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=f313be67-c9e1-4e03-b459-58c27054994c: 'User wants tips for improving running technique to become more efficie'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.732] User is training for another upcoming charity 5K and hopes to beat a personal-be
+    - [0.627] User recently set a personal best of 27:12 in a charity 5K run and has been runn
+    - [0.170] User is considering adding strength training to their fitness routine and asked 
+    - [0.163] User asked whether interval training should prioritize completing the intervals 
+    - [0.155] [OUTDATED as of 2026-11-16] User wants tips for improving running technique to b
+    - [0.153] User recently scored a goal in a recreational soccer game with coworkers; it was
+    - [0.131] User has been focusing on strengthening their core and legs, which they say has 
+    - [0.129] User is planning a fitness schedule for the next few weeks and wants tips to imp
+    - [0.111] User has played tennis casually for a few years and is considering signing up fo
+    - [0.106] User is preparing for a tennis tournament on May 6 and asked for tips to improve
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   27:12
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 99792 tokens entrada (91% desde cache) | 783 salida | 0.0022 USD | acumulado 0.00 USD
+  Score (propio): 0 [no] | Accuracy: 0.00% | Carga: 43.4s | Respuesta: 2.4s | Total: 58.6s
+
+Pregunta 2/2: How many Korean restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3120.37it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.994
+  Marcada (vieja): 'User is planning a dinner party and wants popular Korean BBQ dishes th'
+  Conservada (nueva): 'User is planning a dinner party with dishes from multiple cuisines, in'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=027c2ec0-cd31-4787-8297-ecdaca474b54: 'User is planning a dinner party and wants popular Korean BBQ dishes th'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.799] User has tried four different Korean restaurants and is looking for new restaura
+    - [0.746] User has recently tried three different Korean restaurants, each of which had it
+    - [0.703] User recently tried three Korean restaurants: one served amazing bibimbap, anoth
+    - [0.484] [OUTDATED as of 2026-11-16] User is planning a dinner party and wants popular Ko
+    - [0.474] User is planning a dinner party with dishes from multiple cuisines, intending to
+    - [0.469] User has recently been experimenting with different types of noodles and wants t
+    - [0.444] User is planning a dinner party and is considering Korean-style BBQ beef; they w
+    - [0.441] User is considering serving kimchi and bokkeumbap as side dishes with Korean-sty
+    - [0.439] User decided to serve samosas and saag aloo as Indian-inspired dishes alongside 
+    - [0.429] User is considering changing the dinner-party menu and wants Indian-inspired rec
+  Correcta:   four
+  Generada:   Four.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 99183 tokens entrada (92% desde cache) | 861 salida | 0.0021 USD | acumulado 0.01 USD
+  Score (propio): 1 [yes] | Accuracy: 50.00% | Carga: 42.2s | Respuesta: 1.9s | Total: 60.8s
+
+============================================================
+RESUMEN FINAL
+============================================================
+Modelo                 : gpt-6-luna (oracle, con modulo)
+Respuestas correctas   : 1 de 2  (calificacion del propio modelo)
+Accuracy               : 50.00%
+Tiempo por mensaje     : 3.56 segundos por mensaje guardado
+Consolidacion promedio : 9.4 segundos por pregunta
+Tiempo respuesta prom. : 2.1 segundos
+Tiempo total promedio  : 59.7 segundos
+Total contradicciones  : 2
+Memorias prom/pregunta : 15.0 (maximo 15)
+Mensajes cargados      : 24 (errores: 0, de Mem0: 0, de la API: 0)
+Tokens de entrada      : 198975 (92% desde cache)
+Parametros rechazados  : ninguno
+Costo estimado         : 0.00 USD (sin embeddings)
+Tiempo total           : 2.0 minutos
+Resultados guardados   : E:/proyecto/resultados_chatgpt/prueba/oracle_con_modulo_chatgpt_2.json
+============================================================

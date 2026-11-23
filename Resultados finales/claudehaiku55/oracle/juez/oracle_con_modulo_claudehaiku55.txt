@@ -1,0 +1,90 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : claudehaiku55_escenario_2/oracle/oracle_con_modulo_claudehaiku55.json
+Fecha              : 2026-11-20T10:54:53
+
+Correctas segun el juez independiente : 65 de 78  (83.33 %)
+Correctas segun el propio modelo      : 68 de 78  (87.18 %)
+
+Los dos jueces coinciden en           : 75 de 78
+  correcta para los dos               : 65
+  incorrecta para los dos             : 10
+  correcta solo para el propio modelo : 3
+  correcta solo para el independiente : 0
+Preguntas de abstencion (6)           : independiente 2, propio 4
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 3
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : Between 1,250 and 1,300 followers. Your latest estimate is close to 1,300.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : You’ve added 20 autographed baseballs—not footballs—to your collection over the past few months.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with your friends every other week—not table tennis.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 13
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : Hawaii.
+
+  [c4ea545c] Do I go to the gym more frequently than I did previously?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : I can’t tell from these memories—they say you currently go to the gym on Tuesdays, Thursdays, and Saturdays, but don’t specify your previous routine.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous personal best was 26 minutes and 30 seconds.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : Between 1,250 and 1,300 followers. Your latest estimate is close to 1,300.
+
+  [10e09553] How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?
+    Respuesta correcta    : 7
+    Respuesta del sistema : 9 largemouth bass.
+
+  [ba61f0b9] How many women are on the team led by my former manager Rachel?
+    Respuesta correcta    : 6
+    Respuesta del sistema : 5 women.
+
+  [c6853660] Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?
+    Respuesta correcta    : You increased the limit (from one cup to two cups)
+    Respuesta del sistema : You most recently decreased it to one cup in the morning.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead 5 engineers.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You’ve been living in your current apartment in Harajuku for about a month.
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : You’ve added 20 autographed baseballs—not footballs—to your collection over the past few months.
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with your friends every other week—not table tennis.
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : Under your bed.
+

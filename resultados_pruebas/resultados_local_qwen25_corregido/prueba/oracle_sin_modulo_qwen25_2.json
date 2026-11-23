@@ -1,0 +1,180 @@
+{
+  "total_preguntas": 2,
+  "correctas": 0,
+  "accuracy": 0.0,
+  "accuracy_pct": "0.00%",
+  "juez_de_score": "propio (qwen2.5:7b-instruct-q4_K_M, plantillas oficiales, temperatura 0)",
+  "tiempo_promedio_seg": 47.95,
+  "tiempo_carga_promedio_seg": 40.02,
+  "tiempo_respuesta_promedio_seg": 0.74,
+  "tiempo_por_mensaje_guardado_seg": 3.33,
+  "tiempo_total_min": 1.6,
+  "total_contradicciones": 0,
+  "total_memorias_marcadas": 0,
+  "total_pares_descartados_filtro": 0,
+  "promedio_memorias_guardadas": 19.0,
+  "total_mensajes_cargados": 24,
+  "total_errores_carga": 0,
+  "total_errores_mem0": 0,
+  "total_llamadas_llm": 24,
+  "total_llamadas_recortadas": 0,
+  "total_tokens_entrada": 206193,
+  "total_tokens_salida": 3537,
+  "use_nli": false,
+  "use_ner": true,
+  "use_marking": true,
+  "use_bidirectional": true,
+  "categoria": "knowledge-update",
+  "variante": "oracle",
+  "configuracion": {
+    "modelo": "qwen2.5:7b-instruct-q4_K_M",
+    "embeddings": "nomic-embed-text",
+    "num_ctx": 12288,
+    "think": null,
+    "semilla": 42,
+    "temperatura_respuesta": 0,
+    "temperatura_extraccion": "0.1 (valor por defecto de Mem0)",
+    "top_k_busqueda": 10,
+    "history_db_path": ":memory:",
+    "dataset": "E:/proyecto/LongMemEval/data/longmemeval_oracle",
+    "ollama_version": "ollama version is 0.40.16",
+    "ollama_ps": "qwen2.5:7b-instruct-q4_K_M 845dbda0ea48 5.2 GB 100% GPU 12288 llamacpp 4 minutes from now",
+    "fecha_fin": "2026-11-16T11:02:32"
+  },
+  "detalle": [
+    {
+      "question_id": "6a1eabeb",
+      "question": "What was my personal best time in the charity 5K run?",
+      "answer_correcta": "25 minutes and 50 seconds (or 25:50)",
+      "respuesta_generada": "Your personal best time in the charity 5K run was 27:12, set on May 6, 2026.",
+      "score": 0,
+      "salida_juez_propio": "No",
+      "tiempo_segundos": 43.66,
+      "tiempo_carga_seg": 35.73,
+      "tiempo_consolidacion_seg": 0.0,
+      "tiempo_respuesta_seg": 0.81,
+      "tiempo_juez_propio_seg": 0.11,
+      "mensajes_cargados": 12,
+      "errores_carga": 0,
+      "errores_mem0": 0,
+      "memorias_guardadas": 19,
+      "puntos_qdrant_total": 36,
+      "contradicciones": 0,
+      "memorias_marcadas": 0,
+      "pares_descartados_filtro": 0,
+      "llamadas_llm": 12,
+      "tokens_entrada": 103579,
+      "tokens_salida": 1512,
+      "llamadas_recortadas": 0,
+      "memorias_usadas": [
+        {
+          "memoria": "User recently set a personal best time of 27:12 in a charity 5K run",
+          "puntaje": 0.9046
+        },
+        {
+          "memoria": "User recently set a personal best time of 27:12 in a charity 5K run on May 6, 2026",
+          "puntaje": 0.8935
+        },
+        {
+          "memoria": "User recently set a personal best time of 27:12 in a charity 5K run on [date]",
+          "puntaje": 0.884
+        },
+        {
+          "memoria": "User is training for a charity 5K run and hopes to beat their personal best time of 25:50",
+          "puntaje": 0.8656
+        },
+        {
+          "memoria": "User is training for a charity 5K run and aims to beat their personal best time of 25:50",
+          "puntaje": 0.8656
+        },
+        {
+          "memoria": "User is training for a charity 5K run and aims to beat their personal best time of 27:12",
+          "puntaje": 0.8647
+        },
+        {
+          "memoria": "User is seeking tips to improve their running technique for soccer",
+          "puntaje": 0.587
+        },
+        {
+          "memoria": "User is thinking about incorporating strength training into their routine to improve running performance",
+          "puntaje": 0.5763
+        },
+        {
+          "memoria": "User is planning their fitness schedule for the next few weeks and wants to know when their next soccer game with coworkers is",
+          "puntaje": 0.5081
+        },
+        {
+          "memoria": "User is looking for tips to improve their endurance for soccer, as they are playing every two weeks",
+          "puntaje": 0.3446
+        }
+      ]
+    },
+    {
+      "question_id": "6aeb4375",
+      "question": "How many Korean restaurants have I tried in my city?",
+      "answer_correcta": "four",
+      "respuesta_generada": "Based on the most recent memory, you have tried three Korean restaurants in your city recently.",
+      "score": 0,
+      "salida_juez_propio": "No",
+      "tiempo_segundos": 52.24,
+      "tiempo_carga_seg": 44.31,
+      "tiempo_consolidacion_seg": 0.0,
+      "tiempo_respuesta_seg": 0.66,
+      "tiempo_juez_propio_seg": 0.08,
+      "mensajes_cargados": 12,
+      "errores_carga": 0,
+      "errores_mem0": 0,
+      "memorias_guardadas": 19,
+      "puntos_qdrant_total": 39,
+      "contradicciones": 0,
+      "memorias_marcadas": 0,
+      "pares_descartados_filtro": 0,
+      "llamadas_llm": 12,
+      "tokens_entrada": 102614,
+      "tokens_salida": 2025,
+      "llamadas_recortadas": 0,
+      "memorias_usadas": [
+        {
+          "memoria": "User has tried four Korean restaurants in their city recently, each with its own unique flavor and style",
+          "puntaje": 0.8611
+        },
+        {
+          "memoria": "User has tried three Korean restaurants in their city recently, each with its own unique flavor and style",
+          "puntaje": 0.8511
+        },
+        {
+          "memoria": "User tried an amazing bibimbap at one Korean restaurant, a spicy kimchi stew at another, and a unique sweet potato Japchae at a third, each with its own unique flavor and style",
+          "puntaje": 0.7642
+        },
+        {
+          "memoria": "User has been experimenting with different types of noodles and is interested in Korean noodle dishes",
+          "puntaje": 0.6614
+        },
+        {
+          "memoria": "User is planning a dinner party and needs recommendations for popular Korean BBQ dishes to make in large quantities",
+          "puntaje": 0.6207
+        },
+        {
+          "memoria": "User is considering kimchi and bokkeumbap for the Korean BBQ dishes at the dinner party",
+          "puntaje": 0.6165
+        },
+        {
+          "memoria": "User is planning a dinner party and considering Korean BBQ beef, Middle Eastern falafel, and Indian samosas and saag aloo as menu options",
+          "puntaje": 0.6009
+        },
+        {
+          "memoria": "User is planning to serve kimchi and bokkeumbap for the Korean BBQ dishes at the dinner party",
+          "puntaje": 0.5949
+        },
+        {
+          "memoria": "User heard about a new Indian restaurant in their neighborhood that just opened and heard their chicken tikka masala is amazing",
+          "puntaje": 0.5791
+        },
+        {
+          "memoria": "User is planning a dinner party and needs recommendations for side dishes to complement Korean BBQ beef",
+          "puntaje": 0.5685
+        }
+      ]
+    }
+  ]
+}

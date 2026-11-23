@@ -1,0 +1,2000 @@
+Limpiando Qdrant...
+Cargando dataset...
+Evaluando 78 preguntas de 'knowledge-update' (oracle)
+Modelo: claude-haiku-5-5 | embeddings: text-embedding-3-small | Qdrant en el puerto 6335 | tope: 0.4 USD
+Modulo NLI: ACTIVADO
+Resultados en: E:/proyecto/claudehaiku55_escenario_2/oracle/oracle_con_modulo_claudehaiku55.json
+============================================================
+Comprobando la conexion (calentamiento, no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+Conexion correcta. Gastado hasta ahora: 0.0002 USD.
+
+Pregunta 1/78: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\jit\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3642.14it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Marcada (vieja): 'User asked for advice on improving running technique to become more ef'
+  Conservada (nueva): 'User asked for tips to improve their soccer shooting technique.'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=2946d102-ef68-4b81-ad56-c8d76606f894: 'User asked for advice on improving running technique to become more ef'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.896
+  Marcada (vieja): 'User recently set a personal best of 27:12 in a charity 5K run and has'
+  Conservada (nueva): 'User is training for another upcoming charity 5K and hopes to beat a p'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=6335db8c-6bd3-5320-abce-63c48c22875c: 'User recently set a personal best of 27:12 in a charity 5K run and has'
+  [Consolidacion] 2 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.775] User is training for another upcoming charity 5K and hopes to beat a personal-be
+    - [0.627] [OUTDATED as of 2026-11-20] User recently set a personal best of 27:12 in a char
+    - [0.354] User asked for advice on improving endurance while training for the upcoming cha
+    - [0.167] [OUTDATED as of 2026-11-20] User asked for advice on improving running technique
+    - [0.161] User asked whether interval training should prioritize completing every interval
+    - [0.153] User recently scored a goal in a recreational soccer game with coworkers; it was
+    - [0.153] User is considering adding strength training to their fitness routine and wants 
+    - [0.131] User has been focusing on strengthening their core and legs, which they say has 
+    - [0.120] User is considering signing up for a tennis tournament on May 6, 2027; after pla
+    - [0.104] User is preparing for a tennis tournament on May 6, 2027, and wants advice on im
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   25:50.
+  Memorias:   15 | Contradicciones: 2 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132475 tokens entrada (93% desde cache) | 924 salida | 0.0029 USD | acumulado 0.00 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 42.2s | Respuesta: 3.6s | Total: 61.7s
+
+Pregunta 2/78: How many Korean restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3095.15it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.988
+  Marcada (vieja): 'User is planning a dinner party and wants popular Korean BBQ dishes th'
+  Conservada (nueva): 'User is planning a dinner party with dishes from multiple cuisines, in'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=96174816-802b-43ec-9a4a-dea03c51cf13: 'User is planning a dinner party and wants popular Korean BBQ dishes th'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.769] User has tried four different Korean restaurants so far and is looking for new K
+    - [0.747] User has recently tried three different Korean restaurants, each of which had it
+    - [0.704] User recently tried three Korean restaurants: one served amazing bibimbap, anoth
+    - [0.494] User has recently been experimenting with different types of noodles and is inte
+    - [0.483] [OUTDATED as of 2026-11-20] User is planning a dinner party and wants popular Ko
+    - [0.480] User is planning a dinner party with dishes from multiple cuisines, intending to
+    - [0.450] User plans to serve kimchi and bokkeumbap as dishes at the dinner party, apparen
+    - [0.441] User is planning a dinner party and is considering Korean-style BBQ beef as the 
+    - [0.430] User is considering changing the dinner party menu and wants Indian-inspired rec
+    - [0.400] User decided to include samosas and saag aloo in the dinner party menu, alongsid
+  Correcta:   four
+  Generada:   Four.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127379 tokens entrada (92% desde cache) | 1136 salida | 0.0029 USD | acumulado 0.01 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 50.1s | Respuesta: 2.0s | Total: 71.3s
+
+Pregunta 3/78: Where did Rachel move to after her recent relocation?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 2810.08it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.873
+  Marcada (vieja): 'User's friend Rachel recently moved to a new apartment in Chicago.'
+  Conservada (nueva): 'User's friend Rachel has moved back to the suburbs after recently livi'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=b357e5d0-4130-43a9-89d5-24fd319be506: 'User's friend Rachel recently moved to a new apartment in Chicago.'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.817] User's friend Rachel has moved back to the suburbs after recently living in a Ch
+    - [0.797] [OUTDATED as of 2026-11-20] User's friend Rachel recently moved to a new apartme
+    - [0.712] User plans to ask Rachel which Chicago neighborhood she lives in before narrowin
+    - [0.691] User plans to ask Rachel which Chicago neighborhood she lives in and what her fa
+    - [0.666] User is considering visiting their friend Rachel, who recently moved to a new ap
+    - [0.542] User is looking for a good neighborhood to stay in while visiting their friend R
+    - [0.199] User has visited Miami Beach before and, while planning a Florida beach trip wit
+    - [0.137] User is considering a trip with friends to a Florida beach town and wants recomm
+    - [0.134] User asked for recommendations for good coffee shops or cafes in Chicago.
+    - [0.129] User is considering how to spend the rest of the trip with friends, asking wheth
+  Correcta:   the suburbs
+  Generada:   Rachel moved back to the suburbs.
+  Memorias:   14 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 125347 tokens entrada (93% desde cache) | 1008 salida | 0.0027 USD | acumulado 0.01 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 42.7s | Respuesta: 3.1s | Total: 61.2s
+
+Pregunta 4/78: What was the amount I was pre-approved for when I got my mortgage from Wells Far
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 2934.94it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.824] User said they were pre-approved for $400,000 from Wells Fargo, which differs fr
+    - [0.766] User is buying a $325,000 house and has been pre-approved for a $350,000 mortgag
+    - [0.254] User is buying a $325,000 home and has already agreed with the seller on a $2,00
+    - [0.236] User wants to estimate the monthly cost of their mortgage payment, property taxe
+    - [0.229] User is in the process of buying a new home and is finalizing their budget; they
+    - [0.229] User wants to understand how much of the closing costs they can negotiate for th
+    - [0.211] User plans to ask the seller to cover an additional $3,250 (1% of the $325,000 p
+    - [0.162] User needs to schedule a home insurance policy with Liberty Mutual for the home 
+    - [0.136] User is planning to move into the home they are buying soon and needs to set up 
+    - [0.126] User is looking forward to owning a home after a long buying process and is espe
+  Correcta:   $400,000
+  Generada:   $400,000
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129256 tokens entrada (91% desde cache) | 1353 salida | 0.0033 USD | acumulado 0.01 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 48.3s | Respuesta: 2.3s | Total: 67.6s
+
+Pregunta 5/78: How often do I attend yoga classes to help with my anxiety?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3008.38it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.719] User attends yoga classes three times a week and notices being more focused on y
+    - [0.382] User says yoga helps them feel more grounded and centered, especially on days wh
+    - [0.331] User has been prioritizing self-care by doing yoga twice a week, which has been 
+    - [0.235] User is actively educating themselves about anxiety and depression and values ha
+    - [0.228] User is seeking recommendations for books or other resources to better understan
+    - [0.225] User wants tips for incorporating mindfulness into their daily routine, includin
+    - [0.211] User finds it helpful to talk with a therapist and plans to try journaling promp
+    - [0.208] User uses meditation to set intentions and focus on daily goals.
+    - [0.196] User asked for recommendations for stress-reducing apps or meditation techniques
+    - [0.163] User is seeking journaling prompts or reflection exercises to identify personal 
+  Correcta:   Three times a week.
+  Generada:   You attend yoga classes three times a week, which helps you feel grounded and centered, especially w
+  Memorias:   18 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129406 tokens entrada (91% desde cache) | 1396 salida | 0.0033 USD | acumulado 0.02 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 44.1s | Respuesta: 3.1s | Total: 62.1s
+
+Pregunta 6/78: Is my mom using the same grocery list method as me?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3593.70it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.666] User is trying to get their mother to switch from her old paper grocery list to 
+    - [0.663] User's mother has switched from her old paper grocery list to the same grocery l
+    - [0.582] User uses a new grocery list app to track ingredients and says it has been a lif
+    - [0.534] User recently downloaded a new app that helps organize grocery lists and keep tr
+    - [0.528] User plans to add onions and bell peppers to their grocery list and realized the
+    - [0.185] User bought cauliflower gnocchi from Trader Joe’s and is considering trying new 
+    - [0.163] User is planning to make chicken fajitas for dinner on November 16, 2026, and wa
+    - [0.160] User needs to buy fresh cilantro and parsley for the chicken fajitas and wants a
+    - [0.147] User chose Brown Butter Sage Sauce to serve with the cauliflower gnocchi at the 
+    - [0.144] User is planning a dinner party for the weekend of November 21–22, 2026, and cho
+  Correcta:   Yes.
+  Generada:   Yes. Your mom switched to the same grocery list app you use, so you can share lists.
+  Memorias:   13 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 131218 tokens entrada (92% desde cache) | 993 salida | 0.0030 USD | acumulado 0.02 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 39.3s | Respuesta: 2.1s | Total: 62.0s
+
+Pregunta 7/78: How many hours have I spent on my abstract ocean sculpture?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 2715.07it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.856] User has continued working on an abstract ocean sculpture at home; by November 1
+    - [0.838] User has been working at home on an abstract ocean sculpture and has spent aroun
+    - [0.689] User asked for techniques to give the abstract ocean sculpture a weathered, drif
+    - [0.647] User is considering a series of ocean-inspired sculptures, exploring different t
+    - [0.645] User is considering creating a series of ocean-inspired sculptures and wants to 
+    - [0.635] User is considering a series of ocean-inspired sculptures and wants to explore d
+    - [0.631] User is considering incorporating natural materials such as seashells or driftwo
+    - [0.483] User is considering combining layering and impasto techniques to create a sense 
+    - [0.422] User is considering creating a clay sculpture inspired by a sunset and wants to 
+    - [0.405] User is considering adding texture to their sunset sculpture by combining fabric
+  Correcta:   10-12 hours
+  Generada:   10–12 hours.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132799 tokens entrada (92% desde cache) | 1097 salida | 0.0031 USD | acumulado 0.02 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 41.4s | Respuesta: 1.8s | Total: 61.6s
+
+Pregunta 8/78: How many bikes do I currently own?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3800.27it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.609] User recently purchased a new hybrid bike, bringing their total to four bikes: a
+    - [0.605] User uses their mountain bike for trail rides and their commuter bike for daily 
+    - [0.493] User uses their road bike alongside two other bikes: a mountain bike and a commu
+    - [0.412] User is considering doing a century ride soon and is assessing whether their cur
+    - [0.403] User has obtained a new bike computer and has been tracking cycling progress on 
+    - [0.392] During the San Francisco-to-New York City road trip, User wants to stop at local
+    - [0.385] For the San Francisco-to-New York City road trip, User plans to bring all four b
+    - [0.375] User is planning a 50-mile ride for the weekend of November 21–22, 2026, and wan
+    - [0.375] User is considering upgrading their road bike to carbon-fiber wheels and is weig
+    - [0.359] User plans to use their road bike for the century ride and has been using it for
+  Correcta:   4
+  Generada:   You currently own four bikes.
+  Memorias:   21 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132171 tokens entrada (90% desde cache) | 1543 salida | 0.0035 USD | acumulado 0.02 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 44.3s | Respuesta: 2.5s | Total: 66.5s
+
+Pregunta 9/78: What day of the week do I take a cocktail-making class?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3831.73it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.794] User has a cocktail-making class on Thursday, November 19, 2026, and is excited 
+    - [0.769] User has a cocktail-making class on Friday, November 20, 2026, and is thinking o
+    - [0.693] User is looking for inspiration for a refreshing summer cocktail recipe that inc
+    - [0.681] User plans to try making a Paloma and a Tequila Sour during their cocktail-makin
+    - [0.356] User plans to try roasting watermelon to bring out its sweetness for the Waterme
+    - [0.179] User plans to serve grilled pineapple and prosciutto skewers and spicy shrimp ce
+    - [0.178] User is planning a dinner party and wants appetizer ideas that pair well with sp
+    - [0.175] User plans to serve coconut lime panna cotta with mango salsa as dessert at the 
+    - [0.162] User likes the sound of a Watermelon Basil Margarita and has recently been exper
+    - [0.151] User plans to serve grilled jerk chicken with mango salsa as the main course at 
+  Correcta:   Friday
+  Generada:   Friday.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 131689 tokens entrada (91% desde cache) | 1110 salida | 0.0032 USD | acumulado 0.03 USD
+  Score (propio): 1 [yes] | Accuracy: 100.00% | Carga: 42.5s | Respuesta: 2.5s | Total: 63.4s
+
+Pregunta 10/78: Where did I go on my most recent family trip?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4097.72it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.655] User recently took a family trip to Hawaii, where the family had a great time sn
+    - [0.648] User is excited to explore hidden gems in Tokyo and wants to compare the experie
+    - [0.644] User plans to include solo excursions on their next family trip and is consideri
+    - [0.626] During the family trip to Hawaii, snorkeling together was a highlight for the Us
+    - [0.589] User is excited to plan a solo trip to Tokyo and wants unique, off-the-beaten-pa
+    - [0.512] User is planning a trip to Europe and wants tips for creating a family-friendly 
+    - [0.334] User is considering planning a solo trip to Tokyo and is seeking tips for a firs
+    - [0.293] User is planning a future trip and is undecided between traveling solo or with f
+    - [0.289] User and their family visited Paris in October 2026, had an amazing time, and Us
+    - [0.177] User plans to try staying in social hostels and joining food tours or cooking cl
+  Correcta:   Paris
+  Generada:   Hawaii.
+  Memorias:   13 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130454 tokens entrada (92% desde cache) | 1089 salida | 0.0031 USD | acumulado 0.03 USD
+  Score (propio): 0 [no] | Accuracy: 90.00% | Carga: 40.6s | Respuesta: 2.2s | Total: 55.3s
+
+Pregunta 11/78: Where do I initially keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4839.19it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.980
+  Marcada (vieja): 'User plans to drop off their old sneakers at the cobbler during the we'
+  Conservada (nueva): 'User plans to organize their closet during the weekend of November 21–'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=d4ee8df9-eafc-4912-90bf-d52bc37e3b62: 'User plans to drop off their old sneakers at the cobbler during the we'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.667] User stores old sneakers under their bed, and the sneakers are starting to smell
+    - [0.665] User wants tips for keeping their old sneakers clean and fresh while stored unde
+    - [0.529] User plans to inventory their shoe collection and identify additional pairs to g
+    - [0.511] [OUTDATED as of 2026-11-20] User plans to drop off their old sneakers at the cob
+    - [0.509] User plans to organize their closet during the weekend of November 21–22, 2026, 
+    - [0.473] User is considering organizing their closet by shoe type, keeping boots, sneaker
+    - [0.470] User plans to donate their old dress shoes to a local charity thrift store on Sa
+    - [0.463] User plans to check online review platforms and ask around for recommendations w
+    - [0.432] User plans to donate their old dress shoes to a local charity thrift store on Sa
+    - [0.406] User is looking for a good cobbler to polish and condition their old sneakers; n
+  Correcta:   under my bed
+  Generada:   Under your bed.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 124485 tokens entrada (92% desde cache) | 1124 salida | 0.0030 USD | acumulado 0.03 USD
+  Score (propio): 1 [yes] | Accuracy: 90.91% | Carga: 44.0s | Respuesta: 1.6s | Total: 61.2s
+
+Pregunta 12/78: How many short stories have I written since I started writing regularly?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5534.55it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.684] User has been writing regularly for three months as of November 16, 2026, and ha
+    - [0.628] User has been enjoying writing short stories lately and has written four since s
+    - [0.457] User is working on several writing projects: short stories, a journal, and a mem
+    - [0.413] User is considering using prompts or themes to generate ideas for short stories 
+    - [0.402] User is considering writing a memoir focused on their experiences with writing o
+    - [0.389] User plans to begin their memoir about their writing experiences with a chapter 
+    - [0.324] User plans to describe their Sundays in the memoir chapter “The Spark”: Sundays 
+    - [0.314] User is experimenting with non-linear narrative structures in their writing and 
+    - [0.305] User is thinking of starting a writing group with friends; everyone is excited t
+    - [0.283] User is considering a short story about a mysterious library and thinks the them
+  Correcta:   seven
+  Generada:   7 short stories.
+  Memorias:   11 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129536 tokens entrada (91% desde cache) | 919 salida | 0.0031 USD | acumulado 0.04 USD
+  Score (propio): 1 [yes] | Accuracy: 91.67% | Carga: 36.2s | Respuesta: 1.0s | Total: 52.6s
+
+Pregunta 13/78: How many pages of 'A Short History of Nearly Everything' have I read so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4400.00it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.718] User is reading 'A Short History of Nearly Everything' and was on page 200 on No
+    - [0.716] User is reading 'A Short History of Nearly Everything' and was on page 200 on No
+    - [0.704] User finished reading the section about the discovery of DNA structure in 'A Sho
+    - [0.546] User is especially interested in how AI can help diagnose rare diseases, particu
+    - [0.159] User listened to an episode of the podcast 'The Science Hour' about AI-powered m
+    - [0.133] User is very interested in AI's potential for medical diagnosis and is learning 
+    - [0.116] User is interested in learning more about renewable energy and asked for online 
+    - [0.107] User is interested in the current state of AI in healthcare, particularly AI-pow
+    - [0.105] User is trying to learn more about AI-powered medical diagnosis and asked for on
+    - [0.098] User is interested in learning about AI applications in healthcare beyond diagno
+  Correcta:   220
+  Generada:   You’ve read 220 pages.
+  Memorias:   21 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 131838 tokens entrada (90% desde cache) | 1622 salida | 0.0035 USD | acumulado 0.04 USD
+  Score (propio): 1 [yes] | Accuracy: 92.31% | Carga: 49.4s | Respuesta: 1.8s | Total: 74.1s
+
+Pregunta 14/78: How many engineers do I lead when I just started my new role as Senior Software 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3096.98it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.993 > umbral=0.85
+  Memoria en conflicto: 'User plans to invite their manager Rachel to the team outing; the group will con'
+  Hecho nuevo:          'user: I apologize for the confusion! I lead a team of 4 engineers in my new role'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=8a907e50-ae09-4ba9-b553-6c3f20cf0e02: 'User plans to invite their manager Rachel to the team outing; the grou'
+INFO:mem0.memory.main:[NLI] Memoria en conflicto marcada id=8a907e50-ae09-4ba9-b553-6c3f20cf0e02
+  Memorias recuperadas para responder:
+    - [0.739] User's new role is Senior Software Engineer, where they lead a team of 4 enginee
+    - [0.683] User has been enjoying the Senior Software Engineer role, particularly leading a
+    - [0.227] [OUTDATED as of 2026-11-20] User plans to invite their manager Rachel to the tea
+    - [0.222] User plans to improve delegation by setting realistic deadlines and expectations
+    - [0.206] User is concerned about the team's workload and wants to delegate tasks more eff
+    - [0.162] User is planning a team outing for their engineers and is looking for fun activi
+    - [0.132] User thinks City View Rooftop sounds like a great option for the engineers’ team
+    - [0.130] User is considering whether to create a specific agenda for the team outing or l
+    - [0.123] User likes the idea of outdoor games for the engineers’ team outing and is consi
+    - [0.095] User is looking forward to a team hike at Mount Tamalpais State Park as an oppor
+  Correcta:   When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+  Generada:   When you started, you led 4 engineers. Now, you lead a team of 5 engineers.
+  Memorias:   16 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 131509 tokens entrada (92% desde cache) | 1317 salida | 0.0032 USD | acumulado 0.04 USD
+  Score (propio): 1 [yes] | Accuracy: 92.86% | Carga: 44.8s | Respuesta: 2.3s | Total: 60.7s
+
+Pregunta 15/78: How many titles are currently on my to-watch list?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3671.39it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.674] User has 25 titles on their to-watch list as of November 16, 2026, and is findin
+    - [0.637] User has a Netflix to-watch list of 25 titles as of November 16, 2026, and is st
+    - [0.490] User has a Netflix to-watch list with 20 titles waiting to be watched and is con
+    - [0.444] User plans to start watching 'Victoria' and 'The Last Kingdom' first because the
+    - [0.420] User has been meaning to watch 'Victoria' and plans to check out some historical
+    - [0.410] User plans to add 'Amistad' and 'Hotel Rwanda' to their to-watch list, describin
+    - [0.393] User just finished binge-watching 'The Crown' and loved it; they are looking for
+    - [0.377] User enjoys complex, atmospheric TV shows and appreciates a good balance between
+    - [0.375] User is interested in exploring more historical dramas like Netflix's 'The Crown
+    - [0.363] User is interested in recommendations for historical drama movies, specifically 
+  Correcta:   25
+  Generada:   25 titles.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 133618 tokens entrada (91% desde cache) | 1236 salida | 0.0033 USD | acumulado 0.05 USD
+  Score (propio): 1 [yes] | Accuracy: 93.33% | Carga: 46.2s | Respuesta: 1.9s | Total: 63.9s
+
+Pregunta 16/78: How many stars do I need to reach the gold level on my Starbucks Rewards app?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3879.44it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.996
+  Marcada (vieja): 'User corrected the Starbucks Rewards Gold-level requirement: they need'
+  Conservada (nueva): 'User corrected the Starbucks Rewards Gold-level requirement to 120 Sta'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=1f2e856e-e5fa-45e9-ac22-8a9074dbfc2b: 'User corrected the Starbucks Rewards Gold-level requirement: they need'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.871] User is trying to reach Gold level in the Starbucks Rewards app and asked how ma
+    - [0.757] [OUTDATED as of 2026-11-20] User corrected the Starbucks Rewards Gold-level requ
+    - [0.748] User corrected the Starbucks Rewards Gold-level requirement to 120 Stars, not 30
+    - [0.735] User uses the Starbucks Rewards app and wants tips for earning Stars faster.
+    - [0.416] User is considering buying a new laptop and is interested in Best Buy’s My Best 
+    - [0.331] User currently organizes loyalty cards and rewards points in a spreadsheet and i
+    - [0.277] User asked how many Fetch Rewards points are needed to redeem a $10 gift card.
+    - [0.159] User has a daily coffee routine and is considering stocking up on coffee; they a
+    - [0.107] User is planning a weekend shopping trip and is interested in ideas for what to 
+  Correcta:   120
+  Generada:   You need 120 Stars to reach Gold.
+  Memorias:   9 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 124037 tokens entrada (95% desde cache) | 589 salida | 0.0023 USD | acumulado 0.05 USD
+  Score (propio): 1 [yes] | Accuracy: 93.75% | Carga: 34.9s | Respuesta: 2.4s | Total: 47.1s
+
+Pregunta 17/78: How long have I been using my Fitbit Charge 3?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3880.82it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.989
+  Marcada (vieja): 'User has been using a Fitbit Charge 3 for six months as of November 16'
+  Conservada (nueva): 'User has been using a Fitbit Charge 3 for nine months as of November 1'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=57c40105-8d0d-4bfb-bab9-090799431cd3: 'User has been using a Fitbit Charge 3 for six months as of November 16'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.872] User has been using a Fitbit Charge 3 for nine months as of November 16, 2026, a
+    - [0.846] [OUTDATED as of 2026-11-20] User has been using a Fitbit Charge 3 for six months
+    - [0.158] User is considering whether to buy a yoga strap to use with the new Hugger Mugge
+    - [0.158] User wants tips for staying motivated to reach their daily step goal on lazy Sun
+    - [0.139] User has recently been having issues with sleep and is seeking tips to improve s
+    - [0.133] A book User recently read about the benefits of intermittent fasting inspired th
+    - [0.123] User has been using their current yoga mat for a while and has enjoyed it, but n
+    - [0.122] Reading health and wellness books before bed inspires User to make healthier cho
+    - [0.109] User has been working on establishing a consistent bedtime routine and creating 
+    - [0.109] User is a big fan of nonfiction books, especially about health and wellness topi
+  Correcta:   9 months
+  Generada:   You’ve been using your Fitbit Charge 3 for nine months.
+  Memorias:   19 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127007 tokens entrada (91% desde cache) | 1455 salida | 0.0033 USD | acumulado 0.05 USD
+  Score (propio): 1 [yes] | Accuracy: 94.12% | Carga: 42.4s | Respuesta: 3.6s | Total: 63.8s
+
+Pregunta 18/78: How many sessions of the bereavement support group did I attend?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3819.00it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.771] User attended three sessions of a bereavement support group while going through 
+    - [0.760] User recalls attending five sessions of a bereavement support group in 2025 and 
+    - [0.704] User attended a bereavement support group while going through a tough time and i
+    - [0.678] User found the bereavement support group helpful for processing emotions and fee
+    - [0.278] User is considering seeking a therapist or counselor for guidance and support wi
+    - [0.221] User is considering reaching out to friends and family members who have gone thr
+    - [0.184] User is organizing their calendar for the past year and wants help recalling the
+    - [0.142] User plans to restart exercise with small goals, tracking progress, and 10–15 mi
+    - [0.126] User plans to begin their memory box by gathering items that remind them of thei
+    - [0.114] User is interested in creating a memorial or ritual to honor their loved ones bu
+  Correcta:   five
+  Generada:   You attended five sessions.
+  Memorias:   18 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130650 tokens entrada (91% desde cache) | 1556 salida | 0.0034 USD | acumulado 0.06 USD
+  Score (propio): 1 [yes] | Accuracy: 94.44% | Carga: 44.0s | Respuesta: 2.0s | Total: 64.2s
+
+Pregunta 19/78: What type of camera lens did I purchase most recently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5400.00it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.989
+  Marcada (vieja): 'User is considering buying a new camera bag and has narrowed the optio'
+  Conservada (nueva): 'User decided to get the Think Tank Urban Disguise 40L instead of the L'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=6bc0b4d2-7c7a-4eea-a02c-2c4b8875d551: 'User is considering buying a new camera bag and has narrowed the optio'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.598] User is considering buying a wide-angle lens, such as a 14–24mm or 16–35mm, for 
+    - [0.540] User recently got a 50mm prime lens, which has been working out great, and wants
+    - [0.469] User is considering Gitzo and Really Right Stuff tripods and had not previously 
+    - [0.454] User is considering upgrading from a Nikon D5600 to a full-frame camera body, po
+    - [0.440] User mainly uses their camera for portrait and low-light photography and wants a
+    - [0.435] [OUTDATED as of 2026-11-20] User is considering buying a new camera bag and has 
+    - [0.367] User recently got a 70-200mm zoom lens and has been getting some great shots wit
+    - [0.347] User has been having issues with their old 18-55mm kit lens and has lately been 
+    - [0.322] User recently took great shots with their 70-200mm zoom lens at a local park and
+    - [0.250] User is considering getting a neutral density (ND) filter to support their photo
+  Correcta:   a 70-200mm zoom lens
+  Generada:   A 70–200mm zoom lens.
+  Memorias:   17 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132666 tokens entrada (90% desde cache) | 1256 salida | 0.0033 USD | acumulado 0.06 USD
+  Score (propio): 1 [yes] | Accuracy: 94.74% | Carga: 48.4s | Respuesta: 1.8s | Total: 65.4s
+
+Pregunta 20/78: How often do I see my therapist, Dr. Smith?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3250.66it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.827] User now sees Dr. Smith every week for help working on boundaries, updating the 
+    - [0.793] User has therapy sessions with Dr. Smith every two weeks and is looking forward 
+    - [0.700] User had a therapy session with Dr. Smith during the week of November 16, 2026, 
+    - [0.640] On November 16, 2026, User planned to meditate and journal after the conversatio
+    - [0.535] User has been feeling overwhelmed by commitments, and Dr. Smith suggested learni
+    - [0.236] User works 9 a.m. to 5 p.m., Monday through Friday, and has regular social commi
+    - [0.152] User's partner often invites them to social events, but the user sometimes prefe
+    - [0.129] User has been prioritizing yoga and meditation as self-care activities, and thes
+    - [0.128] User wants to make time for meditation and journaling as self-care while managin
+    - [0.126] User sometimes has trouble falling asleep despite trying journaling and maintain
+  Correcta:   every week
+  Generada:   You see Dr. Smith every week.
+  Memorias:   14 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 131707 tokens entrada (91% desde cache) | 1204 salida | 0.0033 USD | acumulado 0.06 USD
+  Score (propio): 1 [yes] | Accuracy: 95.00% | Carga: 37.5s | Respuesta: 2.3s | Total: 53.9s
+
+Pregunta 21/78: How many MCU films did I watch in the last 3 months?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4202.60it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.940
+  Marcada (vieja): 'User watched 4 MCU films in the three months before November 16, 2026,'
+  Conservada (nueva): 'In the three months before November 16, 2026, User watched 12 films, i'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=2b4efd0b-855c-59f5-baf8-de004a177264: 'User watched 4 MCU films in the three months before November 16, 2026,'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.768] In the three months before November 16, 2026, User watched 12 films, including 5
+    - [0.737] [OUTDATED as of 2026-11-20] User watched 4 MCU films in the three months before 
+    - [0.676] User has been on a Marvel binge recently and wants to share that interest by wat
+    - [0.227] User is considering including 'The Lion King' and 'Back to the Future' in a fami
+    - [0.215] User is planning a family movie marathon over the long weekend and wants to rewa
+    - [0.215] User is planning a family movie marathon over the upcoming long weekend, includi
+    - [0.203] User asked for snack and activity suggestions to complement watching 'Spider-Man
+    - [0.201] User asked for suggestions for movie-themed games or quizzes to play during brea
+    - [0.157] User is considering 'The Goonies' and 'The NeverEnding Story' for the family mov
+    - [0.153] User plans to include a movie trivia game and a quote-along competition during b
+  Correcta:   5
+  Generada:   5 MCU films.
+  Memorias:   16 | Contradicciones: 1 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 120575 tokens entrada (92% desde cache) | 1296 salida | 0.0030 USD | acumulado 0.07 USD
+  Score (propio): 1 [yes] | Accuracy: 95.24% | Carga: 44.5s | Respuesta: 2.0s | Total: 64.2s
+
+Pregunta 22/78: How many of Emma's recipes have I tried out?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3496.48it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.979
+  Marcada (vieja): 'User enjoys Emma’s recipes on her channel and has already tried two of'
+  Conservada (nueva): 'As of November 16, 2026, User has tried three of Emma’s recipes and th'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=efe92346-a679-4338-bafa-eb3c5ee1ebb4: 'User enjoys Emma’s recipes on her channel and has already tried two of'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.821] As of November 16, 2026, User has tried three of Emma’s recipes and thinks they 
+    - [0.795] [OUTDATED as of 2026-11-20] User enjoys Emma’s recipes on her channel and has al
+    - [0.266] User has already tried the vegan cheesecake recipe that was suggested and is pla
+    - [0.251] User is thinking of trying new recipes over the weekend of November 21–22, 2026,
+    - [0.176] User is interested in trying more vegan restaurants and is also looking for reco
+    - [0.167] User plans to take a taxi or ride-hailing service around Barcelona and Rome when
+    - [0.160] User wants recommendations for must-try vegan dishes and local specialties in Ba
+    - [0.144] User wants advice on getting around Barcelona and Rome while carrying ingredient
+    - [0.128] User is looking for recommendations for vegan restaurants in Spain or Italy as p
+    - [0.115] User is considering cooking classes in Barcelona and Rome and wants affordable a
+  Correcta:   3
+  Generada:   Three.
+  Memorias:   19 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129028 tokens entrada (91% desde cache) | 1201 salida | 0.0031 USD | acumulado 0.07 USD
+  Score (propio): 1 [yes] | Accuracy: 95.45% | Carga: 40.2s | Respuesta: 2.2s | Total: 58.1s
+
+Pregunta 23/78: What company is Rachel, an old colleague from my previous company, currently wor
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3426.95it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.960
+  Marcada (vieja): 'User met Alex, the founder of a new startup in the edtech space, at a '
+  Conservada (nueva): 'User plans to add their friend David to their contact-tracking spreads'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=cf240214-48c4-4f20-8dc6-145a9d139076: 'User met Alex, the founder of a new startup in the edtech space, at a '
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.815] User is thinking about catching up with Rachel, an old colleague from a previous
+    - [0.784] User met Rachel, an old colleague from a previous company, at the TechConnect co
+    - [0.368] User met Jason, the CEO of StartupX, at the TechConnect conference and plans to 
+    - [0.254] [OUTDATED as of 2026-11-20] User met Alex, the founder of a new startup in the e
+    - [0.235] User found Dr. Maria Hernandez really informative during the Women in Tech webin
+    - [0.232] User plans to add their friend David to their contact-tracking spreadsheet; they
+    - [0.216] User met Alex, the founder of a new edtech startup, and they discussed their sha
+    - [0.205] At the local chamber of commerce speed networking event, User also met several o
+    - [0.196] User plans to reach out to Alex to ask about his edtech startup, using the recom
+    - [0.194] User is considering adding a “Company” column to their contact-tracking spreadsh
+  Correcta:   TechCorp
+  Generada:   TechCorp
+  Memorias:   18 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132542 tokens entrada (90% desde cache) | 1329 salida | 0.0034 USD | acumulado 0.07 USD
+  Score (propio): 1 [yes] | Accuracy: 95.65% | Carga: 47.6s | Respuesta: 1.8s | Total: 67.2s
+
+Pregunta 24/78: For the coffee-to-water ratio in my French press, did I switch to more water per
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3390.28it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.993
+  Marcada (vieja): 'User plans to try Kenyan coffee first as a coffee option for a recipe '
+  Conservada (nueva): 'User plans to try Earl Grey tea with their citrus-infused coffee.'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=8809e076-ea72-44b1-b9b6-f95ec0cb5516: 'User plans to try Kenyan coffee first as a coffee option for a recipe '
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.797] User has been experimenting with a French press and finds that 1 tablespoon of c
+    - [0.685] User plans to brew a fresh pot of coffee in the morning using their new beans an
+    - [0.640] User wants to clean their French press thoroughly, especially to remove old coff
+    - [0.613] User plans to brew the new beans from their coffee subscription in a French pres
+    - [0.243] User is considering trying a new coffee recipe with citrus notes and asked for c
+    - [0.219] [OUTDATED as of 2026-11-20] User plans to try Kenyan coffee first as a coffee op
+    - [0.191] User plans to try Earl Grey tea with their citrus-infused coffee.
+    - [0.184] User asked for advice on the best way to store tea leaves to keep them fresh.
+    - [0.166] User is planning to organize their tea cabinet and intends to use the tea-storag
+    - [0.158] User is considering trying a tea subscription service and asked for recommendati
+  Correcta:   You switched to less water (5 ounces) per tablespoon of coffee.
+  Generada:   Less water per tablespoon: you changed from 6 ounces to 5 ounces.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129662 tokens entrada (91% desde cache) | 1102 salida | 0.0031 USD | acumulado 0.08 USD
+  Score (propio): 1 [yes] | Accuracy: 95.83% | Carga: 32.4s | Respuesta: 2.8s | Total: 49.1s
+
+Pregunta 25/78: Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3713.59it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.765] User recently moved the painting “Ethereal Dreams” by Emma Taylor above their be
+    - [0.681] User has a painting titled “Ethereal Dreams” above the living room sofa and plan
+    - [0.628] User rearranged their bedroom and is enjoying how the digital print “Moonlit Oce
+    - [0.431] User is planning an art piece featuring a figure in a dreamlike environment, ins
+    - [0.397] User plans to experiment with glazing, soft brushstrokes, and layers of transpar
+    - [0.389] User plans to create a dreamlike artwork featuring a figure floating in a misty,
+    - [0.267] User has a new painting above the living room sofa and enjoys how it adds a nice
+    - [0.252] User plans to create a cozy, welcoming atmosphere for an art-themed party by dis
+    - [0.184] User is looking for contemporary artists or art styles to inspire their next art
+    - [0.166] User wants to create an art piece that combines their love of abstract art with 
+  Correcta:   in my bedroom
+  Generada:   Above the bed in the bedroom.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 131416 tokens entrada (90% desde cache) | 1288 salida | 0.0033 USD | acumulado 0.08 USD
+  Score (propio): 1 [yes] | Accuracy: 96.00% | Carga: 42.4s | Respuesta: 2.7s | Total: 64.0s
+
+Pregunta 26/78: How many times have I worn my new black Converse Chuck Taylor All Star sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3957.36it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.873] User has worn their new black Converse Chuck Taylor All Star sneakers six times 
+    - [0.842] User loves their new black Converse Chuck Taylor All Star sneakers and has worn 
+    - [0.654] User is considering buying a waterproofing spray to protect their new black Conv
+    - [0.480] User owns white Adidas Superstars that got dirty and scuffed after being worn to
+    - [0.433] User is considering buying a new pair of Vans Old Skool sneakers and wants to kn
+    - [0.169] User plans to get a leather shoe-cleaning kit to keep their brown leather boots 
+    - [0.164] User wants tips for caring for their leather boots to prevent future damage.
+    - [0.163] User is considering getting a shoe-cleaning kit specifically designed for leathe
+    - [0.154] User plans to check online reviews and ask friends for recommendations when look
+    - [0.146] User is considering getting a shoe tree to help maintain the shape of their brow
+  Correcta:   six
+  Generada:   Six times.
+  Memorias:   14 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129860 tokens entrada (92% desde cache) | 931 salida | 0.0030 USD | acumulado 0.08 USD
+  Score (propio): 1 [yes] | Accuracy: 96.15% | Carga: 36.6s | Respuesta: 3.3s | Total: 55.2s
+
+Pregunta 27/78: How many episodes of the Science series have I completed on Crash Course?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4439.49it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.834] User has completed 50 episodes of Crash Course's Science series and found it ver
+    - [0.716] User is currently on episode 10 of the Crash Course Science series.
+    - [0.610] User is planning a daily routine to make better use of their time and wants to i
+    - [0.566] User wants a daily routine that prioritizes reading and exercise and includes wa
+    - [0.397] User is taking a data science course on Coursera and wants book recommendations 
+    - [0.354] User has decided to get 'Data Science For Dummies' as a beginner-friendly resour
+    - [0.203] User plans to start with Khan Academy's Linear Algebra Course and then move on t
+    - [0.165] User is considering taking an online course in Data Science with Python and is s
+    - [0.149] User has finished reading 'Sapiens' and is currently reading 'The Power of Habit
+    - [0.149] User plans to supplement Spanish learning with SpanishDict first, then move on t
+  Correcta:   50
+  Generada:   50 episodes
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129393 tokens entrada (91% desde cache) | 1060 salida | 0.0031 USD | acumulado 0.08 USD
+  Score (propio): 1 [yes] | Accuracy: 96.30% | Carga: 42.5s | Respuesta: 2.1s | Total: 57.3s
+
+Pregunta 28/78: Do I go to the gym more frequently than I did previously?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3180.67it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.450] User has been consistent with their gym routine, working out four times a week, 
+    - [0.383] User does not work out on Mondays, Wednesdays, or Fridays; User goes to the gym 
+    - [0.369] User wants to make time for reading, meditation, and workouts as part of their w
+    - [0.323] User wants meal prep ideas for Sunday, November 22, 2026, and prefers the weekly
+    - [0.309] User uses a habit tracker app to track daily and weekly tasks, meditation, and e
+    - [0.240] User is looking for healthy dinner recipes to meal prep on Sunday, continuing th
+    - [0.239] User wants suggestions for prioritizing tasks and staying organized while planni
+    - [0.206] User tries to assign specific tasks to particular days, including Fridays for ad
+    - [0.201] User is considering trying the Quinoa and Roasted Vegetable Bowls recipe on Sund
+    - [0.197] User plans to add grilled chicken and black beans to the Quinoa and Roasted Vege
+  Correcta:   Yes
+  Generada:   I can’t tell from these memories—they say you currently go to the gym on Tuesdays, Thursdays, and Sa
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130946 tokens entrada (93% desde cache) | 1124 salida | 0.0030 USD | acumulado 0.09 USD
+  Score (propio): 0 [no] | Accuracy: 92.86% | Carga: 37.3s | Respuesta: 1.5s | Total: 53.7s
+
+Pregunta 29/78: How many new postcards have I added to my collection since I started collecting 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3902.34it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.782] User has added 25 new postcards to their collection since restarting collecting 
+    - [0.717] User has resumed collecting postcards and has added 17 new postcards since resta
+    - [0.650] User recently visited a local antique shop and acquired 8 more postcards for the
+    - [0.529] User wants tips for categorizing and organizing their postcard collection so the
+    - [0.527] User provided details for 3 of 17 new postcards: “1920s Paris Postcard” (1920s, 
+    - [0.481] User is looking for a simple, effective way to display their postcard collection
+    - [0.463] User plans to organize their postcard collection by theme as a starting approach
+    - [0.463] User wants recommendations for resources or online communities specifically for 
+    - [0.454] User plans to start displaying their postcard collection with a simple postcard 
+    - [0.387] User is organizing and cataloging their vintage camera equipment and postcard co
+  Correcta:   25
+  Generada:   25 postcards.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129011 tokens entrada (92% desde cache) | 1183 salida | 0.0031 USD | acumulado 0.09 USD
+  Score (propio): 1 [yes] | Accuracy: 93.10% | Carga: 46.1s | Respuesta: 2.4s | Total: 66.1s
+
+Pregunta 30/78: How many videos of Corey Schafer's Python programming series have I completed so
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4110.68it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.984
+  Marcada (vieja): 'User has been brushing up on Python by watching Corey Schafer's Python'
+  Conservada (nueva): 'As of November 16, 2026, User has completed 30 videos in Corey Schafer'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=bb9e6b8b-fdfc-4e18-b097-c6af7a06a0c5: 'User has been brushing up on Python by watching Corey Schafer's Python'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.885] As of November 16, 2026, User has completed 30 videos in Corey Schafer's Python 
+    - [0.865] [OUTDATED as of 2026-11-20] User has been brushing up on Python by watching Core
+    - [0.821] As of November 16, 2026, User has completed 30 videos in Corey Schafer's Python 
+    - [0.651] User is preparing to apply NLP to a project and is looking for beginner-friendly
+    - [0.175] User plans to start the DataCamp course and set up a project environment for NLP
+    - [0.174] User plans to start a DataCamp course as a good starting point for learning NLP,
+    - [0.156] User is working on a project involving text analysis and sentiment analysis and 
+    - [0.137] User plans to start with a simple NLP project—sentiment analysis using IMDB or A
+    - [0.136] User plans to begin their NLP project with a simple sentiment-analysis model usi
+    - [0.128] User plans to explore popular NLP datasets and begin an NLP project focused on t
+  Correcta:   30
+  Generada:   30 videos.
+  Memorias:   18 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127739 tokens entrada (91% desde cache) | 1427 salida | 0.0033 USD | acumulado 0.09 USD
+  Score (propio): 1 [yes] | Accuracy: 93.33% | Carga: 38.6s | Respuesta: 2.4s | Total: 58.9s
+
+Pregunta 31/78: How long have I been living in my current apartment in Harajuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3562.60it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.992
+  Marcada (vieja): 'User has been living in Tokyo for about a month as of November 16, 202'
+  Conservada (nueva): 'User has been living in Harajuku for three months as of November 16, 2'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=94614a32-35b0-4436-aa3d-ab32f190dc12: 'User has been living in Tokyo for about a month as of November 16, 202'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.800] User has been living in Harajuku for three months as of November 16, 2026, and i
+    - [0.797] [OUTDATED as of 2026-11-20] User has been living in Tokyo for about a month as o
+    - [0.595] User has not explored much of Harajuku’s historical side yet and has been meanin
+    - [0.553] User asked what Kawai Shrine is known for, indicating interest in learning about
+    - [0.464] User has been exploring a new Tokyo neighborhood every Sunday; during the weeken
+    - [0.445] User plans to visit Kawai Shrine in Harajuku when they have a chance, following 
+    - [0.403] User has been enjoying Tokyo's fall foliage in November 2026, which feels differ
+    - [0.338] User is considering inviting friends who live in Tokyo to join the Japanese Alps
+    - [0.210] User decided to stay in Matsumoto for the November 2026 Japanese Alps trip, pref
+    - [0.199] On November 16, 2026, User asked about autumn festivals or events happening in Y
+  Correcta:   3 months
+  Generada:   Three months.
+  Memorias:   21 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129195 tokens entrada (90% desde cache) | 1652 salida | 0.0035 USD | acumulado 0.10 USD
+  Score (propio): 1 [yes] | Accuracy: 93.55% | Carga: 43.6s | Respuesta: 1.6s | Total: 66.9s
+
+Pregunta 32/78: What brand of BBQ sauce am I currently obsessed with?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4541.40it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Marcada (vieja): 'User plans to try post oak wood chips when making the “Low and Slow Sm'
+  Conservada (nueva): 'User plans to try Killer Hogs BBQ Rub for brisket at the upcoming back'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=58cb81fc-ae61-4e56-bd06-9f6d3ba4b24e: 'User plans to try post oak wood chips when making the “Low and Slow Sm'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.716] User is currently obsessed with Kansas City Masterpiece BBQ sauce on ribs, addin
+    - [0.670] User is thinking of serving BBQ pulled pork on a bun with coleslaw and pickles, 
+    - [0.659] User is considering buying a BBQ rub to complement Sweet Baby Ray's BBQ sauce an
+    - [0.547] User's favorite BBQ sauce is Sweet Baby Ray's, and User plans to stock up on it 
+    - [0.498] User is considering serving burgers and hot dogs at the upcoming backyard BBQ an
+    - [0.484] User is planning to host another backyard BBQ soon, suggesting they have hosted 
+    - [0.472] User plans to try Killer Hogs BBQ Rub for brisket at the upcoming backyard BBQ, 
+    - [0.414] User asked for tips on preparing brisket before applying Killer Hogs BBQ Rub.
+    - [0.413] User is considering adding BBQ pulled pork to the menu for an upcoming backyard 
+    - [0.407] User plans to trim excess fat and remove the silver skin from the brisket before
+  Correcta:   Kansas City Masterpiece
+  Generada:   Kansas City Masterpiece.
+  Memorias:   18 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129780 tokens entrada (91% desde cache) | 1201 salida | 0.0031 USD | acumulado 0.10 USD
+  Score (propio): 1 [yes] | Accuracy: 93.75% | Carga: 41.2s | Respuesta: 2.2s | Total: 63.6s
+
+Pregunta 33/78: How long have my parents been staying with me in the US?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3805.86it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.724] User's parents have been staying with the user in the United States for nine mon
+    - [0.680] User's parents have been living with the user in the United States for the past 
+    - [0.529] User asked whether having their parents live with them in the United States woul
+    - [0.514] User wants to understand the U.S. waiver of inadmissibility process and how it m
+    - [0.442] User is concerned about how their parents living with them affects the financial
+    - [0.437] User is asking whether, for a U.S. green-card application, they must count their
+    - [0.436] User plans to ask an immigration attorney about their experience with green-card
+    - [0.309] User is considering applying for a U.S. green card and is unsure about the appli
+    - [0.303] User is planning to apply for a U.S. green card soon and wants guidance on the a
+    - [0.280] User wants to know which common mistakes to avoid when applying for a U.S. green
+  Correcta:   nine months
+  Generada:   Your parents have been staying with you in the U.S. for nine months as of November 16, 2026.
+  Memorias:   11 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132516 tokens entrada (92% desde cache) | 975 salida | 0.0030 USD | acumulado 0.10 USD
+  Score (propio): 1 [yes] | Accuracy: 93.94% | Carga: 36.4s | Respuesta: 1.7s | Total: 52.1s
+
+Pregunta 34/78: How long have I been sticking to my daily tidying routine?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3634.69it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.826] User has maintained a daily tidying routine for three weeks as of November 16, 2
+    - [0.804] User has maintained a daily tidying routine for four weeks as of November 16, 20
+    - [0.684] User is considering turning the space freed by removing the old garage desk into
+    - [0.439] User plans to stock their dedicated tidying workstation with all-purpose cleaner
+    - [0.282] User is considering adopting a “one-touch rule” for cleaning and wants advice on
+    - [0.235] User plans to try implementing the “one-touch rule” while cleaning out the garag
+    - [0.233] User started using an all-natural bathroom-cleaning brand around November 9, 202
+    - [0.211] User plans to clean out the garage during the weekend of November 21–22, 2026, a
+    - [0.202] User plans to begin organizing the garage by purging and categorizing all items,
+    - [0.200] User is considering organizing cleaning supplies either by room or by type of cl
+  Correcta:   4 weeks
+  Generada:   Four weeks.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 123323 tokens entrada (91% desde cache) | 1399 salida | 0.0032 USD | acumulado 0.11 USD
+  Score (propio): 1 [yes] | Accuracy: 94.12% | Carga: 38.6s | Respuesta: 1.4s | Total: 61.1s
+
+Pregunta 35/78: How long have I had my cat, Luna?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5107.43it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.758] User has had her cat Luna for about nine months as of November 16, 2026, and has
+    - [0.723] User has had her cat Luna for about six months as of November 16, 2026, and has 
+    - [0.666] User has a cat named Luna and is interested in keeping her healthy and happy, pa
+    - [0.616] User has started brushing her cat Luna daily with a new brush, and the brushing 
+    - [0.589] User is considering getting a pet camera to keep an eye on her cat Luna while aw
+    - [0.579] User gives Luna freeze-dried salmon treats, which Luna loves.
+    - [0.571] User is also looking for ways to reduce how much hair their cat Luna sheds.
+    - [0.551] User is considering setting up a playtime routine for Luna to help her get more 
+    - [0.550] User is considering getting Luna microchipped and asked whether it is a good ide
+    - [0.543] User is looking for recommendations for interactive toys to keep Luna engaged an
+  Correcta:   9 months
+  Generada:   You’ve had Luna for about nine months.
+  Memorias:   14 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130547 tokens entrada (91% desde cache) | 1174 salida | 0.0031 USD | acumulado 0.11 USD
+  Score (propio): 1 [yes] | Accuracy: 94.29% | Carga: 42.9s | Respuesta: 2.3s | Total: 57.9s
+
+Pregunta 36/78: How many Instagram followers do I currently have?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5899.49it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.710] User reached 600 Instagram followers by November 16, 2026, up from 500 followers
+    - [0.594] User reached 500 followers on Instagram around November 9, 2026, and hopes to bu
+    - [0.569] User's Instagram followers love seeing photos of the user's cat, Luna, and the u
+    - [0.483] User is working to increase their social media presence, especially on Instagram
+    - [0.445] User is considering sharing the Instagram poll results in a follow-up post or St
+    - [0.438] User asked for ways to encourage followers to share user-generated content (UGC)
+    - [0.431] User plans to share manuscript snippets on Instagram Stories as they complete ne
+    - [0.426] User plans to answer a selection of questions during their Instagram Q&A, addres
+    - [0.399] User is considering using Instagram Stories to share their writing process, incl
+    - [0.397] User plans to promote an Instagram Q&A by announcing it in advance, creating a b
+  Correcta:   600
+  Generada:   600 followers
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130979 tokens entrada (89% desde cache) | 1498 salida | 0.0036 USD | acumulado 0.11 USD
+  Score (propio): 1 [yes] | Accuracy: 94.44% | Carga: 45.3s | Respuesta: 1.9s | Total: 66.9s
+
+Pregunta 37/78: How many dozen eggs do we currently have stocked up in our refrigerator?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4813.49it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Marcada (vieja): 'User plans to start with a fresh chèvre recipe as a beginner cheese-ma'
+  Conservada (nueva): 'User is excited to make cheese with their goat milk and has shifted fr'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=1188b5cf-df5e-4595-bd51-614a146faa18: 'User plans to start with a fresh chèvre recipe as a beginner cheese-ma'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.662] User has 30 dozen eggs stocked in the fridge and needs to start using them up.
+    - [0.584] User has 20 dozen fresh eggs from their coop stocked in the fridge and wants tip
+    - [0.404] User has a large amount of goat milk stocked in the fridge and needs to start us
+    - [0.362] User has fresh eggs and goat milk and is considering trying new breakfast recipe
+    - [0.325] User is considering making egg salad as a quick lunch and wants a simple recipe 
+    - [0.273] User is considering making quiche for dinner and asked for a simple recipe.
+    - [0.257] [OUTDATED as of 2026-11-20] User plans to start with a fresh chèvre recipe as a 
+    - [0.233] User plans to try the spinach and feta variation of the quiche for dinner.
+    - [0.216] User plans to start building a predator-proof fence around the chicken coop this
+    - [0.204] User is excited to make cheese with their goat milk and has shifted from plannin
+  Correcta:   20
+  Generada:   20 dozen eggs.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129301 tokens entrada (93% desde cache) | 1050 salida | 0.0029 USD | acumulado 0.12 USD
+  Score (propio): 1 [yes] | Accuracy: 94.59% | Carga: 41.4s | Respuesta: 1.9s | Total: 58.8s
+
+Pregunta 38/78: How many issues of National Geographic have I finished reading?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 6235.41it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Marcada (vieja): 'User regularly reads the newspapers The New York Times and The Daily N'
+  Conservada (nueva): 'User regularly reads The Atlantic and Medium online.'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=bccc7d93-f9f7-41f6-a2c1-b5aa498b901b: 'User regularly reads the newspapers The New York Times and The Daily N'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.771] User enjoys The New Yorker for its fiction and National Geographic for its in-de
+    - [0.706] User has finished five National Geographic issues featuring articles about the A
+    - [0.570] User has finished a fifth National Geographic issue while reading about the Amaz
+    - [0.541] User has been reading about the Yanomami people and their struggles in National 
+    - [0.227] User usually reads magazines covering news, science, and entertainment.
+    - [0.189] User has recently been reading Rolling Stone frequently, especially its online c
+    - [0.185] User regularly reads The Atlantic and Medium online.
+    - [0.183] [OUTDATED as of 2026-11-20] User regularly reads the newspapers The New York Tim
+    - [0.147] User is interested in documentaries or films about the Amazon rainforest to supp
+    - [0.140] User asked for recommendations of articles or books about the Amazon rainforest’
+  Correcta:   Five
+  Generada:   Five.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 123116 tokens entrada (93% desde cache) | 982 salida | 0.0027 USD | acumulado 0.12 USD
+  Score (propio): 1 [yes] | Accuracy: 94.74% | Carga: 39.2s | Respuesta: 3.0s | Total: 57.2s
+
+Pregunta 39/78: Did I finish reading 'The Nightingale' by Kristin Hannah?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4682.45it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.748] User loved Kristin Hannah’s 'The Nightingale' and felt its emotional ending was 
+    - [0.734] User has been reading 'The Nightingale' by Kristin Hannah but temporarily put it
+    - [0.705] User has recently been enjoying historical fiction and finished reading 'The Sev
+    - [0.677] User plans to ask bookstore staff for recommendations that could help them get b
+    - [0.636] User plans to read 'The Poppy War' next, while leaving 'The Nightingale' by Kris
+    - [0.223] User plans to start reading 'The Alice Network' and is especially interested in 
+    - [0.195] User has recently been enjoying audiobooks during morning runs and is looking fo
+    - [0.187] User is interested in 'The Poppy War,' a 440-page book, and wants to estimate ho
+    - [0.163] User picked up 'The Song of Achilles' based on a staff recommendation and is exc
+    - [0.161] User has recently been enjoying mythology-inspired books and has read or is fami
+  Correcta:   Yes
+  Generada:   Yes—you finished it and found its emotional ending perfect.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129901 tokens entrada (90% desde cache) | 1231 salida | 0.0034 USD | acumulado 0.12 USD
+  Score (propio): 1 [yes] | Accuracy: 94.87% | Carga: 39.1s | Respuesta: 3.6s | Total: 57.1s
+
+Pregunta 40/78: Where did I get my guitar serviced?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3750.75it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.686] User says they had their guitar serviced at the music shop on Main St and consid
+    - [0.647] User is in ZIP code 12345 and is considering having their acoustic guitar servic
+    - [0.616] User plans to have their acoustic guitar serviced before attending the music fes
+    - [0.597] User has an acoustic guitar that they have been meaning to get serviced but have
+    - [0.522] User plans to call Rhythm Central, a music shop on Main St that their friend rec
+    - [0.357] User is considering buying a violin and taking lessons, and is looking for local
+    - [0.311] User corrected their location from ZIP code 12345 to the city center and plans t
+    - [0.298] User is considering learning to play the violin and is looking for recommendatio
+    - [0.256] User plans to list their old saxophone case on Craigslist for $120, pricing it s
+    - [0.251] User is considering selling their old saxophone case and wants advice on how to 
+  Correcta:   The music shop on Main St.
+  Generada:   At the music shop on Main St.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127774 tokens entrada (91% desde cache) | 1197 salida | 0.0032 USD | acumulado 0.13 USD
+  Score (propio): 1 [yes] | Accuracy: 95.00% | Carga: 42.5s | Respuesta: 2.2s | Total: 58.4s
+
+Pregunta 41/78: What is my current highest score in Ticket to Ride?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4142.95it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.823] User achieved a new personal-best score of 132 points in Ticket to Ride, surpass
+    - [0.791] User recently achieved a personal-best score of 124 points in Ticket to Ride, ha
+    - [0.630] User enjoys the strategy aspect of Ticket to Ride and is thinking of hosting ano
+    - [0.221] User is intrigued by the board game Scythe and wants to know its typical playtim
+    - [0.201] User is interested in trying Carcassonne after hearing positive things and wants
+    - [0.188] User plans to play Carcassonne with a smaller group rather than 6–8 players and 
+    - [0.171] User and their friends have played and loved Codenames and What Do You Meme.
+    - [0.161] User is especially drawn to the Nordic Kingdom faction in Scythe because of its 
+    - [0.157] User is considering getting Deception: Murder in Hong Kong or Two Rooms and a Bo
+    - [0.155] User decided to get Deception: Murder in Hong Kong for a game night, drawn to pl
+  Correcta:   132 points
+  Generada:   132 points
+  Memorias:   12 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129512 tokens entrada (91% desde cache) | 944 salida | 0.0031 USD | acumulado 0.13 USD
+  Score (propio): 1 [yes] | Accuracy: 95.12% | Carga: 40.9s | Respuesta: 2.5s | Total: 55.0s
+
+Pregunta 42/78: How many tops have I bought from H&M so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4212.91it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.976
+  Marcada (vieja): 'User has visited The Vault, a new thrift store near their work, and wa'
+  Conservada (nueva): 'User is considering visiting The Vault, the new thrift store near thei'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=b3218a5a-d0b3-403b-8c3b-511affe2fd8a: 'User has visited The Vault, a new thrift store near their work, and wa'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.847] User has bought five tops from H&M so far and is considering buying a few more.
+    - [0.703] User bought three tops from H&M and is really enjoying H&M’s summer collection; 
+    - [0.597] User is planning to visit the mall this weekend and is considering buying more t
+    - [0.474] User is planning to go to the mall during the weekend of November 21–22, 2026, a
+    - [0.196] User is considering buying a new pair of sneakers from ASOS and may place anothe
+    - [0.167] User is interested in buying household essentials at Target and asked about curr
+    - [0.159] User is interested in popular online marketplaces and websites for finding vinta
+    - [0.119] User is interested in finding other thrift stores or vintage shops in their area
+    - [0.113] User is curious about customer reviews of The Vault, a new thrift store near the
+    - [0.093] [OUTDATED as of 2026-11-20] User has visited The Vault, a new thrift store near 
+  Correcta:   five
+  Generada:   Five tops.
+  Memorias:   14 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127087 tokens entrada (92% desde cache) | 989 salida | 0.0029 USD | acumulado 0.13 USD
+  Score (propio): 1 [yes] | Accuracy: 95.24% | Carga: 46.6s | Respuesta: 2.4s | Total: 62.9s
+
+Pregunta 43/78: How much did I earn at the Downtown Farmers Market on my most recent visit?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3694.88it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.819] User earned $420 at the Downtown Farmers Market on their most recent visit, repo
+    - [0.727] User's small business sales so far in 2026 include $220 at the Downtown Farmers 
+    - [0.692] User's small business sales so far in 2026 also include $350 at the Downtown Far
+    - [0.605] User is considering offering a gift basket themed around the Downtown Farmers Ma
+    - [0.243] User recently attended the Foodie Festival and found it amazing; User also clear
+    - [0.228] User runs a small business and is tracking its sales and expenses. As of Novembe
+    - [0.164] User is considering expanding their small business product line with more artisa
+    - [0.157] User has nearly sold out of their current candle stock and is considering restoc
+    - [0.157] User's small business sells homemade jams, candles, and soaps. Strawberry jam is
+    - [0.121] User has several large orders coming in and wants advice on managing inventory f
+  Correcta:   $420
+  Generada:   $420
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132860 tokens entrada (92% desde cache) | 1192 salida | 0.0031 USD | acumulado 0.13 USD
+  Score (propio): 1 [yes] | Accuracy: 95.35% | Carga: 43.5s | Respuesta: 2.2s | Total: 63.0s
+
+Pregunta 44/78: How many times have I tried making a Negroni at home since my friend Emma showed
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4937.63it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.893] User has made a Negroni at home 10 times since friend Emma showed them how and i
+    - [0.891] User has made a Negroni at home 10 times since friend Emma showed them how to ma
+    - [0.844] User has made a Negroni at home five times while working to perfect the recipe, 
+    - [0.703] User has been experimenting with Negroni recipes at home and finds that Hendrick
+    - [0.672] User finds that Hendrick's gin and Carpano Antica vermouth bring out the flavors
+    - [0.663] User has been meaning to experiment with a White Negroni, which they understand 
+    - [0.641] User asked for recommendations for bitter liqueurs to use in place of Campari in
+    - [0.613] User plans to try bitter liqueurs as Campari substitutes in Negronis and compare
+    - [0.473] User asked for recommendations for other classic cocktails to try making.
+    - [0.438] User is interested in recommendations for other gin-based cocktails to make.
+  Correcta:   10
+  Generada:   10 times.
+  Memorias:   22 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 121081 tokens entrada (90% desde cache) | 1546 salida | 0.0033 USD | acumulado 0.14 USD
+  Score (propio): 1 [yes] | Accuracy: 95.45% | Carga: 41.7s | Respuesta: 3.0s | Total: 68.2s
+
+Pregunta 45/78: What time do I usually go to the gym?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5169.87it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.530] User usually goes to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays, and
+    - [0.459] User thinks Tuesday at 2:00 pm would work well for a meeting with a potential cl
+    - [0.364] User is flexible about scheduling a meeting with a potential client but prefers 
+    - [0.282] User is planning their week and wants help choosing the best time to schedule a 
+    - [0.168] User plans to email the potential client a Google Drive file link with a brief n
+    - [0.160] User has many projects underway at the same time and wants advice on organizing 
+    - [0.157] User already uses Todoist for task management and is leaning toward it as a prod
+    - [0.139] User is planning their week and is interested in productivity apps to stay organ
+    - [0.123] User wants to explore Todoist’s features for setting and tracking goals and moni
+  Correcta:   6:00 pm
+  Generada:   You usually go to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays.
+  Memorias:   11 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 117404 tokens entrada (93% desde cache) | 854 salida | 0.0026 USD | acumulado 0.14 USD
+  Score (propio): 0 [no] | Accuracy: 93.33% | Carga: 30.3s | Respuesta: 2.0s | Total: 47.8s
+
+Pregunta 46/78: How many Crash Course videos have I watched in the past few weeks?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3573.29it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.829] User has watched 15 Crash Course videos over the few weeks before November 16, 2
+    - [0.758] User has been keeping track of educational activities and finished 10 Crash Cour
+    - [0.707] User has continued watching Crash Course videos and finished their 12th video, w
+    - [0.198] User has completed a Python programming course on edX and is interested in learn
+    - [0.184] User is trying to learn more about cloud computing and is interested in online c
+    - [0.170] User is making good progress learning AWS and machine learning, continuing their
+    - [0.170] User wants to explore advanced machine-learning topics, specifically reinforceme
+    - [0.170] User is interested in learning natural language processing and asked for recomme
+    - [0.165] User is interested in learning about online communities such as Kaggle and Reddi
+    - [0.138] User engages with online communities such as Kaggle and Reddit to learn from oth
+  Correcta:   15
+  Generada:   15 Crash Course videos.
+  Memorias:   14 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 117214 tokens entrada (92% desde cache) | 1104 salida | 0.0028 USD | acumulado 0.14 USD
+  Score (propio): 1 [yes] | Accuracy: 93.48% | Carga: 40.6s | Respuesta: 2.2s | Total: 58.4s
+
+Pregunta 47/78: Where am I planning to stay for my birthday trip to Hawaii?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4094.16it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.972
+  Marcada (vieja): 'User is planning a birthday trip to Hawaii and is interested in hiking'
+  Conservada (nueva): 'User is planning to hike on Oahu during the birthday trip to Hawaii an'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=2d113bfb-4774-4452-a311-15f657ded232: 'User is planning a birthday trip to Hawaii and is interested in hiking'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.740] [OUTDATED as of 2026-11-20] User is planning a birthday trip to Hawaii and is in
+    - [0.733] User is planning to stay on Oahu rather than Kauai for the birthday trip and thi
+    - [0.725] User is planning a birthday trip to Hawaii in October and is looking for good sn
+    - [0.717] User is considering booking a snorkeling tour to the Na Pali Coast during their 
+    - [0.700] User is planning to hike on Oahu during the birthday trip to Hawaii and is looki
+    - [0.662] User is interested in visiting waterfalls on Kauai during a planned birthday tri
+    - [0.661] User is considering adding a snorkeling trip to their planned birthday visit to 
+    - [0.645] User is considering spending the rest of their birthday relaxing on a beach duri
+    - [0.621] User is interested in trying local Hawaiian cuisine at restaurants during a plan
+    - [0.600] User has decided to book a snorkeling tour to Kauai’s Na Pali Coast during their
+  Correcta:   Oahu
+  Generada:   Oahu.
+  Memorias:   12 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 126877 tokens entrada (92% desde cache) | 1074 salida | 0.0030 USD | acumulado 0.15 USD
+  Score (propio): 1 [yes] | Accuracy: 93.62% | Carga: 46.4s | Respuesta: 2.7s | Total: 63.0s
+
+Pregunta 48/78: How many different species of birds have I seen in my local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4385.45it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.821] User has recorded seeing 27 different bird species in their local park and is am
+    - [0.741] User saw a Northern Flicker in their local park around November 7–8, 2026, bring
+    - [0.640] User is planning a picnic in their local park for the weekend of November 21–22,
+    - [0.596] User plans to bring binoculars to the local park picnic to get a closer look at 
+    - [0.573] User plans to bring sunflower seeds and suet to a picnic in their local park to 
+    - [0.547] User plans to bring water and a birdbath to the local park picnic to attract mor
+    - [0.499] User is considering bringing fresh apples and oranges to the local park picnic t
+    - [0.478] User is considering bringing peanut butter to the local park picnic to attract b
+    - [0.415] User is planning a trip to a nearby lake on the weekend of November 21–22, 2026,
+    - [0.327] User wants to explore more birding spots in their area and is looking for nearby
+  Correcta:   32
+  Generada:   32 species.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 126896 tokens entrada (91% desde cache) | 1095 salida | 0.0031 USD | acumulado 0.15 USD
+  Score (propio): 1 [yes] | Accuracy: 93.75% | Carga: 35.5s | Respuesta: 2.0s | Total: 53.0s
+
+Pregunta 49/78: What was my previous frequent flyer status on United Airlines before I got the c
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3675.45it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.732] User has accumulated 20,000 miles on United Airlines and says this makes them el
+    - [0.624] User has a United Airlines MileagePlus account and has just reached Premier Gold
+    - [0.599] User is planning a trip to San Francisco in a few weeks, around early December 2
+    - [0.520] User is interested in transferring miles or points from other loyalty programs t
+    - [0.507] User asked how long it usually takes to earn enough United miles to reach Premie
+    - [0.447] User is considering transferring Chase Ultimate Rewards points to their United M
+    - [0.304] User has United miles or is considering using United miles to book a flight to L
+    - [0.234] User plans to book a one-way economy award ticket from Washington, DC, to Los An
+    - [0.196] User is asking how many United miles are needed to book a one-way economy ticket
+    - [0.154] User considers nonstop flights from IAD priced at $410–$430 slightly over budget
+  Correcta:   Premier Silver
+  Generada:   Premier Silver
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129966 tokens entrada (91% desde cache) | 1089 salida | 0.0031 USD | acumulado 0.15 USD
+  Score (propio): 1 [yes] | Accuracy: 93.88% | Carga: 38.9s | Respuesta: 2.5s | Total: 54.0s
+
+Pregunta 50/78: What was my previous personal best time for the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4078.92it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.822] User completed a charity 5K run the weekend of November 14–15, 2026, and was hap
+    - [0.820] User recently completed a charity 5K run with a personal-best time of 27 minutes
+    - [0.691] User reports that their previous charity 5K personal-best time was 26 minutes an
+    - [0.547] User is considering signing up for a 10K run in a few months and wants help crea
+    - [0.298] User is preparing for a 10K in about 12 weeks and hopes to finish in under 55 mi
+    - [0.269] User currently runs three times per week: one longer run on weekends and two sho
+    - [0.254] User is training for a sprint triathlon on June 24; the year was not specified.
+    - [0.250] User agreed to adjust their 10K training plan to incorporate the more aggressive
+    - [0.224] User wants a Saturday cycling group ride route to start and end at the local par
+    - [0.185] User describes their current fitness level as intermediate in yoga and cycling, 
+  Correcta:   27 minutes and 45 seconds
+  Generada:   Your previous personal best was 26 minutes and 30 seconds.
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 135261 tokens entrada (90% desde cache) | 1368 salida | 0.0035 USD | acumulado 0.16 USD
+  Score (propio): 0 [no] | Accuracy: 92.00% | Carga: 41.4s | Respuesta: 2.9s | Total: 59.8s
+
+Pregunta 51/78: How many autographed baseballs have I added to my collection in the first three 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4045.49it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.768] After returning from a weekend trip, User organized their collection and said th
+    - [0.749] User collects autographed baseballs and got a signed baseball from Mike Trout ar
+    - [0.709] User is considering selling some of their autographed baseballs to make room for
+    - [0.402] User is looking for notable sports memorabilia auctions happening in their city 
+    - [0.187] User is considering attending a stamp show next quarter and is looking for notab
+    - [0.159] User is considering listing their Leica camera on Fred Miranda and Rangefinder F
+    - [0.157] User is considering selling some of their vinyl records to make space in their c
+    - [0.143] User is considering expanding their vinyl record collection to include more inte
+    - [0.142] User recently acquired a 1943 Lincoln Wheat Cent with a copper planchet error an
+    - [0.133] User is considering selling a Leica camera and other vintage cameras to make roo
+  Correcta:   15
+  Generada:   15 autographed baseballs.
+  Memorias:   12 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 116818 tokens entrada (92% desde cache) | 881 salida | 0.0026 USD | acumulado 0.16 USD
+  Score (propio): 1 [yes] | Accuracy: 92.16% | Carga: 35.0s | Respuesta: 2.5s | Total: 50.0s
+
+Pregunta 52/78: How often do I play tennis with my friends at the local park previously? How oft
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3076.12it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.790] User is planning to play tennis with friends at the local park on Sunday, Novemb
+    - [0.749] User plans to play tennis with friends at the local park on Sunday, November 22,
+    - [0.731] User was at a local park on Sunday, November 15, 2026, and saw people playing te
+    - [0.604] User is considering getting a new tennis bag to carry a racket, shoes, and other
+    - [0.455] User plays tennis weekly with friends.
+    - [0.380] User recently signed up for swimming lessons at the local pool to add more swimm
+    - [0.376] User asked for tips to improve their swimming technique while taking lessons at 
+    - [0.271] User asked for advice on keeping their tennis racket in good condition.
+    - [0.247] User is primarily a baseline tennis player who focuses on forehand and backhand 
+    - [0.239] User is a big fan of Roger Federer and considers him a legend on the court, but 
+  Correcta:   Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+  Generada:   Previously, you played weekly. Now, you play every other week.
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130979 tokens entrada (91% desde cache) | 1100 salida | 0.0032 USD | acumulado 0.16 USD
+  Score (propio): 1 [yes] | Accuracy: 92.31% | Carga: 39.8s | Respuesta: 1.7s | Total: 58.7s
+
+Pregunta 53/78: How much time do I dedicate to coding exercises each day?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3746.24it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.722] User has increased their coding-exercise practice from about one hour each day t
+    - [0.665] User has been using the Pomodoro Technique to stay focused while doing coding ex
+    - [0.644] User has been reflecting on their learning journey over the past few months and 
+    - [0.632] User thinks Habitica and WakaTime could be useful tools for tracking progress in
+    - [0.527] User plans to track coding progress by logging completed challenges, concepts le
+    - [0.515] User uses Pluralsight for Python tutorials and wants to supplement it with platf
+    - [0.509] User hopes to complete personal coding projects, including building a simple web
+    - [0.464] User has been using Pluralsight for Python tutorials and particularly likes its 
+    - [0.464] User is seeking resources to learn data structures and algorithms as part of imp
+    - [0.451] User dedicates about an hour each day to coding exercises and finds the routine 
+  Correcta:   about two hours
+  Generada:   About two hours a day.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 121225 tokens entrada (91% desde cache) | 1121 salida | 0.0030 USD | acumulado 0.16 USD
+  Score (propio): 1 [yes] | Accuracy: 92.45% | Carga: 39.8s | Respuesta: 2.1s | Total: 56.8s
+
+Pregunta 54/78: What day of the week did I meet with my previous language exchange tutor Juan?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3471.57it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.791] User has a language exchange class with Juan on a weekday evening to practice co
+    - [0.772] User attends a weekly language exchange class at a local language school with Ju
+    - [0.694] User is meeting their language exchange tutor Maria on Thursday, November 19, 20
+    - [0.646] User has a language exchange session with a tutor named Maria during the week of
+    - [0.178] User is planning a trip to Colombia and wants travel tips and useful Spanish phr
+    - [0.118] User plans to grab a snack at a cafe around Plaza de Bolívar in Bogotá before ex
+    - [0.112] User is interested in whether Bogotá’s Gold Museum has exhibits about the histor
+    - [0.102] User is planning to visit the Gold Museum in Bogotá during their trip to Colombi
+    - [0.085] User would like recommendations for nearby cafes or restaurants around Bogotá’s 
+    - [0.085] User is considering visiting Plaza de Bolívar in Bogotá after the Gold Museum an
+  Correcta:   Wednesday
+  Generada:   Wednesday.
+  Memorias:   10 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 114806 tokens entrada (94% desde cache) | 746 salida | 0.0023 USD | acumulado 0.17 USD
+  Score (propio): 1 [yes] | Accuracy: 92.59% | Carga: 31.5s | Respuesta: 3.0s | Total: 46.5s
+
+Pregunta 55/78: How many pre-1920 American coins do I have in my collection?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4060.35it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.749] User has a collection of 37 pre-1920 American coins and is considering organizin
+    - [0.721] User is excited to organize and display their collection of 37 pre-1920 American
+    - [0.703] User added a 1915-S Barber quarter to their collection of pre-1920 American coin
+    - [0.483] User owns a 1913 Liberty Head nickel and has been meaning to get it appraised; t
+    - [0.450] User is interested in learning about error coins, especially coins with misprint
+    - [0.413] User recently bought a 1972 doubled die cent and has been meaning to get some of
+    - [0.400] User has heard that PCGS is more popular among error coin collectors but is also
+    - [0.371] User is interested in attending upcoming coin shows in their area to meet other 
+    - [0.233] User is looking to add a few more vintage cameras to their collection and is int
+    - [0.216] User plans to try Coin Collector's Assistant to catalog and track their coin col
+  Correcta:   38
+  Generada:   You have 38 pre-1920 American coins.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 117988 tokens entrada (92% desde cache) | 1056 salida | 0.0029 USD | acumulado 0.17 USD
+  Score (propio): 1 [yes] | Accuracy: 92.73% | Carga: 41.8s | Respuesta: 2.8s | Total: 58.3s
+
+Pregunta 56/78: How many free night's stays can I redeem at any Hilton property with my accumula
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4130.99it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.854] User is considering redeeming accumulated Hilton points for a stay at a Hilton p
+    - [0.817] User has accumulated enough Hilton Honors points for two free nights at any Hilt
+    - [0.742] User has accumulated enough Hilton Honors points to redeem one free night at any
+    - [0.568] User is considering the Waldorf Astoria Las Vegas as another Hilton property opt
+    - [0.548] User is also considering the Hilton Grand Vacations Club on the Las Vegas Strip 
+    - [0.458] User is planning a weekend getaway to Las Vegas and is considering staying at th
+    - [0.351] User wants to compare the Hilton Paris Eiffel Tower’s rates and amenities with t
+    - [0.346] User is asking about the Hilton Paris Eiffel Tower and whether it is close to th
+    - [0.273] User wants to know whether breakfast at Pullman Paris Tour Eiffel is a full buff
+    - [0.187] User wants to compare the breakfast buffets at Pullman Paris Tour Eiffel and Hil
+  Correcta:   Two
+  Generada:   You can redeem enough points for **two free nights** at any Hilton property.
+  Memorias:   13 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127865 tokens entrada (93% desde cache) | 1112 salida | 0.0029 USD | acumulado 0.17 USD
+  Score (propio): 1 [yes] | Accuracy: 92.86% | Carga: 45.7s | Respuesta: 2.6s | Total: 66.6s
+
+Pregunta 57/78: How much weight have I lost since I started going to the gym consistently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4227.16it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.689] User has lost 10 pounds since starting to go to the gym consistently three month
+    - [0.510] User says workouts and diet have been going well and reports losing 5 pounds in 
+    - [0.500] User tracks progress with a fitness app and has averaged 2,500 calories burned p
+    - [0.353] User is a complete beginner at running but has been doing a lot of cardio at the
+    - [0.346] User wants advice on making exercise a sustainable part of their daily routine.
+    - [0.334] User wants tips for staying motivated and focused on long-term goals, including 
+    - [0.300] User is concerned that the proposed 10K training plan increases jogging time too
+    - [0.296] User is planning a workout routine for the month following November 16, 2026, an
+    - [0.287] User appreciates having someone to report their fitness progress to and finds it
+    - [0.281] User has been doing yoga and Pilates but wants to practice them more consistentl
+  Correcta:   10 pounds
+  Generada:   You’ve lost 10 pounds since you started going to the gym consistently.
+  Memorias:   20 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 122130 tokens entrada (90% desde cache) | 1403 salida | 0.0033 USD | acumulado 0.18 USD
+  Score (propio): 1 [yes] | Accuracy: 92.98% | Carga: 41.9s | Respuesta: 2.0s | Total: 59.9s
+
+Pregunta 58/78: How many followers do I have on Instagram now?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4931.69it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.906
+  Marcada (vieja): 'User has 1,250 Instagram followers as of November 16, 2026, and wants '
+  Conservada (nueva): 'As of November 16, 2026, User thinks their Instagram follower count is'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=c786617c-2410-5621-86e9-21ac68d5e3d2: 'User has 1,250 Instagram followers as of November 16, 2026, and wants '
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.725] As of November 16, 2026, User thinks their Instagram follower count is close to 
+    - [0.599] [OUTDATED as of 2026-11-20] User has 1,250 Instagram followers as of November 16
+    - [0.588] User posts regularly on Instagram and maintains a consistent aesthetic as part o
+    - [0.441] User asked whether Instagram Insights can show which posts are performing well o
+    - [0.436] User's Instagram audience is mostly from the US, UK, and Australia, which they w
+    - [0.424] User is looking for tips on writing engaging captions for Instagram posts as par
+    - [0.422] User prefers Instagram hashtags tailored to their niche, such as #contentcreatio
+    - [0.414] User attended a recent industry event and is planning to create an Instagram pos
+    - [0.394] User is considering using Instagram Live more often and wants tips for making li
+    - [0.373] User is considering hosting a Q&A during their next Instagram Live and wants way
+  Correcta:   1300
+  Generada:   Between 1,250 and 1,300 followers. Your latest estimate is close to 1,300.
+  Memorias:   13 | Contradicciones: 1 | Mensajes: 10 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        12 llamadas | 107939 tokens entrada (94% desde cache) | 975 salida | 0.0024 USD | acumulado 0.18 USD
+  Score (propio): 1 [yes] | Accuracy: 93.10% | Carga: 29.2s | Respuesta: 2.1s | Total: 45.6s
+
+Pregunta 59/78: What is my current record in the recreational volleyball league?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4279.87it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.698] User is playing in a volleyball league, and their team has a 3–2 record as of No
+    - [0.537] User is considering hosting a mini tournament to wrap up the office recreational
+    - [0.532] User feels confident about their athletic abilities lately, and their volleyball
+    - [0.520] User is considering organizing a recreational basketball league at their office 
+    - [0.515] User is considering starting a recreational basketball league at their office an
+    - [0.510] User plans to start organizing the recreational basketball league at their offic
+    - [0.491] User is considering offering prizes or recognition to the winning team or MVPs i
+    - [0.477] User plans to scale back their involvement in organizing a recreational basketba
+    - [0.455] User is considering offering training or coaching through the office recreationa
+    - [0.437] User plans to begin supporting newcomers and skill development in the office rec
+  Correcta:   5-2
+  Generada:   Your current record is 5–2.
+  Memorias:   20 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 133051 tokens entrada (90% desde cache) | 1416 salida | 0.0035 USD | acumulado 0.18 USD
+  Score (propio): 1 [yes] | Accuracy: 93.22% | Carga: 42.9s | Respuesta: 1.8s | Total: 63.7s
+
+Pregunta 60/78: How many projects have I completed since starting painting classes?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4321.16it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.802] Since starting painting classes, User has completed 4 projects and feels pretty 
+    - [0.802] User feels more confident in their painting skills after completing 4 projects s
+    - [0.776] User has completed their 5th painting project since starting painting classes an
+    - [0.475] User is looking for inspiration and ideas or themes for their next painting proj
+    - [0.456] User plans to create an abstract painting with a bold, bright palette, starting 
+    - [0.427] User is considering setting up a small art studio in their spare bedroom and is 
+    - [0.413] User is excited to set up a small art studio and plans to begin by purging and d
+    - [0.404] User has always been drawn to vibrant colors and likes the idea of using a bold,
+    - [0.398] User is considering setting up a small art studio in their spare bedroom and wan
+    - [0.395] User is interested in using a limited color palette for an abstract painting and
+  Correcta:   5
+  Generada:   5 projects
+  Memorias:   17 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127728 tokens entrada (92% desde cache) | 1269 salida | 0.0031 USD | acumulado 0.19 USD
+  Score (propio): 1 [yes] | Accuracy: 93.33% | Carga: 42.0s | Respuesta: 2.0s | Total: 60.2s
+
+Pregunta 61/78: What type of vehicle model am I currently working on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4128.43it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Marcada (vieja): 'User is currently building a Ford Mustang Shelby GT350R model and is i'
+  Conservada (nueva): 'User has learned airbrushing and decal application techniques and now '
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=9af59cdf-bb62-4ab4-8db7-ce33f70e3a69: 'User is currently building a Ford Mustang Shelby GT350R model and is i'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.457] User is considering adding a realistic engine and transmission to their Ford Mus
+    - [0.449] [OUTDATED as of 2026-11-20] User is currently building a Ford Mustang Shelby GT3
+    - [0.400] User plans to use photo-etched metal strips and fabric to make realistic seatbel
+    - [0.392] User is impressed with the color range and quality of Vallejo paints, which they
+    - [0.377] User is considering adding seatbelts and a dashboard to their Ford Mustang Shelb
+    - [0.376] User is using Vallejo paints on a Ford Mustang Shelby GT350R model project and i
+    - [0.278] User has finished a model and switched to building a Ford F-150 pickup truck mod
+    - [0.230] User wants to weather the underside of their Ford F-150 pickup truck model to ma
+    - [0.225] User has learned airbrushing and decal application techniques and now wants to c
+    - [0.200] User wants to add subtle, realistic rust to the underside of their Ford F-150 pi
+  Correcta:   Ford F-150 pickup truck
+  Generada:   A Ford F-150 pickup truck model.
+  Memorias:   12 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127884 tokens entrada (91% desde cache) | 993 salida | 0.0030 USD | acumulado 0.19 USD
+  Score (propio): 1 [yes] | Accuracy: 93.44% | Carga: 40.9s | Respuesta: 2.1s | Total: 57.1s
+
+Pregunta 62/78: What was my previous goal for my Apex Legends level before I updated my goal?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5521.43it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.979
+  Marcada (vieja): 'User has been playing Apex Legends a lot lately and is determined to r'
+  Conservada (nueva): 'User is planning to play Apex Legends with friends during the weekend '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=1.000
+  Marcada (vieja): 'User plans to play Apex Legends with friends during the weekend of Nov'
+  Conservada (nueva): 'User plans to focus on completing daily and weekly challenges in Apex '
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.945
+  Marcada (vieja): 'User is considering buying a new gaming mouse to pair with a new keybo'
+  Conservada (nueva): 'User is considering buying a new gaming headset to complete their gami'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=78362803-397d-40c1-82ae-64e514a7a6cd: 'User plans to play Apex Legends with friends during the weekend of Nov'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=cc388ea0-ea15-455d-a2dc-66ac0f291250: 'User is considering buying a new gaming mouse to pair with a new keybo'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=763785bf-325c-471f-9786-0e61d42f6e74: 'User has been playing Apex Legends a lot lately and is determined to r'
+  [Consolidacion] 3 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.686] User's current Apex Legends goal is to reach level 150 and is determined to get 
+    - [0.633] User plans to focus on completing daily and weekly challenges in Apex Legends to
+    - [0.627] [OUTDATED as of 2026-11-20] User has been playing Apex Legends a lot lately and 
+    - [0.619] User is planning to play Apex Legends with friends during the weekend of Novembe
+    - [0.604] User is considering completing Apex Legends daily and weekly challenges to earn 
+    - [0.591] [OUTDATED as of 2026-11-20] User plans to play Apex Legends with friends during 
+    - [0.582] User plans to communicate more effectively with their team and focus on improvin
+    - [0.549] User wants tips for improving overall gameplay and communication with their team
+    - [0.531] User wants tips for improving their aim in Apex Legends as part of focusing on g
+    - [0.487] User is considering buying a new gaming headset to complete their gaming setup a
+  Correcta:   level 100
+  Generada:   Your previous goal was to reach level 100 before the end of 2026.
+  Memorias:   15 | Contradicciones: 3 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 118970 tokens entrada (92% desde cache) | 1082 salida | 0.0029 USD | acumulado 0.19 USD
+  Score (propio): 1 [yes] | Accuracy: 93.55% | Carga: 39.4s | Respuesta: 2.1s | Total: 60.8s
+
+Pregunta 63/78: How many largemouth bass did I catch with Alex on the earlier fishing trip to La
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3677.52it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.994
+  Marcada (vieja): 'User caught 7 largemouth bass on a fishing trip to Lake Michigan with '
+  Conservada (nueva): 'User and Alex caught 9 largemouth bass while fishing near Waukegan har'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=57c93b2c-f613-4159-a62e-7f81706cea9d: 'User caught 7 largemouth bass on a fishing trip to Lake Michigan with '
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.881] [OUTDATED as of 2026-11-20] User caught 7 largemouth bass on a fishing trip to L
+    - [0.789] User and Alex caught 9 largemouth bass while fishing near Waukegan harbor on Jul
+    - [0.698] User has been watching YouTube videos about deer-hunting strategies and tactics,
+    - [0.679] User is considering planning another fishing trip to Lake Michigan and asked for
+    - [0.637] User is planning a fishing trip from Illinois, probably around the Waukegan harb
+    - [0.611] User is considering trying new lures for bass fishing and is looking for recomme
+    - [0.558] User is planning to help Alex set up additional tree stands on Alex's property s
+    - [0.392] User plans to try some deer calls during the next hunting trip.
+    - [0.248] User has been getting back into fishing and hunting and wants tools to organize 
+    - [0.101] User asked for recommendations on the best types of deer calls to use during hun
+  Correcta:   7
+  Generada:   9 largemouth bass.
+  Memorias:   14 | Contradicciones: 1 | Mensajes: 10 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        12 llamadas | 109304 tokens entrada (92% desde cache) | 939 salida | 0.0025 USD | acumulado 0.19 USD
+  Score (propio): 0 [no] | Accuracy: 92.06% | Carga: 34.2s | Respuesta: 3.5s | Total: 50.6s
+
+Pregunta 64/78: What time do I wake up on Saturday mornings?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4013.44it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.649] User is trying to establish a consistent weekend morning routine and is brainsto
+    - [0.594] User has been waking up around 8:30 a.m. on Saturdays and fits in a 30-minute jo
+    - [0.594] User is planning to go for a jog on Saturday morning and asked about the weather
+    - [0.589] User likes to wake up at 7:30 a.m. on Saturdays and have a cup of coffee before 
+    - [0.529] User is considering starting with a 30-minute yoga or stretching routine on Sund
+    - [0.526] User is considering adding yoga or stretching to Sunday mornings to loosen up af
+    - [0.351] User is looking forward to reading 'The Lean Startup' by Eric Ries and applying 
+    - [0.124] User is interested in reading more before bed each night and is looking for book
+    - [0.116] User plans to check online for water fountains or drinking water stations along 
+    - [0.109] User lives in a downtown area and is looking for a 30-minute jogging route that 
+  Correcta:   7:30 am
+  Generada:   You wake up at 7:30 a.m. on Saturdays.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130493 tokens entrada (91% desde cache) | 1160 salida | 0.0032 USD | acumulado 0.20 USD
+  Score (propio): 1 [yes] | Accuracy: 92.19% | Carga: 45.8s | Respuesta: 1.8s | Total: 62.8s
+
+Pregunta 65/78: How many women are on the team led by my former manager Rachel?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4054.71it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.774] User is interested in examples and resources about companies that promote gender
+    - [0.748] User is interested in learning whether the five women on former manager Rachel’s
+    - [0.728] User recently caught up with former manager Rachel, who now leads a team of 10 p
+    - [0.237] User learned at a seminar that women hold only 25% of executive positions in the
+    - [0.212] User is interested in learning about mentorship programs offered by companies to
+    - [0.183] User is interested in learning how Accenture’s “return to work” program for care
+    - [0.180] User is interested in understanding intersectionality in the workplace and how o
+    - [0.177] User is interested in learning what Goldman Sachs’ unconscious bias training ent
+    - [0.173] User is interested in learning about parental leave policies at Goldman Sachs an
+    - [0.148] User is interested in learning about flexible work arrangements offered by Micro
+  Correcta:   6
+  Generada:   5 women.
+  Memorias:   10 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 116267 tokens entrada (93% desde cache) | 779 salida | 0.0025 USD | acumulado 0.20 USD
+  Score (propio): 0 [no] | Accuracy: 90.77% | Carga: 39.2s | Respuesta: 2.6s | Total: 53.1s
+
+Pregunta 66/78: Do I have a spare screwdriver for opening up my laptop?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4218.26it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.950
+  Marcada (vieja): 'User plans to open their laptop soon to clean its fans and is unsure w'
+  Conservada (nueva): 'User found a spare screwdriver they had picked up while organizing the'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Marcada (vieja): 'User plans to open their laptop to upgrade its RAM but misplaced the s'
+  Conservada (nueva): 'User found a spare screwdriver they had picked up while organizing the'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.999
+  Marcada (vieja): 'User is setting up automatic backups for working files on their laptop'
+  Conservada (nueva): 'User decided to use Backblaze for automatic backups of working files o'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=628b67af-8ffd-4d1e-a949-f13f7d81003a: 'User plans to open their laptop to upgrade its RAM but misplaced the s'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=8198a0e6-4062-4e57-b0be-a3ee6635827d: 'User plans to open their laptop soon to clean its fans and is unsure w'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=b8f9852b-ef77-4159-9dd1-355d6415b9a7: 'User is setting up automatic backups for working files on their laptop'
+  [Consolidacion] 3 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.846] User found a spare screwdriver they had picked up while organizing their compute
+    - [0.777] [OUTDATED as of 2026-11-20] User plans to open their laptop soon to clean its fa
+    - [0.426] [OUTDATED as of 2026-11-20] User plans to open their laptop to upgrade its RAM b
+    - [0.390] User is considering visiting the electronics store near their home, which usuall
+    - [0.202] User is looking for backup software options to set up automatic backups for work
+    - [0.184] User wants recommendations for cable organizers to help organize their computer 
+    - [0.176] User has a wireless mouse that freezes and is considering troubleshooting it by 
+    - [0.158] User decided to get the Anker cable organizer for their computer bag because the
+    - [0.156] User has set up their Google Drive backup for working files on their laptop and 
+    - [0.147] User wants guidance on selecting which files and folders to back up to Google Dr
+  Correcta:   Yes
+  Generada:   Yes—you found a spare screwdriver while organizing your computer desk.
+  Memorias:   16 | Contradicciones: 3 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129446 tokens entrada (92% desde cache) | 1050 salida | 0.0030 USD | acumulado 0.20 USD
+  Score (propio): 1 [yes] | Accuracy: 90.91% | Carga: 37.8s | Respuesta: 2.4s | Total: 55.2s
+
+Pregunta 67/78: How many times have I met up with Alex from Germany?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3987.95it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.793] User has met up twice with Alex, a friend from Germany whom User met at a music 
+    - [0.768] User plans to meet up with Alex, a friend from Germany, in Berlin during the pla
+    - [0.740] User met Alex, who is from Germany, at a music festival a few weeks before Novem
+    - [0.594] User plans to ask Alex for his favorite indie rock bands or musicians to build o
+    - [0.560] User is interested in discovering indie rock bands or musicians, prompted by cur
+    - [0.559] User is planning a trip to Germany soon and is interested in visiting indie rock
+    - [0.552] User is considering visiting live music venues in Kreuzberg while in Berlin duri
+    - [0.398] User wants to follow local music blogs or zines to stay up to date with Berlin's
+    - [0.144] User is especially interested in lo-fi and garage rock and wants to find Berlin 
+    - [0.134] User recently attended a reading by a local author and had a great conversation 
+  Correcta:   We've met up twice.
+  Generada:   Twice.
+  Memorias:   12 | Contradicciones: 0 | Mensajes: 10 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        12 llamadas | 107865 tokens entrada (93% desde cache) | 937 salida | 0.0025 USD | acumulado 0.20 USD
+  Score (propio): 1 [yes] | Accuracy: 91.04% | Carga: 39.1s | Respuesta: 3.0s | Total: 55.5s
+
+Pregunta 68/78: Did I mostly recently increase or decrease the limit on the number of cups of co
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4126.82it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.852
+  Marcada (vieja): 'User currently brews coffee with a French press and is considering swi'
+  Conservada (nueva): 'User is excited to try brewing their darker roast with a French press.'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=efb19b72-d640-42af-ad69-ad009af6f7a4: 'User currently brews coffee with a French press and is considering swi'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.661] User is considering increasing their morning coffee limit from one cup to two cu
+    - [0.623] User has increased their morning coffee limit from one cup to two cups and is co
+    - [0.582] User switched to a darker coffee roast and cut back to one cup in the morning; t
+    - [0.434] User is trying to make their morning routine more efficient and asked for tips t
+    - [0.357] User is considering both a drip coffee maker and French press brewing, and wants
+    - [0.336] User currently uses a drip coffee maker and is open to exploring other coffee-br
+    - [0.326] User is trying to make their morning routine more intentional by replacing mindl
+    - [0.320] User plans to try brewing their darker roast with a French press and is consider
+    - [0.312] [OUTDATED as of 2026-11-20] User currently brews coffee with a French press and 
+    - [0.269] User is excited to try brewing their darker roast with a French press. This cont
+  Correcta:   You increased the limit (from one cup to two cups)
+  Generada:   You most recently decreased it to one cup in the morning.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 10 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        12 llamadas | 110600 tokens entrada (91% desde cache) | 1046 salida | 0.0028 USD | acumulado 0.21 USD
+  Score (propio): 0 [no] | Accuracy: 89.71% | Carga: 35.7s | Respuesta: 2.6s | Total: 50.2s
+
+Pregunta 69/78: How many trips have I taken my Canon EOS 80D camera on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4316.25it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.995
+  Marcada (vieja): 'User is considering a square filter system for photography and has hea'
+  Conservada (nueva): 'User has decided to invest in a Lee Filters system for photography and'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=8e685c04-910e-4e59-a937-dcd22291f600: 'User is considering a square filter system for photography and has hea'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.747] User has taken their Canon EOS 80D on five trips and describes it as a beast.
+    - [0.733] User has taken their Canon EOS 80D on three trips to Yellowstone, Yosemite, and 
+    - [0.679] User is considering a Really Right Stuff tripod after hearing positive things ab
+    - [0.443] User recently got a Lowepro backpack-style camera bag to organize camera gear an
+    - [0.406] User is considering the Lowepro ProTactic 450 AW camera backpack because they ha
+    - [0.403] User recently got a new camera strap and wants a camera bag that can comfortably
+    - [0.238] User has been eyeing a new Really Right Stuff tripod and is unsure whether it is
+    - [0.233] User has many photography files to edit and store, and expects Adobe Creative Cl
+    - [0.225] User plans to use Adobe Creative Cloud for professional photography while contin
+    - [0.212] User is planning a trip to Zion National Park and wants to capture landscape pho
+  Correcta:   five
+  Generada:   Five trips.
+  Memorias:   18 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130408 tokens entrada (91% desde cache) | 1238 salida | 0.0032 USD | acumulado 0.21 USD
+  Score (propio): 1 [yes] | Accuracy: 89.86% | Carga: 40.1s | Respuesta: 2.3s | Total: 58.9s
+
+Pregunta 70/78: What new kitchen gadget did I invest in before getting the Air Fryer?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5494.85it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Marcada (vieja): 'User asked whether leftovers from the Cuban Black Bean and Rice Bowl s'
+  Conservada (nueva): 'User asked whether leftover sweet potato fries should be refrigerated '
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=87726840-b362-490e-937b-cb53cdb64ac8: 'User asked whether leftovers from the Cuban Black Bean and Rice Bowl s'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.730] User got an Air Fryer on November 15, 2026, and is considering using it to make 
+    - [0.244] User has a new Instant Pot and is considering using it to make soups and stews f
+    - [0.189] User is preparing to make Korean Chicken Stew and plans to adjust the cooking ti
+    - [0.187] User asked whether leftover sweet potato fries should be refrigerated or frozen,
+    - [0.171] User is considering trying the Cuban Black Bean and Rice Bowl recipe previously 
+    - [0.163] User has not cooked with gochujang before and is concerned about how spicy Korea
+    - [0.156] User is particularly interested in the Korean Chicken Stew recipe and wants deta
+    - [0.147] User is excited to try the Korean Chicken Stew and asked whether chicken breast 
+    - [0.144] User is planning meals for the week and is looking for inspiration for healthy l
+    - [0.135] User plans to start the Korean Chicken Stew with 1 tablespoon of chili flakes an
+  Correcta:   Instant Pot
+  Generada:   An Instant Pot.
+  Memorias:   12 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 132733 tokens entrada (93% desde cache) | 916 salida | 0.0029 USD | acumulado 0.21 USD
+  Score (propio): 1 [yes] | Accuracy: 90.00% | Carga: 38.7s | Respuesta: 3.9s | Total: 55.5s
+
+Pregunta 71/78: How many Italian restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4369.63it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.988
+  Marcada (vieja): 'User is planning a dinner party and wants popular Korean BBQ dishes th'
+  Conservada (nueva): 'User is planning a dinner party with dishes from multiple cuisines, in'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=489a75a9-cfa3-48d5-95f9-4725af794769: 'User is planning a dinner party and wants popular Korean BBQ dishes th'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.524] User has tried four different Korean restaurants so far and is looking for new r
+    - [0.466] User has recently tried three different Korean restaurants, each of which had it
+    - [0.393] User recently tried three Korean restaurants: one served amazing bibimbap, anoth
+    - [0.390] User has heard that a newly opened Indian restaurant in their neighborhood serve
+    - [0.320] User is planning a dinner party with dishes from multiple cuisines, intending to
+    - [0.181] User has been experimenting with different types of noodles and is interested in
+    - [0.120] User decided to use traditional Indian basmati rice rather than the authentic Ja
+    - [0.116] User decided to serve samosas and saag aloo as Indian-inspired dishes at the din
+    - [0.114] User is considering changing the dinner party menu and wants Indian-inspired rec
+    - [0.113] User has been trying different types of rice and wants a recommendation for a go
+  Correcta:   The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+  Generada:   You haven’t mentioned trying any Italian restaurants.
+  Memorias:   15 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 124761 tokens entrada (92% desde cache) | 1122 salida | 0.0030 USD | acumulado 0.22 USD
+  Score (propio): 1 [yes] | Accuracy: 90.14% | Carga: 49.9s | Respuesta: 2.3s | Total: 67.5s
+
+Pregunta 72/78: How many engineers do I lead when I just started my new role as Software Enginee
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4492.56it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.678] User refers to a new role as Senior Software Engineer and asks how many engineer
+    - [0.648] User leads a team of 4 engineers in their new role as Senior Software Engineer. 
+    - [0.620] User has been enjoying the Senior Software Engineer role, particularly leading a
+    - [0.210] User is thinking about the team's workload and believes they need to delegate ta
+    - [0.195] User plans to improve delegation by setting realistic deadlines and expectations
+    - [0.139] User is planning a team outing for their engineers and is interested in outdoor 
+    - [0.138] User is considering City View Rooftop for an outing with outdoor games such as g
+    - [0.115] User plans to contact Samantha about the Corporate Team Building Package for 6 p
+    - [0.098] User is looking forward to the team hike at Mount Tamalpais State Park as a chan
+    - [0.095] User plans to include a scavenger hunt in the team outing to keep it engaging an
+  Correcta:   The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+  Generada:   You lead 5 engineers.
+  Memorias:   15 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 128972 tokens entrada (92% desde cache) | 1202 salida | 0.0031 USD | acumulado 0.22 USD
+  Score (propio): 0 [no] | Accuracy: 88.89% | Carga: 42.4s | Respuesta: 1.9s | Total: 59.5s
+
+Pregunta 73/78: How often do I see Dr. Johnson?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4569.77it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.511] User sees Dr. Smith every week, and Dr. Smith is helping User work on setting bo
+    - [0.496] User has therapy sessions with Dr. Smith every two weeks and is looking forward 
+    - [0.390] User had a therapy session with Dr. Smith during the week of November 16, 2026, 
+    - [0.365] On November 16, 2026, User planned to meditate and journal after the conversatio
+    - [0.198] User works Monday through Friday from 9 a.m. to 5 p.m. and has regular social co
+    - [0.130] User sometimes has trouble falling asleep despite trying journaling and maintain
+    - [0.119] User has been feeling overwhelmed by commitments, and therapist Dr. Smith sugges
+    - [0.107] User is considering setting boundaries with their partner around social commitme
+    - [0.102] User wants to make time for meditation and journaling as self-care while managin
+    - [0.087] User prefers a flexible, general plan for prioritizing tasks and setting boundar
+  Correcta:   The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+  Generada:   You see Dr. Smith weekly; the memories don’t mention Dr. Johnson.
+  Memorias:   14 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 130065 tokens entrada (91% desde cache) | 1243 salida | 0.0032 USD | acumulado 0.22 USD
+  Score (propio): 1 [yes] | Accuracy: 89.04% | Carga: 46.4s | Respuesta: 2.2s | Total: 63.2s
+
+Pregunta 74/78: How long have I been living in my current apartment in Shinjuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3480.51it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.646] User has been living in a studio apartment in Harajuku, Tokyo, for about a month
+    - [0.600] As of November 16, 2026, User has been living in Harajuku for three months and i
+    - [0.504] User has been exploring a new Tokyo neighborhood every Sunday and discovered a c
+    - [0.442] User has not explored much of Harajuku’s historical side and has been meaning to
+    - [0.405] User has been enjoying Tokyo's fall foliage, which feels different from what the
+    - [0.402] User asked what Kawai Shrine is known for while exploring historical sites in Ha
+    - [0.390] User plans to visit Kawai Shrine in Harajuku when they have a chance.
+    - [0.382] User is considering inviting friends who live in Tokyo to join the Japanese Alps
+    - [0.311] For the planned Yokohama day trip, User plans to try kanimeshi at Kanemasa and n
+    - [0.229] User decided to stay in Matsumoto for the November 2026 Japanese Alps trip, pref
+  Correcta:   The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+  Generada:   You’ve been living in your current apartment in Harajuku for about a month.
+  Memorias:   21 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 135778 tokens entrada (90% desde cache) | 1607 salida | 0.0036 USD | acumulado 0.23 USD
+  Score (propio): 0 [no] | Accuracy: 87.84% | Carga: 52.3s | Respuesta: 3.4s | Total: 74.4s
+
+Pregunta 75/78: How many autographed football have I added to my collection in the first three m
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4455.72it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.733] User has added 20 autographed baseballs to their collection over the past few mo
+    - [0.663] User collects autographed baseballs and acquired a signed baseball from Mike Tro
+    - [0.615] User is considering selling some of their autographed baseballs to make room for
+    - [0.392] User is looking for notable sports memorabilia auctions happening in their city 
+    - [0.183] User is considering attending a stamp show next quarter and wants to know about 
+    - [0.172] User asked for Mike Trout's current batting average and home-run total for the 2
+    - [0.146] User is considering listing their Leica camera on Fred Miranda and Rangefinder F
+    - [0.134] User is considering selling some of their vinyl records to make space in their c
+    - [0.126] User recently acquired a 1943 Lincoln Wheat Cent with a copper planchet error an
+    - [0.118] User is considering expanding their vinyl record collection to include more inte
+  Correcta:   The information provided is not enough. You mentioned collecting autographed baseball but not football.
+  Generada:   You’ve added 20 autographed baseballs—not footballs—to your collection over the past few months.
+  Memorias:   13 | Contradicciones: 0 | Mensajes: 11 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        13 llamadas | 120204 tokens entrada (92% desde cache) | 949 salida | 0.0028 USD | acumulado 0.23 USD
+  Score (propio): 1 [yes] | Accuracy: 88.00% | Carga: 51.3s | Respuesta: 1.6s | Total: 67.7s
+
+Pregunta 76/78: How often do I play table tennis with my friends at the local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4197.26it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+  Memorias recuperadas para responder:
+    - [0.754] User is planning to play tennis with friends at the local park on Sunday, Novemb
+    - [0.743] User plays tennis weekly with friends and was reminded of those sessions after s
+    - [0.719] User is planning to play tennis with friends at the local park on Sunday, Novemb
+    - [0.544] User is considering buying a new tennis bag to carry their tennis gear to the lo
+    - [0.459] User asked for advice on keeping their tennis racket in good condition, indicati
+    - [0.392] User is primarily a baseline tennis player who focuses on forehand and backhand 
+    - [0.361] User recently signed up for swimming lessons at the local pool to add more swimm
+    - [0.234] User is a big fan of Roger Federer and considers him a legend on the court, but 
+    - [0.140] User asked for tips on staying motivated to exercise regularly, indicating an in
+    - [0.131] User is considering trying the Almaden Lake Park Loop for a jog and may stop by 
+  Correcta:   The information provided is not enough. You mentioned playing tennis but not table tennis.
+  Generada:   You play tennis with your friends every other week—not table tennis.
+  Memorias:   16 | Contradicciones: 0 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 127334 tokens entrada (92% desde cache) | 1089 salida | 0.0030 USD | acumulado 0.23 USD
+  Score (propio): 1 [yes] | Accuracy: 88.16% | Carga: 40.0s | Respuesta: 2.6s | Total: 56.8s
+
+Pregunta 77/78: Before I purchased the gravel bike, do I have other bikes in addition to my moun
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 5492.27it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.855
+  Marcada (vieja): 'User is planning a 50-mile ride for the weekend of November 21–22, 202'
+  Conservada (nueva): 'User is considering doing a century ride soon and wonders whether thei'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=3c445318-ee99-4175-9c1d-87b07d5295b9: 'User is planning a 50-mile ride for the weekend of November 21–22, 202'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.748] User recently purchased a new hybrid bike, bringing their total to four bikes: a
+    - [0.743] User owns and uses three bikes: a road bike, a mountain bike, and a commuter bik
+    - [0.710] User uses their mountain bike for trail rides and their commuter bike for daily 
+    - [0.532] User has purchased a new bike computer and has been tracking cycling progress on
+    - [0.532] User is considering doing a century ride soon and wonders whether their current 
+    - [0.512] User plans to use their road bike for the century ride and has been using it for
+    - [0.504] User is unsure whether their road bike needs any additional adjustments or prepa
+    - [0.496] User is considering upgrading their road bike's current wheels to carbon-fiber w
+    - [0.489] User is considering upgrading their road bike to carbon-fiber wheels and wants t
+    - [0.487] User is postponing a decision about upgrading their road bike to carbon-fiber wh
+  Correcta:   Yes. (You have a road bike too.)
+  Generada:   Yes. You also had a road bike.
+  Memorias:   22 | Contradicciones: 1 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 131180 tokens entrada (90% desde cache) | 1589 salida | 0.0035 USD | acumulado 0.24 USD
+  Score (propio): 1 [yes] | Accuracy: 88.31% | Carga: 49.9s | Respuesta: 3.8s | Total: 71.5s
+
+Pregunta 78/78: Where do I currently keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 4509.51it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.990
+  Marcada (vieja): 'User plans to organize their closet during the weekend of November 21–'
+  Conservada (nueva): 'User plans to organize their closet during the weekend of November 21–'
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Marcada (vieja): 'User plans to take their old sneakers to a cobbler for polishing and c'
+  Conservada (nueva): 'User plans to organize their closet during the weekend of November 21–'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=d426c28e-c36e-4a54-aa99-83ceade3e6c2: 'User plans to take their old sneakers to a cobbler for polishing and c'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=46d10b45-f67c-4780-82a0-609480e86eac: 'User plans to organize their closet during the weekend of November 21–'
+  [Consolidacion] 2 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.655] User wants tips for keeping their old sneakers clean and fresh while stored unde
+    - [0.653] User stores old sneakers under their bed, and the sneakers are starting to smell
+    - [0.575] User plans to organize their closet during the weekend of November 21–22, 2026, 
+    - [0.556] [OUTDATED as of 2026-11-20] User plans to organize their closet during the weeke
+    - [0.547] User plans to inventory their shoe collection and decide what else to get rid of
+    - [0.543] [OUTDATED as of 2026-11-20] User plans to take their old sneakers to a cobbler f
+    - [0.483] User is looking for a good cobbler to polish and condition their old sneakers an
+    - [0.471] User plans to check online review platforms and ask around for recommendations w
+    - [0.455] User is considering organizing their closet by shoe type, keeping boots together
+    - [0.454] User plans to donate their old dress shoes to a local charity thrift store on Sa
+  Correcta:   in a shoe rack in my closet
+  Generada:   Under your bed.
+  Memorias:   15 | Contradicciones: 2 | Mensajes: 12 (errores: 0, de Mem0: 0, de la API: 0)
+  API:        14 llamadas | 129783 tokens entrada (92% desde cache) | 1031 salida | 0.0030 USD | acumulado 0.24 USD
+  Score (propio): 0 [no] | Accuracy: 87.18% | Carga: 39.1s | Respuesta: 1.9s | Total: 56.6s
+
+============================================================
+RESUMEN FINAL
+============================================================
+Modelo                 : claude-haiku-5-5 (oracle, con modulo)
+Respuestas correctas   : 68 de 78  (calificacion del propio modelo)
+Accuracy               : 87.18%
+Tiempo por mensaje     : 3.54 segundos por mensaje guardado
+Consolidacion promedio : 10.7 segundos por pregunta
+Tiempo respuesta prom. : 2.4 segundos
+Tiempo total promedio  : 59.8 segundos
+Total contradicciones  : 36
+Memorias prom/pregunta : 15.4 (maximo 22)
+Mensajes cargados      : 915 (errores: 0, de Mem0: 0, de la API: 0)
+Tokens de entrada      : 9902585 (91% desde cache)
+Parametros rechazados  : ninguno
+Costo estimado         : 0.24 USD (sin embeddings)
+Tiempo total           : 77.7 minutos
+Resultados guardados   : E:/proyecto/claudehaiku55_escenario_2/oracle/oracle_con_modulo_claudehaiku55.json
+============================================================

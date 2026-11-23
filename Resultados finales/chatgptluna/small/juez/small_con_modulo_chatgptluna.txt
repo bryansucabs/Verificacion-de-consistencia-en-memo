@@ -1,0 +1,106 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : chatgptluna_escenario_1/small/small_con_modulo_chatgptluna.json
+Fecha              : 2026-11-18T05:10:46
+
+Correctas segun el juez independiente : 60 de 78  (76.92 %)
+Correctas segun el propio modelo      : 60 de 78  (76.92 %)
+
+Los dos jueces coinciden en           : 76 de 78
+  correcta para los dos               : 59
+  incorrecta para los dos             : 17
+  correcta solo para el propio modelo : 1
+  correcta solo para el independiente : 1
+Preguntas de abstencion (6)           : independiente 1, propio 1
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 2
+
+  [42ec0761] Do I have a spare screwdriver for opening up my laptop?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Yes—you have a spare screwdriver you picked up while organizing your computer desk, and you’re set to open your laptop to clean the fans.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes')
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : Right now, your old sneakers are kept in your closet—they’re currently taking up space there.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'no')
+
+
+Respuestas incorrectas segun el juez independiente: 18
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : Your most recent family trip was to **Hawaii**.
+
+  [031748ae] How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?
+    Respuesta correcta    : When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+    Respuesta del sistema : When you just started your new role as a **Senior Software Engineer**, you led **5 engineers**.  
+
+Now, you lead **4 engineers** (and you’re planning outings with those 4 engineers plus your manager Rachel).
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : You most recently purchased a **50mm prime lens**.
+
+  [c4ea545c] Do I go to the gym more frequently than I did previously?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No. You currently go to the gym 4 times per week (Tuesdays, Thursdays, and Saturdays), and there’s no newer memory indicating a higher frequency than before.
+
+  [2133c1b5] How long have I been living in my current apartment in Harajuku?
+    Respuesta correcta    : 3 months
+    Respuesta del sistema : About a month.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at **7:00 pm** on **Mondays, Wednesdays, and Fridays**.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous charity 5K personal best time was **26 minutes, 30 seconds**.
+
+  [0ddfec37] How many autographed baseballs have I added to my collection in the first three months of collection?
+    Respuesta correcta    : 15
+    Respuesta del sistema : You added **20 autographed baseballs** to your collection in the first three months.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : Previously, you were playing on an every-other-week routine (you last went on **2026-05-24**). Now, you’re continuing that same schedule—playing again on **this Sunday, 2026-05-31**, i.e., **every other week**.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have **37** pre-1920 American coins in your collection.
+
+  [dad224aa] What time do I wake up on Saturday mornings?
+    Respuesta correcta    : 7:30 am
+    Respuesta del sistema : You wake up at **8:00 am on Saturday mornings**.
+
+  [0977f2af] What new kitchen gadget did I invest in before getting the Air Fryer?
+    Respuesta correcta    : Instant Pot
+    Respuesta del sistema : You invested in a **small fridge and a coffee maker** for your garage workstation before getting the Air Fryer.
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : I don’t have any memory indicating you’ve tried any Italian restaurants in your city, so the count is **0**.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead **4 engineers** in your new role as Software Engineer Manager.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see **Dr. Smith** (not Dr. Johnson) **every week**.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You’ve been living in your current apartment in Shinjuku for about **3 months** (since **March 2026**, as of **May 30, 2026**).
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with your friends at the local park every other week, and you’re scheduled to play this Sunday (2026-05-31).
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : Right now, your old sneakers are kept in your closet—they’re currently taking up space there.
+

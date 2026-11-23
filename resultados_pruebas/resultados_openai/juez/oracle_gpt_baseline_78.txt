@@ -1,0 +1,137 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_openai/oracle_gpt_baseline_78.json
+Fecha              : 2026-11-23T00:25:11
+
+Correctas segun el juez independiente : 50 de 78  (64.10 %)
+Correctas segun el propio modelo      : 51 de 78  (65.38 %)
+
+Los dos jueces coinciden en           : 77 de 78
+  correcta para los dos               : 50
+  incorrecta para los dos             : 27
+  correcta solo para el propio modelo : 1
+  correcta solo para el independiente : 0
+Preguntas de abstencion (6)           : independiente 1, propio 1
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 1
+
+  [c4ea545c] Do I go to the gym more frequently than I did previously?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No—your current schedule is **3 gym days per week (Tue/Thu/Sat)**, which is **not more frequent** than the earlier plan you mentioned (4 times per week).
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 28
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : Your personal best time in the charity 5K run was **27:12**.
+
+  [830ce83f] Where did Rachel move to after her recent relocation?
+    Respuesta correcta    : the suburbs
+    Respuesta del sistema : Rachel moved to **Chicago**.
+
+  [89941a93] How many bikes do I currently own?
+    Respuesta correcta    : 4
+    Respuesta del sistema : You currently own **three bikes**.
+
+  [031748ae] How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?
+    Respuesta correcta    : When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+    Respuesta del sistema : When you just started your new role as Senior Software Engineer, you lead **4 engineers**. Now, you still lead **4 engineers** (with **4 engineers plus your manager Rachel** attending the outing, for **5 people** total from your team).
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended **three** sessions of the bereavement support group.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : You most recently purchased a **50mm prime lens**.
+
+  [b6019101] How many MCU films did I watch in the last 3 months?
+    Respuesta correcta    : 5
+    Respuesta del sistema : You watched **4 MCU films** in the last 3 months.
+
+  [6071bd76] For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?
+    Respuesta correcta    : You switched to less water (5 ounces) per tablespoon of coffee.
+    Respuesta del sistema : You switched to **more water per tablespoon** (from **5 oz per tbsp** to **6 oz per tbsp**).
+
+  [e493bb7c] Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+    Respuesta correcta    : in my bedroom
+    Respuesta del sistema : The painting **“Ethereal Dreams” by Emma Taylor** is currently hanging **above their living room sofa**.
+
+  [c4ea545c] Do I go to the gym more frequently than I did previously?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No—your current schedule is **3 gym days per week (Tue/Thu/Sat)**, which is **not more frequent** than the earlier plan you mentioned (4 times per week).
+
+  [2133c1b5] How long have I been living in my current apartment in Harajuku?
+    Respuesta correcta    : 3 months
+    Respuesta del sistema : About a month.
+
+  [b01defab] Did I finish reading 'The Nightingale' by Kristin Hannah?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : It sounds like you haven’t finished yet—you temporarily put it down because it was getting too emotional and are considering whether you can finish it in time for book club.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at **7:00 pm** on **Mondays, Wednesdays, and Fridays**.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : Previously, you played about **every other week** (e.g., **last Sunday, 2026-05-24**). Now, you’re continuing that same routine—planning to play again **every other week**, with your next session on **Sunday, 2026-05-31**.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have **37** pre-1920 American coins in your collection.
+
+  [7401057b] How many free night's stays can I redeem at any Hilton property with my accumulated points?
+    Respuesta correcta    : Two
+    Respuesta del sistema : You can redeem **3 free-night stays total** at any Hilton property with your accumulated points (2 nights from one set, plus 1 additional night from another set).
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You currently have **1,250 Instagram followers**.
+
+  [c7dc5443] What is my current record in the recreational volleyball league?
+    Respuesta correcta    : 5-2
+    Respuesta del sistema : Your current recreational volleyball league record is **3–2**.
+
+  [3ba21379] What type of vehicle model am I currently working on?
+    Respuesta correcta    : Ford F-150 pickup truck
+    Respuesta del sistema : You’re currently working on a **Ford Mustang Shelby GT350R** model (with plans to add realistic engine/transmission, interior details like seatbelts and a dashboard, and weathered finishing).
+
+  [10e09553] How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?
+    Respuesta correcta    : 7
+    Respuesta del sistema : You caught **9 largemouth bass** with Alex on the earlier Lake Michigan trip before the 7/22 trip.
+
+  [c6853660] Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?
+    Respuesta correcta    : You increased the limit (from one cup to two cups)
+    Respuesta del sistema : You mostly recently **decreased** the morning coffee limit (from two cups down to one cup).
+
+  [0977f2af] What new kitchen gadget did I invest in before getting the Air Fryer?
+    Respuesta correcta    : Instant Pot
+    Respuesta del sistema : You invested in an **air fryer** (the new kitchen gadget).
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead **4 engineers** when you just started your new role as Software Engineer Manager.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see Dr. Smith (not Dr. Johnson) every week.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You’ve been living in your current apartment in Shinjuku for about **1 month**.
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : You haven’t mentioned adding any autographed footballs—only autographed baseballs—so the number added in the first three months is **0**.
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play table tennis with your friends at the local park **every other Sunday** (a recurring every-other-week schedule).
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : You currently keep your old sneakers under your bed.

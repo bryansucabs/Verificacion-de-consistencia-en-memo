@@ -1,0 +1,15 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_local_qwen35/prueba/oracle_con_modulo_qwen35_2.json
+Fecha              : 2026-11-16T04:48:14
+
+Correctas segun el juez independiente : 0 de 2  (0.00 %)
+Correctas segun el propio modelo      : 0 de 2  (0.00 %)
+
+Los dos jueces coinciden en           : 2 de 2
+  correcta para los dos               : 0
+  incorrecta para los dos             : 2
+  correcta solo para el propio modelo : 0
+  correcta solo para el independiente : 0
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 0

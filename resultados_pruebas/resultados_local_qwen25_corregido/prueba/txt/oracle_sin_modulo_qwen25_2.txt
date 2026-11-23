@@ -1,0 +1,73 @@
+Limpiando Qdrant...
+Qdrant limpio.
+Cargando dataset...
+Evaluando 2 preguntas de 'knowledge-update' (oracle)
+Modelo: qwen2.5:7b-instruct-q4_K_M | num_ctx: 12288 | think: None | semilla: 42
+Modulo NLI: desactivado
+Resultados en: E:/proyecto/resultados_local_qwen25_corregido/prueba/oracle_sin_modulo_qwen25_2.json
+============================================================
+Cargando modelos (calentamiento, este tiempo no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+Modelos listos en 44 s.
+
+Pregunta 1/2: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.905] User recently set a personal best time of 27:12 in a charity 5K run
+    - [0.894] User recently set a personal best time of 27:12 in a charity 5K run on May 6, 20
+    - [0.884] User recently set a personal best time of 27:12 in a charity 5K run on [date]
+    - [0.866] User is training for a charity 5K run and hopes to beat their personal best time
+    - [0.866] User is training for a charity 5K run and aims to beat their personal best time 
+    - [0.865] User is training for a charity 5K run and aims to beat their personal best time 
+    - [0.587] User is seeking tips to improve their running technique for soccer
+    - [0.576] User is thinking about incorporating strength training into their routine to imp
+    - [0.508] User is planning their fitness schedule for the next few weeks and wants to know
+    - [0.345] User is looking for tips to improve their endurance for soccer, as they are play
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   Your personal best time in the charity 5K run was 27:12, set on May 6, 2026.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 103579 tokens entrada | 1512 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 0.00% | Carga: 35.7s (3.0s/mensaje) | Respuesta: 0.8s | Total: 43.7s
+  Ollama:     qwen2.5:7b-instruct-q4_K_M 845dbda0ea48 5.2 GB 100% GPU 12288 llamacpp 4 minutes from now
+
+Pregunta 2/2: How many Korean restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+  Memorias recuperadas para responder:
+    - [0.861] User has tried four Korean restaurants in their city recently, each with its own
+    - [0.851] User has tried three Korean restaurants in their city recently, each with its ow
+    - [0.764] User tried an amazing bibimbap at one Korean restaurant, a spicy kimchi stew at 
+    - [0.661] User has been experimenting with different types of noodles and is interested in
+    - [0.621] User is planning a dinner party and needs recommendations for popular Korean BBQ
+    - [0.617] User is considering kimchi and bokkeumbap for the Korean BBQ dishes at the dinne
+    - [0.601] User is planning a dinner party and considering Korean BBQ beef, Middle Eastern 
+    - [0.595] User is planning to serve kimchi and bokkeumbap for the Korean BBQ dishes at the
+    - [0.579] User heard about a new Indian restaurant in their neighborhood that just opened 
+    - [0.568] User is planning a dinner party and needs recommendations for side dishes to com
+  Correcta:   four
+  Generada:   Based on the most recent memory, you have tried three Korean restaurants in your city recently.
+  Memorias:   19 | Contradicciones: 0 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 102614 tokens entrada | 2025 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 0.00% | Carga: 44.3s (3.7s/mensaje) | Respuesta: 0.7s | Total: 52.2s
+
+============================================================
+RESUMEN FINAL
+============================================================
+Modelo                 : qwen2.5:7b-instruct-q4_K_M (oracle, sin modulo)
+Preguntas evaluadas    : 2
+Respuestas correctas   : 0  (calificacion del propio modelo)
+Accuracy               : 0.00%
+Tiempo carga promedio  : 40.0 segundos
+Tiempo por mensaje     : 3.33 segundos por mensaje guardado
+Tiempo respuesta prom. : 0.7 segundos
+Tiempo total promedio  : 48.0 segundos
+Total contradicciones  : 0
+Memorias marcadas      : 0
+Pares descartados NER  : 0
+Memorias prom/pregunta : 19.0
+Mensajes cargados      : 24 (errores: 0, errores internos de Mem0: 0)
+Llamadas al LLM (Mem0) : 24 (recortadas: 0)
+Tiempo total           : 1.6 minutos
+Resultados guardados   : E:/proyecto/resultados_local_qwen25_corregido/prueba/oracle_sin_modulo_qwen25_2.json
+============================================================

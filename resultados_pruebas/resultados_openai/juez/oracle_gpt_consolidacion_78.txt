@@ -1,0 +1,111 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_openai/oracle_gpt_consolidacion_78.json
+Fecha              : 2026-11-23T00:25:32
+
+Correctas segun el juez independiente : 58 de 78  (74.36 %)
+Correctas segun el propio modelo      : 56 de 78  (71.79 %)
+
+Los dos jueces coinciden en           : 76 de 78
+  correcta para los dos               : 56
+  incorrecta para los dos             : 20
+  correcta solo para el propio modelo : 0
+  correcta solo para el independiente : 2
+Preguntas de abstencion (6)           : independiente 2, propio 1
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 2
+
+  [42ec0761] Do I have a spare screwdriver for opening up my laptop?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Yes—you have a spare screwdriver you picked up while organizing your computer desk, and you’re all set for opening your laptop.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes')
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : You haven’t added any autographed football to your collection in the first three months—your memories mention adding **20 autographed baseballs** and a **signed Mike Trout baseball**, but nothing about autographed football.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes.')
+
+
+Respuestas incorrectas segun el juez independiente: 20
+
+  [89941a93] How many bikes do I currently own?
+    Respuesta correcta    : 4
+    Respuesta del sistema : You currently own **3 bikes** (a road bike, a mountain bike, and a commuter bike).
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : You most recently went to **Hawaii** on your family trip.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : You most recently purchased a **50mm prime lens**.
+
+  [6071bd76] For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?
+    Respuesta correcta    : You switched to less water (5 ounces) per tablespoon of coffee.
+    Respuesta del sistema : You switched to **more water per tablespoon of coffee** (from **1 tbsp per 6 oz** to **1 tbsp per 5 oz**).
+
+  [c4ea545c] Do I go to the gym more frequently than I did previously?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No—your current plan is **3 gym days per week** (Tue/Thu/Sat), which is not more frequent than before (you previously mentioned “four times a week” as a consistency goal).
+
+  [b01defab] Did I finish reading 'The Nightingale' by Kristin Hannah?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No—you temporarily put *The Nightingale* down due to how emotional it felt, and you’re considering whether you can finish it in time for your book club discussion.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at **7:00 pm** on **Mondays, Wednesdays, and Fridays**.
+
+  [50635ada] What was my previous frequent flyer status on United Airlines before I got the current status?
+    Respuesta correcta    : Premier Silver
+    Respuesta del sistema : I don’t have enough information in your memories to determine what your previous United MileagePlus status was before you reached **Premier Gold**.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous personal best time for the charity 5K run was **26 minutes, 30 seconds**.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : Previously, you played on a recurring **every-other-week** schedule. Now, you’re continuing that same routine—planning to play again **this Sunday (2026-05-31)**, i.e., **every other week**.
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have **37** pre-1920 American coins in your collection.
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : You currently have **1,250 Instagram followers**.
+
+  [9bbe84a2] What was my previous goal for my Apex Legends level before I updated my goal?
+    Respuesta correcta    : level 100
+    Respuesta del sistema : Your previous goal was to **reach level 150 eventually** (before you updated it).
+
+  [10e09553] How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?
+    Respuesta correcta    : 7
+    Respuesta del sistema : You caught **9 largemouth bass** with Alex on the earlier Lake Michigan trip before the **7/22** trip.
+
+  [ba61f0b9] How many women are on the team led by my former manager Rachel?
+    Respuesta correcta    : 6
+    Respuesta del sistema : There are **5 women** on Rachel’s team (out of 10 people).
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : I don’t have any memory of you trying Italian restaurants in your city, so the number is **0**.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead **5 engineers** (your team of 4 engineers plus you, with your manager Rachel also attending the outing separately).
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see **Dr. Smith** (not Dr. Johnson) **every week**.
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : You play tennis with your friends at the local park every other week (on a recurring schedule).
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : You currently keep your old sneakers **under your bed**, and they’re starting to smell.

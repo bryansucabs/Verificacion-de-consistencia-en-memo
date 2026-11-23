@@ -1,0 +1,185 @@
+Juez independiente : llama33 (meta-llama/Llama-3.3-70B-Instruct-Turbo, DeepInfra)
+Corrida            : resultados_local_qwen_pfc3/small/small_sin_modulo.json
+Fecha              : 2026-11-16T15:01:41
+
+Correctas segun el juez independiente : 45 de 78  (57.69 %)
+Correctas segun el propio modelo      : 46 de 78  (58.97 %)
+
+Los dos jueces coinciden en           : 73 de 78
+  correcta para los dos               : 43
+  incorrecta para los dos             : 30
+  correcta solo para el propio modelo : 3
+  correcta solo para el independiente : 2
+Preguntas de abstencion (6)           : independiente 0, propio 2
+Salidas del juez con formato invalido : 0
+
+Preguntas donde los dos jueces difieren: 5
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : You got your guitar serviced at Rhythm Central on Main St.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [a2f3aa27] How many followers do I have on Instagram now?
+    Respuesta correcta    : 1300
+    Respuesta del sistema : Your Instagram follower count is close to 1300.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes.')
+
+  [10e09553] How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?
+    Respuesta correcta    : 7
+    Respuesta del sistema : You caught 9 largemouth bass with Alex on the earlier fishing trip to Lake Michigan on 7/22. However, you caught 7 largemouth bass on the earlier trips in July 10, 2023.
+    Propio modelo         : incorrecta
+    Juez independiente    : correcta (salida: 'Yes.')
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : Based on the provided memories, there is no mention of the user trying any Italian restaurants. Therefore, the answer is that the user has not tried any Italian restaurants in their city.
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : Based on the given memories, there is no mention of autographed footballs being added to the collection. All the memories are about autographed baseballs. Therefore, the answer to how many autographed footballs have been added to the collection in the first three months is:
+
+0
+    Propio modelo         : correcta
+    Juez independiente    : incorrecta (salida: 'No.')
+
+
+Respuestas incorrectas segun el juez independiente: 33
+
+  [6a1eabeb] What was my personal best time in the charity 5K run?
+    Respuesta correcta    : 25 minutes and 50 seconds (or 25:50)
+    Respuesta del sistema : Your most recent personal best time in a charity 5K run is 27:12.
+
+  [830ce83f] Where did Rachel move to after her recent relocation?
+    Respuesta correcta    : the suburbs
+    Respuesta del sistema : Rachel recently moved to an apartment in Chicago.
+
+  [852ce960] What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?
+    Respuesta correcta    : $400,000
+    Respuesta del sistema : You were pre-approved for $350,000 from Wells Fargo for your home purchase.
+
+  [ce6d2d27] What day of the week do I take a cocktail-making class?
+    Respuesta correcta    : Friday
+    Respuesta del sistema : You take a cocktail-making class on Thursday.
+
+  [9ea5eabc] Where did I go on my most recent family trip?
+    Respuesta correcta    : Paris
+    Respuesta del sistema : On your most recent family trip, you went to Hawaii for a 10-day island-hopping trip.
+
+  [07741c44] Where do I initially keep my old sneakers?
+    Respuesta correcta    : under my bed
+    Respuesta del sistema : The information provided does not specify where you initially keep your old sneakers. However, based on your plans, it seems you will be taking them to a cobbler for cleaning and conditioning. For storage before you take them to the cobbler, you could keep your old sneakers in a clean, dry place like a shoe box or on a shoe rack. This will help maintain their condition until you can have them professionally cared for.
+
+  [184da446] How many pages of 'A Short History of Nearly Everything' have I read so far?
+    Respuesta correcta    : 220
+    Respuesta del sistema : Based on the most recent memory, you have read up to page 200 of 'A Short History of Nearly Everything'.
+
+  [0f05491a] How many stars do I need to reach the gold level on my Starbucks Rewards app?
+    Respuesta correcta    : 120
+    Respuesta del sistema : You need 125 stars to reach the gold level on your Starbucks Rewards app.
+
+  [f9e8c073] How many sessions of the bereavement support group did I attend?
+    Respuesta correcta    : five
+    Respuesta del sistema : You attended three sessions of the bereavement support group.
+
+  [41698283] What type of camera lens did I purchase most recently?
+    Respuesta correcta    : a 70-200mm zoom lens
+    Respuesta del sistema : Based on the user's memories, the most recent purchase was a 50mm prime lens.
+
+  [2698e78f] How often do I see my therapist, Dr. Smith?
+    Respuesta correcta    : every week
+    Respuesta del sistema : You see your therapist, Dr. Smith, every two weeks.
+
+  [e493bb7c] Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+    Respuesta correcta    : in my bedroom
+    Respuesta del sistema : Currently, the painting 'Ethereal Dreams' by Emma Taylor is planned to be left above the living room sofa for the party.
+
+  [618f13b2] How many times have I worn my new black Converse Chuck Taylor All Star sneakers?
+    Respuesta correcta    : six
+    Respuesta del sistema : You have worn your new black Converse Chuck Taylor All Star sneakers four times, including to a friend's birthday party.
+
+  [c4ea545c] Do I go to the gym more frequently than I did previously?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : Based on the user's most recent memories, the user does not go to the gym more frequently than previously. The user has been consistent with a four-times-a-week gym routine, working out on Tuesdays, Thursdays, and Saturdays, and has not changed this routine from the previous memories.
+
+  [ed4ddc30] How many dozen eggs do we currently have stocked up in our refrigerator?
+    Respuesta correcta    : 20
+    Respuesta del sistema : We currently have 30 dozen eggs stocked up in the refrigerator.
+
+  [8fb83627] How many issues of National Geographic have I finished reading?
+    Respuesta correcta    : Five
+    Respuesta del sistema : Based on the provided memories, you have finished reading four issues of National Geographic. The most recent memory states that you are currently on the fourth issue, implying you have finished the previous three.
+
+  [b01defab] Did I finish reading 'The Nightingale' by Kristin Hannah?
+    Respuesta correcta    : Yes
+    Respuesta del sistema : No, based on the user memories, the user wants to finish reading 'The Nightingale' by Kristin Hannah during their daily commute for the next book club discussion.
+
+  [22d2cb42] Where did I get my guitar serviced?
+    Respuesta correcta    : The music shop on Main St.
+    Respuesta del sistema : You got your guitar serviced at Rhythm Central on Main St.
+
+  [59524333] What time do I usually go to the gym?
+    Respuesta correcta    : 6:00 pm
+    Respuesta del sistema : You usually go to the gym at 7:00 pm on Mondays, Wednesdays, and Fridays.
+
+  [50635ada] What was my previous frequent flyer status on United Airlines before I got the current status?
+    Respuesta correcta    : Premier Silver
+    Respuesta del sistema : Based on the provided memories, your previous frequent flyer status on United Airlines before becoming Premier Silver is not explicitly stated. However, it is mentioned that you now have 20,000 miles on United Airlines and are eligible for Premier Silver status. Without conflicting information, we can infer that your previous status might have been Premier or a lower status, but the exact previous status is not specified in the given memories. If you had a lower status, it would have been a status below Premier Silver.
+
+  [e66b632c] What was my previous personal best time for the charity 5K run?
+    Respuesta correcta    : 27 minutes and 45 seconds
+    Respuesta del sistema : Your previous personal best time for the charity 5K run was 26 minutes and 30 seconds.
+
+  [0ddfec37] How many autographed baseballs have I added to my collection in the first three months of collection?
+    Respuesta correcta    : 15
+    Respuesta del sistema : Based on the user memories, the user added 20 autographed baseballs to their collection in the past few months, which likely refers to the first three months of the collection. Therefore, you have added 20 autographed baseballs to your collection in the first three months.
+
+  [f685340e] How often do I play tennis with my friends at the local park previously? How often do I play now?
+    Respuesta correcta    : Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+    Respuesta del sistema : Based on the memories, you previously played tennis with friends at the local park weekly (last Sunday). Now, you are planning to do it weekly as well (this Sunday).
+
+  [69fee5aa] How many pre-1920 American coins do I have in my collection?
+    Respuesta correcta    : 38
+    Respuesta del sistema : You have a total of 37 pre-1920 American coins in your collection.
+
+  [c7dc5443] What is my current record in the recreational volleyball league?
+    Respuesta correcta    : 5-2
+    Respuesta del sistema : Your current record in the recreational volleyball league is 3-2.
+
+  [0977f2af] What new kitchen gadget did I invest in before getting the Air Fryer?
+    Respuesta correcta    : Instant Pot
+    Respuesta del sistema : Based on the provided memories, there is no mention of any previous kitchen gadget that was invested in before getting the Air Fryer. The focus is on using the Air Fryer to make sweet potato fries and possibly adding a small fridge and coffee maker to the garage workstation. Therefore, there is no information to determine what new kitchen gadget was invested in before the Air Fryer.
+
+  [6aeb4375_abs] How many Italian restaurants have I tried in my city?
+    Respuesta correcta    : The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+    Respuesta del sistema : Based on the provided memories, there is no mention of the user trying any Italian restaurants. Therefore, the answer is that the user has not tried any Italian restaurants in their city.
+
+  [031748ae_abs] How many engineers do I lead when I just started my new role as Software Engineer Manager?
+    Respuesta correcta    : The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+    Respuesta del sistema : You lead a team of 4 engineers when you just started your new role as Senior Software Engineer.
+
+  [2698e78f_abs] How often do I see Dr. Johnson?
+    Respuesta correcta    : The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+    Respuesta del sistema : You see Dr. Smith every two weeks for therapy sessions and weekly for help with setting healthy boundaries.
+
+  [2133c1b5_abs] How long have I been living in my current apartment in Shinjuku?
+    Respuesta correcta    : The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+    Respuesta del sistema : You have been living in your current studio apartment in Harajuku, Tokyo, for 3 months.
+
+  [0ddfec37_abs] How many autographed football have I added to my collection in the first three months of collection?
+    Respuesta correcta    : The information provided is not enough. You mentioned collecting autographed baseball but not football.
+    Respuesta del sistema : Based on the given memories, there is no mention of autographed footballs being added to the collection. All the memories are about autographed baseballs. Therefore, the answer to how many autographed footballs have been added to the collection in the first three months is:
+
+0
+
+  [f685340e_abs] How often do I play table tennis with my friends at the local park?
+    Respuesta correcta    : The information provided is not enough. You mentioned playing tennis but not table tennis.
+    Respuesta del sistema : Based on the user's memories, it does not specify how often they play tennis with their friends at the local park. However, the user reminisces about seeing people playing tennis there last Sunday, which might suggest they or their friends play regularly, possibly weekly. But without explicit confirmation, the frequency cannot be definitively stated.
+
+  [07741c45] Where do I currently keep my old sneakers?
+    Respuesta correcta    : in a shoe rack in my closet
+    Respuesta del sistema : Based on the user's memories, there is no specific information about where the user currently keeps their old sneakers. The user is more focused on organizing their closet, getting rid of old sneakers, and finding a good cobbler to polish and condition their sneakers.

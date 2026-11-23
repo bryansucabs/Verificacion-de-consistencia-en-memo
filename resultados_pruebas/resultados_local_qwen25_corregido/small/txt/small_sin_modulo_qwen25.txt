@@ -1,0 +1,1735 @@
+Limpiando Qdrant...
+Qdrant limpio.
+Cargando dataset...
+Evaluando 78 preguntas de 'knowledge-update' (small)
+Modelo: qwen2.5:7b-instruct-q4_K_M | num_ctx: 12288 | think: None | semilla: 42
+Modulo NLI: desactivado
+Resultados en: E:/proyecto/resultados_local_qwen25_corregido/small/small_sin_modulo_qwen25.json
+============================================================
+Cargando modelos (calentamiento, este tiempo no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+Modelos listos en 46 s.
+
+Pregunta 1/78: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 205
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 34 column 192 (char 5938)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 874 (char 873)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.893] User recently set a personal best time in a charity 5K run with a time of 27:12
+    - [0.893] User recently set a personal best time in a charity 5K run with a time of 27:12
+    - [0.893] User recently set a personal best time in a charity 5K run with a time of 27:12
+    - [0.893] User recently set a personal best time in a charity 5K run with a time of 27:12
+    - [0.893] User recently set a personal best time of 27:12 in a charity 5K run
+    - [0.893] User recently set a personal best time of 27:12 in a charity 5K run
+    - [0.882] User is training for another charity 5K run and aims to beat their personal best
+    - [0.865] User is preparing for a charity 5K run and aims to beat their personal best time
+    - [0.854] User is training for a charity 5K run and aims to beat their personal best time 
+    - [0.810] User is training for another charity 5K run and is seeking advice on interval tr
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   Your personal best time in the charity 5K run is 27:12.
+  Memorias:   672 | Contradicciones: 0 | Mensajes: 201 (errores: 1, errores internos de Mem0: 2)
+  LLM:        201 llamadas | 1800351 tokens entrada | 39484 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 0.00% | Carga: 816.9s (4.1s/mensaje) | Respuesta: 0.7s | Total: 825.5s
+  Ollama:     qwen2.5:7b-instruct-q4_K_M 845dbda0ea48 5.2 GB 100% GPU 12288 llamacpp 4 minutes from now
+
+Pregunta 2/78: How many Korean restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 232
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.877] User has tried four Korean restaurants in their city recently and is looking for
+    - [0.844] User has tried three Korean restaurants recently, each with unique flavors and s
+    - [0.841] User has tried three different Korean restaurants recently, each with unique fla
+    - [0.838] User has tried three Korean restaurants recently, each with unique flavors and s
+    - [0.823] User has tried three different Korean restaurants recently, each with its own un
+    - [0.793] User has tried three Korean restaurants recently, each with unique flavors: amaz
+    - [0.714] User is experimenting with different Korean dishes, having tried bibimbap, spicy
+    - [0.663] User is experimenting with different types of noodles and is looking for popular
+    - [0.659] User is experimenting with different Korean noodle dishes and has tried bibimbap
+    - [0.658] User has been experimenting with different Korean noodle dishes and has tried bi
+  Correcta:   four
+  Generada:   You have tried four Korean restaurants in your city recently.
+  Memorias:   845 | Contradicciones: 0 | Mensajes: 231 (errores: 2, errores internos de Mem0: 0)
+  LLM:        231 llamadas | 2055732 tokens entrada | 40508 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 50.00% | Carga: 850.4s (3.7s/mensaje) | Respuesta: 0.5s | Total: 857.9s
+
+Pregunta 3/78: Where did Rachel move to after her recent relocation?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 254
+  Memorias recuperadas para responder:
+    - [0.816] User's friend Rachel recently moved to Chicago
+    - [0.809] User is considering visiting their friend Rachel who recently moved to a new apa
+    - [0.785] User is visiting their friend Rachel who recently moved to Chicago
+    - [0.778] User is planning to visit their friend Rachel who recently moved to Chicago
+    - [0.751] User is considering a trip with friends to a more relaxed beach town in Florida,
+    - [0.723] User is seeking recommendations for good neighborhoods to stay in Chicago for ea
+    - [0.678] User attended a book reading event at the local library a month ago where Rachel
+    - [0.676] User is seeking recommendations for good neighborhoods to stay in when visiting 
+    - [0.655] User attended a book reading event at the local library on January 10, 2026, and
+    - [0.609] User is considering a trip between a beach town in Florida and a hiking trip in 
+  Correcta:   the suburbs
+  Generada:   Rachel moved to Chicago after her recent relocation.
+  Memorias:   696 | Contradicciones: 0 | Mensajes: 251 (errores: 0, errores internos de Mem0: 0)
+  LLM:        251 llamadas | 2231364 tokens entrada | 36537 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 33.33% | Carga: 770.5s (3.1s/mensaje) | Respuesta: 0.5s | Total: 778.0s
+
+Pregunta 4/78: What was the amount I was pre-approved for when I got my mortgage from Wells Far
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 197
+  Memorias recuperadas para responder:
+    - [0.862] User is buying a $325,000 house and has been pre-approved for $350,000 from Well
+    - [0.862] User is buying a $325,000 house and has been pre-approved for $350,000 from Well
+    - [0.846] User is excited about finally owning a home and has been pre-approved for $400,0
+    - [0.846] User is excited about finally owning a home and has been pre-approved for $400,0
+    - [0.493] User is exploring entrepreneurship and venture capital specializations at Stanfo
+    - [0.488] User is interested in entrepreneurship and venture capital specializations at St
+    - [0.486] Transactions within the platform are transparent, allowing users to understand t
+    - [0.486] User is interested in entrepreneurship and venture capital specializations at St
+    - [0.484] User is particularly interested in the entrepreneurship and venture capital spec
+    - [0.395] User is trying to estimate their monthly mortgage payment, property taxes, and i
+  Correcta:   $400,000
+  Generada:   You were pre-approved for $350,000 from Wells Fargo for your mortgage.
+  Memorias:   627 | Contradicciones: 0 | Mensajes: 197 (errores: 0, errores internos de Mem0: 0)
+  LLM:        197 llamadas | 1750475 tokens entrada | 33673 salida | recortadas: 1
+  Score (propio): 0 [No] | Accuracy: 25.00% | Carga: 722.3s (3.7s/mensaje) | Respuesta: 0.6s | Total: 730.0s
+
+Pregunta 5/78: How often do I attend yoga classes to help with my anxiety?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 241
+  Memorias recuperadas para responder:
+    - [0.758] User is making a schedule to manage work tasks and yoga classes
+    - [0.717] User finds their yoga practice helpful for feeling more grounded
+    - [0.713] User finds that their yoga practice helps them feel more grounded.
+    - [0.687] User loves the yoga schedule and is concerned about fitting all report tasks int
+    - [0.655] User is collecting data on yoga effects through a Google form with questions on 
+    - [0.638] User has a project on Yoga effects and is collecting data using a Google form wi
+    - [0.637] User's Google form includes questions on name, gender, occupation, age, weight, 
+    - [0.617] User is creating a Google form for a project on Yoga effects with questions abou
+    - [0.607] User is creating a Google form for a project on yoga effects, including question
+    - [0.602] User is interested in stress-reducing apps and meditation techniques
+  Correcta:   Three times a week.
+  Generada:   Based on the provided memories, there is no specific information about how often you attend yoga cla
+  Memorias:   831 | Contradicciones: 0 | Mensajes: 241 (errores: 0, errores internos de Mem0: 0)
+  LLM:        241 llamadas | 2151938 tokens entrada | 44706 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 20.00% | Carga: 955.9s (4.0s/mensaje) | Respuesta: 1.4s | Total: 964.1s
+
+Pregunta 6/78: Is my mom using the same grocery list method as me?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 258
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 177 column 6 (char 7573)
+  Memorias recuperadas para responder:
+    - [0.801] User is using the same grocery list app as their mom for sharing and tracking
+    - [0.801] User is using the same grocery list app as their mom for sharing and tracking
+    - [0.775] User is sharing a grocery list app with their mom for easier tracking
+    - [0.722] User will use a new grocery list app to organize their grocery lists
+    - [0.707] User is using a new grocery list app to organize their ingredients
+    - [0.704] User is using a new grocery list app to organize their ingredients for dinner an
+    - [0.697] User is using a new grocery list app to keep track of ingredients for their dinn
+    - [0.694] User is using a new grocery list app to keep track of ingredients for the dinner
+    - [0.691] User will use a new grocery list app to keep track of ingredients for their dinn
+    - [0.681] User plans to add onions, bell peppers, olive oil, fresh herbs like cilantro and
+  Correcta:   Yes.
+  Generada:   Yes, based on the memories, you and your mom are currently using the same grocery list app for shari
+  Memorias:   691 | Contradicciones: 0 | Mensajes: 253 (errores: 0, errores internos de Mem0: 1)
+  LLM:        253 llamadas | 2240549 tokens entrada | 39374 salida | recortadas: 1
+  Score (propio): 1 [Yes.] | Accuracy: 33.33% | Carga: 829.4s (3.3s/mensaje) | Respuesta: 0.7s | Total: 837.0s
+
+Pregunta 7/78: How many hours have I spent on my abstract ocean sculpture?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 256
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.921] User is working on an abstract ocean sculpture and has spent 10-12 hours on it
+    - [0.914] User has been spending a lot of time on an abstract ocean sculpture, putting in 
+    - [0.900] User has been working on an abstract ocean sculpture at home for 5-6 hours
+    - [0.896] User has spent 10-12 hours on their abstract ocean sculpture and is excited to t
+    - [0.801] User is exploring the use of natural materials like seashells or driftwood in th
+    - [0.793] User is considering using natural materials like seashells or driftwood in their
+    - [0.788] User has been working on an abstract ocean sculpture at home and seeks tips on a
+    - [0.786] User is considering creating a series of ocean-inspired sculptures and experimen
+    - [0.783] User is interested in achieving a weathered, driftwood-like effect on an abstrac
+    - [0.781] User is interested in achieving a weathered, driftwood-like effect on an abstrac
+  Correcta:   10-12 hours
+  Generada:   You have spent 10-12 hours on your abstract ocean sculpture.
+  Memorias:   801 | Contradicciones: 0 | Mensajes: 255 (errores: 1, errores internos de Mem0: 0)
+  LLM:        255 llamadas | 2265721 tokens entrada | 43060 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 42.86% | Carga: 964.4s (3.8s/mensaje) | Respuesta: 0.8s | Total: 972.9s
+
+Pregunta 8/78: How many bikes do I currently own?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 263
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 8037 (char 8036)
+  Memorias recuperadas para responder:
+    - [0.739] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.739] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.732] User is currently using three bikes: a road bike, a mountain bike, and a commute
+    - [0.722] User has been using their road bike for long rides on weekends and has three bik
+    - [0.697] User owns a mountain bike and a commuter bike in addition to their road bike
+    - [0.695] User will have four bikes on their road trip: a road bike, a mountain bike, a co
+    - [0.693] User will have four bikes on the trip: a road bike, a mountain bike, a commuter 
+    - [0.686] User has four bikes and plans to book accommodations with bike storage in advanc
+    - [0.671] User will bring four bikes on the trip: a road bike, a mountain bike, a commuter
+    - [0.660] User will bring four bikes and ensure accommodations have bike storage
+  Correcta:   4
+  Generada:   You currently own three bikes: a road bike, a mountain bike, and a commuter bike.
+  Memorias:   730 | Contradicciones: 0 | Mensajes: 255 (errores: 0, errores internos de Mem0: 1)
+  LLM:        255 llamadas | 2267319 tokens entrada | 42182 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 37.50% | Carga: 993.6s (3.9s/mensaje) | Respuesta: 4.2s | Total: 1005.6s
+
+Pregunta 9/78: What day of the week do I take a cocktail-making class?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 258
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 6955 (char 6954)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 49 column 156 (char 7648)
+  Memorias recuperadas para responder:
+    - [0.839] User is planning to try the Paloma and Tequila Sour cocktails during the cocktai
+    - [0.824] User is excited about a cocktail-making class on Friday and plans to try Paloma 
+    - [0.797] User is taking a cocktail-making class on Fridays and is looking for ideas for a
+    - [0.793] User is excited to try out a new recipe and is thinking of experimenting with so
+    - [0.739] User prefers using Avion Silver tequila for homemade margaritas and is excited t
+    - [0.668] User has started taking a weekly cooking class at a local culinary school that f
+    - [0.667] User is taking a weekly cooking class at a local culinary school that focuses on
+    - [0.667] User is taking a weekly cooking class at a local culinary school that focuses on
+    - [0.667] User is taking a weekly cooking class at a local culinary school that focuses on
+    - [0.667] User is taking a weekly cooking class at a local culinary school that focuses on
+  Correcta:   Friday
+  Generada:   You take a cocktail-making class on Friday.
+  Memorias:   683 | Contradicciones: 0 | Mensajes: 253 (errores: 0, errores internos de Mem0: 2)
+  LLM:        253 llamadas | 2252042 tokens entrada | 41215 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 44.44% | Carga: 959.9s (3.8s/mensaje) | Respuesta: 0.5s | Total: 970.0s
+
+Pregunta 10/78: Where did I go on my most recent family trip?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 267
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7120 (char 7119)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 6873 (char 6872)
+  Memorias recuperadas para responder:
+    - [0.783] User feels a bit stuck to a schedule during recent family trips
+    - [0.780] User attended a family trip to Paris last month and enjoyed it
+    - [0.751] User had a great snorkeling experience during a recent family trip to Hawaii
+    - [0.749] User is planning to take extra days after a family trip to explore on their own,
+    - [0.747] User is planning to take extra days after a family trip to explore on their own,
+    - [0.740] User plans to take extra days for solo excursions on their next family trip
+    - [0.739] User plans to take extra days after a family trip for solo excursions, possibly 
+    - [0.727] User would have set aside more time for exploring Waikiki and shopping during th
+    - [0.715] User is planning a trip to Europe and is interested in family-friendly itinerari
+    - [0.715] User is seeking specific tips for planning a family-friendly trip to Paris
+  Correcta:   Paris
+  Generada:   Based on the user memories, your most recent family trip was to Paris, which you attended last month
+  Memorias:   773 | Contradicciones: 0 | Mensajes: 264 (errores: 0, errores internos de Mem0: 2)
+  LLM:        264 llamadas | 2343805 tokens entrada | 45922 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 50.00% | Carga: 1027.5s (3.9s/mensaje) | Respuesta: 0.7s | Total: 1036.0s
+
+Pregunta 11/78: Where do I initially keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 254
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7573 (char 7572)
+  Memorias recuperadas para responder:
+    - [0.840] User needs to clean and freshen their old sneakers while storing them
+    - [0.798] User needs to take care of old sneakers, which are starting to smell
+    - [0.777] User needs to organize their closet and store old sneakers
+    - [0.767] User needs to take care of old sneakers by polishing and conditioning them
+    - [0.762] User is considering getting their old sneakers polished and conditioned and plan
+    - [0.757] User is organizing their closet and planning to store old sneakers in a shoe rac
+    - [0.749] User plans to drop off old sneakers at a cobbler this weekend for polishing and 
+    - [0.748] User plans to polish and condition old sneakers and drop them off at a cobbler t
+    - [0.747] User plans to organize their closet this weekend, storing old sneakers in a shoe
+    - [0.743] User intends to drop off old sneakers at a cobbler this weekend for polishing an
+  Correcta:   under my bed
+  Generada:   Based on the user's recent plans and intentions, the user initially keeps their old sneakers in thei
+  Memorias:   692 | Contradicciones: 0 | Mensajes: 254 (errores: 0, errores internos de Mem0: 1)
+  LLM:        254 llamadas | 2266014 tokens entrada | 40621 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 45.45% | Carga: 920.1s (3.6s/mensaje) | Respuesta: 0.8s | Total: 928.1s
+
+Pregunta 12/78: How many short stories have I written since I started writing regularly?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 235
+  Memorias recuperadas para responder:
+    - [0.836] User has been writing regularly for three months and has completed 7 short stori
+    - [0.823] User has been writing regularly for three months and has completed 7 short stori
+    - [0.755] User is thinking about setting a goal for a certain number of short stories per 
+    - [0.752] User is considering setting a goal for a certain number of short stories per mon
+    - [0.752] User is considering setting a goal for a certain number of short stories per mon
+    - [0.748] User has been working on a short story for about a month and aims to write 500 w
+    - [0.748] User is working on a short story and has been writing 500 words a week for about
+    - [0.737] User is currently working on a short story, aiming to write 500 words a week and
+    - [0.736] User is working on a short story and aims to write 500 words a week, excited abo
+    - [0.722] User is considering setting a goal for a certain number of short stories per mon
+  Correcta:   seven
+  Generada:   You have written 7 short stories since starting to write regularly.
+  Memorias:   718 | Contradicciones: 0 | Mensajes: 228 (errores: 0, errores internos de Mem0: 0)
+  LLM:        228 llamadas | 2035642 tokens entrada | 39640 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 50.00% | Carga: 928.5s (4.1s/mensaje) | Respuesta: 0.5s | Total: 937.1s
+
+Pregunta 13/78: How many pages of 'A Short History of Nearly Everything' have I read so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 234
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.877] User is reading 'A Short History of Nearly Everything' and is currently on page 
+    - [0.871] User is reading 'A Short History of Nearly Everything' and is currently on page 
+    - [0.871] User is reading 'A Short History of Nearly Everything' and is currently on page 
+    - [0.849] User is reading 'A Short History of Nearly Everything' and is currently on page 
+    - [0.831] User is currently reading 'A Short History of Nearly Everything' and is on page 
+    - [0.823] User just finished reading about the discovery of DNA structure in 'A Short Hist
+    - [0.796] User is interested in learning about renewable energy and has been reading 'A Sh
+    - [0.507] User is interested in reading graphic novels and manga, and plans to alternate w
+    - [0.430] User is currently reading 'The Nightingale' by Kristin Hannah, a 440-page book
+    - [0.415] User wants to read 50 books by the end of the year and has read 12 so far
+  Correcta:   220
+  Generada:   Based on the most recent memory, you have read up to page 220 of 'A Short History of Nearly Everythi
+  Memorias:   848 | Contradicciones: 0 | Mensajes: 230 (errores: 1, errores internos de Mem0: 0)
+  LLM:        230 llamadas | 2055767 tokens entrada | 43998 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 53.85% | Carga: 987.0s (4.3s/mensaje) | Respuesta: 0.7s | Total: 995.0s
+
+Pregunta 14/78: How many engineers do I lead when I just started my new role as Senior Software 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 246
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 6888 (char 6887)
+  Memorias recuperadas para responder:
+    - [0.860] User is leading a team of 4 engineers in their new role as Senior Software Engin
+    - [0.856] User is leading a team of engineers in their new role as Senior Software Enginee
+    - [0.826] User is a Senior Software Engineer leading a team of 4 engineers and a manager (
+    - [0.808] User is a Senior Software Engineer leading a team of 4 engineers and a manager (
+    - [0.804] User is a Senior Software Engineer leading a team of 4 engineers and a manager (
+    - [0.431] User is planning a team outing for 6 people, including 4 engineers, a manager (R
+    - [0.428] User is planning to invite manager Rachel to join a team outing with 4 engineers
+    - [0.427] User is planning a team outing for 6 people, including 5 engineers and 1 manager
+    - [0.425] User is planning a team outing for 6 people, including 4 engineers and a manager
+    - [0.420] User is planning a team outing for 5 people, including 4 engineers and 1 manager
+  Correcta:   When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers
+  Generada:   You lead 4 engineers when you just started your new role as Senior Software Engineer, and you still 
+  Memorias:   747 | Contradicciones: 0 | Mensajes: 246 (errores: 0, errores internos de Mem0: 1)
+  LLM:        246 llamadas | 2188893 tokens entrada | 44115 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 50.00% | Carga: 911.3s (3.7s/mensaje) | Respuesta: 0.7s | Total: 918.9s
+
+Pregunta 15/78: How many titles are currently on my to-watch list?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 257
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.741] User is organizing a to-watch list with 25 titles
+    - [0.729] User wants help organizing a to-watch list with 25 titles
+    - [0.727] User is trying to organize a to-watch list with 25 titles
+    - [0.727] User is interested in historical dramas and has a to-watch list of 25 titles
+    - [0.620] User is planning to add 'Amistad' and 'Hotel Rwanda' to their to-watch list
+    - [0.602] User is considering adding 'Amistad' and 'Hotel Rwanda' to their to-watch list, 
+    - [0.600] User plans to add 'Amistad' and 'Hotel Rwanda' to their to-watch list
+    - [0.584] User is planning to watch 'Succession' on HBO Max and 'The Great British Baking 
+    - [0.584] User is planning to watch Succession on HBO Max and The Great British Baking Sho
+    - [0.582] User specifically wants to watch 'Schindler's List' and '12 Years a Slave'
+  Correcta:   25
+  Generada:   Currently, you have 25 titles on your to-watch list.
+  Memorias:   703 | Contradicciones: 0 | Mensajes: 255 (errores: 2, errores internos de Mem0: 0)
+  LLM:        255 llamadas | 2259128 tokens entrada | 40777 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 53.33% | Carga: 843.2s (3.3s/mensaje) | Respuesta: 0.5s | Total: 850.6s
+
+Pregunta 16/78: How many stars do I need to reach the gold level on my Starbucks Rewards app?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 242
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.947] User is trying to reach the gold level on their Starbucks Rewards app and wants 
+    - [0.946] User wants to know how many stars are needed to reach the gold level on their St
+    - [0.941] User needs 120 stars to reach the gold level on the Starbucks Rewards app
+    - [0.941] User needs 120 stars to reach the gold level on their Starbucks Rewards app
+    - [0.941] User needs 120 stars to reach the gold level on their Starbucks Rewards app
+    - [0.941] User needs 120 stars to reach the gold level on their Starbucks Rewards app
+    - [0.939] User needs 125 stars to reach the Gold level on the Starbucks Rewards app
+    - [0.939] User needs 125 stars to reach the Gold level on the Starbucks Rewards app
+    - [0.939] User needs 125 stars to reach the Gold level on the Starbucks Rewards app
+    - [0.938] User needs 125 stars to reach the gold level on their Starbucks Rewards app
+  Correcta:   120
+  Generada:   You need 125 stars to reach the gold level on your Starbucks Rewards app.
+  Memorias:   764 | Contradicciones: 0 | Mensajes: 240 (errores: 1, errores internos de Mem0: 0)
+  LLM:        240 llamadas | 2142119 tokens entrada | 41939 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 50.00% | Carga: 890.2s (3.7s/mensaje) | Respuesta: 0.6s | Total: 897.8s
+
+Pregunta 17/78: How long have I been using my Fitbit Charge 3?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 241
+WARNING:root:Error al agregar mensaje: do embedding request: Post "http://127.0.0.1:58569/v1/embeddings": dial tcp 127.0.0.1:58569: bind: An operation on a socket could not be performed because the system lacked sufficient buffer space or because a queue was full. (status code: 400)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 8281 (char 8280)
+  Memorias recuperadas para responder:
+    - [0.868] User is using their Fitbit Charge 3 for 6 months and finds it helpful for daily 
+    - [0.863] User has been using their Fitbit Charge 3 for 9 months and is considering its us
+    - [0.823] User has been using a Fitbit Charge 3 for 6 months and is seeking tips to stay m
+    - [0.616] User is considering the Fitbit Inspire HR for sleep tracking
+    - [0.600] User is interested in getting a fitness tracker for sleep tracking and inquired 
+    - [0.535] User is planning to track their workouts more closely and seeks recommendations 
+    - [0.529] User is interested in tracking their workouts more closely and seeks recommendat
+    - [0.524] User is interested in fitness apps that integrate well with their smartwatch for
+    - [0.522] User wants to know if GPS device can track 2,500 miles over 7 days
+    - [0.498] User is thinking about their road trip to Yellowstone and wonders if their GPS d
+  Correcta:   9 months
+  Generada:   You have been using your Fitbit Charge 3 for 9 months.
+  Memorias:   728 | Contradicciones: 0 | Mensajes: 236 (errores: 1, errores internos de Mem0: 1)
+  LLM:        235 llamadas | 2094664 tokens entrada | 41648 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 52.94% | Carga: 875.9s (3.7s/mensaje) | Respuesta: 0.6s | Total: 883.4s
+
+Pregunta 18/78: How many sessions of the bereavement support group did I attend?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 250
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7818 (char 7817)
+  Memorias recuperadas para responder:
+    - [0.873] User attended three sessions of a bereavement support group to cope with grief
+    - [0.851] User attended three sessions of a bereavement support group and found it helpful
+    - [0.837] User attended three sessions of a bereavement support group and found it helpful
+    - [0.837] User attended three sessions of a bereavement support group and found it helpful
+    - [0.818] User attended a bereavement support group that was helpful in processing emotion
+    - [0.813] User is seeking information on coping with grief or loss after attending a berea
+    - [0.790] User found a bereavement support group helpful for processing emotions and feeli
+    - [0.555] User attended three bereavement support group sessions to cope with grief
+    - [0.544] User attended three bereavement support group sessions and found it helpful for 
+    - [0.540] User attended five bereavement support group sessions and found them helpful for
+  Correcta:   five
+  Generada:   You attended five sessions of the bereavement support group.
+  Memorias:   803 | Contradicciones: 0 | Mensajes: 250 (errores: 2, errores internos de Mem0: 1)
+  LLM:        250 llamadas | 2230735 tokens entrada | 46180 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 55.56% | Carga: 971.0s (3.9s/mensaje) | Respuesta: 0.5s | Total: 978.5s
+
+Pregunta 19/78: What type of camera lens did I purchase most recently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 235
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.711] User is considering getting a wide-angle lens, possibly a 14-24mm or 16-35mm, to
+    - [0.679] User recently got a new 50mm prime lens which has been working out great
+    - [0.670] User is using a new Canon EF lens for portrait and general photography and is sa
+    - [0.658] User is using their Canon EF 70-200mm f/2.8L IS III USM lens for portrait and ge
+    - [0.658] User is using their Canon EF lens for portrait and general photography, apprecia
+    - [0.656] User is considering a new camera bag and tripod for their Nikon D5600 and lenses
+    - [0.648] User is considering upgrading to a full-frame camera body, possibly a Nikon Z6 o
+    - [0.641] User is considering including information about their camera and equipment in a 
+    - [0.630] User is considering the Lowepro ProTactic 450 AW and the Think Tank Urban Disgui
+    - [0.628] User is evaluating the Lowepro ProTactic 450 AW and the Think Tank Urban Disguis
+  Correcta:   a 70-200mm zoom lens
+  Generada:   Based on the user memories, the most recent purchase related to a lens is a 50mm prime lens.
+  Memorias:   698 | Contradicciones: 0 | Mensajes: 234 (errores: 1, errores internos de Mem0: 0)
+  LLM:        234 llamadas | 2085696 tokens entrada | 38992 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 52.63% | Carga: 827.1s (3.5s/mensaje) | Respuesta: 0.7s | Total: 834.6s
+
+Pregunta 20/78: How often do I see my therapist, Dr. Smith?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 238
+ERROR:mem0.memory.main:Error parsing extraction response: Unterminated string starting at: line 142 column 7 (char 5568)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 42 column 199 (char 7633)
+  Memorias recuperadas para responder:
+    - [0.867] User has a therapy session with Dr. Smith every two weeks
+    - [0.867] User has a therapy session with Dr. Smith every two weeks
+    - [0.867] User has a therapy session with Dr. Smith every two weeks
+    - [0.867] User has a therapy session with Dr. Smith every two weeks
+    - [0.751] User had a session with Dr. Smith this week and discussed setting healthy bounda
+    - [0.751] User had a session with Dr. Smith this week and discussed setting healthy bounda
+    - [0.749] User had a session with Dr. Smith this week to discuss setting healthy boundarie
+    - [0.685] User is feeling overwhelmed with commitments and Dr. Smith suggested learning to
+    - [0.510] User is interested in Dr. Patricia Jennings' research on social-emotional learni
+    - [0.499] User is interested in learning more about Dr. Patricia Jennings' research on soc
+  Correcta:   every week
+  Generada:   You see your therapist, Dr. Smith, every two weeks.
+  Memorias:   662 | Contradicciones: 0 | Mensajes: 238 (errores: 0, errores internos de Mem0: 2)
+  LLM:        238 llamadas | 2116204 tokens entrada | 41986 salida | recortadas: 1
+  Score (propio): 0 [No] | Accuracy: 50.00% | Carga: 859.4s (3.6s/mensaje) | Respuesta: 0.5s | Total: 866.9s
+
+Pregunta 21/78: How many MCU films did I watch in the last 3 months?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 254
+  Memorias recuperadas para responder:
+    - [0.924] User has watched 12 films in the last 3 months, including 5 MCU films
+    - [0.802] User has watched 4 MCU films in the last 3 months and suggests Spider-Man: Homec
+    - [0.717] User is planning a movie marathon with family, considering MCU films and classic
+    - [0.713] User is interested in Marvel films for family movie nights
+    - [0.700] User is interested in Marvel films suitable for family movie nights
+    - [0.686] User has been binge-watching MCU films and wants to share Spider-Man: Homecoming
+    - [0.642] User is a fan of Marvel films and wants to share Spider-Man: Homecoming with the
+    - [0.571] User is interested in snack and activity suggestions for a Marvel-themed movie n
+    - [0.534] User is considering Spider-Man: Homecoming for the family movie night
+    - [0.527] User is planning a movie marathon with family and wants to re-watch classic film
+  Correcta:   5
+  Generada:   You watched 5 MCU films in the last 3 months.
+  Memorias:   695 | Contradicciones: 0 | Mensajes: 253 (errores: 0, errores internos de Mem0: 0)
+  LLM:        253 llamadas | 2247728 tokens entrada | 39408 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 52.38% | Carga: 833.2s (3.3s/mensaje) | Respuesta: 0.8s | Total: 841.0s
+
+Pregunta 22/78: How many of Emma's recipes have I tried out?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 242
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7004 (char 7003)
+  Memorias recuperadas para responder:
+    - [0.871] User has tried 3 recipes from Emma's channel so far and finds them amazing
+    - [0.869] User has been enjoying recipes from Emma's channel and has tried two of them
+    - [0.846] User has been loving Emma's recipes on her channel
+    - [0.775] User expressed interest in vegan dessert recipes, specifically the Chocolate Chi
+    - [0.535] User has been taking guitar lessons with friend Rachel
+    - [0.504] User has Java Moss and Anacharis in their tank and is planning to add more plant
+    - [0.499] User is considering adding more plants to their tank, specifically Java Moss and
+    - [0.387] User is thinking of trying out some new recipes this weekend, specifically vegan
+    - [0.378] User is considering trying out new vegan dessert recipes this weekend
+    - [0.376] User is thinking of trying brisket recipes after having an amazing one at a BBQ 
+  Correcta:   3
+  Generada:   You have tried 3 of Emma's recipes so far.
+  Memorias:   826 | Contradicciones: 0 | Mensajes: 242 (errores: 0, errores internos de Mem0: 1)
+  LLM:        242 llamadas | 2152997 tokens entrada | 46383 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 54.55% | Carga: 971.0s (4.0s/mensaje) | Respuesta: 0.5s | Total: 978.4s
+
+Pregunta 23/78: What company is Rachel, an old colleague from my previous company, currently wor
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 242
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7465 (char 7464)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 7 column 4677 (char 5359)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 41 column 228 (char 8207)
+  Memorias recuperadas para responder:
+    - [0.910] User is interested in catching up with Rachel, an old colleague from their previ
+    - [0.854] User met Rachel, an old colleague from a previous company, at the TechConnect co
+    - [0.854] User met Rachel, an old colleague from a previous company, at the TechConnect co
+    - [0.783] User is organizing contacts and tracking connections made at recent events, incl
+    - [0.677] User met Rachel at the TechConnect conference on February 10th and 11th
+    - [0.673] User met Rachel at the TechConnect conference on February 10th and 11th and plan
+    - [0.580] User is adding David, a friend, to the spreadsheet as he introduced the user to 
+    - [0.575] User met David at the startup mixer at WeWork and he introduced the user to some
+    - [0.558] User met David, a friend, at the same startup mixer at WeWork and plans to add h
+    - [0.558] User is planning to add David to their contact list, who they met at a startup m
+  Correcta:   TechCorp
+  Generada:   Rachel is currently working at TechCorp.
+  Memorias:   761 | Contradicciones: 0 | Mensajes: 241 (errores: 0, errores internos de Mem0: 3)
+  LLM:        241 llamadas | 2154571 tokens entrada | 47181 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 56.52% | Carga: 973.2s (4.0s/mensaje) | Respuesta: 0.5s | Total: 980.5s
+
+Pregunta 24/78: For the coffee-to-water ratio in my French press, did I switch to more water per
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 241
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.855] User is experimenting with their French press and has found a 1:6 coffee-to-wate
+    - [0.852] User is experimenting with their French press and has found that 1 tablespoon of
+    - [0.743] User is asking about the best way to clean their French press to ensure all old 
+    - [0.735] User is interested in cleaning their French press to ensure it is free of old co
+    - [0.735] User is curious about the best way to clean a French press and wants to ensure a
+    - [0.732] User is asking about cleaning their French press
+    - [0.729] User is planning to clean their French press to remove old coffee oils
+    - [0.725] User is curious about the beans received in their first coffee subscription ship
+    - [0.717] User is excited to try new coffee roasts and flavors in their French press
+    - [0.713] User wants to know the best way to clean a French press
+  Correcta:   You switched to less water (5 ounces) per tablespoon of coffee.
+  Generada:   You switched to more water per tablespoon of coffee. Your most recent memory indicates a 1:6 coffee-
+  Memorias:   703 | Contradicciones: 0 | Mensajes: 241 (errores: 1, errores internos de Mem0: 0)
+  LLM:        241 llamadas | 2148021 tokens entrada | 38546 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 54.17% | Carga: 819.0s (3.4s/mensaje) | Respuesta: 0.9s | Total: 826.9s
+
+Pregunta 25/78: Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 251
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.867] User moved the 'Ethereal Dreams' painting by Emma Taylor above their bed, enhanc
+    - [0.784] User is planning to display their own art pieces, including a digital print of '
+    - [0.772] User rearranged their bedroom and moved the 'Moonlit Ocean' print to their bedro
+    - [0.642] User is planning to create an art piece that incorporates a figure in a dreamlik
+    - [0.631] User is planning to create a dreamlike art piece with a figure in a misty, ether
+    - [0.630] User is planning to create an art piece featuring a figure in a dreamlike enviro
+    - [0.627] User is interested in creating a piece of art that combines abstract art with th
+    - [0.625] User is planning to create a piece of art incorporating a dreamlike environment 
+    - [0.443] User is enjoying a new painting above their living room sofa
+    - [0.400] User is looking for inspiration for their next art project and is interested in 
+  Correcta:   in my bedroom
+  Generada:   The painting 'Ethereal Dreams' by Emma Taylor is currently hanging in the user's bedroom.
+  Memorias:   674 | Contradicciones: 0 | Mensajes: 251 (errores: 1, errores internos de Mem0: 0)
+  LLM:        251 llamadas | 2230725 tokens entrada | 36577 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 56.00% | Carga: 780.2s (3.1s/mensaje) | Respuesta: 0.9s | Total: 788.1s
+
+Pregunta 26/78: How many times have I worn my new black Converse Chuck Taylor All Star sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 252
+  Memorias recuperadas para responder:
+    - [0.930] User has worn new black Converse Chuck Taylor All Star sneakers four times alrea
+    - [0.904] User has been wearing their new black Converse Chuck Taylor All Star sneakers si
+    - [0.900] User has been wearing their new black Converse Chuck Taylor All Star sneakers fo
+    - [0.896] User has new black Converse Chuck Taylor All Star sneakers and has worn them fou
+    - [0.893] User has been wearing their new black Converse Chuck Taylor All Star sneakers fo
+    - [0.889] User has been wearing their new black Converse Chuck Taylor All Star sneakers fo
+    - [0.756] User wore new black Converse sneakers to run errands yesterday
+    - [0.722] User is considering getting a waterproofing spray for new black Converse sneaker
+    - [0.722] User is considering getting a waterproofing spray for new black Converse sneaker
+    - [0.646] User is considering getting a new pair of Vans Old Skool sneakers
+  Correcta:   six
+  Generada:   You have worn your new black Converse Chuck Taylor All Star sneakers six times, including to run err
+  Memorias:   756 | Contradicciones: 0 | Mensajes: 252 (errores: 0, errores internos de Mem0: 0)
+  LLM:        252 llamadas | 2242572 tokens entrada | 44147 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 57.69% | Carga: 912.4s (3.6s/mensaje) | Respuesta: 0.8s | Total: 920.2s
+
+Pregunta 27/78: How many episodes of the Science series have I completed on Crash Course?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 247
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7560 (char 7559)
+  Memorias recuperadas para responder:
+    - [0.900] User has been watching Crash Course's Science series and completed 50 episodes
+    - [0.900] User has been watching Crash Course's Science series and completed 50 episodes
+    - [0.897] User has been watching Crash Course's Science series and has completed 50 episod
+    - [0.897] User has been watching Crash Course's Science series and has completed 50 episod
+    - [0.888] User is currently watching Crash Course's Science series and has completed 50 ep
+    - [0.844] User is currently on episode 10 of the Science series in Crash Course
+    - [0.815] User is considering incorporating their lunch break and before-bed time into a d
+    - [0.804] User wants to incorporate their lunch break and before-bed time for watching Cra
+    - [0.802] User wants to incorporate their lunch break and before-bed time into a daily rou
+    - [0.765] User is currently on episode 10 of the Science series
+  Correcta:   50
+  Generada:   You have completed 50 episodes of the Science series on Crash Course.
+  Memorias:   759 | Contradicciones: 0 | Mensajes: 246 (errores: 2, errores internos de Mem0: 1)
+  LLM:        246 llamadas | 2195117 tokens entrada | 45632 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 59.26% | Carga: 957.6s (3.9s/mensaje) | Respuesta: 0.6s | Total: 965.4s
+
+Pregunta 28/78: Do I go to the gym more frequently than I did previously?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 244
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.699] User has been consistent with their gym routine, working out four times a week
+    - [0.678] User does not work out on Mondays, Wednesdays, and Fridays, but goes to the gym 
+    - [0.678] User does not work out on Mondays, Wednesdays, and Fridays, but goes to the gym 
+    - [0.678] User does not work out on Mondays, Wednesdays, and Fridays, but goes to the gym 
+    - [0.674] User goes to the gym on Tuesdays, Thursdays, and Saturdays, not on Mondays, Wedn
+    - [0.591] User is thinking of rewarding themselves with a post-workout smoothie on Saturda
+    - [0.583] User currently uses a habit tracker app to manage daily and weekly tasks, includ
+    - [0.581] User uses a habit tracker app to manage daily and weekly tasks, including medita
+    - [0.579] User plans to reward themselves with a post-workout smoothie on Saturday after b
+    - [0.575] User is using a habit tracker app to manage daily and weekly tasks, meditation, 
+  Correcta:   Yes
+  Generada:   No, you do not go to the gym more frequently than you did previously. You consistently go to the gym
+  Memorias:   758 | Contradicciones: 0 | Mensajes: 237 (errores: 1, errores internos de Mem0: 0)
+  LLM:        237 llamadas | 2111004 tokens entrada | 37832 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 57.14% | Carga: 803.0s (3.4s/mensaje) | Respuesta: 0.9s | Total: 810.9s
+
+Pregunta 29/78: How many new postcards have I added to my collection since I started collecting 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 242
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 37 column 212 (char 7323)
+  Memorias recuperadas para responder:
+    - [0.881] User has added 17 new postcards to their collection since starting again
+    - [0.869] User has added 25 new postcards to their collection since resuming collection
+    - [0.869] User has added 25 new postcards to their collection since resuming collection
+    - [0.868] User has added 17 new postcards to their collection since resuming
+    - [0.858] User has added 25 new postcards to their collection since resuming
+    - [0.855] User has added 25 new postcards to their collection since resuming and is excite
+    - [0.813] User has 17 new postcards to add to their collection
+    - [0.809] User recently acquired 8 new postcards for their collection
+    - [0.786] User has 17 new postcards in their collection, with detailed information for eac
+    - [0.758] User has a list of 17 new postcards, including titles, dates, conditions, and ac
+  Correcta:   25
+  Generada:   You have added 25 new postcards to your collection since resuming collection.
+  Memorias:   732 | Contradicciones: 0 | Mensajes: 242 (errores: 0, errores internos de Mem0: 1)
+  LLM:        242 llamadas | 2161492 tokens entrada | 40857 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 58.62% | Carga: 846.8s (3.5s/mensaje) | Respuesta: 0.5s | Total: 854.4s
+
+Pregunta 30/78: How many videos of Corey Schafer's Python programming series have I completed so
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 244
+  Memorias recuperadas para responder:
+    - [0.952] User has completed 30 videos of Corey Schafer's Python series
+    - [0.886] User has completed 30 videos of Corey Schafer's Python series and intends to app
+    - [0.881] User has completed 30 videos of Corey Schafer's Python series and is excited to 
+    - [0.870] User is brushing up on Python skills by watching Corey Schafer's series on YouTu
+    - [0.827] User has been preparing for NLP by watching Corey Schafer's Python series
+    - [0.612] User is interested in popular NLP libraries in Python for text analysis and sent
+    - [0.595] User is looking for popular NLP libraries in Python for text analysis and sentim
+    - [0.517] User recently binge-watched 'Schitt's Creek' on Netflix
+    - [0.503] User is considering starting a simple NLP project like sentiment analysis using 
+    - [0.502] User is thinking of starting a simple NLP project, such as building a sentiment 
+  Correcta:   30
+  Generada:   You have completed 30 videos of Corey Schafer's Python series so far.
+  Memorias:   698 | Contradicciones: 0 | Mensajes: 243 (errores: 0, errores internos de Mem0: 0)
+  LLM:        243 llamadas | 2165185 tokens entrada | 38219 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 60.00% | Carga: 805.0s (3.3s/mensaje) | Respuesta: 0.6s | Total: 812.8s
+
+Pregunta 31/78: How long have I been living in my current apartment in Harajuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 258
+  Memorias recuperadas para responder:
+    - [0.848] User has been living in Harajuku, Tokyo for 3 months and continues to discover n
+    - [0.836] User has been living in a studio apartment in Harajuku, Tokyo for a month and fi
+    - [0.822] User is living in a studio apartment in Harajuku, Tokyo, and finds the commute t
+    - [0.818] User is enjoying their new studio apartment in Harajuku, Tokyo, and finds the co
+    - [0.812] User is exploring new neighborhoods in Harajuku and planning a day trip
+    - [0.798] User is exploring new neighborhoods in Harajuku and planning a day trip to Yokoh
+    - [0.790] User has been exploring a new neighborhood in Harajuku every Sunday and recently
+    - [0.788] User has been enjoying the fall foliage in Tokyo and exploring new neighborhoods
+    - [0.725] User is interested in exploring the historical side of Harajuku, specifically th
+    - [0.684] User is considering visiting the Kawai Shrine in Harajuku
+  Correcta:   3 months
+  Generada:   You have been living in your current studio apartment in Harajuku for 3 months.
+  Memorias:   692 | Contradicciones: 0 | Mensajes: 258 (errores: 0, errores internos de Mem0: 0)
+  LLM:        258 llamadas | 2289665 tokens entrada | 38859 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 61.29% | Carga: 832.8s (3.2s/mensaje) | Respuesta: 0.6s | Total: 840.3s
+
+Pregunta 32/78: What brand of BBQ sauce am I currently obsessed with?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 217
+  Memorias recuperadas para responder:
+    - [0.793] User is looking for a BBQ rub to complement Sweet Baby Ray's BBQ sauce
+    - [0.788] User is considering getting a BBQ rub to complement Sweet Baby Ray's BBQ sauce
+    - [0.787] User loves mac and cheese and Sweet Baby Ray's BBQ sauce, and is considering rec
+    - [0.786] User is looking for recommendations for a good BBQ rub to complement Sweet Baby 
+    - [0.782] User is looking for a BBQ rub to complement Sweet Baby Ray's BBQ sauce for brisk
+    - [0.757] User needs to stock up on Sweet Baby Ray's BBQ sauce for the ribs
+    - [0.757] User needs to stock up on Sweet Baby Ray's BBQ sauce for the ribs
+    - [0.726] User currently prefers Kansas City Masterpiece BBQ sauce for pulled pork, but is
+    - [0.680] User loves using a Weber gas grill for quick weeknight dinners and enjoys Kansas
+    - [0.643] User loves mac and cheese and plans to make it for the BBQ
+  Correcta:   Kansas City Masterpiece
+  Generada:   You currently prefer Kansas City Masterpiece BBQ sauce for pulled pork and are open to trying other 
+  Memorias:   601 | Contradicciones: 0 | Mensajes: 216 (errores: 0, errores internos de Mem0: 0)
+  LLM:        216 llamadas | 1924749 tokens entrada | 34625 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 62.50% | Carga: 735.7s (3.4s/mensaje) | Respuesta: 0.8s | Total: 743.4s
+
+Pregunta 33/78: How long have my parents been staying with me in the US?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 234
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7274 (char 7273)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.799] User's parents have been living with them in the US for six months, helping with
+    - [0.736] User's parents are living with them in the US and have been helping with househo
+    - [0.726] User's parents have been staying with them for nine months and are overstaying t
+    - [0.713] User's parents have been staying with them for nine months and are helping with 
+    - [0.707] User's parents have been staying with them for nine months and have been helping
+    - [0.706] User's parents have been staying with them for nine months and have been helping
+    - [0.657] User is concerned about the impact of having parents living with them in the US 
+    - [0.633] User has parents living with them in the US and is concerned about including the
+    - [0.612] User is considering a waiver of inadmissibility for their parents who have overs
+    - [0.603] User is considering applying for a green card and is seeking advice on the proce
+  Correcta:   nine months
+  Generada:   Your parents have been staying with you in the US for nine months.
+  Memorias:   763 | Contradicciones: 0 | Mensajes: 233 (errores: 1, errores internos de Mem0: 1)
+  LLM:        233 llamadas | 2072554 tokens entrada | 40839 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 63.64% | Carga: 864.0s (3.7s/mensaje) | Respuesta: 0.5s | Total: 871.4s
+
+Pregunta 34/78: How long have I been sticking to my daily tidying routine?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 251
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 7 column 153 (char 815)
+  Memorias recuperadas para responder:
+    - [0.854] User has been sticking to a daily tidying routine for 3 weeks
+    - [0.842] User has been sticking to a daily tidying routine for 3 weeks and feels proud of
+    - [0.836] User has been following a daily tidying routine for 4 weeks
+    - [0.830] User has been doing their daily tidying routine for 3 weeks and feels proud of i
+    - [0.820] User is feeling proud of sticking to a daily tidying routine for 3 weeks
+    - [0.820] User has been sticking to a daily tidying routine for 4 weeks and has noticed a 
+    - [0.813] User has been sticking to a daily tidying routine for 4 weeks in their apartment
+    - [0.806] User has been sticking to a daily tidying routine for 4 weeks and is considering
+    - [0.764] User currently does their daily tidying routine on the kitchen counter
+    - [0.730] User intends to implement the 'one-touch rule' for cleaning as part of their dai
+  Correcta:   4 weeks
+  Generada:   You have been sticking to your daily tidying routine for 4 weeks.
+  Memorias:   800 | Contradicciones: 0 | Mensajes: 250 (errores: 1, errores internos de Mem0: 1)
+  LLM:        250 llamadas | 2228056 tokens entrada | 45413 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.71% | Carga: 957.6s (3.8s/mensaje) | Respuesta: 0.6s | Total: 965.0s
+
+Pregunta 35/78: How long have I had my cat, Luna?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 245
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 39 column 195 (char 7607)
+  Memorias recuperadas para responder:
+    - [0.634] User has had their cat Luna for about 9 months and is trying to keep her active 
+    - [0.621] User has had their cat Luna for about 9 months and has been setting up her playt
+    - [0.611] User has a cat named Luna and has been trying to keep her active for about 9 mon
+    - [0.610] User is giving their cat Luna freeze-dried salmon treats, which she loves
+    - [0.585] User has had their cat Luna for about 6 months and plans to get her microchipped
+    - [0.579] User is concerned about maintaining their cat Luna's health and weight
+    - [0.578] User is concerned about maintaining their cat Luna's weight and seeking tips
+    - [0.574] User is seeking general tips on maintaining their cat Luna's weight
+    - [0.574] User is trying to maintain their cat Luna's health and happiness by managing her
+    - [0.572] User is trying to maintain their cat Luna's health and happiness by managing her
+  Correcta:   9 months
+  Generada:   You have had your cat Luna for about 9 months.
+  Memorias:   779 | Contradicciones: 0 | Mensajes: 241 (errores: 0, errores internos de Mem0: 1)
+  LLM:        241 llamadas | 2148223 tokens entrada | 45744 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.71% | Carga: 952.9s (4.0s/mensaje) | Respuesta: 0.5s | Total: 960.4s
+
+Pregunta 36/78: How many Instagram followers do I currently have?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 241
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.782] User currently has 600 followers on Instagram
+    - [0.734] User is currently at 600 followers on Instagram and is planning to promote a Q&A
+    - [0.671] User is considering a hybrid approach for Instagram content, posting manuscript 
+    - [0.669] User wants to increase their social media presence on Instagram
+    - [0.668] User is trying to increase their social media presence, especially on Instagram
+    - [0.662] User will post a poll on Instagram asking followers about their content preferen
+    - [0.660] User is considering using Instagram's Poll feature to ask followers about their 
+    - [0.659] User is thinking of creating a follow-up Instagram story with a graphic or scree
+    - [0.656] User will post a poll on Instagram asking followers about their content preferen
+    - [0.655] User wants to use Instagram's Poll feature to gather feedback from followers
+  Correcta:   600
+  Generada:   You currently have 600 followers on Instagram.
+  Memorias:   726 | Contradicciones: 0 | Mensajes: 238 (errores: 2, errores internos de Mem0: 0)
+  LLM:        238 llamadas | 2123001 tokens entrada | 39163 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 839.5s (3.5s/mensaje) | Respuesta: 0.7s | Total: 847.4s
+
+Pregunta 37/78: How many dozen eggs do we currently have stocked up in our refrigerator?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 271
+Limpiando Qdrant...
+Qdrant limpio.
+Cargando dataset...
+Evaluando 78 preguntas de 'knowledge-update' (small)
+Modelo: qwen2.5:7b-instruct-q4_K_M | num_ctx: 12288 | think: None | semilla: 42
+Modulo NLI: desactivado
+Resultados en: E:/proyecto/resultados_local_qwen25_corregido/small/small_sin_modulo_qwen25.json
+============================================================
+Retomando: 36 preguntas ya procesadas, continuando desde donde se quedo.
+Cargando modelos (calentamiento, este tiempo no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+Modelos listos en 66 s.
+Pregunta 1/78: ya procesada, saltando.
+Pregunta 2/78: ya procesada, saltando.
+Pregunta 3/78: ya procesada, saltando.
+Pregunta 4/78: ya procesada, saltando.
+Pregunta 5/78: ya procesada, saltando.
+Pregunta 6/78: ya procesada, saltando.
+Pregunta 7/78: ya procesada, saltando.
+Pregunta 8/78: ya procesada, saltando.
+Pregunta 9/78: ya procesada, saltando.
+Pregunta 10/78: ya procesada, saltando.
+Pregunta 11/78: ya procesada, saltando.
+Pregunta 12/78: ya procesada, saltando.
+Pregunta 13/78: ya procesada, saltando.
+Pregunta 14/78: ya procesada, saltando.
+Pregunta 15/78: ya procesada, saltando.
+Pregunta 16/78: ya procesada, saltando.
+Pregunta 17/78: ya procesada, saltando.
+Pregunta 18/78: ya procesada, saltando.
+Pregunta 19/78: ya procesada, saltando.
+Pregunta 20/78: ya procesada, saltando.
+Pregunta 21/78: ya procesada, saltando.
+Pregunta 22/78: ya procesada, saltando.
+Pregunta 23/78: ya procesada, saltando.
+Pregunta 24/78: ya procesada, saltando.
+Pregunta 25/78: ya procesada, saltando.
+Pregunta 26/78: ya procesada, saltando.
+Pregunta 27/78: ya procesada, saltando.
+Pregunta 28/78: ya procesada, saltando.
+Pregunta 29/78: ya procesada, saltando.
+Pregunta 30/78: ya procesada, saltando.
+Pregunta 31/78: ya procesada, saltando.
+Pregunta 32/78: ya procesada, saltando.
+Pregunta 33/78: ya procesada, saltando.
+Pregunta 34/78: ya procesada, saltando.
+Pregunta 35/78: ya procesada, saltando.
+Pregunta 36/78: ya procesada, saltando.
+
+Pregunta 37/78: How many dozen eggs do we currently have stocked up in our refrigerator?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 271
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.849] User has 30 dozen eggs stocked up in the fridge.
+    - [0.849] User has 30 dozen eggs stocked up in the fridge.
+    - [0.809] User has 20 dozen eggs stocked up in the fridge and is seeking tips on storing t
+    - [0.797] User has 20 dozen eggs stocked up in the fridge and is looking for tips on stori
+    - [0.790] User has 20 dozen eggs stocked up in the fridge and wants tips on storing them p
+    - [0.771] User has 20 dozen fresh eggs from the coop and is considering how to store them 
+    - [0.766] User is planning to make egg salad for a quick lunch and needs to use up 30 doze
+    - [0.762] User has 20 dozen eggs stocked up in the fridge for making quiche
+    - [0.741] User plans to make egg salad for a quick lunch and needs to use up 30 dozen eggs
+    - [0.707] User needs to use up the eggs in the fridge.
+  Correcta:   20
+  Generada:   We currently have 30 dozen eggs stocked up in the refrigerator.
+  Memorias:   793 | Contradicciones: 0 | Mensajes: 259 (errores: 1, errores internos de Mem0: 0)
+  LLM:        259 llamadas | 2305074 tokens entrada | 41981 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 64.86% | Carga: 894.4s (3.5s/mensaje) | Respuesta: 0.5s | Total: 902.3s
+  Ollama:     qwen2.5:7b-instruct-q4_K_M 845dbda0ea48 5.2 GB 100% GPU 12288 llamacpp 4 minutes from now
+
+Pregunta 38/78: How many issues of National Geographic have I finished reading?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 241
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.875] User has finished three issues of National Geographic and is currently on the fo
+    - [0.857] User has been reading National Geographic for their in-depth articles on science
+    - [0.851] User has been reading National Geographic for their in-depth articles on science
+    - [0.844] User has been reading National Geographic for their in-depth articles on the Ama
+    - [0.760] User has been reading The New York Times, The Daily News, The New Yorker, Nation
+    - [0.758] User has been reading The New York Times, The Daily News, The New Yorker, Nation
+    - [0.743] User reads news, science, and entertainment magazines, and regularly reads The N
+    - [0.740] User reads The New York Times, The Daily News, The New Yorker, National Geograph
+    - [0.729] User wants to create a reading list of magazines and newspapers they have been r
+    - [0.722] User has been reading National Geographic issues about the Amazon rainforest and
+  Correcta:   Five
+  Generada:   Based on the most recent user memories, the user has finished reading a total of 13 issues of Nation
+  Memorias:   689 | Contradicciones: 0 | Mensajes: 239 (errores: 1, errores internos de Mem0: 0)
+  LLM:        239 llamadas | 2127352 tokens entrada | 40076 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.16% | Carga: 851.8s (3.6s/mensaje) | Respuesta: 1.1s | Total: 860.5s
+
+Pregunta 39/78: Did I finish reading 'The Nightingale' by Kristin Hannah?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 250
+  Memorias recuperadas para responder:
+    - [0.923] User finished reading 'The Nightingale' by Kristin Hannah recently
+    - [0.901] User was recently reading 'The Nightingale' by Kristin Hannah
+    - [0.870] User has recently finished reading 'The Seven Husbands of Evelyn Hugo' and 'The 
+    - [0.854] User enjoyed 'The Nightingale' by Kristin Hannah, finding it powerful and emotio
+    - [0.831] User enjoyed 'The Nightingale' by Kristin Hannah, finding it powerful and emotio
+    - [0.819] User recently finished reading 'The Nightingale' by Kristin Hannah, finding the 
+    - [0.816] User is interested in historical fiction and enjoyed 'The Nightingale' by Kristi
+    - [0.811] User finished reading 'The Nightingale' by Kristin Hannah recently, finding the 
+    - [0.799] User is looking for book recommendations beyond 'The Song of Achilles' and 'The 
+    - [0.785] User recently finished reading 'The Seven Husbands of Evelyn Hugo' and 'The Nigh
+  Correcta:   Yes
+  Generada:   Yes, you finished reading 'The Nightingale' by Kristin Hannah recently.
+  Memorias:   638 | Contradicciones: 0 | Mensajes: 249 (errores: 0, errores internos de Mem0: 0)
+  LLM:        249 llamadas | 2219635 tokens entrada | 36874 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.10% | Carga: 784.5s (3.2s/mensaje) | Respuesta: 0.7s | Total: 792.7s
+
+Pregunta 40/78: Where did I get my guitar serviced?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 235
+ERROR:mem0.memory.main:Error parsing extraction response: Unterminated string starting at: line 1 column 211 (char 210)
+  Memorias recuperadas para responder:
+    - [0.817] User remembers a music shop on Main St where they got their guitar serviced and 
+    - [0.799] User had a guitar serviced at 'Rhythm Central' on Main St and they are good for 
+    - [0.792] User remembers a music shop on Main St where they got their guitar serviced and 
+    - [0.788] User has been meaning to get their acoustic guitar serviced but hasn't gotten ar
+    - [0.763] User is looking for a music shop on Main St called 'Rhythm Central' for guitar s
+    - [0.761] User is preparing their guitar for servicing
+    - [0.740] User remembers a music shop on Main St called 'Rhythm Central' for guitar servic
+    - [0.728] User plans to get their guitar serviced before a music festival
+    - [0.726] User is considering 'Rhythm Central' on Main St for guitar servicing
+    - [0.721] User is planning to get their guitar serviced before attending a music festival 
+  Correcta:   The music shop on Main St.
+  Generada:   You got your guitar serviced at Rhythm Central on Main St.
+  Memorias:   728 | Contradicciones: 0 | Mensajes: 235 (errores: 0, errores internos de Mem0: 1)
+  LLM:        235 llamadas | 2099325 tokens entrada | 40678 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.00% | Carga: 863.6s (3.7s/mensaje) | Respuesta: 0.5s | Total: 871.6s
+
+Pregunta 41/78: What is my current highest score in Ticket to Ride?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 239
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 50 column 177 (char 8189)
+  Memorias recuperadas para responder:
+    - [0.868] User has been crushing it in Ticket to Ride, with a highest score of 124 points 
+    - [0.862] User has been enjoying Ticket to Ride and has a high score of 124 points
+    - [0.852] User has been playing Ticket to Ride and has a high score of 124 points
+    - [0.819] User has been enjoying playing Ticket to Ride and has scored 124 points
+    - [0.696] User is considering games similar to Ticket to Ride for a game night
+    - [0.682] User is planning a game night and looking for games similar to Ticket to Ride
+    - [0.681] User is considering hosting another game night and is looking for recommendation
+    - [0.673] User enjoys strategy games and is considering games similar to Ticket to Ride fo
+    - [0.670] User is considering hosting a game night and is looking for games similar to Tic
+    - [0.668] User is considering hosting another game night and is looking for recommendation
+  Correcta:   132 points
+  Generada:   Your current highest score in Ticket to Ride is 124 points.
+  Memorias:   791 | Contradicciones: 0 | Mensajes: 239 (errores: 0, errores internos de Mem0: 1)
+  LLM:        239 llamadas | 2129050 tokens entrada | 43284 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.41% | Carga: 918.1s (3.8s/mensaje) | Respuesta: 0.9s | Total: 926.3s
+
+Pregunta 42/78: How many tops have I bought from H&M so far?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 256
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 9 column 26 (char 878)
+  Memorias recuperadas para responder:
+    - [0.859] User has already bought five tops from H&M and is considering getting a few more
+    - [0.857] User is considering buying more tops from H&M
+    - [0.847] User has already purchased five tops from H&M and plans to buy more
+    - [0.845] User has already purchased five tops from H&M and is considering buying more
+    - [0.845] User is thinking of buying more tops from H&M this weekend
+    - [0.819] User is considering buying more tops from H&M this weekend and wants to know if 
+    - [0.815] User is thinking of buying more tops from H&M this weekend and wants to know abo
+    - [0.808] User is considering buying tops from H&M this weekend and wants to know if there
+    - [0.802] User is already loving the summer collection from H&M and has bought three tops
+    - [0.782] User is considering buying more tops from H&M and might purchase from The Vault 
+  Correcta:   five
+  Generada:   You have bought five tops from H&M so far.
+  Memorias:   851 | Contradicciones: 0 | Mensajes: 255 (errores: 0, errores internos de Mem0: 1)
+  LLM:        255 llamadas | 2268829 tokens entrada | 46296 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.29% | Carga: 971.0s (3.8s/mensaje) | Respuesta: 0.5s | Total: 978.6s
+
+Pregunta 43/78: How much did I earn at the Downtown Farmers Market on my most recent visit?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 249
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7410 (char 7409)
+  Memorias recuperadas para responder:
+    - [0.891] User earned $420 at the Downtown Farmers Market on their most recent visit
+    - [0.891] User earned $420 at the Downtown Farmers Market on their most recent visit
+    - [0.891] User earned $420 at the Downtown Farmers Market on their most recent visit
+    - [0.891] User earned $420 at the Downtown Farmers Market on their most recent visit
+    - [0.800] User provided sales data: March 18th, Downtown Farmers Market, $220; March 25th,
+    - [0.767] User is tracking sales and expenses from markets and events in 2026, including e
+    - [0.763] User has upcoming events at the Downtown Farmers Market (March 18th, $220), Arts
+    - [0.717] User is considering offering a 'Downtown Farmers Market' themed gift basket
+    - [0.712] User is considering a 'Downtown Farmers Market' themed gift basket featuring bes
+    - [0.711] User is considering offering a 'Downtown Farmers Market' themed gift basket feat
+  Correcta:   $420
+  Generada:   You earned $420 at the Downtown Farmers Market on your most recent visit.
+  Memorias:   733 | Contradicciones: 0 | Mensajes: 248 (errores: 0, errores internos de Mem0: 1)
+  LLM:        248 llamadas | 2199206 tokens entrada | 42395 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.12% | Carga: 883.7s (3.6s/mensaje) | Respuesta: 0.6s | Total: 891.3s
+
+Pregunta 44/78: How many times have I tried making a Negroni at home since my friend Emma showed
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 235
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.926] User is perfecting their Negroni recipe and has tried it 10 times since learning
+    - [0.911] User has been making Negroni cocktails at home 10 times since learning from Emma
+    - [0.910] User has been making Negroni cocktails at home 5 times since learning from Emma 
+    - [0.899] User has been making Negronis at home 10 times since a friend showed them how to
+    - [0.898] User has been perfecting their Negroni cocktail recipe at home 10 times since le
+    - [0.878] User is perfecting their Negroni recipe and has tried making it at home 10 times
+    - [0.871] User has been perfecting their Negroni recipe by making it at home 10 times
+    - [0.871] User has been perfecting their Negroni recipe by making it at home 10 times
+    - [0.765] User is interested in a White Negroni recipe and tips on balancing flavors
+    - [0.759] User is interested in perfecting their Negroni recipe using Hendrick's gin and C
+  Correcta:   10
+  Generada:   You have tried making a Negroni at home 10 times since your friend Emma showed you how to make it.
+  Memorias:   576 | Contradicciones: 0 | Mensajes: 234 (errores: 1, errores internos de Mem0: 0)
+  LLM:        234 llamadas | 2088792 tokens entrada | 34601 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 65.91% | Carga: 733.1s (3.1s/mensaje) | Respuesta: 0.8s | Total: 740.7s
+
+Pregunta 45/78: What time do I usually go to the gym?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 262
+  Memorias recuperadas para responder:
+    - [0.714] User prefers Tuesday afternoon at 2:00 pm for a meeting with a potential client,
+    - [0.698] User is trying to schedule a meeting with a potential client and prefers Tuesday
+    - [0.695] User prefers scheduling a meeting with a potential client for Tuesday afternoon 
+    - [0.688] User is flexible for scheduling but prefers to avoid gym sessions on Mondays, We
+    - [0.680] User is planning to set reminders for gym sessions at 7:00 pm on Mondays, Wednes
+    - [0.679] User suggests Tuesday afternoon at 2:00 pm for a meeting with a potential client
+    - [0.638] User prefers to avoid scheduling meetings on Mondays, Wednesdays, and Fridays du
+    - [0.638] User prefers to avoid scheduling meetings on Mondays, Wednesdays, and Fridays du
+    - [0.638] User prefers to avoid scheduling meetings on Mondays, Wednesdays, and Fridays du
+    - [0.638] User prefers to avoid scheduling meetings on Mondays, Wednesdays, and Fridays du
+  Correcta:   6:00 pm
+  Generada:   You usually go to the gym at 6:00 pm on Tuesdays and 7:00 pm on Mondays, Wednesdays, and Fridays.
+  Memorias:   612 | Contradicciones: 0 | Mensajes: 261 (errores: 0, errores internos de Mem0: 0)
+  LLM:        261 llamadas | 2321094 tokens entrada | 34366 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 749.6s (2.9s/mensaje) | Respuesta: 0.8s | Total: 757.2s
+
+Pregunta 46/78: How many Crash Course videos have I watched in the past few weeks?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 209
+ERROR:mem0.memory.main:LLM extraction failed: prediction aborted, token repeat limit reached (status code: 500)
+  Memorias recuperadas para responder:
+    - [0.924] User has been watching Crash Course videos and has finished 15 videos in the pas
+    - [0.892] User has been watching Crash Course videos frequently, completing 12 videos in t
+    - [0.890] User has been watching Crash Course videos frequently, completing 10 videos in t
+    - [0.876] User has been watching Crash Course videos and has finished 12 videos on compute
+    - [0.876] User has been watching Crash Course videos and has finished 12 videos on compute
+    - [0.871] User has watched 12 Crash Course videos on computer science
+    - [0.547] User has been doing yoga classes at a new studio near their work twice a week si
+    - [0.530] User is particularly interested in the Coursera course by IBM for learning about
+    - [0.530] User wants more information about the duration and level of the Coursera course 
+    - [0.522] User is interested in learning more about machine learning and has taken a Pytho
+  Correcta:   15
+  Generada:   You have watched 12 Crash Course videos in the past few weeks.
+  Memorias:   711 | Contradicciones: 0 | Mensajes: 209 (errores: 0, errores internos de Mem0: 1)
+  LLM:        208 llamadas | 1860944 tokens entrada | 40793 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 65.22% | Carga: 856.6s (4.1s/mensaje) | Respuesta: 0.5s | Total: 864.2s
+
+Pregunta 47/78: Where am I planning to stay for my birthday trip to Hawaii?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 242
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 8061 (char 8060)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7872 (char 7871)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.860] User is planning a birthday trip to Hawaii in October
+    - [0.834] User is planning a birthday trip to Hawaii in October and is considering snorkel
+    - [0.822] User is planning a birthday trip to Hawaii in October and is interested in snork
+    - [0.822] User is planning a birthday trip to Hawaii and is looking for hiking trail recom
+    - [0.821] User is planning a birthday trip to Hawaii and is interested in snorkeling at Ha
+    - [0.819] User is planning a birthday trip to Hawaii and is interested in snorkeling spots
+    - [0.817] User is considering a birthday trip to Hawaii and is looking for hiking trail re
+    - [0.799] User is planning a birthday trip to Hawaii in October and considering snorkeling
+    - [0.798] User is planning a birthday trip to Hawaii in October and is considering snorkel
+    - [0.777] User is planning a birthday trip to Hawaii in October and is interested in snork
+  Correcta:   Oahu
+  Generada:   Based on the provided memories, there is no specific information about where you are planning to sta
+  Memorias:   688 | Contradicciones: 0 | Mensajes: 241 (errores: 1, errores internos de Mem0: 2)
+  LLM:        241 llamadas | 2144446 tokens entrada | 42848 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.83% | Carga: 915.6s (3.8s/mensaje) | Respuesta: 1.2s | Total: 923.9s
+
+Pregunta 48/78: How many different species of birds have I seen in my local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 239
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.884] User has spotted 27 different bird species in their local park
+    - [0.884] User has spotted 27 different bird species in their local park
+    - [0.863] User has been keeping track of 27 different bird species seen in their local par
+    - [0.861] User has been keeping track of 27 different bird species seen in their local par
+    - [0.841] User has seen a Northern Flicker in the local park and has a total of 32 bird sp
+    - [0.833] User has seen a Northern Flicker in the local park and has a total of 32 bird sp
+    - [0.823] User has been keeping track of 32 different bird species seen in their local par
+    - [0.816] User has seen a Northern Flicker in the local park, bringing their total bird sp
+    - [0.804] User has been tracking 27 different bird species in their local park using the e
+    - [0.798] User saw a Northern Flicker in the local park last weekend, bringing their bird 
+  Correcta:   32
+  Generada:   You have seen 32 different species of birds in your local park.
+  Memorias:   834 | Contradicciones: 0 | Mensajes: 239 (errores: 1, errores internos de Mem0: 0)
+  LLM:        239 llamadas | 2131549 tokens entrada | 42489 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.58% | Carga: 1051.9s (4.4s/mensaje) | Respuesta: 1.2s | Total: 1061.3s
+
+Pregunta 49/78: What was my previous frequent flyer status on United Airlines before I got the c
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 265
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.864] User is planning to use United miles to book a flight to LA but is unsure about 
+    - [0.756] User has hit 20,000 miles on United Airlines and is now eligible for Premier Sil
+    - [0.741] User is planning a trip to San Francisco in a few weeks and is considering flyin
+    - [0.738] User is planning a trip to San Francisco and considering flying with United Airl
+    - [0.738] User is planning a trip to San Francisco and considering flying with United Airl
+    - [0.732] User is planning to fly from DC to San Francisco using United Airlines and is fl
+    - [0.731] User is considering flying with United Airlines from DC to San Francisco
+    - [0.718] User wants price alerts for United Airlines tickets and is curious about mile ea
+    - [0.717] User wants to know how many miles are needed to book a one-way economy ticket to
+    - [0.709] User is considering flying with United Airlines and looking for Economy tickets 
+  Correcta:   Premier Silver
+  Generada:   Based on the user's memory, your previous frequent flyer status on United Airlines before getting th
+  Memorias:   808 | Contradicciones: 0 | Mensajes: 264 (errores: 1, errores internos de Mem0: 0)
+  LLM:        264 llamadas | 2348852 tokens entrada | 44542 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.27% | Carga: 1027.3s (3.9s/mensaje) | Respuesta: 2.0s | Total: 1037.9s
+
+Pregunta 50/78: What was my previous personal best time for the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 250
+ERROR:mem0.memory.main:LLM extraction failed: prediction aborted, token repeat limit reached (status code: 500)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.885] User recently completed a charity 5K run with a personal best time of 27 minutes
+    - [0.881] User recently completed a charity 5K run with a personal best time of 26 minutes
+    - [0.876] User ran a charity 5K with a personal best time of 26 minutes and 30 seconds.
+    - [0.876] User ran a charity 5K and achieved a personal best time of 26 minutes and 30 sec
+    - [0.876] User ran a charity 5K with a personal best time of 26 minutes and 30 seconds
+    - [0.874] User finished a charity 5K run with a personal best time of 26 minutes and 30 se
+    - [0.872] User finished a charity 5K run with a personal best time of 26 minutes and 30 se
+    - [0.851] User recently completed a charity 5K run in Oakdale with a personal best time of
+    - [0.850] User just completed a charity 5K run in Oakdale and beat their personal best tim
+    - [0.846] User has a personal best time of 26 minutes and 30 seconds in a charity 5K run a
+  Correcta:   27 minutes and 45 seconds
+  Generada:   Your previous personal best time for the charity 5K run was 27 minutes and 45 seconds.
+  Memorias:   885 | Contradicciones: 0 | Mensajes: 248 (errores: 1, errores internos de Mem0: 1)
+  LLM:        247 llamadas | 2209145 tokens entrada | 48997 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.00% | Carga: 1132.2s (4.6s/mensaje) | Respuesta: 0.7s | Total: 1140.3s
+
+Pregunta 51/78: How many autographed baseballs have I added to my collection in the first three 
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 239
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 39 column 200 (char 7020)
+  Memorias recuperadas para responder:
+    - [0.889] User has 15 autographed baseballs in their collection, started collecting three 
+    - [0.874] User has added 20 autographed baseballs to their collection in the past few mont
+    - [0.871] User has added 20 autographed baseballs to their collection
+    - [0.871] User has added 20 autographed baseballs to their collection
+    - [0.865] User is organizing their collection and has added 20 autographed baseballs recen
+    - [0.847] User has added 20 autographed baseballs to their collection after a weekend trip
+    - [0.818] User has 15 autographed baseballs in their collection, including a signed Mike T
+    - [0.802] User is considering selling some of their autographed baseballs to make room for
+    - [0.802] User is considering selling autographed baseballs to make room for new additions
+    - [0.790] User is planning to sell some of their autographed baseballs to make room for ne
+  Correcta:   15
+  Generada:   Based on the memories, you added 20 autographed baseballs to your collection in the past few months,
+  Memorias:   793 | Contradicciones: 0 | Mensajes: 233 (errores: 0, errores internos de Mem0: 1)
+  LLM:        233 llamadas | 2085031 tokens entrada | 45773 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 62.75% | Carga: 951.3s (4.1s/mensaje) | Respuesta: 1.1s | Total: 959.4s
+
+Pregunta 52/78: How often do I play tennis with my friends at the local park previously? How oft
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 211
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.830] User is planning to play tennis with friends at the local park every other Sunda
+    - [0.822] User was at the local park on Sunday, 2026-11-12 and saw people playing tennis, 
+    - [0.816] User is planning to play tennis with friends at the local park this Sunday, like
+    - [0.803] User is planning to play tennis with friends this Sunday at the local park
+    - [0.803] User is planning to play tennis with friends this Sunday at the local park
+    - [0.800] User is planning to play tennis with friends at the local park this Sunday
+    - [0.796] User is interested in playing tennis with friends this Sunday at the local park
+    - [0.790] User plans to play tennis with friends at the local park on Sunday
+    - [0.771] User plans to play tennis with friends at the local park on Sunday, 2026-11-19
+    - [0.752] User is considering getting a new tennis bag for carrying gear to the local park
+  Correcta:   Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).
+  Generada:   Previously, you were planning to play tennis with friends at the local park every other Sunday. Now,
+  Memorias:   777 | Contradicciones: 0 | Mensajes: 211 (errores: 1, errores internos de Mem0: 0)
+  LLM:        211 llamadas | 1890258 tokens entrada | 41457 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 61.54% | Carga: 888.8s (4.2s/mensaje) | Respuesta: 1.0s | Total: 896.8s
+
+Pregunta 53/78: How much time do I dedicate to coding exercises each day?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 245
+  Memorias recuperadas para responder:
+    - [0.892] User is dedicating about an hour each day to coding exercises
+    - [0.887] User dedicates about an hour daily to coding exercises to make progress
+    - [0.872] User is dedicating about two hours daily to coding exercises to improve coding s
+    - [0.865] User is dedicated to coding exercises for about two hours daily to improve codin
+    - [0.864] User is dedicated to coding exercises for about two hours daily to improve codin
+    - [0.807] User is dedicated to coding exercises for about two hours daily and seeks recomm
+    - [0.768] User has been dedicating about an hour daily to coding exercises and is seeking 
+    - [0.766] User is considering using Habitica and WakaTime for staying focused on coding ex
+    - [0.766] User has been using the Pomodoro Technique for staying focused on coding exercis
+    - [0.765] User has been using the Pomodoro Technique to stay focused on coding exercises
+  Correcta:   about two hours
+  Generada:   You dedicate about two hours daily to coding exercises to improve coding skills.
+  Memorias:   603 | Contradicciones: 0 | Mensajes: 244 (errores: 0, errores internos de Mem0: 0)
+  LLM:        244 llamadas | 2168462 tokens entrada | 34167 salida | recortadas: 2
+  Score (propio): 1 [Yes] | Accuracy: 62.26% | Carga: 736.3s (3.0s/mensaje) | Respuesta: 0.5s | Total: 743.8s
+
+Pregunta 54/78: What day of the week did I meet with my previous language exchange tutor Juan?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 239
+  Memorias recuperadas para responder:
+    - [0.874] User is trying to remember the day of their language exchange class with Juan, c
+    - [0.872] User is unsure if their language exchange class with Juan is on Tuesday or Thurs
+    - [0.868] User has a language exchange class with Juan on a specific day of the week
+    - [0.856] User's language exchange class with Juan is on a weekday, not Thursday, and they
+    - [0.833] User recalls meeting Juan for language practice every Wednesday evening
+    - [0.830] User is trying to plan their schedule for the week, specifically their language 
+    - [0.830] User is trying to plan their schedule for the week, specifically their language 
+    - [0.828] User has a language exchange class with Juan every Wednesday evening at a local 
+    - [0.792] User is meeting with language exchange tutor Maria on Thursday
+    - [0.792] User is meeting with language exchange tutor Maria on Thursday
+  Correcta:   Wednesday
+  Generada:   You met with your previous language exchange tutor Juan every Wednesday evening.
+  Memorias:   623 | Contradicciones: 0 | Mensajes: 238 (errores: 0, errores internos de Mem0: 0)
+  LLM:        238 llamadas | 2122204 tokens entrada | 37036 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 62.96% | Carga: 805.3s (3.4s/mensaje) | Respuesta: 0.9s | Total: 813.7s
+
+Pregunta 55/78: How many pre-1920 American coins do I have in my collection?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 240
+  Memorias recuperadas para responder:
+    - [0.899] User has a total of 37 pre-1920 American coins in their collection
+    - [0.899] User has a total of 37 pre-1920 American coins in their collection
+    - [0.862] User plans to organize pre-1920 American coins by denomination and mint mark, wi
+    - [0.852] User is organizing pre-1920 American coins by denomination and mint mark, with a
+    - [0.848] User plans to organize their pre-1920 American coins by denomination and mint ma
+    - [0.825] User wants to see their pre-1920 American coins displayed together
+    - [0.822] User added a 1915-S Barber quarter to their collection of pre-1920 American coin
+    - [0.820] User plans to organize their pre-1920 American coins by denomination and mint ma
+    - [0.820] User is looking for tips on how to properly store and display their pre-1920 Ame
+    - [0.818] User is looking for tips on properly storing and displaying pre-1920 American co
+  Correcta:   38
+  Generada:   You have 37 pre-1920 American coins in your collection.
+  Memorias:   784 | Contradicciones: 0 | Mensajes: 240 (errores: 0, errores internos de Mem0: 0)
+  LLM:        240 llamadas | 2132723 tokens entrada | 41940 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 61.82% | Carga: 883.4s (3.7s/mensaje) | Respuesta: 0.8s | Total: 891.4s
+
+Pregunta 56/78: How many free night's stays can I redeem at any Hilton property with my accumula
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 222
+  Memorias recuperadas para responder:
+    - [0.910] User has accumulated enough Hilton points for a free night's stay at any Hilton 
+    - [0.908] User is redeeming Hilton points for a free night's stay at any Hilton property
+    - [0.907] User has accumulated enough Hilton points for two free night's stays at any Hilt
+    - [0.885] User is considering redeeming Hilton points for a free night's stay at any Hilto
+    - [0.837] User is redeeming points for a free weekend stay at a Hilton property in Las Veg
+    - [0.763] User is considering other Hilton properties in Las Vegas, specifically the Hilto
+    - [0.759] User is considering Hilton properties in Las Vegas, specifically the Hilton Gran
+    - [0.753] User is considering other Hilton properties in Las Vegas, specifically the Hilto
+    - [0.742] User is considering other Hilton properties in Las Vegas, specifically the Waldo
+    - [0.731] User is planning a weekend getaway to the Hilton Lake Las Vegas Resort and consi
+  Correcta:   Two
+  Generada:   You can redeem your accumulated Hilton points for two free night's stays at any Hilton property.
+  Memorias:   660 | Contradicciones: 0 | Mensajes: 222 (errores: 0, errores internos de Mem0: 0)
+  LLM:        222 llamadas | 1975689 tokens entrada | 36140 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 62.50% | Carga: 767.9s (3.5s/mensaje) | Respuesta: 1.0s | Total: 776.2s
+
+Pregunta 57/78: How much weight have I lost since I started going to the gym consistently?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 273
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7696 (char 7695)
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7192 (char 7191)
+  Memorias recuperadas para responder:
+    - [0.800] User has lost 10 pounds since starting a consistent gym routine 3 months ago.
+    - [0.782] User has lost 10 pounds in 3 months by consistently going to the gym
+    - [0.776] User has been consistently going to the gym for 3 months and has lost 10 pounds
+    - [0.706] User is tracking progress using a fitness app and has burned an average of 2500 
+    - [0.634] User has lost 5 pounds in the past month with a goal to reach their target weigh
+    - [0.620] User is planning to continue their workout routine and track progress using a fi
+    - [0.576] User is unsure about committing to daily exercise routines.
+    - [0.573] User is considering spinning classes as a new workout routine after 3 months of 
+    - [0.570] User inquired about the frequency of back pain exercises
+    - [0.568] User has been doing 30-minute walks during lunch breaks, 3 times a week, and aim
+  Correcta:   10 pounds
+  Generada:   You have lost 10 pounds since starting a consistent gym routine 3 months ago. Additionally, you have
+  Memorias:   718 | Contradicciones: 0 | Mensajes: 272 (errores: 1, errores internos de Mem0: 2)
+  LLM:        272 llamadas | 2409869 tokens entrada | 42935 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 63.16% | Carga: 892.0s (3.3s/mensaje) | Respuesta: 0.8s | Total: 900.0s
+
+Pregunta 58/78: How many followers do I have on Instagram now?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 227
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7476 (char 7475)
+  Memorias recuperadas para responder:
+    - [0.858] User has 1250 followers on Instagram
+    - [0.852] User's Instagram follower count is close to 1300
+    - [0.815] User's Instagram page has been growing rapidly, gaining over 200 new followers i
+    - [0.815] User's Instagram page has been growing rapidly, gaining over 200 new followers i
+    - [0.815] User's Instagram page has been growing rapidly, gaining over 200 new followers i
+    - [0.763] User is growing their Instagram page rapidly, recently gaining over 200 new foll
+    - [0.725] User is interested in Instagram Insights to see the performance of their posts
+    - [0.724] User is interested in coming up with fitness tips and hacks to share on Instagra
+    - [0.722] User is curious about which Instagram posts are performing well and how to use I
+    - [0.719] User plans to create a short video showcasing a 5-minute dynamic warm-up routine
+  Correcta:   1300
+  Generada:   You currently have 1300 followers on Instagram.
+  Memorias:   735 | Contradicciones: 0 | Mensajes: 227 (errores: 0, errores internos de Mem0: 1)
+  LLM:        227 llamadas | 2026837 tokens entrada | 42722 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 63.79% | Carga: 897.8s (4.0s/mensaje) | Respuesta: 0.5s | Total: 905.5s
+
+Pregunta 59/78: What is my current record in the recreational volleyball league?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 238
+  Memorias recuperadas para responder:
+    - [0.812] User is performing well in the volleyball league with a record of 3-2
+    - [0.730] User is planning to host a mini tournament to wrap up the season and is inviting
+    - [0.728] User is considering hosting a mini tournament to wrap up the volleyball season a
+    - [0.712] User is confident in their athletic abilities and their volleyball team, the Net
+    - [0.711] User is feeling confident about their athletic abilities and their volleyball te
+    - [0.703] User is thinking of hosting a mini tournament to wrap up the basketball league s
+    - [0.702] User is thinking of hosting a mini tournament to wrap up the basketball season a
+    - [0.677] User is feeling confident about their athletic abilities, with the Net Ninjas vo
+    - [0.632] User is planning to start a recreational basketball league at their office and c
+    - [0.628] User is thinking about organizing a recreational basketball league at their offi
+  Correcta:   5-2
+  Generada:   Your current record in the recreational volleyball league is 5-2.
+  Memorias:   827 | Contradicciones: 0 | Mensajes: 237 (errores: 0, errores internos de Mem0: 0)
+  LLM:        237 llamadas | 2121398 tokens entrada | 44451 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.41% | Carga: 938.4s (4.0s/mensaje) | Respuesta: 0.6s | Total: 946.0s
+
+Pregunta 60/78: How many projects have I completed since starting painting classes?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 240
+  Memorias recuperadas para responder:
+    - [0.861] User is working on a painting of a sunset scene and has completed 4 projects sin
+    - [0.861] User is working on a painting of a sunset scene and has completed 4 projects sin
+    - [0.861] User is working on a painting of a sunset scene and has completed 4 projects sin
+    - [0.805] User has completed 5 painting projects since starting classes and is feeling acc
+    - [0.795] User completed 4 painting projects since starting classes and feels confident in
+    - [0.788] User has completed 4 painting projects since starting classes and feels confiden
+    - [0.786] User is looking for inspiration for their next painting project and has complete
+    - [0.686] User is feeling confident about their painting skills and is looking for tips on
+    - [0.655] User is looking for inspiration for their next painting project, considering abs
+    - [0.627] User is excited to start an abstract painting with a bold and bright palette, pl
+  Correcta:   5
+  Generada:   You have completed 5 painting projects since starting classes.
+  Memorias:   733 | Contradicciones: 0 | Mensajes: 238 (errores: 0, errores internos de Mem0: 0)
+  LLM:        238 llamadas | 2117592 tokens entrada | 39732 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 65.00% | Carga: 838.2s (3.5s/mensaje) | Respuesta: 0.5s | Total: 845.9s
+
+Pregunta 61/78: What type of vehicle model am I currently working on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 214
+  Memorias recuperadas para responder:
+    - [0.678] User is working on a Ford Mustang Shelby GT350R model and is interested in creat
+    - [0.660] User is working on a Ford F-150 pickup truck model and is interested in achievin
+    - [0.657] User is working on a Ford F-150 pickup truck model and is thinking of adding wea
+    - [0.657] User is interested in creating realistic engine and transmission details for the
+    - [0.655] User is working on a Ford Mustang Shelby GT350R model and is interested in creat
+    - [0.653] User is working on a Ford F-150 pickup truck model and plans to add subtle rust 
+    - [0.649] User is working on a Ford Mustang Shelby GT350R model and is interested in airbr
+    - [0.646] User is working on a Ford F-150 pickup truck model and is thinking of adding dec
+    - [0.644] User is asking for advice on airbrushing techniques for a 1/25 scale car body
+    - [0.643] User is planning to add weathering effects to the underside of a Ford F-150 pick
+  Correcta:   Ford F-150 pickup truck
+  Generada:   You are currently working on a Ford Mustang Shelby GT350R model and a Ford F-150 pickup truck model.
+  Memorias:   742 | Contradicciones: 0 | Mensajes: 214 (errores: 0, errores internos de Mem0: 0)
+  LLM:        214 llamadas | 1907836 tokens entrada | 39758 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 65.57% | Carga: 852.8s (4.0s/mensaje) | Respuesta: 0.7s | Total: 860.7s
+
+Pregunta 62/78: What was my previous goal for my Apex Legends level before I updated my goal?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 228
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.741] User's current goal is to reach level 150 in Apex Legends
+    - [0.687] User is interested in improving their aim in Apex Legends
+    - [0.679] User will focus on completing daily and weekly challenges to earn more experienc
+    - [0.675] User is considering focusing on completing daily and weekly challenges to earn m
+    - [0.668] User is looking for tips to improve their aim in Apex Legends
+    - [0.665] User is considering completing daily and weekly challenges to earn experience po
+    - [0.665] User is interested in improving their overall gameplay and communication with th
+    - [0.664] User is playing a lot of Apex Legends and is determined to reach level 100 befor
+    - [0.660] User is interested in improving overall gameplay and communication with their te
+    - [0.652] User is organizing a gaming session with friends this weekend and prefers to pla
+  Correcta:   level 100
+  Generada:   Based on the memories provided, your previous goal was to reach level 100 before the end of the year
+  Memorias:   752 | Contradicciones: 0 | Mensajes: 224 (errores: 3, errores internos de Mem0: 0)
+  LLM:        224 llamadas | 2006061 tokens entrada | 39826 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.13% | Carga: 865.7s (3.9s/mensaje) | Respuesta: 0.9s | Total: 873.6s
+
+Pregunta 63/78: How many largemouth bass did I catch with Alex on the earlier fishing trip to La
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 234
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7599 (char 7598)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.922] User caught 9 largemouth bass on a fishing trip to Lake Michigan with Alex on 7/
+    - [0.913] User caught 7 largemouth bass on a trip to Lake Michigan with Alex on July 10
+    - [0.913] User caught 7 largemouth bass on a trip to Lake Michigan with Alex on 7/10
+    - [0.913] User caught 7 largemouth bass on a trip to Lake Michigan with Alex on 7/10
+    - [0.912] User caught 7 largemouth bass on a trip to Lake Michigan with Alex on 10/7
+    - [0.911] User is planning a fishing trip to Lake Michigan and fished with Alex on 7/22, c
+    - [0.905] User caught 7 largemouth bass on a trip to Lake Michigan with Alex on July 10, 2
+    - [0.905] User caught 7 largemouth bass on a trip to Lake Michigan with Alex on July 10, 2
+    - [0.797] User caught 9 largemouth bass with spinnerbaits and plastic worms on a trip to W
+    - [0.767] User is considering trying new lures for bass fishing, specifically for catching
+  Correcta:   7
+  Generada:   You caught 7 largemouth bass on the earlier fishing trip to Lake Michigan with Alex on July 10, 2026
+  Memorias:   836 | Contradicciones: 0 | Mensajes: 233 (errores: 2, errores internos de Mem0: 1)
+  LLM:        233 llamadas | 2078994 tokens entrada | 48522 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 66.67% | Carga: 1021.9s (4.4s/mensaje) | Respuesta: 0.9s | Total: 1029.7s
+
+Pregunta 64/78: What time do I wake up on Saturday mornings?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 259
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+ERROR:mem0.memory.main:LLM extraction failed: prediction aborted, token repeat limit reached (status code: 500)
+  Memorias recuperadas para responder:
+    - [0.822] User woke up at 7:30 am on the previous Saturday and 9:30 am on the previous Sat
+    - [0.801] User has been waking up at 7:15 am on weekdays and varying times on weekends, li
+    - [0.783] User has been waking up at 7:30 am on Saturdays, which is a good start to the da
+    - [0.754] User wants to jog on Saturday morning and is unsure about the weather forecast
+    - [0.742] User wakes up around 8:30 am on Saturdays and plans a 30-minute jog before showe
+    - [0.724] User likes to wake up at 7:30 am on Saturdays and fit in a cup of coffee before 
+    - [0.723] User likes to wake up at 7:30 am on Saturdays and fit in a cup of coffee before 
+    - [0.687] User has been trying to establish a consistent wake-up time, waking up at 7:15 a
+    - [0.683] User usually goes to bed at 11:00 pm and wakes up at 7:15 am on weekdays, with v
+    - [0.680] User usually goes to bed at 11:00 pm and wakes up at 7:15 am on weekdays, with v
+  Correcta:   7:30 am
+  Generada:   You wake up at 7:30 am on Saturday mornings.
+  Memorias:   707 | Contradicciones: 0 | Mensajes: 258 (errores: 1, errores internos de Mem0: 1)
+  LLM:        257 llamadas | 2289577 tokens entrada | 37983 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.19% | Carga: 814.8s (3.2s/mensaje) | Respuesta: 0.8s | Total: 822.8s
+
+Pregunta 65/78: How many women are on the team led by my former manager Rachel?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 225
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 26 column 344 (char 6148)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.909] User's former manager Rachel leads a team with 6 women out of 10 people
+    - [0.883] User was impressed by a former manager, Rachel, who leads a team with 50% women 
+    - [0.818] User is impressed by Rachel's team, which has half women in leadership positions
+    - [0.790] User is curious about the specific roles of the women on Rachel's team
+    - [0.785] User is curious about the specific roles of the 5 women on Rachel's team of 10 p
+    - [0.775] User wants to know about the specific roles of the 5 women on Rachel's team of 1
+    - [0.773] User is interested in the specific roles of the 5 women on Rachel's team of 10 p
+    - [0.769] User is interested in learning more about the women on Rachel's team, specifical
+    - [0.379] User is interested in companies promoting gender diversity in the workplace
+    - [0.379] User is interested in companies promoting gender diversity in the workplace
+  Correcta:   6
+  Generada:   There are 6 women on the team led by your former manager Rachel.
+  Memorias:   652 | Contradicciones: 0 | Mensajes: 222 (errores: 2, errores internos de Mem0: 1)
+  LLM:        222 llamadas | 1983549 tokens entrada | 36966 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.69% | Carga: 786.3s (3.5s/mensaje) | Respuesta: 0.7s | Total: 794.0s
+
+Pregunta 66/78: Do I have a spare screwdriver for opening up my laptop?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 256
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.858] User needs a spare screwdriver for cleaning the fans in their laptop
+    - [0.518] User needs to pick up a small screwdriver for upgrading their laptop RAM
+    - [0.510] User needs to pick up a screwdriver to upgrade their laptop RAM
+    - [0.463] User is checking out an electronics store near their place for a small screwdriv
+    - [0.454] User intends to buy a screwdriver from an electronics store near their place
+    - [0.373] User is setting up automatic backups for working files on their laptop
+    - [0.372] User is looking for backup software options for automatic backups of working fil
+    - [0.367] User is looking for tips on setting up automatic backups for working files on th
+    - [0.356] User is walking through the process of selecting files and folders to back up on
+    - [0.355] User needs help setting up automatic backups for working files on their laptop
+  Correcta:   Yes
+  Generada:   Based on the user memories, there is no direct information about whether you have a spare screwdrive
+  Memorias:   827 | Contradicciones: 0 | Mensajes: 256 (errores: 2, errores internos de Mem0: 0)
+  LLM:        256 llamadas | 2270410 tokens entrada | 46609 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 66.67% | Carga: 966.6s (3.8s/mensaje) | Respuesta: 1.3s | Total: 974.8s
+
+Pregunta 67/78: How many times have I met up with Alex from Germany?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 238
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7936 (char 7935)
+  Memorias recuperadas para responder:
+    - [0.868] User has a friend named Alex from Germany whom they met at a music festival and 
+    - [0.824] User met Alex from Germany at a music festival a few weeks ago and bonded over i
+    - [0.824] User met Alex from Germany at a music festival a few weeks ago and bonded over i
+    - [0.818] User met Alex from Germany at a music festival and they bonded over indie rock m
+    - [0.747] User is planning to meet up with Alex, who is coming to their city for work
+    - [0.745] User met Alex at a music festival and they bonded over indie rock music
+    - [0.744] User met Alex at a music festival and bonded over their shared love of indie roc
+    - [0.732] User is meeting up with friend Alex in Berlin and plans to catch up at cafes or 
+    - [0.726] User is curious about the indie rock bands or musicians from the music festival 
+    - [0.724] User is curious about indie rock bands or musicians from the music festival wher
+  Correcta:   We've met up twice.
+  Generada:   You have met up with Alex from Germany twice, and you are planning to meet up again.
+  Memorias:   760 | Contradicciones: 0 | Mensajes: 238 (errores: 0, errores internos de Mem0: 1)
+  LLM:        238 llamadas | 2114411 tokens entrada | 45570 salida | recortadas: 1
+  Score (propio): 1 [Yes] | Accuracy: 67.16% | Carga: 962.7s (4.0s/mensaje) | Respuesta: 0.9s | Total: 970.6s
+
+Pregunta 68/78: Did I mostly recently increase or decrease the limit on the number of cups of co
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 237
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.876] User recently increased their morning coffee limit to two cups
+    - [0.870] User increased their morning coffee limit to two cups
+    - [0.849] User is increasing their morning coffee limit to two cups
+    - [0.849] User is increasing their morning coffee limit to two cups
+    - [0.842] User is considering changing their morning coffee limit to two cups
+    - [0.763] User is thinking of reducing their morning coffee intake to two cups
+    - [0.752] User switched to a darker roast coffee and reduced their morning coffee intake t
+    - [0.743] User has switched to a darker roast coffee and reduced their morning coffee inta
+    - [0.736] User is trying to reduce their coffee consumption to one cup in the morning, fin
+    - [0.717] User has switched to a darker roast coffee and reduced their morning coffee inta
+  Correcta:   You increased the limit (from one cup to two cups)
+  Generada:   You recently increased the limit on the number of cups of coffee in the morning to two cups.
+  Memorias:   787 | Contradicciones: 0 | Mensajes: 231 (errores: 2, errores internos de Mem0: 0)
+  LLM:        231 llamadas | 2065844 tokens entrada | 43759 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.65% | Carga: 914.8s (4.0s/mensaje) | Respuesta: 0.8s | Total: 922.8s
+
+Pregunta 69/78: How many trips have I taken my Canon EOS 80D camera on?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 245
+  Memorias recuperadas para responder:
+    - [0.902] User has a Canon EOS 80D camera and has used it on five trips
+    - [0.852] User has taken their Canon EOS 80D camera on multiple adventures, including trip
+    - [0.833] User has a Canon EOS 80D and has used it on five trips
+    - [0.830] User has a Canon EOS 80D and has been using it on five trips
+    - [0.798] User has been using a Canon EOS 80D on five trips and finds it effective
+    - [0.796] User is considering getting a Really Right Stuff tripod for their Canon EOS 80D 
+    - [0.795] User is considering using the Really Right Stuff tripod for their camera, specif
+    - [0.788] User is considering the Really Right Stuff tripod for their Canon EOS 80D camera
+    - [0.788] User is considering the Really Right Stuff tripod for their Canon EOS 80D camera
+    - [0.783] User has taken their Canon EOS 80D on five trips, including to Zion National Par
+  Correcta:   five
+  Generada:   You have taken your Canon EOS 80D camera on five trips.
+  Memorias:   688 | Contradicciones: 0 | Mensajes: 241 (errores: 0, errores internos de Mem0: 0)
+  LLM:        241 llamadas | 2148781 tokens entrada | 38456 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 68.12% | Carga: 808.5s (3.4s/mensaje) | Respuesta: 0.5s | Total: 816.1s
+
+Pregunta 70/78: What new kitchen gadget did I invest in before getting the Air Fryer?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 239
+  Memorias recuperadas para responder:
+    - [0.788] User is considering using the Air Fryer to make crispy sweet potato fries for di
+    - [0.787] User is planning to use the Air Fryer to make crispy sweet potato fries for meal
+    - [0.772] User is considering using the Air Fryer to make sweet potato fries and is seekin
+    - [0.768] User is planning to use the Air Fryer to make sweet potato fries to go with the 
+    - [0.585] User is looking for gift ideas for their brother's birthday, considering a smart
+    - [0.581] User is considering adding a small fridge and a coffee maker to their garage wor
+    - [0.571] User is planning to add a small fridge and a coffee maker to the garage workstat
+    - [0.569] User is looking for tips on choosing the right appliances for a garage workstati
+    - [0.552] User is considering getting a smartwatch or high-tech gadget as a gift for their
+    - [0.539] User is considering making a Cuban Black Bean and Rice Bowl for dinner and pairi
+  Correcta:   Instant Pot
+  Generada:   Based on the provided memories, there is no mention of investing in any new kitchen gadget before ge
+  Memorias:   727 | Contradicciones: 0 | Mensajes: 238 (errores: 0, errores internos de Mem0: 0)
+  LLM:        238 llamadas | 2117251 tokens entrada | 37988 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 67.14% | Carga: 787.4s (3.3s/mensaje) | Respuesta: 1.5s | Total: 796.1s
+
+Pregunta 71/78: How many Italian restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 259
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 212 column 6 (char 8550)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.614] User is considering trying a new Indian restaurant in their neighborhood that ju
+    - [0.596] User is considering trying a new Indian restaurant in their neighborhood for chi
+    - [0.594] User is considering visiting specific restaurants in County Clare for vegetarian
+    - [0.593] User is interested in trying a new Indian restaurant in the neighborhood
+    - [0.572] User has tried three different Korean restaurants recently, each with unique fla
+    - [0.570] User has tried three Korean restaurants recently, each with unique flavors and s
+    - [0.570] User has tried three Korean restaurants recently, each with unique flavors and s
+    - [0.568] User has tried four Korean restaurants recently and is always looking for new re
+    - [0.563] User wants recommendations for vegetarian or vegan restaurants in County Clare
+    - [0.559] User has tried three Korean restaurants recently, each with a unique flavor and 
+  Correcta:   The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.
+  Generada:   Based on the provided memories, there is no information about the number of Italian restaurants you 
+  Memorias:   822 | Contradicciones: 0 | Mensajes: 258 (errores: 1, errores internos de Mem0: 1)
+  LLM:        258 llamadas | 2301019 tokens entrada | 50160 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 67.61% | Carga: 1047.7s (4.1s/mensaje) | Respuesta: 1.1s | Total: 1056.0s
+
+Pregunta 72/78: How many engineers do I lead when I just started my new role as Software Enginee
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 258
+  Memorias recuperadas para responder:
+    - [0.712] User is leading a team of 4 engineers in their new role as Senior Software Engin
+    - [0.696] User enjoys his role as Senior Software Engineer and leading a team of five engi
+    - [0.693] User is a Senior Software Engineer leading a team of 4 engineers.
+    - [0.689] User is a Senior Software Engineer leading a team of 4 engineers
+    - [0.682] User is currently a Senior Software Engineer and leads a team of five
+    - [0.665] User is a Senior Software Engineer at an unspecified company, leading a team of 
+    - [0.664] User is a Senior Software Engineer leading a team
+    - [0.637] User is a Senior Software Engineer and plans to delegate tasks more effectively 
+    - [0.612] User is planning a team outing for their 4 engineers and manager Rachel, conside
+    - [0.566] User is planning a team outing for their 4 engineers and manager Rachel, conside
+  Correcta:   The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.
+  Generada:   You lead a team of 4 engineers when you just started your new role as Software Engineer Manager.
+  Memorias:   702 | Contradicciones: 0 | Mensajes: 257 (errores: 0, errores internos de Mem0: 0)
+  LLM:        257 llamadas | 2285055 tokens entrada | 35260 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 66.67% | Carga: 758.5s (3.0s/mensaje) | Respuesta: 0.8s | Total: 766.2s
+
+Pregunta 73/78: How often do I see Dr. Johnson?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 230
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7879 (char 7878)
+ERROR:mem0.memory.main:LLM extraction failed: prediction aborted, token repeat limit reached (status code: 500)
+  Memorias recuperadas para responder:
+    - [0.658] User has a therapy session with Dr. Smith every two weeks
+    - [0.595] User is planning to meditate and journal after the session with Dr. Smith
+    - [0.592] User had a session with Dr. Smith this week to discuss setting healthy boundarie
+    - [0.592] User had a session with Dr. Smith this week to discuss setting healthy boundarie
+    - [0.592] User had a session with Dr. Smith this week to discuss setting healthy boundarie
+    - [0.537] User is feeling overwhelmed with commitments and Dr. Smith suggested learning to
+    - [0.362] User's work hours are 9 to 5, Monday to Friday, with regular social commitments 
+    - [0.359] User has work hours from 9 to 5, Monday to Friday, and regular social commitment
+    - [0.353] User has been traveling frequently, taking 5 flights in the past month, with 3 d
+    - [0.353] User has been traveling frequently, taking 5 flights in the past month, with 3 d
+  Correcta:   The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.
+  Generada:   You see Dr. Smith every two weeks for therapy sessions.
+  Memorias:   721 | Contradicciones: 0 | Mensajes: 230 (errores: 0, errores internos de Mem0: 2)
+  LLM:        229 llamadas | 2040909 tokens entrada | 41408 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 65.75% | Carga: 856.3s (3.7s/mensaje) | Respuesta: 0.5s | Total: 863.9s
+
+Pregunta 74/78: How long have I been living in my current apartment in Shinjuku?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 236
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.804] User has been living in a studio apartment in Harajuku, Tokyo for a month
+    - [0.780] User has been living in Harajuku for 3 months and continues to discover new hidd
+    - [0.767] User is living in a studio apartment in Harajuku, Tokyo, and finds the commute t
+    - [0.754] User has been living in Harajuku for 3 months and has not yet explored the histo
+    - [0.627] User enjoys the fall foliage in Tokyo and has been exploring a new neighborhood 
+    - [0.609] User is asking about travel plans for Japan
+    - [0.593] User is also inviting friends who live in Tokyo to join the trip for a few days
+    - [0.592] User is planning a day trip to Yokohama and has been enjoying the fall foliage i
+    - [0.590] User is inviting friends who live in Tokyo to join the trip for a few days
+    - [0.587] User is planning to visit Kanemasa for kanimeshi and Tsukiji Itadori Uogashi Nih
+  Correcta:   The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.
+  Generada:   You have been living in your current studio apartment in Harajuku, Tokyo, for 3 months.
+  Memorias:   697 | Contradicciones: 0 | Mensajes: 235 (errores: 2, errores internos de Mem0: 0)
+  LLM:        235 llamadas | 2101253 tokens entrada | 37902 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 64.86% | Carga: 803.2s (3.4s/mensaje) | Respuesta: 0.7s | Total: 810.8s
+
+Pregunta 75/78: How many autographed football have I added to my collection in the first three m
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 222
+  Memorias recuperadas para responder:
+    - [0.758] User has added 20 autographed baseballs to their collection.
+    - [0.756] User has added 20 autographed baseballs to their collection
+    - [0.756] User has added 20 autographed baseballs to their collection
+    - [0.753] User recently received 20 autographed baseballs, bringing their collection to 35
+    - [0.751] User is organizing their collection and has added 20 autographed baseballs.
+    - [0.736] User recently received a signed Mike Trout baseball and now has 15 autographed b
+    - [0.732] User recently added 20 autographed baseballs to their collection after a weekend
+    - [0.713] User has 15 autographed baseballs in their collection, including a recently sign
+    - [0.689] User is considering selling some of their autographed baseballs to make space in
+    - [0.681] User is planning to sell some autographed baseballs to make room for new additio
+  Correcta:   The information provided is not enough. You mentioned collecting autographed baseball but not football.
+  Generada:   Based on the provided memories, there is no mention of autographed footballs being added to the coll
+  Memorias:   680 | Contradicciones: 0 | Mensajes: 221 (errores: 0, errores internos de Mem0: 0)
+  LLM:        221 llamadas | 1975212 tokens entrada | 35353 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 64.00% | Carga: 746.2s (3.4s/mensaje) | Respuesta: 1.1s | Total: 754.4s
+
+Pregunta 76/78: How often do I play table tennis with my friends at the local park?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 227
+ERROR:mem0.memory.main:Error parsing extraction response: Expecting ',' delimiter: line 1 column 7478 (char 7477)
+WARNING:root:Error al agregar mensaje: 'str' object has no attribute 'get'
+  Memorias recuperadas para responder:
+    - [0.828] User is considering playing tennis with friends at the local park every other Su
+    - [0.815] User is planning to play tennis with friends at the local park every other Sunda
+    - [0.792] User is planning to play tennis with friends this Sunday at the local park
+    - [0.772] User was at the local park on Sunday, 12 November 2026, where they saw people pl
+    - [0.755] User is planning to play tennis with friends at the local park this Sunday, 12 N
+    - [0.743] User plans to play tennis with friends at the local park on Sunday, 12 November 
+    - [0.735] User is planning to get a new tennis bag to carry gear to the local park for pla
+    - [0.723] User is considering getting a new tennis bag to carry their gear to the local pa
+    - [0.717] User is planning to jog and play tennis with friends at the local park this Sund
+    - [0.712] User is planning to jog near Almaden Lake Park and play tennis with friends at t
+  Correcta:   The information provided is not enough. You mentioned playing tennis but not table tennis.
+  Generada:   You do not play table tennis with your friends at the local park based on the provided memories. The
+  Memorias:   738 | Contradicciones: 0 | Mensajes: 227 (errores: 1, errores internos de Mem0: 1)
+  LLM:        227 llamadas | 2030451 tokens entrada | 42983 salida | recortadas: 0
+  Score (propio): 0 [No] | Accuracy: 63.16% | Carga: 904.8s (4.0s/mensaje) | Respuesta: 1.1s | Total: 912.9s
+
+Pregunta 77/78: Before I purchased the gravel bike, do I have other bikes in addition to my moun
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 260
+  Memorias recuperadas para responder:
+    - [0.829] User has three bikes: a road bike, a mountain bike, and a commuter bike.
+    - [0.829] User has three bikes: a road bike, a mountain bike, and a commuter bike.
+    - [0.829] User has three bikes: a road bike, a mountain bike, and a commuter bike.
+    - [0.828] User has three bikes: a road bike, a mountain bike, and a commuter bike
+    - [0.818] User has been using three bikes: a road bike, a mountain bike, and a commuter bi
+    - [0.806] User has been using their road bike along with a mountain bike and a commuter bi
+    - [0.804] User is using three bikes: a road bike, a mountain bike, and a commuter bike.
+    - [0.803] User is using their mountain bike for trail rides and their commuter bike for da
+    - [0.662] User has been using their road bike for long rides on weekends, their mountain b
+    - [0.658] User is excited about a bike trip with four bikes and plans to book accommodatio
+  Correcta:   Yes. (You have a road bike too.)
+  Generada:   Yes, you have a road bike in addition to your mountain bike and commuter bike.
+  Memorias:   756 | Contradicciones: 0 | Mensajes: 258 (errores: 0, errores internos de Mem0: 0)
+  LLM:        258 llamadas | 2301185 tokens entrada | 39551 salida | recortadas: 0
+  Score (propio): 1 [Yes.] | Accuracy: 63.64% | Carga: 858.2s (3.3s/mensaje) | Respuesta: 0.7s | Total: 865.9s
+
+Pregunta 78/78: Where do I currently keep my old sneakers?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 261
+  Memorias recuperadas para responder:
+    - [0.795] User is looking for tips on how to keep sneakers clean and fresh while stored
+    - [0.794] User needs to take care of old sneakers, which are starting to smell and are sto
+    - [0.771] User plans to take care of old sneakers by polishing and conditioning them, then
+    - [0.770] User wants tips on keeping sneakers clean and fresh while stored
+    - [0.742] User needs to organize their closet this weekend, specifically to get rid of old
+    - [0.739] User needs to polish and condition their old sneakers and plans to drop them off
+    - [0.734] User plans to organize their closet this weekend, specifically to get rid of old
+    - [0.732] User plans to polish and condition their old sneakers and drop them off at a cob
+    - [0.730] User plans to take inventory of their shoe collection and get rid of unused pair
+    - [0.730] User needs to organize their closet this weekend and store old sneakers in a sho
+  Correcta:   in a shoe rack in my closet
+  Generada:   You currently keep your old sneakers under the bed and in a shoe rack in your closet.
+  Memorias:   613 | Contradicciones: 0 | Mensajes: 259 (errores: 0, errores internos de Mem0: 0)
+  LLM:        259 llamadas | 2308324 tokens entrada | 33931 salida | recortadas: 0
+  Score (propio): 1 [Yes] | Accuracy: 64.10% | Carga: 724.1s (2.8s/mensaje) | Respuesta: 0.5s | Total: 731.6s
+
+============================================================
+RESUMEN FINAL
+============================================================
+Modelo                 : qwen2.5:7b-instruct-q4_K_M (small, sin modulo)
+Preguntas evaluadas    : 78
+Respuestas correctas   : 50  (calificacion del propio modelo)
+Accuracy               : 64.10%
+Tiempo carga promedio  : 878.2 segundos
+Tiempo por mensaje     : 3.65 segundos por mensaje guardado
+Tiempo respuesta prom. : 0.8 segundos
+Tiempo total promedio  : 886.2 segundos
+Total contradicciones  : 0
+Memorias marcadas      : 0
+Pares descartados NER  : 0
+Memorias prom/pregunta : 733.7
+Mensajes cargados      : 18778 (errores: 46, errores internos de Mem0: 43)
+Llamadas al LLM (Mem0) : 18773 (recortadas: 14)
+Tiempo total           : 1152.1 minutos
+Resultados guardados   : E:/proyecto/resultados_local_qwen25_corregido/small/small_sin_modulo_qwen25.json
+============================================================

@@ -1,0 +1,113 @@
+{
+  "total_preguntas": 1,
+  "correctas": 0,
+  "accuracy": 0.0,
+  "accuracy_pct": "0.00%",
+  "juez_de_score": "propio (qwen3.5:4b, plantillas oficiales, temperatura 0)",
+  "tiempo_promedio_seg": 46.36,
+  "tiempo_carga_promedio_seg": 37.79,
+  "tiempo_respuesta_promedio_seg": 0.53,
+  "tiempo_por_mensaje_guardado_seg": 3.15,
+  "tiempo_total_min": 0.77,
+  "total_contradicciones": 0,
+  "total_memorias_marcadas": 0,
+  "total_pares_descartados_filtro": 0,
+  "promedio_memorias_guardadas": 12.0,
+  "total_mensajes_cargados": 12,
+  "total_errores_carga": 0,
+  "total_errores_mem0": 0,
+  "total_llamadas_llm": 12,
+  "total_llamadas_recortadas": 0,
+  "total_tokens_entrada": 105913,
+  "total_tokens_salida": 506,
+  "use_nli": false,
+  "use_ner": true,
+  "use_marking": true,
+  "use_bidirectional": true,
+  "categoria": "knowledge-update",
+  "variante": "oracle",
+  "configuracion": {
+    "modelo": "qwen3.5:4b",
+    "embeddings": "nomic-embed-text",
+    "num_ctx": 12288,
+    "think": false,
+    "semilla": 42,
+    "temperatura_respuesta": 0,
+    "temperatura_extraccion": "0.1 (valor por defecto de Mem0)",
+    "top_k_busqueda": 10,
+    "history_db_path": ":memory:",
+    "dataset": "E:/proyecto/LongMemEval/data/longmemeval_oracle",
+    "ollama_version": "ollama version is 0.40.16",
+    "ollama_ps": "qwen3.5:4b d8b0f5e9760c 3.5 GB 100% GPU 12288 llamacpp 4 minutes from now",
+    "fecha_fin": "2026-11-16T04:11:17"
+  },
+  "detalle": [
+    {
+      "question_id": "6a1eabeb",
+      "question": "What was my personal best time in the charity 5K run?",
+      "answer_correcta": "25 minutes and 50 seconds (or 25:50)",
+      "respuesta_generada": "27:12",
+      "score": 0,
+      "salida_juez_propio": "no",
+      "tiempo_segundos": 46.36,
+      "tiempo_carga_seg": 37.79,
+      "tiempo_consolidacion_seg": 0.0,
+      "tiempo_respuesta_seg": 0.53,
+      "tiempo_juez_propio_seg": 0.19,
+      "mensajes_cargados": 12,
+      "errores_carga": 0,
+      "errores_mem0": 0,
+      "memorias_guardadas": 12,
+      "puntos_qdrant_total": 26,
+      "contradicciones": 0,
+      "memorias_marcadas": 0,
+      "pares_descartados_filtro": 0,
+      "llamadas_llm": 12,
+      "tokens_entrada": 105913,
+      "tokens_salida": 506,
+      "llamadas_recortadas": 0,
+      "memorias_usadas": [
+        {
+          "memoria": "User has been doing running lately and recently set a personal best time of 27:12 in a charity 5K run",
+          "puntaje": 0.8957
+        },
+        {
+          "memoria": "User is preparing for a charity 5K run and seeking tips to improve endurance, with the goal of beating their previous personal best time of 25:50",
+          "puntaje": 0.8693
+        },
+        {
+          "memoria": "User is training for another charity 5K run and seeking tips to improve endurance",
+          "puntaje": 0.8482
+        },
+        {
+          "memoria": "User is considering incorporating strength training into their fitness routine to improve running performance",
+          "puntaje": 0.5719
+        },
+        {
+          "memoria": "User is planning a fitness schedule for the next few weeks and has a soccer game with coworkers in two weeks",
+          "puntaje": 0.5211
+        },
+        {
+          "memoria": "User has been focusing on strengthening their core and legs, which has improved their performance in both running and soccer games",
+          "puntaje": 0.3771
+        },
+        {
+          "memoria": "User is asking for tips on how to improve running technique to become more efficient and effective on the soccer field",
+          "puntaje": 0.3747
+        },
+        {
+          "memoria": "User plays soccer every two weeks with coworkers and is seeking tips to improve endurance",
+          "puntaje": 0.3519
+        },
+        {
+          "memoria": "User is preparing for a tennis tournament on May 6th, 2027 and seeking tips to improve their serve",
+          "puntaje": 0.3425
+        },
+        {
+          "memoria": "User is planning to sign up for a tennis tournament on May 6th, 2027, which will be their first real tournament after playing casually for a few years",
+          "puntaje": 0.3251
+        }
+      ]
+    }
+  ]
+}

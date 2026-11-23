@@ -1,0 +1,110 @@
+Limpiando Qdrant...
+Qdrant limpio.
+Cargando dataset...
+Evaluando 2 preguntas de 'knowledge-update' (oracle)
+Modelo: qwen3.5:4b | num_ctx: 12288 | think: False | semilla: 42
+Modulo NLI: ACTIVADO (NER=True, marcado=True, bidireccional=True)
+Resultados en: E:/proyecto/resultados_local_qwen35/prueba/oracle_con_modulo_qwen35_2.json
+============================================================
+Cargando modelos (calentamiento, este tiempo no se mide)...
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\bsbry\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\jit\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  74%|#######3  | 149/202 [00:00<00:00, 1486.67it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 1897.67it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.998 > umbral=0.85
+  Memoria en conflicto: 'User adopted a dog named Max around November 9, 2026'
+  Hecho nuevo:          'user: Actually, my dog is called Rocky, not Max.
+'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=ead078bf-c79b-4d75-8b02-6f17897855f2: 'User adopted a dog named Max around November 9, 2026'
+INFO:mem0.memory.main:[NLI] Memoria en conflicto marcada id=ead078bf-c79b-4d75-8b02-6f17897855f2
+Modelos listos en 38 s.
+
+Pregunta 1/2: What was my personal best time in the charity 5K run?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 3007.89it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:CONTRADICCIÓN DETECTADA — P(contradicción)=0.901 > umbral=0.85
+  Memoria en conflicto: 'User has been focusing on strengthening their core and legs, which has improved '
+  Hecho nuevo:          'user: I was thinking about incorporating strength training into my routine, can '
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=c7a958da-bc28-4114-a2a7-33c5faabff04: 'User has been focusing on strengthening their core and legs, which has'
+INFO:mem0.memory.main:[NLI] Memoria en conflicto marcada id=c7a958da-bc28-4114-a2a7-33c5faabff04
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.998
+  Marcada (vieja): 'User is seeking tips on how to improve running technique to become mor'
+  Conservada (nueva): 'User is seeking tips on how to improve their shooting technique in soc'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=d78b37bd-8d43-439b-bb1e-4695333cc511: 'User is seeking tips on how to improve running technique to become mor'
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.900] User has been doing running lately and recently set a personal best time of 27:1
+    - [0.868] User is preparing for a charity 5K run and seeking tips to improve endurance, wi
+    - [0.848] User is training for another charity 5K run and seeking tips to improve enduranc
+    - [0.566] User is considering incorporating strength training exercises into their fitness
+    - [0.565] User recently scored a goal in a recreational soccer game with coworkers, markin
+    - [0.521] User is planning a fitness schedule for the next few weeks and has a soccer game
+    - [0.377] [OUTDATED as of 2026-11-16] User has been focusing on strengthening their core a
+    - [0.369] [OUTDATED as of 2026-11-16] User is seeking tips on how to improve running techn
+    - [0.350] User plays soccer every two weeks with coworkers and is trying to improve endura
+    - [0.342] User is preparing for a tennis tournament on May 6th, 2027 and seeking tips to i
+  Correcta:   25 minutes and 50 seconds (or 25:50)
+  Generada:   27:12 minutes
+  Memorias:   14 | Contradicciones: 2 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 106425 tokens entrada | 575 salida | recortadas: 0
+  Score (propio): 0 [no] | Accuracy: 0.00% | Carga: 29.1s (2.4s/mensaje) | Respuesta: 0.8s | Total: 47.0s
+  Ollama:     qwen3.5:4b d8b0f5e9760c 3.5 GB 100% GPU 12288 llamacpp 4 minutes from now
+
+Pregunta 2/2: How many Korean restaurants have I tried in my city?
+INFO:mem0.nli.verificador_consistencia:VerificadorConsistencia inicializado con umbral=0.85 | filtro_entidades=True | bidireccional=True | marcado=True
+  Mensajes user a cargar: 12
+INFO:mem0.nli.filtro_entidades:[FiltroEntidades] spaCy en_core_web_sm cargado
+INFO:mem0.nli.verificador_consistencia:Cargando modelo NLI: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 2638.82it/s]
+INFO:mem0.nli.verificador_consistencia:Modelo NLI cargado correctamente en CPU
+INFO:mem0.nli.verificador_consistencia:[NLI-Consolidacion] CONTRADICCIÓN P=0.865
+  Marcada (vieja): 'User has been using an authentic Japanese short-grain rice lately but '
+  Conservada (nueva): 'User decided to use traditional Indian basmati rice for their dinner p'
+INFO:mem0.nli.verificador_consistencia:[NLI] Memoria marcada como historica id=2a4e8870-149a-4e47-8d63-dc7925beca18: 'User has been using an authentic Japanese short-grain rice lately but '
+  [Consolidacion] 1 memorias obsoletas marcadas
+  Memorias recuperadas para responder:
+    - [0.841] User has tried three different Korean restaurants in their city recently and not
+    - [0.786] User tried a Korean restaurant recently that served an amazing bibimbap, another
+    - [0.655] User is experimenting with different types of noodles at home and seeking recomm
+    - [0.608] User is planning a dinner party and needs suggestions for popular Korean BBQ dis
+    - [0.567] User is planning changes to their dinner party menu and seeking recipe ideas for
+    - [0.563] User plans to serve kimchi and bokkeumbap as side dishes for their Korean-style 
+    - [0.559] User is planning a dinner party and wants to make Korean-style BBQ beef, seeking
+    - [0.544] User plans to serve samosas and saag aloo as part of their Indian-inspired dinne
+    - [0.311] User is trying out different types of rice lately and seeking recommendations fo
+    - [0.293] User decided to use traditional Indian basmati rice for their dinner party inste
+  Correcta:   four
+  Generada:   You have tried three different Korean restaurants in your city.
+  Memorias:   11 | Contradicciones: 1 | Mensajes: 12 (errores: 0, errores internos de Mem0: 0)
+  LLM:        12 llamadas | 104660 tokens entrada | 536 salida | recortadas: 0
+  Score (propio): 0 [no] | Accuracy: 0.00% | Carga: 36.0s (3.0s/mensaje) | Respuesta: 0.8s | Total: 57.8s
+
+============================================================
+RESUMEN FINAL
+============================================================
+Modelo                 : qwen3.5:4b (oracle, con modulo)
+Preguntas evaluadas    : 2
+Respuestas correctas   : 0  (calificacion del propio modelo)
+Accuracy               : 0.00%
+Tiempo carga promedio  : 32.5 segundos
+Tiempo por mensaje     : 2.71 segundos por mensaje guardado
+Tiempo respuesta prom. : 0.8 segundos
+Tiempo total promedio  : 52.4 segundos
+Total contradicciones  : 3
+Memorias marcadas      : 3
+Pares descartados NER  : 2
+Memorias prom/pregunta : 12.5
+Mensajes cargados      : 24 (errores: 0, errores internos de Mem0: 0)
+Llamadas al LLM (Mem0) : 24 (recortadas: 0)
+Tiempo total           : 1.7 minutos
+Resultados guardados   : E:/proyecto/resultados_local_qwen35/prueba/oracle_con_modulo_qwen35_2.json
+============================================================
